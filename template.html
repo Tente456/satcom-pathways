@@ -59,6 +59,14 @@ h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; li
 
 /* masthead */
 .mast { background: var(--band); color: var(--band-ink); }
+/* dish photo blended into the far right of the masthead on wide screens */
+.mast { position: relative; overflow: hidden; }
+.mast > .container { position: relative; z-index: 1; }
+@media (min-width: 1600px) {
+  .mast::after { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: 254px; pointer-events: none;
+    background: url(/assets/hero-dish.jpg) right top -36px / auto 140px no-repeat;
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.35) 30%, #000 62%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.35) 30%, #000 62%); }
+}
 .mast .container { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-top: 16px; padding-bottom: 16px; }
 .brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
 .brand svg { flex: none; }
@@ -147,17 +155,9 @@ aside { display: grid; gap: 18px; }
 .tag.type { color: var(--link); border-color: currentColor; background: transparent; font-weight: 600; }
 .note { color: var(--muted); font-size: 14px; max-width: 80ch; margin-top: 12px; }
 /* home */
-.intro { position: relative; overflow: hidden; display: grid; align-content: center; gap: 6px; margin-bottom: 20px; min-height: 230px; padding: 34px 40px; border-radius: 12px; background: var(--band); color: var(--band-ink); }
-.intro::before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; width: min(58%, 560px); background: url(/assets/hero-dish.jpg) right 80% / cover no-repeat;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.45) 25%, #000 55%); mask-image: linear-gradient(to right, transparent 0%, rgba(0,0,0,.45) 25%, #000 55%); }
-.intro > * { position: relative; }
-.intro h2 { font-size: 34px; max-width: 18ch; color: #f1f4f8; }
+.intro { display: grid; gap: 6px; margin-bottom: 20px; }
+.intro h2 { font-size: 28px; max-width: 30ch; }
 .intro p { margin: 0; }
-@media (max-width: 720px) {
-  .intro { min-height: 170px; padding: 26px 22px; }
-  .intro::before { width: 100%; opacity: .45; -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 70%); mask-image: linear-gradient(to right, transparent 0%, #000 70%); }
-  .intro h2 { font-size: 26px; }
-}
 .view-band { margin: 6px 0 26px; border: 1px solid var(--line); border-radius: 10px; padding: 14px 0; display: grid; gap: 10px; }
 .home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 16px; align-items: start; margin-bottom: 20px; }
 .news-wrap { max-width: 860px; }
