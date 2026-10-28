@@ -13,6 +13,7 @@
 :root {
   /* Layout: masthead + two views (news, jobs) switched by #hash; news has a lead row, filters, list and a hiring sidebar. */
   --bg: #f3f4f6;
+  --edge: #e4e7ec;
   --surface: #ffffff;
   --ink: #0f1b2d;
   --muted: #5b6676;
@@ -30,13 +31,13 @@
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --bg: #0d131c; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
+    --bg: #0d131c; --edge: #080c12; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
     --accent: #2ee07a; --accent-ink: #06210f; --accent-text: #4fe38f; --link: #8ab4ff; --band: #070b11; --band-ink: #e8ecf2; --good: #4fe38f;
     color-scheme: dark;
   }
 }
 :root[data-theme="dark"] {
-  --bg: #0d131c; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
+  --bg: #0d131c; --edge: #080c12; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
   --accent: #2ee07a; --accent-ink: #06210f; --accent-text: #4fe38f; --link: #8ab4ff; --band: #070b11; --band-ink: #e8ecf2; --good: #4fe38f;
   color-scheme: dark;
 }
@@ -47,6 +48,14 @@ a { color: var(--link); text-underline-offset: 2px; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
 .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+/* wide screens: wider column, edges a shade off the column */
+@media (min-width: 1440px) {
+  .container { max-width: 1360px; }
+  body { background: linear-gradient(to right,
+    var(--edge) calc(50% - 681px), var(--line) calc(50% - 681px), var(--line) calc(50% - 680px),
+    var(--bg) calc(50% - 680px), var(--bg) calc(50% + 680px),
+    var(--line) calc(50% + 680px), var(--line) calc(50% + 681px), var(--edge) calc(50% + 681px)); }
+}
 
 /* masthead */
 .mast { background: var(--band); color: var(--band-ink); }
