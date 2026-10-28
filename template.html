@@ -467,9 +467,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <a href="digest.xml">Digest RSS</a>
       <a href="jobs-early.xml">Early-career jobs RSS</a>
     </nav>
-    <p id="foot-updated"></p>
-    <p>Headlines link to the publishers. Articles are not copied here. Jobs come from each company's public careers board.</p>
-    <p id="foot-sources"></p>
+    <p id="foot-line"></p>
   </div>
 </footer>
 
@@ -501,8 +499,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   var companies = uniq(D.jobs.map(function (j) { return j.company; })).sort();
   $('home-stats').textContent = D.news.length + ' headlines this month · ' + D.jobs.length + ' open roles at ' +
     companies.length + ' companies · ' + D.deals.length + ' Africa deals tracked · updated ' + ago(D.site.updated);
-  $('foot-updated').textContent = 'Last refreshed ' + new Date(D.site.updated).toLocaleString(undefined, {dateStyle: 'medium', timeStyle: 'short'}) + '.';
-  $('foot-sources').textContent = 'News sources: ' + D.newsSources.join(', ') + '.';
+  $('foot-line').textContent = '\u00a9 ' + new Date().getFullYear() + ' Satcom Pathways. Headlines link to the original publishers.';
 
   /* lead stories: prefer satcom */
   var satcom = D.news.filter(function (n) { return n.categories.indexOf('Satcom & connectivity') !== -1; });
