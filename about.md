@@ -23,3 +23,5 @@ I spent eight years at Airtel Nigeria as a project manager for enterprise connec
 I also volunteer with Cosmos for Humanity.
 
 Spotted a mistake, or know of a deal or event that should be here? Email {{CONTACT}}.
+
+Follow Satcom Pathways on [LinkedIn](https://www.linkedin.com/company/satcom-pathways/).
