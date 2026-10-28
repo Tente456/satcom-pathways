@@ -22,14 +22,4 @@ I spent eight years at Airtel Nigeria as a project manager for enterprise connec
 
 I also volunteer with Cosmos for Humanity.
 
-## How it works
-
-- **News** comes from satcom, space and telecom publishers. Each headline links to the original article; nothing is copied here.
-- **Jobs** come from each company's public careers board. Internships, graduate schemes and other early-career roles are flagged.
-- **Deals** are added by hand, and every entry links to its source. If a report can't be confirmed, it stays off the tracker.
-- **Research** lists its sources at the end of each piece.
-- **Events** show a "check dates" tag until the organiser confirms the dates.
-
-No listing on the site is paid for.
-
 Spotted a mistake, or know of a deal or event that should be here? Email {{CONTACT}}.
