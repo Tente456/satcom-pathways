@@ -286,7 +286,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   <section class="view" id="view-home" aria-labelledby="tab-home">
     <div class="intro">
       <h2>{{TAGLINE}}</h2>
-      <p class="meta" id="home-stats"></p>
     </div>
     <div class="lead" id="lead"></div>
   </section>
@@ -334,7 +333,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="jobs-head">
       <div>
         <h2>Satellite and space news</h2>
-        <p>Headlines from satcom, space and telecom publishers. Each one links to the original article.</p>
       </div>
     </div>
     <div class="news-wrap">
@@ -354,8 +352,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="jobs-head">
       <div>
         <h2>Jobs in satellite and space</h2>
-        <p>Openings pulled straight from company career pages. Every listing links to the employer's own application page. Tap the star to save a role on this device.</p>
-        <div class="alerts"><span class="meta" style="margin:0">Job alerts:</span><a href="#subscribe" id="alert-email">Weekly email</a><a href="/jobs-early.xml">Early-career feed (RSS)</a><a href="/jobs.xml">All new jobs (RSS)</a></div>
       </div>
     </div>
     <div class="toolbar">
@@ -376,7 +372,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="jobs-head">
       <div>
         <h2>Africa satcom deals</h2>
-        <p>Agreements, contracts, licences, funding rounds and launches in African satellite communications, gathered from public announcements. Every entry links to its source.</p>
       </div>
     </div>
     <div class="tiles" id="deal-tiles"></div>
@@ -406,7 +401,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="rhead">
       <div>
         <h2>Research</h2>
-        <p id="research-tagline"></p>
       </div>
       <dl class="rledger" id="research-ledger"></dl>
     </div>
@@ -427,7 +421,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="jobs-head">
       <div>
         <h2 id="events-title">Upcoming events</h2>
-        <p>Satcom and space conferences, Africa included. Events tagged "check dates" come from listings and are not yet confirmed on the organiser's site.</p>
       </div>
     </div>
     <div class="chips" id="events-chips" role="group" aria-label="Filter events by region"></div>
@@ -497,8 +490,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   /* ticker, footer */
   var early = D.jobs.filter(function (j) { return j.early; });
   var companies = uniq(D.jobs.map(function (j) { return j.company; })).sort();
-  $('home-stats').textContent = D.news.length + ' headlines this month · ' + D.jobs.length + ' open roles at ' +
-    companies.length + ' companies · ' + D.deals.length + ' Africa deals tracked · updated ' + ago(D.site.updated);
   $('foot-line').textContent = '\u00a9 ' + new Date().getFullYear() + ' Satcom Pathways. Headlines link to the original publishers.';
 
   /* lead stories: prefer satcom */
@@ -600,11 +591,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'Remove from saved' : 'Save this role'); b.title = on ? 'Saved' : 'Save';
     var sc = savedCount(); $('saved-n').textContent = sc ? '(' + sc + ')' : '';
   });
-  $('alert-email').addEventListener('click', function (e) {
-    e.preventDefault(); $('sub-early').checked = true;
-    var f = document.querySelector('.subscribe'); f.scrollIntoView({behavior: 'smooth', block: 'center'});
-    setTimeout(function () { $('sub-email').focus({preventScroll: true}); }, 400);
-  });
   $('early-link').addEventListener('click', function () { $('jobs-early').checked = true; jobsState.early = true; renderJobs(); });
   $('boards').innerHTML = D.moreBoards.map(function (b) {
     return '<a href="' + esc(b.url) + '" target="_blank" rel="noopener"><strong>' + esc(b.name) + '</strong><span>' + esc(b.note) + '</span></a>';
@@ -696,7 +682,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
 
   /* research */
   var TICON = {};
-  $('research-tagline').textContent = D.researchTagline || '';
   (function () {
     var n = function (t) { return D.research.filter(function (r) { return r.type === t; }).length; };
     var latest = D.research.length && D.research[0].date ? fmtDate(D.research[0].date) : '';

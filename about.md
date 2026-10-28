@@ -2,13 +2,13 @@
 
 <h1 id="about-title">Satellite connectivity in Africa is changing quickly. The record of it is scattered.</h1>
 
-By May 2026, Starlink held licences in 29 African countries. Airtel Africa has signed a satellite-to-phone deal with Starlink for all 14 of its markets, AXIAN Telecom has partnered with AST SpaceMobile, and Amazon Leo has lined up partners from Herotel in South Africa to Vodacom. Nigeria approved two new communications satellites in August 2026.
+Satellite operators are winning licences across the continent. Mobile networks are signing satellite-to-phone agreements. Governments are ordering new communications satellites.
 
 Each of these shows up in a different place: a company press release, a regulator notice, a trade article. It is rarely collected in one place, and little of it is written for people trying to get into the industry.
 
-Jobs are just as spread out. The roles sit on separate careers pages at dozens of companies, and early-career openings are easy to miss.
+Jobs are just as spread out. Roles sit on separate careers pages, and early-career openings are easy to miss.
 
-Satcom Pathways puts it in one place: satellite and space news checked every four hours, open roles from <span data-count="companies"></span> companies, a hand-checked tracker of <span data-count="deals"></span> African deals, short research built on public data, and the conferences worth knowing about.
+Satcom Pathways brings it together in one place.
 
 ---
 
