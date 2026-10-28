@@ -318,7 +318,7 @@ def fetch_comeet(board):
     m = re.search(r"COMPANY_POSITIONS_DATA = (\[.*?\]);\s*\n", h, re.S)
     data = json.loads(m.group(1)) if m else []
     return [norm_job(board, j.get("name", ""), j.get("url_active_page") or j.get("url_comeet_hosted_page", ""),
-                     (j.get("location") or {}).get("name", ""), iso_norm(j.get("time_updated")), j.get("department", ""))
+                     (j.get("location") or {}).get("name", ""), "", j.get("department", ""))  # Comeet gives only an update time
             for j in data]
 
 

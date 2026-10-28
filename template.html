@@ -290,7 +290,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="lead" id="lead"></div>
   </section>
   <div class="band view-band" id="home-band" aria-label="Companies whose live job listings appear on this site">
-    <div class="band-label" id="band-label"></div>
     <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
   </div>
   <section class="view" id="view-home2" aria-label="Highlights">
@@ -656,7 +655,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   });
 
   /* company band */
-  $('band-label').textContent = D.marqueeLabel + ' ' + companies.length + ' satcom and space companies';
   var names = companies.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join('');
   $('marquee').innerHTML = names + names.replace(/<span>/g, '<span class="dup" aria-hidden="true">');
 
