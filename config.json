@@ -357,6 +357,90 @@
       "sector": "Ground segment"
     },
     {
+      "company": "SES",
+      "ats": "sfcsb",
+      "id": "ses",
+      "host": "careers.ses.com",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Eutelsat OneWeb",
+      "ats": "sfcsb",
+      "id": "eutelsat",
+      "host": "careers.eutelsat.com",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Viasat",
+      "ats": "jibe",
+      "id": "viasat",
+      "host": "careers.viasat.com",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Hughes (EchoStar)",
+      "ats": "jibe",
+      "id": "echostar",
+      "host": "jobs.echostar.com",
+      "filter": {
+        "tags4": "Hughes"
+      },
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Iridium",
+      "ats": "icims",
+      "id": "iridium",
+      "host": "careers-iridium.icims.com",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Amazon Leo",
+      "ats": "amazon",
+      "id": "amazonleo",
+      "queries": [
+        "amazon leo",
+        "kuiper"
+      ],
+      "match": "kuiper|amazon leo|\\bleo\\b",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Elveo (Lynk and Omnispace)",
+      "ats": "ashby",
+      "id": "elveo",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Speedcast",
+      "ats": "workday",
+      "id": "speedcast",
+      "host": "speedcast.wd1.myworkdayjobs.com",
+      "site": "SpeedcastCareers",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "ST Engineering iDirect",
+      "ats": "icims",
+      "id": "idirect",
+      "host": "careers-idirect.icims.com",
+      "sector": "Ground segment"
+    },
+    {
+      "company": "KVH",
+      "ats": "icims",
+      "id": "kvh",
+      "host": "careers-kvh.icims.com",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Gilat",
+      "ats": "comeet",
+      "id": "gilat",
+      "url": "https://www.comeet.com/jobs/gilat/39.005",
+      "sector": "Ground segment"
+    },
+    {
       "company": "Spire",
       "ats": "greenhouse",
       "id": "spire",
@@ -463,5 +547,9 @@
   "marquee_label": "Live job listings from",
   "site_url": "https://satcompathways.com",
   "research_tagline": "Analysis of public data on African satellite communications.",
-  "contact_email": "hello@satcompathways.com"
+  "contact_email": "hello@satcompathways.com",
+  "jobs_cap_by_sector": {
+    "Data & Earth observation": 25,
+    "Launch & spacecraft": 25
+  }
 }

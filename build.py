@@ -19,6 +19,7 @@ import html
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timedelta, timezone
@@ -73,6 +74,19 @@ def get_bytes(url):
     req = urllib.request.Request(url, headers={"User-Agent": UA})
     with urllib.request.urlopen(req, timeout=30) as r:
         return r.read()
+
+
+def post_json(url, payload):
+    req = urllib.request.Request(url, data=json.dumps(payload).encode(), headers={
+        "User-Agent": UA, "Accept": "application/json", "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return json.load(r)
+
+
+def get_text(url):
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0 (compatible; SatcomPathwaysBot/1.0)"})
+    with urllib.request.urlopen(req, timeout=30) as r:
+        return r.read().decode("utf-8", "replace")
 
 
 def terms_regex(terms):
@@ -179,6 +193,161 @@ def iso_norm(s):
         return ""
 
 
+def iso_from_text_date(s, fmts=("%B %d, %Y", "%d %b %Y", "%b %d, %Y", "%Y-%m-%d")):
+    s = (s or "").strip()
+    for f in fmts:
+        try:
+            return datetime.strptime(s, f).replace(tzinfo=timezone.utc).isoformat(timespec="minutes")
+        except ValueError:
+            pass
+    return ""
+
+
+def iso_from_workday(posted_on):
+    """Workday gives 'Posted Today', 'Posted Yesterday', 'Posted 14 Days Ago', 'Posted 30+ Days Ago'."""
+    t = (posted_on or "").lower()
+    if "today" in t:
+        days = 0
+    elif "yesterday" in t:
+        days = 1
+    else:
+        m = re.search(r"(\d+)", t)
+        if not m:
+            return ""
+        days = int(m.group(1))
+    return (NOW - timedelta(days=days)).isoformat(timespec="minutes")
+
+
+def fetch_workday(board):
+    host, site, tenant = board["host"], board["site"], board["id"]
+    api = f"https://{host}/wday/cxs/{tenant}/{site}/jobs"
+    out, offset = [], 0
+    while offset < 400:
+        d = post_json(api, {"appliedFacets": {}, "limit": 20, "offset": offset, "searchText": ""})
+        posts = d.get("jobPostings") or []
+        for j in posts:
+            out.append(norm_job(board, j.get("title", ""), f"https://{host}/en-US/{site}{j.get('externalPath', '')}",
+                                j.get("locationsText", ""), iso_from_workday(j.get("postedOn"))))
+        offset += 20
+        if not posts or offset >= (d.get("total") or 0):
+            break
+    return out
+
+
+def fetch_jibe(board):
+    host, flt = board["host"], board.get("filter", {})
+    out, page = [], 1
+    while page <= 10:
+        d = get_json(f"https://{host}/api/jobs?page={page}&limit=100")
+        rows = [x["data"] for x in d.get("jobs") or []]
+        for j in rows:
+            if any(v not in (j.get(k) or []) for k, v in flt.items()):
+                continue
+            team = " ".join(c.get("name", "") for c in j.get("categories") or [])
+            out.append(norm_job(board, j.get("title", ""), f"https://{host}/jobs/{j.get('slug')}",
+                                j.get("full_location") or j.get("location_name", ""),
+                                iso_norm((j.get("posted_date") or "").replace("+0000", "+00:00")), team))
+        if not rows or page * 100 >= (d.get("totalCount") or 0):
+            break
+        page += 1
+    return out
+
+
+def fetch_sfcsb(board):
+    """SAP SuccessFactors career site (careers.<company>.com/search/)."""
+    host, out, seen, start = board["host"], [], set(), 0
+    while start < 500:
+        h = get_text(f"https://{host}/search/?q=&sortColumn=referencedate&sortDirection=desc&startrow={start}")
+        links = list(re.finditer(r'<a[^>]*class="jobTitle-link[^"]*"[^>]*href="(/job/[^"]+/(\d+)/)"[^>]*>\s*([^<]+?)\s*</a>'
+                                 r'|<a[^>]*href="(/job/[^"]+/(\d+)/)"[^>]*class="jobTitle-link[^"]*"[^>]*>\s*([^<]+?)\s*</a>', h))
+        new = 0
+        for i, m in enumerate(links):
+            href, jid, title = (m.group(1), m.group(2), m.group(3)) if m.group(1) else (m.group(4), m.group(5), m.group(6))
+            if jid in seen:
+                continue
+            seen.add(jid); new += 1
+            nxt = next((n.start() for n in links[i + 1:] if (n.group(2) or n.group(5)) != jid), m.end() + 6000)
+            seg = h[m.end(): nxt]
+            loc = (re.search(r'class="jobLocation"[^>]*>\s*([^<\s][^<]*)', seg)
+                   or re.search(r'section-field (?:location|city|country)\b.*?-value">\s*([^<\s][^<]*)', seg, re.S))
+            date = (re.search(r'class="jobDate[^"]*">\s*([^<\s][^<]*)', seg)
+                    or re.search(r'section-field date\b.*?-value">\s*([^<\s][^<]*)', seg, re.S))
+            out.append(norm_job(board, html.unescape(title), f"https://{host}{html.unescape(href)}",
+                                html.unescape(loc.group(1)) if loc else "", iso_from_text_date(date.group(1)) if date else ""))
+        if not new:
+            break
+        start += 25
+    return out
+
+
+def icims_location(raw):
+    """'US-VA-McLean | US-AZ-Chandler' -> 'McLean, VA, US; Chandler, AZ, US'."""
+    out = []
+    for part in (raw or "").split("|"):
+        bits = [b.strip() for b in part.strip().split("-", 2) if b.strip()]
+        nice = ", ".join(reversed(bits)) if len(bits) > 1 else part.strip()
+        if nice and nice not in out:
+            out.append(nice)
+    return "; ".join(out)
+
+
+def fetch_icims(board):
+    host, out, seen = board["host"], [], set()
+    for pr in range(12):
+        h = get_text(f"https://{host}/jobs/search?ss=1&in_iframe=1&pr={pr}")
+        cards = h.split('class="iCIMS_JobCardItem"')[1:]
+        new = 0
+        for c in cards:
+            m = re.search(r'href="(https://[^"]+/jobs/(\d+)/[^"?]+)[^"]*"', c)
+            t = re.search(r"<h3[^>]*>\s*([^<]+?)\s*</h3>", c)
+            if not m or not t or m.group(2) in seen:
+                continue
+            seen.add(m.group(2)); new += 1
+            loc = re.search(r"Job Locations</span>\s*<span[^>]*>\s*([^<]+?)\s*</span>", c)
+            date = re.search(r"Posted Date</span>\s*<span[^>]*>\s*([^<]+?)\s*</span>", c)
+            out.append(norm_job(board, html.unescape(t.group(1)), m.group(1),
+                                icims_location(html.unescape(loc.group(1))) if loc else "",
+                                iso_from_text_date(date.group(1), ("%m/%d/%Y",)) if date else ""))
+        if not new:
+            break
+    return out
+
+
+def fetch_comeet(board):
+    h = get_text(board["url"])
+    m = re.search(r"COMPANY_POSITIONS_DATA = (\[.*?\]);\s*\n", h, re.S)
+    data = json.loads(m.group(1)) if m else []
+    return [norm_job(board, j.get("name", ""), j.get("url_active_page") or j.get("url_comeet_hosted_page", ""),
+                     (j.get("location") or {}).get("name", ""), iso_norm(j.get("time_updated")), j.get("department", ""))
+            for j in data]
+
+
+def fetch_amazon(board):
+    rx = re.compile(board.get("match", "kuiper|amazon leo"), re.I)
+    seen, out = set(), []
+    for q in board.get("queries", ["amazon leo", "kuiper"]):
+        for off in range(0, 1500, 100):
+            d = get_json(f"https://www.amazon.jobs/en/search.json?base_query={urllib.parse.quote(q)}&result_limit=100&offset={off}&sort=recent")
+            rows = d.get("jobs") or []
+            for j in rows:
+                key = j.get("id_icims") or j.get("job_path")
+                text = f"{j.get('title', '')} {j.get('company_name', '')} {j.get('description_short') or ''}"
+                if key in seen or not rx.search(text):
+                    continue
+                seen.add(key)
+                out.append(norm_job(board, j.get("title", ""), "https://www.amazon.jobs" + j.get("job_path", ""),
+                                    j.get("normalized_location") or j.get("location", ""),
+                                    iso_from_text_date(j.get("posted_date")), j.get("job_category", "")))
+            if len(rows) < 100:
+                break
+    return out
+
+
+FETCHERS = {"workday": fetch_workday, "jibe": fetch_jibe, "sfcsb": fetch_sfcsb,
+            "icims": fetch_icims, "comeet": fetch_comeet, "amazon": fetch_amazon}
+
+
+
 def fetch_board(board):
     ats, bid = board["ats"], board["id"]
     try:
@@ -197,6 +366,8 @@ def fetch_board(board):
             jobs = [norm_job(board, j["title"], j["jobUrl"], j.get("location", ""), iso_norm(j.get("publishedAt")),
                              f"{j.get('department', '')} {j.get('team', '')}")
                     for j in data if j.get("isListed", True)]
+        elif ats in FETCHERS:
+            jobs = FETCHERS[ats](board)
         else:
             raise ValueError(f"unknown ats {ats}")
     except Exception as e:
@@ -219,7 +390,8 @@ def build_jobs(cfg):
             if k not in seen:
                 seen.add(k)
                 uniq.append(j)
-        kept = uniq[: cfg["jobs_cap_per_company"]]
+        cap = board.get("cap") or cfg.get("jobs_cap_by_sector", {}).get(board["sector"]) or cfg["jobs_cap_per_company"]
+        kept = uniq[:cap]
         log(f"  jobs {board['company']}: {len(kept)} kept of {len(jobs)}")
         out.extend(kept)
     out.sort(key=lambda x: x["posted"], reverse=True)
@@ -348,7 +520,7 @@ def write_job_feeds(cfg, jobs):
         (OUT / name).write_text(rss, encoding="utf-8")
 
     newest = sorted(jobs, key=lambda j: j.get("posted", ""), reverse=True)
-    feed("jobs.xml", f"{cfg['site_name']}: new satellite and space jobs",
+    feed("jobs.xml", f"{cfg['site_name']}: new satcom and space jobs",
          "The newest roles from the careers boards we track.", newest[:100])
     feed("jobs-early.xml", f"{cfg['site_name']}: early-career roles",
          "Internships, graduate schemes and other early-career roles.", [j for j in newest if j.get("early")])
@@ -425,7 +597,7 @@ def render(cfg, news, jobs, updated, research):
 
 
 SECTION_PAGES = {
-    "jobs": ("Jobs", "Open roles at satellite and space companies, with internships and graduate roles flagged."),
+    "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
     "deals": ("Africa deals tracker", "Satcom licences, contracts and partnerships in Africa, each linked to its source."),
     "research": ("Research", "Short research on African satellite communications, built on public data."),

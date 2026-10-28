@@ -351,7 +351,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   <section class="view" id="view-jobs" aria-labelledby="tab-jobs" hidden>
     <div class="jobs-head">
       <div>
-        <h2>Jobs in satellite and space</h2>
+        <h2>Jobs in satcom and space</h2>
       </div>
     </div>
     <div class="toolbar">
@@ -656,7 +656,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   });
 
   /* company band */
-  $('band-label').textContent = D.marqueeLabel + ' ' + companies.length + ' satellite and space companies';
+  $('band-label').textContent = D.marqueeLabel + ' ' + companies.length + ' satcom and space companies';
   var names = companies.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join('');
   $('marquee').innerHTML = names + names.replace(/<span>/g, '<span class="dup" aria-hidden="true">');
 
