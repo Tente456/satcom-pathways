@@ -203,6 +203,9 @@ aside { display: grid; gap: 18px; }
 .prose table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 12px 0; font-size: 15px; display: block; overflow-x: auto; }
 .prose th, .prose td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
 .prose th { background: var(--bg); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.prose .author-photo { float: left; width: 120px; height: 120px; border-radius: 50%; object-fit: cover; margin: 4px 22px 10px 0; border: 1px solid var(--line); }
+.prose h2 { clear: both; }
+@media (max-width: 520px) { .prose .author-photo { float: none; display: block; margin: 0 0 14px; width: 104px; height: 104px; } }
 .prose .lede { font-size: 18px; color: var(--muted); }
 @media (max-width: 520px) { .prose { padding: 22px 18px; } .prose h1 { font-size: 26px; } }
 /* events */

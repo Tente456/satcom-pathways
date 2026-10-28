@@ -666,6 +666,12 @@ def main():
     write_digest_files(cfg, digests)
     write_job_feeds(cfg, jobs)
     write_pages(cfg, render(cfg, news, jobs, updated, research), research)
+    assets = ROOT / "assets"
+    if assets.is_dir():
+        (OUT / "assets").mkdir(exist_ok=True)
+        for f in assets.iterdir():
+            if f.is_file():
+                (OUT / "assets" / f.name).write_bytes(f.read_bytes())
     log(f"Built site: {len(news)} news items, {len(jobs)} jobs, {len(research)} research pieces, {len(digests)} digests")
 
 

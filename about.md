@@ -14,11 +14,13 @@ Satcom Pathways brings it together in one place.
 
 ## Who runs it
 
+<img class="author-photo" src="/assets/kola-egbeyemi.jpg" alt="Kola Egbeyemi" width="120" height="120">
+
 I'm Kola Egbeyemi. I have worked in telecoms and satcom for about 15 years.
 
 I spent eight years at Airtel Nigeria as a project manager for enterprise connectivity, delivering more than 1,200 IP/MPLS, SD-WAN, fibre and microwave links. At Avanti Communications I ran the technical service desk and then field services for satellite broadband customers across Africa and Europe. I have also worked at Glo.
 
-I am also Country Manager, Nigeria for Cosmos for Humanity, a voluntary role on orbital sustainability.
+I also volunteer with Cosmos for Humanity.
 
 ## How it works
 
