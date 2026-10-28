@@ -1,0 +1,440 @@
+[
+ {
+  "date": "2026-10-01",
+  "title": "Satlyt raises $8M seed round",
+  "type": "Funding",
+  "segment": "Space software",
+  "countries": [
+   "Kenya"
+  ],
+  "parties": [
+   "Satlyt"
+  ],
+  "value_usd": 8000000,
+  "value_text": "$8M",
+  "summary": "Kenyan-founded startup raises seed funding for software that lets satellites process data and run AI in orbit.",
+  "source_name": "Empower Africa",
+  "source_url": "https://empowerafrica.com/2026/10/15/"
+ },
+ {
+  "date": "2026-09-16",
+  "title": "NigComSat selects Hughes JUPITER gateway for NigComSat-2A and 2B",
+  "type": "Contract",
+  "segment": "Ground segment",
+  "countries": [
+   "Nigeria"
+  ],
+  "parties": [
+   "NigComSat",
+   "Hughes Network Systems"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "First public ground-segment contract on the NigComSat-2 programme: multi-band Ka/Ku/C gateway plus support for local terminal assembly.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2026/09/16/nigcomsat-selects-hughes-jupiter-scalable-gateway-for-nigcomsat-2a-and-2b-ground-segment/"
+ },
+ {
+  "date": "2026-09-14",
+  "title": "Thales Alenia Space contracted to build NigComSat-2A",
+  "type": "Contract",
+  "segment": "GEO satellite",
+  "countries": [
+   "Nigeria"
+  ],
+  "parties": [
+   "NigComSat",
+   "Thales Alenia Space"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Spacebus B2 GEO satellite of nearly 4 tonnes, coverage from West and Central Africa to Southern Africa, 15+ year life.",
+  "source_name": "Via Satellite",
+  "source_url": "https://www.satellitetoday.com/manufacturing/2026/09/14/nigeria-contracts-thales-alenia-space-to-build-nigcomsat-2a-geostationary-satellite/"
+ },
+ {
+  "date": "2026-08-22",
+  "title": "Nigeria approves NigComSat-2A and 2B; Thales Alenia Space and IAI selected",
+  "type": "Government programme",
+  "segment": "GEO satellite",
+  "countries": [
+   "Nigeria"
+  ],
+  "parties": [
+   "Federal Executive Council of Nigeria",
+   "NigComSat",
+   "Thales Alenia Space",
+   "Israel Aerospace Industries"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Federal Executive Council approves two high-throughput satellites to replace NigComSat-1R; launches targeted for 2028 and 2029.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2026/08/23/nigeria-approves-nigcomsat-2a-2b-in-push-to-expand-broadband-and-boost-national-security/"
+ },
+ {
+  "date": "2026-07-15",
+  "title": "Amazon Leo partners with Herotel to launch satellite broadband in South Africa",
+  "type": "Partnership",
+  "segment": "LEO broadband",
+  "countries": [
+   "South Africa"
+  ],
+  "parties": [
+   "Amazon Leo",
+   "Herotel"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Amazon's first satellite internet agreement in Africa; consumer service planned for 2027.",
+  "source_name": "Broadband Breakfast (AP)",
+  "source_url": "https://broadbandbreakfast.com/amazon-will-launch-satellite-internet-in-south-africa-seemingly-beating-musk-in-his-homeland/"
+ },
+ {
+  "date": "2026-06-16",
+  "title": "Eutelsat signs multi-year LEO agreement with Mercury (Sonangol) in Angola",
+  "type": "Capacity agreement",
+  "segment": "LEO broadband",
+  "countries": [
+   "Angola"
+  ],
+  "parties": [
+   "Eutelsat",
+   "Mercury (Sonangol)"
+  ],
+  "value_usd": null,
+  "value_text": "Multi-million euro",
+  "summary": "Mercury will use Eutelsat OneWeb LEO services for public, private, offshore and telecom customers across Angola.",
+  "source_name": "Option Finance",
+  "source_url": "https://www.optionfinance.fr/info-financiere-en-continu/d/2026-06-22-contrats-en-angola-et-dans-la-defense-pour-eutelsat.html"
+ },
+ {
+  "date": "2026-06-05",
+  "title": "Amazon Kuiper Kenya applies for International Gateway Operator licence",
+  "type": "Licence & regulation",
+  "segment": "Ground segment",
+  "countries": [
+   "Kenya"
+  ],
+  "parties": [
+   "Amazon Kuiper Kenya",
+   "Communications Authority of Kenya"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Gazette notice confirms a 15-year licence application for what would be Amazon Leo's first African gateway.",
+  "source_name": "TechAfrica News",
+  "source_url": "https://techafricanews.com/2026/06/10/amazon-leo-targets-kenya-for-its-first-african-satellite-gateway/"
+ },
+ {
+  "date": "2026-05-15",
+  "title": "Uganda grants Starlink an operating licence",
+  "type": "Licence & regulation",
+  "segment": "LEO broadband",
+  "countries": [
+   "Uganda"
+  ],
+  "parties": [
+   "Uganda Communications Commission",
+   "Starlink"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Operational licence agreement signed between the regulator and Starlink, announced by President Museveni.",
+  "source_name": "TimesLIVE (Reuters)",
+  "source_url": "https://www.timeslive.co.za/news/africa/2026-05-19-uganda-says-it-has-granted-operating-licence-to-elon-musks-starlink/"
+ },
+ {
+  "date": "2026-05-13",
+  "title": "ICASA says Starlink-style equity alternatives need a change in law",
+  "type": "Licence & regulation",
+  "segment": "LEO broadband",
+  "countries": [
+   "South Africa"
+  ],
+  "parties": [
+   "ICASA",
+   "Department of Communications and Digital Technologies"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Regulator states that recognising equity equivalent investment programmes would require amending the Electronic Communications Act.",
+  "source_name": "Advanced Television",
+  "source_url": "https://www.advanced-television.com/2026/05/14/icasa-says-stouh-africa-needs-new-legislation-for-starlink/"
+ },
+ {
+  "date": "2026-03-13",
+  "title": "Orange Tunisie launches nationwide satellite internet",
+  "type": "Service launch",
+  "segment": "GEO broadband",
+  "countries": [
+   "Tunisia"
+  ],
+  "parties": [
+   "Orange Tunisie",
+   "Eutelsat"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Service of up to 100 Mbps, following Orange's partnership with Eutelsat across Africa and the Middle East.",
+  "source_name": "Agence Ecofin",
+  "source_url": "https://www.ecofinagency.com/news-digital/1903-53918-orange-expands-satellite-internet-in-africa-s-starlink-dominated-market"
+ },
+ {
+  "date": "2026-03-09",
+  "title": "AXIAN Telecom (Yas) and AST SpaceMobile partner on direct-to-device network",
+  "type": "Partnership",
+  "segment": "Direct-to-device",
+  "countries": [
+   "Pan-African"
+  ],
+  "parties": [
+   "AXIAN Telecom (Yas)",
+   "AST SpaceMobile"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "BlueBird satellites to be integrated with Yas core networks for voice, video and data straight to ordinary smartphones.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2026/03/09/axian-telecom-and-ast-spacemobile-partner-to-launch-direct-to-device-satellite-mobile-network-in-africa/"
+ },
+ {
+  "date": "2026-03-06",
+  "title": "MTN Zambia completes Africa's first Starlink Direct to Cell field test",
+  "type": "Partnership",
+  "segment": "Direct-to-device",
+  "countries": [
+   "Zambia"
+  ],
+  "parties": [
+   "MTN Zambia",
+   "Starlink"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "First data session and fintech transaction over MTN spectrum and Starlink satellites; commercial launch subject to ZICTA approval.",
+  "source_name": "TechAfrica",
+  "source_url": "https://tech.africa/?p=86791"
+ },
+ {
+  "date": "2026-03-02",
+  "title": "Vodafone and Amazon Leo sign backhaul deal, with Africa rollout through Vodacom",
+  "type": "Capacity agreement",
+  "segment": "Backhaul",
+  "countries": [
+   "Pan-African"
+  ],
+  "parties": [
+   "Vodafone",
+   "Vodacom",
+   "Amazon Leo"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "LEO backhaul for remote 4G/5G sites at up to 1 Gbps down, starting in Europe and then across Vodacom's African markets.",
+  "source_name": "Engineering News",
+  "source_url": "https://www.engineeringnews.co.za/article/vodafone-amazon-leo-sign-agreement-to-extend-mobile-coverage-across-europe-africa-2026-03-02"
+ },
+ {
+  "date": "2026-02-26",
+  "title": "Amazon Leo and Vanu partner on rural mobile broadband in Africa",
+  "type": "Partnership",
+  "segment": "Backhaul",
+  "countries": [
+   "Pan-African"
+  ],
+  "parties": [
+   "Amazon Leo",
+   "Vanu"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Vanu's Coverage as a Service sites to use Amazon Leo satellite backhaul for 4G and 5G in underserved communities.",
+  "source_name": "SatNews",
+  "source_url": "https://satnews.com/2026/02/26/amazon-leo-and-vanu-partner-to-extend-mobile-broadband-across-rural-africa"
+ },
+ {
+  "date": "2026-02-18",
+  "title": "Seychelles approves Starlink licence",
+  "type": "Licence & regulation",
+  "segment": "LEO broadband",
+  "countries": [
+   "Seychelles"
+  ],
+  "parties": [
+   "Seychelles authorities",
+   "Starlink"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Licence approved for 115 islands, with conditions.",
+  "source_name": "Le360 Afrique",
+  "source_url": "https://afrique.le360.ma/economie/internet-haut-debit-en-seulement-4-ans-starlink-operationnel-dans-un-pays-africain-sur-deux_UYXWC5RPWNGGFIYLU5VHL6L7ZU/"
+ },
+ {
+  "date": "2025-12-16",
+  "title": "Airtel Africa signs Starlink Direct to Cell deal for all 14 markets",
+  "type": "Partnership",
+  "segment": "Direct-to-device",
+  "countries": [
+   "Pan-African"
+  ],
+  "parties": [
+   "Airtel Africa",
+   "SpaceX (Starlink)"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Satellite-to-phone service for Airtel's 174 million customers from 2026, subject to approval in each country.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/12/17/airtel-africa-partners-with-spacex-to-bring-satellite-to-mobile-connectivity-across-africa/"
+ },
+ {
+  "date": "2025-12",
+  "title": "Sonatel (Orange) launches satellite broadband in Senegal",
+  "type": "Service launch",
+  "segment": "GEO broadband",
+  "countries": [
+   "Senegal"
+  ],
+  "parties": [
+   "Sonatel (Orange)",
+   "Eutelsat"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "First unlimited satellite broadband offers for homes and businesses, using Eutelsat KONNECT.",
+  "source_name": "Osiris",
+  "source_url": "https://osiris.sn/internet-par-satellite-orange-et-eutelsat-face-a-starlink-en-afrique.html"
+ },
+ {
+  "date": "2025-11-13",
+  "title": "MSTelcom (Sonangol) to distribute Eutelsat OneWeb in Angola",
+  "type": "Capacity agreement",
+  "segment": "LEO broadband",
+  "countries": [
+   "Angola"
+  ],
+  "parties": [
+   "Eutelsat",
+   "MSTelcom (Sonangol)"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Distribution for enterprise, public sector and telecom customers, including oil and gas and maritime; Eutelsat is Angola's only licensed LEO operator.",
+  "source_name": "Via Satellite",
+  "source_url": "https://www.satellitetoday.com/connectivity/2025/11/13/eutelsat-signs-2-leo-agreements-in-africa/"
+ },
+ {
+  "date": "2025-11-12",
+  "title": "Eutelsat and Paratus sign multi-year OneWeb deal for Southern Africa",
+  "type": "Capacity agreement",
+  "segment": "LEO broadband",
+  "countries": [
+   "South Africa",
+   "Angola",
+   "Namibia",
+   "Botswana",
+   "Zambia"
+  ],
+  "parties": [
+   "Eutelsat",
+   "Paratus"
+  ],
+  "value_usd": null,
+  "value_text": "Multi-million",
+  "summary": "Expanded LEO services for fixed sites, comms-on-the-move and comms-on-pause across five countries.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/11/12/eutelsat-and-paratus-sign-agreement-to-expand-leo-connectivity-services-across-southern-africa/"
+ },
+ {
+  "date": "2025-11-11",
+  "title": "Thuraya enters South Africa with Thuraya-4 commercial rollout",
+  "type": "Service launch",
+  "segment": "Mobile satellite services",
+  "countries": [
+   "South Africa"
+  ],
+  "parties": [
+   "Thuraya (Space42)"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Thuraya's first operational entry into South Africa, targeting energy, mining, maritime, government and humanitarian users.",
+  "source_name": "Space42",
+  "source_url": "https://space42.ai/en/press-release/2025/thuraya-enters-south-african-market-for-the-first-time-with-thuraya-4-commercial-rollout"
+ },
+ {
+  "date": "2025-10-02",
+  "title": "Rwanda and SpaceX plan first Starlink gateway in Rwanda",
+  "type": "Infrastructure",
+  "segment": "Ground segment",
+  "countries": [
+   "Rwanda"
+  ],
+  "parties": [
+   "Government of Rwanda",
+   "SpaceX (Starlink)"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Planned gateway to complement Starlink's Nigerian gateways and Nairobi point of presence.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/10/02/rwanda-and-spacex-advance-starlink-rollout-with-first-gateway-installation-planned/"
+ },
+ {
+  "date": "2025-05-03",
+  "title": "Starlink secures operating licence in DR Congo",
+  "type": "Licence & regulation",
+  "segment": "LEO broadband",
+  "countries": [
+   "DR Congo"
+  ],
+  "parties": [
+   "Starlink",
+   "DRC authorities"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Starlink's 22nd African market, after launches in Lesotho and Guinea-Bissau in April 2025.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/05/03/starlink-secures-operating-license-in-drc-set-to-launch-services/"
+ },
+ {
+  "date": "2025-03-04",
+  "title": "Orange MEA and Eutelsat sign multi-year satellite broadband partnership",
+  "type": "Capacity agreement",
+  "segment": "GEO broadband",
+  "countries": [
+   "Côte d'Ivoire",
+   "Senegal",
+   "DR Congo"
+  ],
+  "parties": [
+   "Orange Middle East and Africa",
+   "Eutelsat"
+  ],
+  "value_usd": null,
+  "value_text": "Undisclosed",
+  "summary": "Orange to use EUTELSAT KONNECT for up to 100 Mbps service, starting with Côte d'Ivoire, Senegal, DRC and Jordan.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/03/04/orange-partners-with-eutelsat-to-expand-satellite-connectivity-in-africa-and-the-middle-east/"
+ },
+ {
+  "date": "2025-01",
+  "title": "Starlink opens point of presence in Nairobi",
+  "type": "Infrastructure",
+  "segment": "Ground segment",
+  "countries": [
+   "Kenya"
+  ],
+  "parties": [
+   "SpaceX (Starlink)"
+  ],
+  "value_usd": null,
+  "value_text": "n/a",
+  "summary": "Regional routing node; reported latency for Kenyan users fell from 100–200 ms to about 30 ms.",
+  "source_name": "Space in Africa",
+  "source_url": "https://spaceinafrica.com/2025/10/02/rwanda-and-spacex-advance-starlink-rollout-with-first-gateway-installation-planned/"
+ }
+]

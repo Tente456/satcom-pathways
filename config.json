@@ -1,0 +1,467 @@
+{
+  "site_name": "Satcom Pathways",
+  "tagline": "Satellite and space industry news, jobs and Africa deals",
+  "news_max_age_days": 30,
+  "news_max_items": 400,
+  "jobs_cap_per_company": 80,
+  "news_sources": [
+    {
+      "name": "SpaceNews",
+      "url": "https://spacenews.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "Payload",
+      "url": "https://payloadspace.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "Via Satellite",
+      "url": "https://www.satellitetoday.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "SpaceWatch.Global",
+      "url": "https://spacewatch.global/feed/",
+      "filter": false
+    },
+    {
+      "name": "Space in Africa",
+      "url": "https://spaceinafrica.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "SpacePolicyOnline",
+      "url": "https://spacepolicyonline.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "Breaking Defense: Space",
+      "url": "https://breakingdefense.com/category/space/feed/",
+      "filter": false
+    },
+    {
+      "name": "SpaceQ",
+      "url": "https://spaceq.ca/feed/",
+      "filter": false
+    },
+    {
+      "name": "European Spaceflight",
+      "url": "https://europeanspaceflight.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "NASASpaceflight",
+      "url": "https://www.nasaspaceflight.com/feed/",
+      "filter": false
+    },
+    {
+      "name": "Advanced Television: Satellite",
+      "url": "https://www.advanced-television.com/category/satellite/feed/",
+      "filter": false
+    },
+    {
+      "name": "ESA Telecommunications",
+      "url": "https://www.esa.int/rssfeed/Our_Activities/Telecommunications_Integrated_Applications",
+      "filter": false
+    },
+    {
+      "name": "Developing Telecoms",
+      "url": "https://www.developingtelecoms.com/?format=feed",
+      "filter": true
+    },
+    {
+      "name": "Light Reading",
+      "url": "https://www.lightreading.com/rss.xml",
+      "filter": true
+    },
+    {
+      "name": "Telecom Review Africa",
+      "url": "https://telecomreviewafrica.com/feed/",
+      "filter": true
+    },
+    {
+      "name": "TechCabal",
+      "url": "https://techcabal.com/feed/",
+      "filter": true
+    },
+    {
+      "name": "Ars Technica",
+      "url": "https://feeds.arstechnica.com/arstechnica/science",
+      "filter": true
+    }
+  ],
+  "space_filter_terms": [
+    "satellite",
+    "satellites",
+    "satcom",
+    "ntn",
+    "non-terrestrial",
+    "starlink",
+    "oneweb",
+    "kuiper",
+    "amazon leo",
+    "leo",
+    "geo",
+    "orbit",
+    "orbital",
+    "constellation",
+    "spacex",
+    "space agency",
+    "spaceport",
+    "launch vehicle",
+    "rocket",
+    "direct-to-device",
+    "d2d",
+    "vsat",
+    "teleport",
+    "iridium",
+    "viasat",
+    "eutelsat",
+    "intelsat",
+    "ses",
+    "telesat",
+    "inmarsat",
+    "ast spacemobile",
+    "lynk",
+    "skylo"
+  ],
+  "news_categories": {
+    "Satcom & connectivity": [
+      "satcom",
+      "communications satellite",
+      "communications network",
+      "telecom",
+      "telecommunications",
+      "comsat",
+      "hts",
+      "high-throughput",
+      "laser link",
+      "optical link",
+      "inter-satellite",
+      "satellite broadband",
+      "broadband",
+      "connectivity",
+      "starlink",
+      "oneweb",
+      "kuiper",
+      "amazon leo",
+      "direct-to-device",
+      "direct to device",
+      "d2d",
+      "ntn",
+      "non-terrestrial",
+      "spectrum",
+      "vsat",
+      "teleport",
+      "ground station",
+      "terminal",
+      "ka-band",
+      "ku-band",
+      "l-band",
+      "iridium",
+      "viasat",
+      "ses",
+      "intelsat",
+      "eutelsat",
+      "telesat",
+      "inmarsat",
+      "hughes",
+      "ast spacemobile",
+      "lynk",
+      "skylo",
+      "globalstar",
+      "echostar",
+      "geo",
+      "gateway",
+      "backhaul",
+      "maritime",
+      "in-flight",
+      "satellite operator"
+    ],
+    "Launch": [
+      "launch",
+      "launches",
+      "rocket",
+      "falcon 9",
+      "starship",
+      "ariane",
+      "vega",
+      "electron",
+      "neutron",
+      "new glenn",
+      "vulcan",
+      "booster",
+      "liftoff",
+      "spaceport"
+    ],
+    "Earth observation": [
+      "earth observation",
+      "imagery",
+      "remote sensing",
+      "sar ",
+      "synthetic aperture",
+      "hyperspectral",
+      "geospatial",
+      "weather satellite"
+    ],
+    "Policy & regulation": [
+      "fcc",
+      "itu",
+      "regulator",
+      "regulatory",
+      "license",
+      "licence",
+      "licensing",
+      "policy",
+      "copuos",
+      "regulation",
+      "legislation",
+      "congress",
+      "senate",
+      "treaty",
+      "ministry"
+    ],
+    "Defence & security": [
+      "space force",
+      "defense",
+      "defence",
+      "military",
+      "pentagon",
+      "sda",
+      "nro",
+      "missile",
+      "golden dome",
+      "national security",
+      "army",
+      "navy",
+      "air force"
+    ],
+    "Business & funding": [
+      "raises",
+      "raised",
+      "funding",
+      "series a",
+      "series b",
+      "series c",
+      "seed round",
+      "acquisition",
+      "acquire",
+      "acquires",
+      "merger",
+      "ipo",
+      "contract",
+      "revenue",
+      "earnings",
+      "investment",
+      "investor",
+      "valuation",
+      "spac"
+    ],
+    "Sustainability & debris": [
+      "debris",
+      "sustainability",
+      "space traffic",
+      "conjunction",
+      "deorbit",
+      "de-orbit",
+      "space situational",
+      "ssa",
+      "collision",
+      "space domain awareness"
+    ],
+    "Africa": [
+      "africa",
+      "african",
+      "nigeria",
+      "kenya",
+      "south africa",
+      "egypt",
+      "ghana",
+      "rwanda",
+      "afsa",
+      "morocco",
+      "ethiopia",
+      "senegal",
+      "angola",
+      "uganda",
+      "tanzania",
+      "zambia",
+      "zimbabwe",
+      "algeria",
+      "tunisia"
+    ]
+  },
+  "job_boards": [
+    {
+      "company": "AST SpaceMobile",
+      "ats": "greenhouse",
+      "id": "astspacemobile",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Astranis",
+      "ats": "greenhouse",
+      "id": "astranis",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "SpaceX (Starlink roles)",
+      "ats": "greenhouse",
+      "id": "spacex",
+      "sector": "Satcom & connectivity",
+      "title_must_include": [
+        "starlink"
+      ]
+    },
+    {
+      "company": "Telesat",
+      "ats": "lever",
+      "id": "telesat",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "E-Space",
+      "ats": "lever",
+      "id": "espace",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Kepler Communications",
+      "ats": "lever",
+      "id": "kepler",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Skylo",
+      "ats": "ashby",
+      "id": "skylo",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Hubble Network",
+      "ats": "greenhouse",
+      "id": "hubblenetwork",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Apolink",
+      "ats": "ashby",
+      "id": "apolink",
+      "sector": "Satcom & connectivity"
+    },
+    {
+      "company": "Northwood Space",
+      "ats": "ashby",
+      "id": "northwoodspace",
+      "sector": "Ground segment"
+    },
+    {
+      "company": "Spire",
+      "ats": "greenhouse",
+      "id": "spire",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "Planet",
+      "ats": "greenhouse",
+      "id": "planetlabs",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "ICEYE",
+      "ats": "ashby",
+      "id": "iceye",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "BlackSky",
+      "ats": "greenhouse",
+      "id": "blacksky",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "HawkEye 360",
+      "ats": "greenhouse",
+      "id": "hawkeye360",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "Muon Space",
+      "ats": "greenhouse",
+      "id": "muonspace",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "Albedo",
+      "ats": "greenhouse",
+      "id": "albedo",
+      "sector": "Data & Earth observation"
+    },
+    {
+      "company": "Loft Orbital",
+      "ats": "lever",
+      "id": "loftorbital",
+      "sector": "Spacecraft & infrastructure"
+    },
+    {
+      "company": "Rocket Lab",
+      "ats": "greenhouse",
+      "id": "rocketlab",
+      "sector": "Launch & spacecraft"
+    },
+    {
+      "company": "Relativity Space",
+      "ats": "greenhouse",
+      "id": "relativity",
+      "sector": "Launch & spacecraft"
+    },
+    {
+      "company": "Ursa Major",
+      "ats": "greenhouse",
+      "id": "ursamajor",
+      "sector": "Launch & spacecraft"
+    }
+  ],
+  "more_job_boards": [
+    {
+      "name": "Space Talent",
+      "url": "https://spacetalent.org",
+      "note": "Free job board and talent network from Space Capital"
+    },
+    {
+      "name": "Space Crew",
+      "url": "https://spacecrew.com",
+      "note": "Large aggregator of space industry jobs"
+    },
+    {
+      "name": "Space-Careers",
+      "url": "https://www.space-careers.com",
+      "note": "Europe and international roles"
+    },
+    {
+      "name": "Space Individuals",
+      "url": "https://spaceindividuals.com",
+      "note": "Europe and UK roles"
+    },
+    {
+      "name": "Space in Africa Opportunities",
+      "url": "https://opportunities.spaceinafrica.com",
+      "note": "Calls, fellowships and roles across Africa"
+    },
+    {
+      "name": "SSPI",
+      "url": "https://www.sspi.org/join-sspi",
+      "note": "Satcom professional society; student membership is free"
+    }
+  ],
+  "newsletter": {
+    "title": "Subscribe to Satcom Pathways Weekly",
+    "blurb": "Top satcom headlines, new roles and Africa deals in one email each week.",
+    "buttondown_username": ""
+  },
+  "marquee_label": "Live job listings from",
+  "site_url": "https://satcompathways.com",
+  "research_tagline": "Analysis of public data on African satellite communications.",
+  "contact_email": ""
+}

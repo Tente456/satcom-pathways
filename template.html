@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{SITE_NAME}}</title>
+<meta name="description" content="{{TAGLINE}}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%228%22%20fill%3D%22%230f1b2d%22/%3E%3Cg%20transform%3D%22translate%284%204%29%20scale%28.8%29%22%20color%3D%22%23eef2f7%22%3E%3Cpath%20d%3D%22M-2%2040%20Q20%2028%2042%2040%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%223.5%22%20stroke-opacity%3D%22.5%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2229.5%22%20r%3D%222%22%20fill%3D%22currentColor%22%20fill-opacity%3D%22.6%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2223.5%22%20r%3D%222.4%22%20fill%3D%22currentColor%22%20fill-opacity%3D%22.8%22/%3E%3Ccircle%20cx%3D%2221.5%22%20cy%3D%2216.5%22%20r%3D%222.8%22%20fill%3D%22currentColor%22/%3E%3Ccircle%20cx%3D%2231%22%20cy%3D%228%22%20r%3D%225.5%22%20fill%3D%22%231fd16a%22/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  /* Layout: masthead + two views (news, jobs) switched by #hash; news has a lead row, filters, list and a hiring sidebar. */
+  --bg: #f3f4f6;
+  --surface: #ffffff;
+  --ink: #0f1b2d;
+  --muted: #5b6676;
+  --line: #dfe3e9;
+  --accent: #1fd16a;
+  --accent-ink: #0f1b2d;
+  --accent-text: #0b7a3b;
+  --link: #174ea6;
+  --band: #0f1b2d;
+  --band-ink: #e9edf3;
+  --good: #0b7a3b;
+  --font-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Source Sans 3", "Segoe UI", Arial, sans-serif;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0d131c; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
+    --accent: #2ee07a; --accent-ink: #06210f; --accent-text: #4fe38f; --link: #8ab4ff; --band: #070b11; --band-ink: #e8ecf2; --good: #4fe38f;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0d131c; --surface: #151d29; --ink: #e8ecf2; --muted: #9aa6b6; --line: #263142;
+  --accent: #2ee07a; --accent-ink: #06210f; --accent-text: #4fe38f; --link: #8ab4ff; --band: #070b11; --band-ink: #e8ecf2; --good: #4fe38f;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.5; }
+a { color: var(--link); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.15; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+/* masthead */
+.mast { background: var(--band); color: var(--band-ink); }
+.mast .container { display: flex; flex-wrap: wrap; gap: 12px 28px; align-items: center; justify-content: space-between; padding-top: 16px; padding-bottom: 16px; }
+.brand { display: flex; align-items: center; gap: 12px; color: inherit; text-decoration: none; }
+.brand svg { flex: none; }
+.brand h1 { font-family: "Fraunces", Georgia, serif; font-size: 25px; font-weight: 600; letter-spacing: -.01em; }
+.brand p { margin: 0; font-size: 13px; opacity: .75; }
+nav.tabs { display: flex; flex-wrap: wrap; gap: 4px; }
+nav.tabs a { color: var(--band-ink); text-decoration: none; font-weight: 600; padding: 7px 12px; font-size: 15px; border-radius: 6px; font-family: var(--font-display); letter-spacing: .02em; }
+nav.tabs a[aria-current="page"] { background: var(--accent); color: var(--accent-ink); }
+nav.tabs a:not([aria-current="page"]):hover { background: rgba(255,255,255,.08); }
+
+main.container { padding-top: 26px; padding-bottom: 50px; }
+.view[hidden], .view-band[hidden] { display: none; }
+
+/* news */
+.lead { display: grid; grid-template-columns: 1.4fr 1fr 1fr; gap: 14px; margin-bottom: 26px; }
+.lead a.story { display: grid; gap: 10px; align-content: start; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 18px; color: var(--ink); text-decoration: none; }
+.lead a.story:first-child { background: var(--band); color: var(--band-ink); border-color: var(--band); }
+.lead a.story:first-child h3 { font-size: 26px; }
+.lead a.story h3 { font-size: 19px; font-weight: 700; }
+.lead a.story:hover h3 { text-decoration: underline; text-underline-offset: 3px; }
+.kicker { font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--accent-text); }
+.meta { font-size: 13.5px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.lead a.story:first-child .meta { color: var(--band-ink); opacity: .7; }
+.lead a.story:first-child .kicker { color: var(--accent); }
+
+.news-layout { display: grid; grid-template-columns: minmax(0, 1fr) 330px; gap: 28px; align-items: start; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
+.chips button { font: inherit; font-size: 14px; padding: 5px 12px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+.chips button[aria-pressed="true"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.toolbar { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 14px; }
+.toolbar input[type="search"], .toolbar select { font: inherit; font-size: 15px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.toolbar input[type="search"] { flex: 1 1 240px; min-width: 0; }
+.toolbar label.check { display: inline-flex; gap: 6px; align-items: center; font-size: 14.5px; padding: 6px 4px; cursor: pointer; }
+.count { font-size: 14px; color: var(--muted); margin-bottom: 8px; }
+
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.row { display: grid; gap: 4px; padding: 14px 18px; border-bottom: 1px solid var(--line); }
+.row:last-child { border-bottom: 0; }
+.row a.t { font-weight: 600; font-size: 17px; color: var(--ink); text-decoration: none; }
+.row a.t:hover { color: var(--link); text-decoration: underline; }
+.row.job { position: relative; padding-right: 58px; }
+.star { position: absolute; top: 12px; right: 12px; width: 36px; height: 36px; display: grid; place-items: center; border: 1px solid transparent; border-radius: 8px; background: none; color: var(--muted); cursor: pointer; }
+.star:hover { border-color: var(--line); color: var(--ink); }
+.star[aria-pressed="true"] { color: var(--accent-text); }
+.star[aria-pressed="true"] svg { fill: var(--accent); stroke: var(--accent-text); }
+.alerts { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14.5px; margin-top: 6px; }
+.alerts a { font-weight: 600; }
+.subscribe .opt { flex-basis: 100%; display: flex; gap: 8px; align-items: center; font-size: 14.5px; opacity: .9; cursor: pointer; }
+.subscribe .opt input { width: 17px; height: 17px; accent-color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.tag { font-size: 12px; padding: 1px 8px; border-radius: 999px; background: var(--bg); color: var(--muted); border: 1px solid var(--line); }
+.tag.early { color: var(--good); border-color: currentColor; background: transparent; font-weight: 600; }
+.more { display: flex; justify-content: center; padding: 14px; }
+.more button { font: inherit; font-weight: 600; padding: 8px 18px; border-radius: 6px; border: 1px solid var(--ink); background: transparent; color: var(--ink); cursor: pointer; }
+.empty { padding: 26px 18px; color: var(--muted); }
+
+aside { display: grid; gap: 18px; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 16px 18px; display: grid; gap: 12px; }
+.panel h2 { font-size: 18px; }
+.panel ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.panel li { display: grid; gap: 2px; }
+.panel li a { font-weight: 600; text-decoration: none; color: var(--ink); }
+.panel li a:hover { color: var(--link); text-decoration: underline; }
+.panel .cta { font-weight: 600; color: var(--link); }
+.stat { font-family: var(--font-display); font-size: 30px; font-weight: 800; color: var(--accent-text); line-height: 1; font-variant-numeric: tabular-nums; }
+
+/* jobs */
+.jobs-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; align-items: end; margin-bottom: 14px; }
+.jobs-head h2 { font-size: 26px; }
+.jobs-head p { margin: 4px 0 0; color: var(--muted); max-width: 70ch; }
+.job-co { font-weight: 600; }
+.boards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px; margin-top: 26px; }
+.boards a { display: grid; gap: 2px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 12px 14px; text-decoration: none; color: var(--ink); }
+.boards a strong { color: var(--link); }
+.boards a span { color: var(--muted); font-size: 14px; }
+
+/* deals */
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 12px; margin-bottom: 18px; }
+.tile { background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 14px 16px; display: grid; gap: 4px; }
+.tile .stat { font-size: 28px; }
+.tile .meta { margin: 0; }
+.deal .head { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: baseline; justify-content: space-between; }
+.deal .date { font-variant-numeric: tabular-nums; color: var(--muted); font-size: 14px; white-space: nowrap; }
+.deal .value { font-family: var(--font-display); font-weight: 700; color: var(--accent-text); white-space: nowrap; }
+.deal p { margin: 2px 0 0; color: var(--ink); max-width: 80ch; }
+.tag.type { color: var(--link); border-color: currentColor; background: transparent; font-weight: 600; }
+.note { color: var(--muted); font-size: 14px; max-width: 80ch; margin-top: 12px; }
+/* home */
+.intro { display: grid; gap: 6px; margin-bottom: 20px; }
+.intro h2 { font-size: 28px; max-width: 30ch; }
+.intro p { margin: 0; }
+.view-band { margin: 6px 0 26px; border: 1px solid var(--line); border-radius: 10px; padding: 14px 0; display: grid; gap: 10px; }
+.home-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(330px, 1fr)); gap: 16px; align-items: start; margin-bottom: 20px; }
+.news-wrap { max-width: 860px; }
+/* intelligence */
+.intel-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 16px; align-items: start; }
+.cgroup { display: grid; gap: 8px; }
+.cgroup h3 { margin: 0; font-family: var(--font-display); font-size: 15px; display: flex; gap: 8px; align-items: baseline; }
+.cgroup h3 .n { font-size: 22px; font-weight: 800; color: var(--accent-text); }
+.cgroup .tags { gap: 6px; }
+.tag.good { color: var(--good); border-color: currentColor; background: transparent; }
+.tag.warn { color: var(--accent-text); border-color: currentColor; background: transparent; }
+.bars { display: grid; gap: 8px; }
+.bar { display: grid; grid-template-columns: 150px 1fr 26px; gap: 10px; align-items: center; font-size: 14px; }
+.bar .track, .bar .fill { display: block; }
+.bar .track { height: 10px; background: var(--bg); border-radius: 5px; overflow: hidden; }
+.bar .fill { height: 100%; background: var(--accent-text); border-radius: 5px; }
+.bar .v { text-align: right; font-variant-numeric: tabular-nums; color: var(--muted); }
+@media (max-width: 900px) { .intel-grid { grid-template-columns: 1fr; } }
+@media (max-width: 520px) {
+  .brand h1 { font-size: 21px; }
+  .brand svg { width: 32px; height: 32px; }
+  nav.tabs { gap: 2px; }
+  nav.tabs a { padding: 6px 8px; font-size: 14px; }
+  .bar { grid-template-columns: 110px 1fr 22px; }
+}
+/* research */
+.rhead { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 18px 32px; align-items: end; padding-bottom: 18px; margin-bottom: 18px; border-bottom: 3px solid var(--ink); }
+.rhead h2 { font-size: 34px; letter-spacing: -.01em; }
+.rhead p { margin: 6px 0 0; color: var(--muted); max-width: 62ch; }
+.rledger { display: flex; gap: 22px; margin: 0; }
+.rledger div { display: grid; gap: 2px; }
+.rledger dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.rledger dd { margin: 0; font-family: var(--font-display); font-size: 26px; font-weight: 800; line-height: 1; font-variant-numeric: tabular-nums; }
+.rtools { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.rtools input[type="search"] { flex: 1 1 260px; max-width: 420px; font: inherit; font-size: 15px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+.rtabs { display: flex; gap: 2px; border-bottom: 1px solid var(--line); }
+.rtabs button { font: inherit; font-size: 14.5px; font-weight: 600; color: var(--muted); background: none; border: 0; border-bottom: 3px solid transparent; margin-bottom: -1px; padding: 6px 12px; cursor: pointer; }
+.rtabs button[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--accent); }
+.rtabs button:hover { color: var(--ink); }
+@media (max-width: 640px) { .rhead { grid-template-columns: 1fr; } .rhead h2 { font-size: 28px; } }
+.rlist { display: grid; gap: 14px; }
+.rcard { display: grid; grid-template-columns: 76px minmax(0, 1fr); gap: 6px 20px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; text-decoration: none; color: var(--ink); }
+.rcard > * { grid-column: 2; }
+.rcard .rdate { grid-column: 1; grid-row: 1 / span 5; align-self: start; border-right: 1px solid var(--line); padding-right: 14px; font-family: "IBM Plex Mono", ui-monospace, monospace; color: var(--muted); font-size: 13px; line-height: 1.3; }
+.rcard .rdate b { display: block; font-family: var(--font-display); font-size: 26px; color: var(--ink); }
+.rcard:hover { border-color: var(--accent-text); }
+.rcard:hover h3 { text-decoration: underline; text-decoration-thickness: 2px; text-decoration-color: var(--accent); text-underline-offset: 4px; }
+@media (max-width: 520px) { .rcard { grid-template-columns: 1fr; } .rcard > *, .rcard .rdate { grid-column: 1; grid-row: auto; } .rcard .rdate { border: 0; padding: 0; } .rcard .rdate b { display: inline; font-size: 14px; margin-right: 4px; } }
+.rcard h3 { font-size: 21px; }
+.rcard p { margin: 0; color: var(--muted); max-width: 80ch; }
+.rtype { display: inline-flex; align-items: center; gap: 6px; font-size: 12.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .05em; }
+.rtype::before { content: ""; width: 8px; height: 8px; border-radius: 2px; background: currentColor; }
+.rtype.Analysis { color: var(--link); } .rtype.Brief { color: var(--accent-text); } .rtype.Report { color: var(--ink); }
+.back { display: inline-block; margin-bottom: 16px; font-weight: 600; }
+.prose { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 30px 34px; max-width: 860px; }
+.prose > * { max-width: 72ch; }
+.prose h1 { font-family: var(--font-display); font-size: 32px; line-height: 1.15; margin: 8px 0 10px; text-wrap: balance; }
+.prose h2 { font-size: 21px; margin: 28px 0 8px; }
+.prose p, .prose li { line-height: 1.65; }
+.prose table { border-collapse: collapse; width: 100%; max-width: 100%; margin: 12px 0; font-size: 15px; display: block; overflow-x: auto; }
+.prose th, .prose td { border-bottom: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+.prose th { background: var(--bg); font-size: 13px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.prose .lede { font-size: 18px; color: var(--muted); }
+@media (max-width: 520px) { .prose { padding: 22px 18px; } .prose h1 { font-size: 26px; } }
+/* events */
+.evlist { display: grid; gap: 26px; }
+.evmonth h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); padding-bottom: 6px; border-bottom: 1px solid var(--line); margin-bottom: 4px; }
+.ev { display: grid; grid-template-columns: 130px minmax(0, 1fr); gap: 4px 20px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.ev:last-child { border-bottom: 0; }
+.ev .when { font-family: var(--font-display); font-weight: 700; font-variant-numeric: tabular-nums; }
+.ev .when span { display: block; font-family: var(--font-body); font-weight: 400; font-size: 13.5px; color: var(--muted); }
+.ev h4 { font-family: var(--font-display); font-size: 18px; margin: 0; }
+.ev h4 a { color: var(--ink); text-decoration: none; }
+.ev h4 a:hover { text-decoration: underline; text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
+.ev p { margin: 2px 0 0; max-width: 78ch; }
+.ev .tags { margin-top: 6px; }
+.tag.check { color: var(--muted); border-style: dashed; background: transparent; }
+@media (max-width: 520px) { .ev { grid-template-columns: 1fr; } }
+.about { display: grid; gap: 18px; max-width: 860px; }
+.why { background: var(--band); color: var(--band-ink); border-radius: 12px; padding: 52px 48px 44px; }
+.why .kicker { color: var(--accent); letter-spacing: .14em; font-size: 12.5px; margin: 0 0 18px; }
+.why h1 { font-family: var(--font-display); font-size: 31px; font-weight: 600; line-height: 1.22; letter-spacing: -.01em; max-width: 32ch; margin: 0 0 26px; }
+.why p:not(.kicker) { font-size: 17px; line-height: 1.75; opacity: .8; max-width: 66ch; margin: 0 0 18px; }
+.why p:last-child { margin-bottom: 0; }
+.about .prose h2:first-child { margin-top: 0; }
+@media (max-width: 520px) { .why { padding: 34px 22px; } .why h1 { font-size: 25px; } .why p:not(.kicker) { font-size: 16px; } }
+.footlinks { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 10px; font-weight: 600; }
+.footlinks a { color: var(--ink); }
+/* company band */
+.band-label { text-align: center; font-family: var(--font-display); font-weight: 600; font-size: 15px; }
+.marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
+.marquee-track { display: flex; width: max-content; animation: scroll 60s linear infinite; }
+.marquee:hover .marquee-track { animation-play-state: paused; }
+.marquee-track span { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 14px; color: var(--muted); padding: 0 22px; white-space: nowrap; }
+@keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@media (prefers-reduced-motion: reduce) {
+  .marquee { -webkit-mask-image: none; mask-image: none; }
+  .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: auto; row-gap: 6px; }
+  .marquee-track span.dup { display: none; }
+}
+/* subscribe */
+.subscribe { background: var(--band); color: var(--band-ink); border-radius: 10px; padding: 22px 24px; display: grid; gap: 12px; max-width: 620px; margin: 10px 0 34px; }
+.subscribe h2 { font-size: 19px; }
+.subscribe p { margin: 0; opacity: .8; font-size: 15px; }
+.subscribe form { display: flex; flex-wrap: wrap; gap: 10px; }
+.subscribe .field { flex: 1 1 260px; display: flex; align-items: center; gap: 10px; background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.14); border-radius: 7px; padding: 0 12px; }
+.subscribe .field svg { flex: none; opacity: .6; }
+.subscribe input[type="email"] { flex: 1; min-width: 0; font: inherit; font-size: 15px; background: transparent; border: 0; color: var(--band-ink); padding: 11px 0; outline: none; }
+.subscribe input[type="email"]::placeholder { color: var(--band-ink); opacity: .55; }
+.subscribe .field:focus-within { border-color: var(--accent); }
+.subscribe button { font: inherit; font-weight: 600; font-size: 15px; padding: 11px 20px; border: 0; border-radius: 7px; background: var(--accent); color: var(--accent-ink); cursor: pointer; }
+.subscribe .msg { font-size: 14px; opacity: .85; min-height: 1em; }
+footer { border-top: 1px solid var(--line); padding: 20px 0 30px; color: var(--muted); font-size: 13.5px; }
+footer p { margin: 0 0 6px; max-width: 90ch; }
+
+@media (max-width: 900px) {
+  .lead { grid-template-columns: 1fr; }
+  .news-layout { grid-template-columns: 1fr; }
+}
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+</style>
+</head>
+<body>
+<header class="mast">
+  <div class="container">
+    <a class="brand" href="#home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M-2 40 Q20 28 42 40" fill="none" stroke="currentColor" stroke-width="3" stroke-opacity=".4"/><circle cx="9" cy="29.5" r="1.5" fill="currentColor" fill-opacity=".55"/><circle cx="14.5" cy="24" r="1.9" fill="currentColor" fill-opacity=".7"/><circle cx="19.5" cy="18" r="2.3" fill="currentColor" fill-opacity=".85"/><circle cx="24.5" cy="12.5" r="2.7" fill="currentColor"/><circle cx="31.5" cy="7.5" r="4.6" fill="#1fd16a"/></svg>
+      <span><h1>{{SITE_NAME}}</h1></span>
+    </a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#home" id="tab-home">Home</a>
+      <a href="#jobs" id="tab-jobs">Jobs</a>
+      <a href="#news" id="tab-news">News</a>
+      <a href="#deals" id="tab-deals">Deals</a>
+      <a href="#research" id="tab-research">Research</a>
+      <a href="#events" id="tab-events">Events</a>
+      <a href="#about" id="tab-about">About</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="view" id="view-home" aria-labelledby="tab-home">
+    <div class="intro">
+      <h2>{{TAGLINE}}</h2>
+      <p class="meta" id="home-stats"></p>
+    </div>
+    <div class="lead" id="lead"></div>
+  </section>
+  <div class="band view-band" id="home-band" aria-label="Companies whose live job listings appear on this site">
+    <div class="band-label" id="band-label"></div>
+    <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
+  </div>
+  <section class="view" id="view-home2" aria-label="Highlights">
+    <div class="home-grid">
+      <div class="panel">
+        <h2>Latest headlines</h2>
+        <ul id="home-news"></ul>
+        <a class="cta" href="#news">All news</a>
+      </div>
+      <div class="panel">
+        <h2>Hiring now</h2>
+        <ul id="side-jobs"></ul>
+        <a class="cta" href="#jobs">All jobs</a>
+      </div>
+      <div class="panel">
+        <h2>Latest Africa deals</h2>
+        <ul id="home-deals"></ul>
+        <a class="cta" href="#deals">Deals tracker</a>
+      </div>
+      <div class="panel">
+        <h2>Latest research</h2>
+        <ul id="home-research"></ul>
+        <a class="cta" href="#research">All research</a>
+      </div>
+      <div class="panel">
+        <h2>Upcoming events</h2>
+        <ul id="home-events"></ul>
+        <a class="cta" href="#events">All events</a>
+      </div>
+      <div class="panel">
+        <h2>Starting out?</h2>
+        <div><span class="stat" id="early-count">0</span></div>
+        <p class="meta" style="margin:0">internship, graduate and early-career roles open right now across the companies we track.</p>
+        <a class="cta" href="#jobs" id="early-link">Show early-career roles</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-news" aria-labelledby="tab-news" hidden>
+    <div class="jobs-head">
+      <div>
+        <h2>Satellite and space news</h2>
+        <p>Headlines from satcom, space and telecom publishers. Each one links to the original article.</p>
+      </div>
+    </div>
+    <div class="news-wrap">
+      <div>
+        <div class="chips" id="news-chips" role="group" aria-label="Filter news by topic"></div>
+        <div class="toolbar">
+          <input type="search" id="news-q" placeholder="Search headlines, e.g. D2D, Starlink, Nigeria" aria-label="Search headlines">
+          <select id="news-source" aria-label="Filter by source"></select>
+        </div>
+        <div class="count" id="news-count"></div>
+        <div class="list" id="news-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="view" id="view-jobs" aria-labelledby="tab-jobs" hidden>
+    <div class="jobs-head">
+      <div>
+        <h2>Jobs in satellite and space</h2>
+        <p>Openings pulled straight from company career pages. Every listing links to the employer's own application page. Tap the star to save a role on this device.</p>
+        <div class="alerts"><span class="meta" style="margin:0">Job alerts:</span><a href="#subscribe" id="alert-email">Weekly email</a><a href="jobs-early.xml">Early-career feed (RSS)</a><a href="jobs.xml">All new jobs (RSS)</a></div>
+      </div>
+    </div>
+    <div class="toolbar">
+      <input type="search" id="jobs-q" placeholder="Search titles or locations, e.g. RF engineer, London, remote" aria-label="Search jobs">
+      <select id="jobs-sector" aria-label="Filter by sector"></select>
+      <select id="jobs-function" aria-label="Filter by role type"></select>
+      <select id="jobs-company" aria-label="Filter by company"></select>
+      <label class="check"><input type="checkbox" id="jobs-early"> Early career</label>
+      <label class="check"><input type="checkbox" id="jobs-remote"> Remote</label>
+      <label class="check"><input type="checkbox" id="jobs-saved"> Saved <span id="saved-n"></span></label>
+    </div>
+    <div class="count" id="jobs-count"></div>
+    <div class="list" id="jobs-list"></div>
+    <h2 style="margin-top:30px;font-size:20px">More job boards</h2>
+    <div class="boards" id="boards"></div>
+  </section>
+  <section class="view" id="view-deals" aria-labelledby="tab-deals" hidden>
+    <div class="jobs-head">
+      <div>
+        <h2>Africa satcom deals</h2>
+        <p>Agreements, contracts, licences, funding rounds and launches in African satellite communications, gathered from public announcements. Every entry links to its source.</p>
+      </div>
+    </div>
+    <div class="tiles" id="deal-tiles"></div>
+    <div class="news-layout">
+      <div>
+        <div class="toolbar">
+          <input type="search" id="deals-q" placeholder="Search companies, countries or keywords, e.g. Starlink, Nigeria, OneWeb" aria-label="Search deals">
+          <select id="deals-type" aria-label="Filter by deal type"></select>
+          <select id="deals-segment" aria-label="Filter by segment"></select>
+          <select id="deals-country" aria-label="Filter by country"></select>
+          <select id="deals-year" aria-label="Filter by year"></select>
+        </div>
+        <div class="count" id="deals-count"></div>
+        <div class="list" id="deals-list"></div>
+        <p class="note">Entries are added by hand from company, government and trade press announcements. Values are shown only where the parties disclosed them.</p>
+      </div>
+      <aside>
+        <div class="panel">
+          <h2>Latest Africa headlines</h2>
+          <ul id="africa-news"></ul>
+          <a class="cta" href="#news" id="africa-link">More Africa news</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+  <section class="view" id="view-research" aria-labelledby="tab-research" hidden>
+    <div class="rhead">
+      <div>
+        <h2>Research</h2>
+        <p id="research-tagline"></p>
+      </div>
+      <dl class="rledger" id="research-ledger"></dl>
+    </div>
+    <div class="rtools">
+      <div class="rtabs" id="research-chips" role="group" aria-label="Filter research by type">
+        <button type="button" data-t="" aria-pressed="true">All</button>
+        <button type="button" data-t="Analysis" aria-pressed="false">Analysis</button>
+        <button type="button" data-t="Brief" aria-pressed="false">Briefs</button>
+        <button type="button" data-t="Report" aria-pressed="false">Reports</button>
+      </div>
+      <input type="search" id="research-q" placeholder="Search research" aria-label="Search research">
+    </div>
+    <div class="count" id="research-count"></div>
+    <div class="rlist" id="research-list"></div>
+  </section>
+
+  <section class="view" id="view-events" aria-labelledby="events-title" hidden>
+    <div class="jobs-head">
+      <div>
+        <h2 id="events-title">Upcoming events</h2>
+        <p>Satcom and space conferences, Africa included. Events tagged "check dates" come from listings and are not yet confirmed on the organiser's site.</p>
+      </div>
+    </div>
+    <div class="chips" id="events-chips" role="group" aria-label="Filter events by region"></div>
+    <div class="evlist" id="events-list"></div>
+  </section>
+
+  <section class="view" id="view-about" aria-labelledby="about-title" hidden>
+    <div class="about" id="about"></div>
+  </section>
+
+  <section class="view" id="view-article" aria-label="Research article" hidden>
+    <a class="back" href="#research">&larr; All research</a>
+    <article class="prose" id="article"></article>
+  </section>
+
+  <section class="subscribe" aria-labelledby="sub-title">
+    <h2 id="sub-title"></h2>
+    <p id="sub-blurb"></p>
+    <form id="sub-form" method="post" target="_blank">
+      <label class="field" for="sub-email">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        <input type="email" id="sub-email" name="email" placeholder="your@email.com" required autocomplete="email" aria-label="Email address">
+      </label>
+      <input type="hidden" name="embed" value="1">
+      <input type="hidden" name="tag" value="website">
+      <button type="submit" id="sub-btn">Subscribe</button>
+      <label class="opt"><input type="checkbox" name="tag" value="early-career-jobs" id="sub-early"> Also email me new early-career roles</label>
+    </form>
+    <div class="msg" id="sub-msg" role="status"></div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <nav class="footlinks" aria-label="More">
+      <a href="digest.html">Weekly digest</a>
+      <a href="digest.xml">Digest RSS</a>
+      <a href="jobs-early.xml">Early-career jobs RSS</a>
+    </nav>
+    <p id="foot-updated"></p>
+    <p>Headlines link to the publishers. Articles are not copied here. Jobs come from each company's public careers board.</p>
+    <p id="foot-sources"></p>
+  </div>
+</footer>
+
+<script id="site-data" type="application/json">{{DATA}}</script>
+<script>
+(function () {
+  var D = JSON.parse(document.getElementById('site-data').textContent);
+  var PAGE = 40;
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+  function ago(iso) {
+    if (!iso) return '';
+    var ms = Date.now() - new Date(iso).getTime(); if (isNaN(ms)) return '';
+    var h = Math.floor(ms / 3600000);
+    if (h < 1) return 'just now';
+    if (h < 24) return h + 'h ago';
+    var d = Math.floor(h / 24);
+    if (d < 60) return d + 'd ago';
+    return new Date(iso).toLocaleDateString(undefined, {day: 'numeric', month: 'short', year: 'numeric'});
+  }
+  function uniq(a) { return a.filter(function (v, i) { return a.indexOf(v) === i; }); }
+  function fillSelect(el, label, values) {
+    el.innerHTML = '<option value="">' + esc(label) + '</option>' + values.map(function (v) { return '<option>' + esc(v) + '</option>'; }).join('');
+  }
+  function newsLink(n, cls) { return '<a class="' + cls + '" href="' + esc(n.url) + '" target="_blank" rel="noopener">'; }
+
+  /* ticker, footer */
+  var early = D.jobs.filter(function (j) { return j.early; });
+  var companies = uniq(D.jobs.map(function (j) { return j.company; })).sort();
+  $('home-stats').textContent = D.news.length + ' headlines this month · ' + D.jobs.length + ' open roles at ' +
+    companies.length + ' companies · ' + D.deals.length + ' Africa deals tracked · updated ' + ago(D.site.updated);
+  $('foot-updated').textContent = 'Last refreshed ' + new Date(D.site.updated).toLocaleString(undefined, {dateStyle: 'medium', timeStyle: 'short'}) + '.';
+  $('foot-sources').textContent = 'News sources: ' + D.newsSources.join(', ') + '.';
+
+  /* lead stories: prefer satcom */
+  var satcom = D.news.filter(function (n) { return n.categories.indexOf('Satcom & connectivity') !== -1; });
+  var lead = (satcom.length >= 3 ? satcom : D.news).slice(0, 3);
+  $('lead').innerHTML = lead.map(function (n) {
+    return newsLink(n, 'story') + '<span class="kicker">' + esc(n.categories[0] || 'Industry') + '</span><h3>' + esc(n.title) + '</h3><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></a>';
+  }).join('');
+  var leadUrls = lead.map(function (n) { return n.url; });
+  $('home-news').innerHTML = D.news.filter(function (n) { return leadUrls.indexOf(n.url) === -1; }).slice(0, 6).map(function (n) {
+    return '<li>' + newsLink(n, '') + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></li>';
+  }).join('');
+
+  /* news filters */
+  var newsState = {cat: '', q: '', source: '', shown: PAGE};
+  $('news-chips').innerHTML = ['All'].concat(D.newsCategories).map(function (c, i) {
+    return '<button type="button" id="chip-' + i + '" data-c="' + esc(i ? c : '') + '" aria-pressed="' + (i ? 'false' : 'true') + '">' + esc(c) + '</button>';
+  }).join('');
+  fillSelect($('news-source'), 'All sources', uniq(D.news.map(function (n) { return n.source; })).sort());
+  function renderNews() {
+    var q = newsState.q.toLowerCase();
+    var list = D.news.filter(function (n) {
+      if (newsState.cat && n.categories.indexOf(newsState.cat) === -1) return false;
+      if (newsState.source && n.source !== newsState.source) return false;
+      return !q || (n.title + ' ' + n.source).toLowerCase().indexOf(q) !== -1;
+    });
+    $('news-count').textContent = list.length + (list.length === 1 ? ' headline' : ' headlines');
+    if (!list.length) { $('news-list').innerHTML = '<div class="empty">No headlines match. Try another topic or clear the search.</div>'; return; }
+    $('news-list').innerHTML = list.slice(0, newsState.shown).map(function (n) {
+      return '<div class="row">' + newsLink(n, 't') + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span>' +
+        (n.categories.length ? '<div class="tags">' + n.categories.map(function (c) { return '<span class="tag">' + esc(c) + '</span>'; }).join('') + '</div>' : '') + '</div>';
+    }).join('') + (list.length > newsState.shown ? '<div class="more"><button type="button" id="news-more">Show more headlines</button></div>' : '');
+    var m = $('news-more'); if (m) m.onclick = function () { newsState.shown += PAGE; renderNews(); };
+  }
+  $('news-chips').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    newsState.cat = b.getAttribute('data-c'); newsState.shown = PAGE;
+    Array.prototype.forEach.call(this.querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    renderNews();
+  });
+  $('news-q').addEventListener('input', function () { newsState.q = this.value; newsState.shown = PAGE; renderNews(); });
+  $('news-source').addEventListener('change', function () { newsState.source = this.value; newsState.shown = PAGE; renderNews(); });
+
+  /* sidebar */
+  var seenCo = {}, sideJobs = D.jobs.filter(function (j) { if (seenCo[j.company]) return false; seenCo[j.company] = 1; return true; });
+  $('side-jobs').innerHTML = sideJobs.slice(0, 6).map(function (j) {
+    return '<li><a href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.title) + '</a><span class="meta">' + esc(j.company) + ' · ' + esc(j.location) + '</span></li>';
+  }).join('') || '<li class="meta">No openings fetched in the last refresh.</li>';
+  $('early-count').textContent = early.length;
+
+  /* jobs */
+  var jobsState = {q: '', sector: '', fn: '', company: '', early: false, remote: false, saved: false, shown: PAGE};
+  /* saved jobs live in this browser only (no account) */
+  var SAVE_KEY = 'sp-saved-jobs', saved = {};
+  try { saved = JSON.parse(localStorage.getItem(SAVE_KEY) || '{}') || {}; } catch (e) { saved = {}; }
+  function persistSaved() { try { localStorage.setItem(SAVE_KEY, JSON.stringify(saved)); } catch (e) {} }
+  function savedCount() { return D.jobs.filter(function (j) { return saved[j.url]; }).length; }
+  var STAR = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="m12 3 2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z"/></svg>';
+  fillSelect($('jobs-sector'), 'All sectors', uniq(D.jobs.map(function (j) { return j.sector; })).sort());
+  fillSelect($('jobs-function'), 'All role types', uniq(D.jobs.map(function (j) { return j.function; })).sort());
+  fillSelect($('jobs-company'), 'All companies', companies);
+  function renderJobs() {
+    var q = jobsState.q.toLowerCase();
+    var list = D.jobs.filter(function (j) {
+      if (jobsState.sector && j.sector !== jobsState.sector) return false;
+      if (jobsState.fn && j.function !== jobsState.fn) return false;
+      if (jobsState.company && j.company !== jobsState.company) return false;
+      if (jobsState.early && !j.early) return false;
+      if (jobsState.remote && !j.remote) return false;
+      if (jobsState.saved && !saved[j.url]) return false;
+      return !q || (j.title + ' ' + j.location + ' ' + j.company).toLowerCase().indexOf(q) !== -1;
+    });
+    $('jobs-count').textContent = list.length + (list.length === 1 ? ' role' : ' roles');
+    var sc = savedCount(); $('saved-n').textContent = sc ? '(' + sc + ')' : '';
+    if (!list.length) { $('jobs-list').innerHTML = '<div class="empty">' + (jobsState.saved ? 'No saved roles yet. Tap the star on any role to keep it here. Saved roles are kept in this browser.' : 'No roles match these filters. Clear a filter or try a broader search.') + '</div>'; return; }
+    $('jobs-list').innerHTML = list.slice(0, jobsState.shown).map(function (j) {
+      var on = !!saved[j.url];
+      return '<div class="row job"><button type="button" class="star" data-u="' + esc(j.url) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Remove from saved' : 'Save this role') + '" title="' + (on ? 'Saved' : 'Save') + '">' + STAR + '</button>' +
+        '<a class="t" href="' + esc(j.url) + '" target="_blank" rel="noopener">' + esc(j.title) + '</a>' +
+        '<span class="meta"><span class="job-co">' + esc(j.company) + '</span> · ' + esc(j.location) + (j.posted ? ' · posted ' + esc(ago(j.posted)) : '') + '</span>' +
+        '<div class="tags">' + (j.early ? '<span class="tag early">Early career</span>' : '') + '<span class="tag">' + esc(j.sector) + '</span><span class="tag">' + esc(j.function) + '</span>' + (j.remote ? '<span class="tag">Remote</span>' : '') + '</div></div>';
+    }).join('') + (list.length > jobsState.shown ? '<div class="more"><button type="button" id="jobs-more">Show more roles</button></div>' : '');
+    var m = $('jobs-more'); if (m) m.onclick = function () { jobsState.shown += PAGE; renderJobs(); };
+  }
+  $('jobs-q').addEventListener('input', function () { jobsState.q = this.value; jobsState.shown = PAGE; renderJobs(); });
+  [['jobs-sector', 'sector'], ['jobs-function', 'fn'], ['jobs-company', 'company']].forEach(function (p) {
+    $(p[0]).addEventListener('change', function () { jobsState[p[1]] = this.value; jobsState.shown = PAGE; renderJobs(); });
+  });
+  $('jobs-early').addEventListener('change', function () { jobsState.early = this.checked; jobsState.shown = PAGE; renderJobs(); });
+  $('jobs-remote').addEventListener('change', function () { jobsState.remote = this.checked; jobsState.shown = PAGE; renderJobs(); });
+  $('jobs-saved').addEventListener('change', function () { jobsState.saved = this.checked; jobsState.shown = PAGE; renderJobs(); });
+  $('jobs-list').addEventListener('click', function (e) {
+    var b = e.target.closest('.star'); if (!b) return;
+    var u = b.getAttribute('data-u');
+    if (saved[u]) delete saved[u]; else saved[u] = Date.now();
+    persistSaved();
+    if (jobsState.saved) { renderJobs(); return; }
+    var on = !!saved[u];
+    b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'Remove from saved' : 'Save this role'); b.title = on ? 'Saved' : 'Save';
+    var sc = savedCount(); $('saved-n').textContent = sc ? '(' + sc + ')' : '';
+  });
+  $('alert-email').addEventListener('click', function (e) {
+    e.preventDefault(); $('sub-early').checked = true;
+    var f = document.querySelector('.subscribe'); f.scrollIntoView({behavior: 'smooth', block: 'center'});
+    setTimeout(function () { $('sub-email').focus({preventScroll: true}); }, 400);
+  });
+  $('early-link').addEventListener('click', function () { $('jobs-early').checked = true; jobsState.early = true; renderJobs(); });
+  $('boards').innerHTML = D.moreBoards.map(function (b) {
+    return '<a href="' + esc(b.url) + '" target="_blank" rel="noopener"><strong>' + esc(b.name) + '</strong><span>' + esc(b.note) + '</span></a>';
+  }).join('');
+
+  /* deals */
+  var MONTHS = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function fmtDate(s) {
+    var p = s.split('-');
+    return (p[2] ? (+p[2]) + ' ' : '') + MONTHS[+p[1] - 1] + ' ' + p[0];
+  }
+  var dealCountries = uniq([].concat.apply([], D.deals.map(function (d) { return d.countries; }))).sort();
+  var realCountries = dealCountries.filter(function (c) { return c !== 'Pan-African'; });
+  var typeCounts = {};
+  D.deals.forEach(function (d) { typeCounts[d.type] = (typeCounts[d.type] || 0) + 1; });
+  var topType = Object.keys(typeCounts).sort(function (a, b) { return typeCounts[b] - typeCounts[a]; })[0] || '';
+  var withValue = D.deals.filter(function (d) { return d.value_usd; }).length;
+  $('deal-tiles').innerHTML = [
+    [D.deals.length, 'deals and milestones tracked'],
+    [realCountries.length, 'countries named, plus pan-African deals'],
+    [typeCounts[topType] || 0, esc(topType) + ' entries, the most common type'],
+    [D.deals.length ? fmtDate(D.deals[0].date) : '-', 'most recent entry']
+  ].map(function (x) { return '<div class="tile"><span class="stat">' + x[0] + '</span><p class="meta">' + x[1] + '</p></div>'; }).join('');
+  fillSelect($('deals-type'), 'All deal types', uniq(D.deals.map(function (d) { return d.type; })).sort());
+  fillSelect($('deals-segment'), 'All segments', uniq(D.deals.map(function (d) { return d.segment; })).sort());
+  fillSelect($('deals-country'), 'All countries', dealCountries);
+  fillSelect($('deals-year'), 'All years', uniq(D.deals.map(function (d) { return d.date.slice(0, 4); })).sort().reverse());
+  var dealState = {q: '', type: '', segment: '', country: '', year: ''};
+  function renderDeals() {
+    var q = dealState.q.toLowerCase();
+    var list = D.deals.filter(function (d) {
+      if (dealState.type && d.type !== dealState.type) return false;
+      if (dealState.segment && d.segment !== dealState.segment) return false;
+      if (dealState.country && d.countries.indexOf(dealState.country) === -1) return false;
+      if (dealState.year && d.date.slice(0, 4) !== dealState.year) return false;
+      return !q || [d.title, d.summary, d.parties.join(' '), d.countries.join(' '), d.segment, d.type].join(' ').toLowerCase().indexOf(q) !== -1;
+    });
+    $('deals-count').textContent = list.length + (list.length === 1 ? ' entry' : ' entries');
+    if (!list.length) { $('deals-list').innerHTML = '<div class="empty">No entries match. Clear a filter or try another search.</div>'; return; }
+    $('deals-list').innerHTML = list.map(function (d) {
+      var val = d.value_usd ? '<span class="value">' + esc(d.value_text) + '</span>'
+        : (d.value_text && d.value_text !== 'n/a' ? '<span class="date">Value: ' + esc(d.value_text) + '</span>' : '');
+      return '<div class="row deal"><div class="head"><span class="date">' + esc(fmtDate(d.date)) + '</span>' + val + '</div>' +
+        '<a class="t" href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>' +
+        '<span class="meta">' + esc(d.parties.join(' · ')) + '</span>' +
+        '<p>' + esc(d.summary) + '</p>' +
+        '<div class="tags"><span class="tag type">' + esc(d.type) + '</span><span class="tag">' + esc(d.segment) + '</span>' +
+        d.countries.map(function (c) { return '<span class="tag">' + esc(c) + '</span>'; }).join('') + '</div>' +
+        '<span class="meta">Source: <a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.source_name) + '</a></span></div>';
+    }).join('');
+  }
+  $('deals-q').addEventListener('input', function () { dealState.q = this.value; renderDeals(); });
+  [['deals-type', 'type'], ['deals-segment', 'segment'], ['deals-country', 'country'], ['deals-year', 'year']].forEach(function (p) {
+    $(p[0]).addEventListener('change', function () { dealState[p[1]] = this.value; renderDeals(); });
+  });
+  var africaNews = D.news.filter(function (n) { return n.categories.indexOf('Africa') !== -1 || n.source === 'Space in Africa'; });
+  $('africa-news').innerHTML = africaNews.slice(0, 8).map(function (n) {
+    return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></li>';
+  }).join('') || '<li class="meta">No Africa headlines in the last refresh.</li>';
+  $('africa-link').addEventListener('click', function () {
+    var i = D.newsCategories.indexOf('Africa');
+    var b = document.getElementById('chip-' + (i + 1)); if (b) b.click();
+  });
+
+  /* company band */
+  $('band-label').textContent = D.marqueeLabel + ' ' + companies.length + ' satellite and space companies';
+  var names = companies.map(function (c) { return '<span>' + esc(c) + '</span>'; }).join('');
+  $('marquee').innerHTML = names + names.replace(/<span>/g, '<span class="dup" aria-hidden="true">');
+
+  /* subscribe */
+  var NL = D.newsletter || {};
+  $('sub-title').textContent = NL.title || 'Subscribe';
+  $('sub-blurb').textContent = NL.blurb || '';
+  var subForm = $('sub-form');
+  if (NL.buttondown_username) {
+    subForm.action = 'https://buttondown.com/api/emails/embed-subscribe/' + encodeURIComponent(NL.buttondown_username);
+    subForm.addEventListener('submit', function () { $('sub-msg').textContent = 'Check your inbox to confirm your subscription.'; });
+  } else {
+    subForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      $('sub-msg').textContent = 'Sign-up opens soon. Please check back shortly.';
+    });
+  }
+
+  /* home deals */
+  $('home-deals').innerHTML = D.deals.slice(0, 5).map(function (d) {
+    return '<li><a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a><span class="meta">' + esc(fmtDate(d.date)) + ' · ' + esc(d.countries.join(', ')) + '</span></li>';
+  }).join('');
+
+  /* research */
+  var TICON = {};
+  $('research-tagline').textContent = D.researchTagline || '';
+  (function () {
+    var n = function (t) { return D.research.filter(function (r) { return r.type === t; }).length; };
+    var latest = D.research.length && D.research[0].date ? fmtDate(D.research[0].date) : '';
+    $('research-ledger').innerHTML = '<div><dt>Published</dt><dd>' + D.research.length + '</dd></div>' +
+      '<div><dt>Analysis</dt><dd>' + n('Analysis') + '</dd></div><div><dt>Briefs</dt><dd>' + n('Brief') + '</dd></div>' +
+      (latest ? '<div><dt>Latest</dt><dd style="font-size:17px;line-height:1.5">' + esc(latest) + '</dd></div>' : '');
+  })();
+  var researchState = {q: '', t: ''};
+  function rMeta(r) { return [r.date ? fmtDate(r.date) : '', r.author, r.minutes + ' min read'].filter(Boolean).join(' · '); }
+  function renderResearch() {
+    var q = researchState.q.toLowerCase();
+    var list = D.research.filter(function (r) {
+      if (researchState.t && r.type !== researchState.t) return false;
+      return !q || [r.title, r.summary, r.tags.join(' ')].join(' ').toLowerCase().indexOf(q) !== -1;
+    });
+    $('research-count').textContent = (researchState.q || researchState.t) ? list.length + (list.length === 1 ? ' piece' : ' pieces') : '';
+    $('research-list').innerHTML = list.length ? list.map(function (r) {
+      var dt = r.date ? new Date(r.date + 'T12:00:00Z') : null;
+      var dd = dt ? '<b>' + dt.getUTCDate() + '</b>' + esc(dt.toLocaleDateString(undefined, {month: 'short', year: 'numeric', timeZone: 'UTC'})) : '';
+      return '<a class="rcard" href="#research-' + esc(r.slug) + '"><span class="rdate">' + dd + '</span><span class="rtype ' + esc(r.type) + '">' + esc(r.type) + '</span>' +
+        '<h3>' + esc(r.title) + '</h3><p>' + esc(r.summary) + '</p><span class="meta">' + esc(rMeta(r)) + '</span>' +
+        (r.tags.length ? '<div class="tags">' + r.tags.map(function (g) { return '<span class="tag">' + esc(g) + '</span>'; }).join('') + '</div>' : '') + '</a>';
+    }).join('') : '<div class="empty">No research matches yet. Try another search or filter.</div>';
+  }
+  $('research-q').addEventListener('input', function () { researchState.q = this.value; renderResearch(); });
+  $('research-chips').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    researchState.t = b.getAttribute('data-t');
+    Array.prototype.forEach.call(this.querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    renderResearch();
+  });
+  function showArticle(slug) {
+    var r = D.research.filter(function (x) { return x.slug === slug; })[0];
+    $('article').innerHTML = r ? '<span class="rtype ' + esc(r.type) + '">' + (TICON[r.type] || '') + esc(r.type) + '</span><h1>' + esc(r.title) + '</h1>' +
+      '<p class="lede">' + esc(r.summary) + '</p><p class="meta">' + esc(rMeta(r)) + '</p>' + r.html
+      : '<h1>Not found</h1><p>This piece may have moved. <a href="#research">Back to all research</a>.</p>';
+  }
+  $('home-research').innerHTML = D.research.slice(0, 4).map(function (r) {
+    return '<li><a href="#research-' + esc(r.slug) + '">' + esc(r.title) + '</a><span class="meta">' + esc(r.type) + ' · ' + esc(r.date ? fmtDate(r.date) : '') + '</span></li>';
+  }).join('') || '<li class="meta">First pieces coming soon.</li>';
+
+  /* events */
+  var today = new Date().toISOString().slice(0, 10);
+  var upcoming = (D.events || []).filter(function (e) { return (e.end || e.start) >= today; })
+    .sort(function (a, b) { return a.start < b.start ? -1 : a.start > b.start ? 1 : 0; });
+  function evWhen(e) {
+    if (e.dates) return e.dates;
+    var a = new Date(e.start + 'T12:00:00Z'), b = new Date((e.end || e.start) + 'T12:00:00Z');
+    var MON = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var m = function (d) { return MON[d.getUTCMonth()]; };
+    if (e.start === (e.end || e.start)) return a.getUTCDate() + ' ' + m(a) + ' ' + a.getUTCFullYear();
+    if (a.getUTCMonth() === b.getUTCMonth()) return a.getUTCDate() + '–' + b.getUTCDate() + ' ' + m(a) + ' ' + b.getUTCFullYear();
+    return a.getUTCDate() + ' ' + m(a) + ' – ' + b.getUTCDate() + ' ' + m(b) + ' ' + b.getUTCFullYear();
+  }
+  $('home-events').innerHTML = upcoming.slice(0, 3).map(function (e) {
+    return '<li><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a><span class="meta">' + esc(evWhen(e)) + ' · ' + esc(e.where.split(', ').slice(-1)[0]) + '</span></li>';
+  }).join('') || '<li class="meta">No upcoming events listed yet.</li>';
+  var evState = {region: ''};
+  var regions = uniq(upcoming.map(function (e) { return e.region; })).sort(function (a, b) { return a === 'Africa' ? -1 : b === 'Africa' ? 1 : a < b ? -1 : 1; });
+  $('events-chips').innerHTML = ['All'].concat(regions).map(function (r) {
+    return '<button type="button" data-r="' + (r === 'All' ? '' : esc(r)) + '" aria-pressed="' + (r === 'All') + '">' + esc(r) + '</button>';
+  }).join('');
+  $('events-chips').addEventListener('click', function (e) {
+    var b = e.target.closest('button'); if (!b) return;
+    evState.region = b.getAttribute('data-r');
+    Array.prototype.forEach.call(this.querySelectorAll('button'), function (x) { x.setAttribute('aria-pressed', x === b ? 'true' : 'false'); });
+    renderEvents();
+  });
+  function renderEvents() {
+    var list = upcoming.filter(function (e) { return !evState.region || e.region === evState.region; });
+    var groups = [], by = {};
+    list.forEach(function (e) {
+      var k = e.start.slice(0, 7);
+      if (!by[k]) { by[k] = []; groups.push(k); }
+      by[k].push(e);
+    });
+    $('events-list').innerHTML = groups.length ? groups.map(function (k) {
+      var label = new Date(k + '-15T12:00:00Z').toLocaleDateString('en-GB', {month: 'long', year: 'numeric', timeZone: 'UTC'});
+      return '<div class="evmonth"><h3>' + esc(label) + '</h3>' + by[k].map(function (e) {
+        return '<div class="ev"><div class="when">' + esc(evWhen(e)) + '<span>' + esc(e.region) + '</span></div><div>' +
+          '<h4><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a></h4>' +
+          '<span class="meta">' + esc(e.where) + ' · ' + esc(e.organiser) + '</span><p>' + esc(e.summary) + '</p>' +
+          '<div class="tags"><span class="tag">' + esc(e.topic) + '</span>' + (e.confirmed ? '' : '<span class="tag check">Check dates</span>') + '</div></div></div>';
+      }).join('') + '</div>';
+    }).join('') : '<div class="empty">No upcoming events in this region yet.</div>';
+  }
+
+  /* about */
+  $('about').innerHTML = D.aboutHtml || '<h1 id="about-title">About</h1>';
+  Array.prototype.forEach.call(document.querySelectorAll('#about [data-count]'), function (el) {
+    var k = el.getAttribute('data-count');
+    el.textContent = k === 'companies' ? companies.length : k === 'deals' ? D.deals.length : k === 'events' ? upcoming.length : k === 'research' ? D.research.length : '';
+  });
+
+  /* views */
+  function route() {
+    var h = location.hash;
+    var v = {'#jobs': 'jobs', '#news': 'news', '#deals': 'deals', '#research': 'research', '#events': 'events', '#about': 'about'}[h] || 'home';
+    if (h.indexOf('#research-') === 0) { v = 'article'; showArticle(h.slice(10)); }
+    ['home', 'news', 'jobs', 'deals', 'research', 'article', 'events', 'about'].forEach(function (k) {
+      $('view-' + k).hidden = v !== k;
+      var tab = $('tab-' + (k === 'article' ? 'research' : k));
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && v === 'article')) ? 'page' : 'false');
+    });
+    $('view-home2').hidden = v !== 'home';
+    $('home-band').hidden = v !== 'home';
+  }
+  window.addEventListener('hashchange', function () { route(); window.scrollTo(0, 0); });
+  renderResearch(); renderEvents(); route(); renderNews(); renderJobs(); renderDeals();
+})();
+</script>
+</body>
+</html>
