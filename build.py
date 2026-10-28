@@ -424,6 +424,52 @@ def render(cfg, news, jobs, updated, research):
     return page
 
 
+SECTION_PAGES = {
+    "jobs": ("Jobs", "Open roles at satellite and space companies, with internships and graduate roles flagged."),
+    "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
+    "deals": ("Africa deals tracker", "Satcom licences, contracts and partnerships in Africa, each linked to its source."),
+    "research": ("Research", "Short research on African satellite communications, built on public data."),
+    "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
+    "about": ("About", "Who runs Satcom Pathways and how the site works."),
+}
+
+
+def write_pages(cfg, page, research):
+    """One copy of the page per address (/, /jobs/, /research/<slug>/ ...), each with its own
+    title, description and canonical link, plus 404.html, sitemap.xml and robots.txt.
+    The page reads its address on load and shows the matching section."""
+    url = cfg.get("site_url", "").rstrip("/")
+    name = cfg["site_name"]
+    esc = html.escape
+    default_title = f"<title>{esc(name)}</title>"
+    default_desc = f'<meta name="description" content="{esc(cfg["tagline"])}">'
+
+    def variant(path, title, desc):
+        out = page.replace(default_title, f"<title>{esc(title)}</title>", 1)
+        out = out.replace(default_desc, f'<meta name="description" content="{esc(desc)}">', 1)
+        if url:
+            out = out.replace("</head>", f'<link rel="canonical" href="{esc(url + path)}">\n</head>', 1)
+        return out
+
+    targets = {"/": (name, cfg["tagline"])}
+    for key, (label, desc) in SECTION_PAGES.items():
+        targets[f"/{key}/"] = (f"{label} | {name}", desc)
+    for r in research:
+        targets[f"/research/{r['slug']}/"] = (f"{r['title']} | {name}", r.get("summary") or r["title"])
+    for path, (title, desc) in targets.items():
+        dest = OUT / path.strip("/") / "index.html" if path != "/" else OUT / "index.html"
+        dest.parent.mkdir(parents=True, exist_ok=True)
+        dest.write_text(variant(path, title, desc), encoding="utf-8")
+    (OUT / "404.html").write_text(page, encoding="utf-8")
+    if url:
+        today = NOW.date().isoformat()
+        urls = "".join(f"<url><loc>{esc(url + p)}</loc><lastmod>{today}</lastmod></url>" for p in targets)
+        (OUT / "sitemap.xml").write_text(
+            f'<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">{urls}</urlset>',
+            encoding="utf-8")
+        (OUT / "robots.txt").write_text(f"User-agent: *\nAllow: /\nSitemap: {url}/sitemap.xml\n", encoding="utf-8")
+
+
 def main():
     cfg = json.loads((ROOT / "config.json").read_text(encoding="utf-8"))
     (OUT / "data").mkdir(parents=True, exist_ok=True)
@@ -447,7 +493,7 @@ def main():
     digests = build_digest(cfg, news, jobs, deals, research)
     write_digest_files(cfg, digests)
     write_job_feeds(cfg, jobs)
-    (OUT / "index.html").write_text(render(cfg, news, jobs, updated, research), encoding="utf-8")
+    write_pages(cfg, render(cfg, news, jobs, updated, research), research)
     log(f"Built site: {len(news)} news items, {len(jobs)} jobs, {len(research)} research pieces, {len(digests)} digests")
 
 

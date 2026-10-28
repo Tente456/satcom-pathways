@@ -266,18 +266,18 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
 <body>
 <header class="mast">
   <div class="container">
-    <a class="brand" href="#home">
+    <a class="brand" href="/">
       <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M-2 40 Q20 28 42 40" fill="none" stroke="currentColor" stroke-width="3" stroke-opacity=".4"/><circle cx="9" cy="29.5" r="1.5" fill="currentColor" fill-opacity=".55"/><circle cx="14.5" cy="24" r="1.9" fill="currentColor" fill-opacity=".7"/><circle cx="19.5" cy="18" r="2.3" fill="currentColor" fill-opacity=".85"/><circle cx="24.5" cy="12.5" r="2.7" fill="currentColor"/><circle cx="31.5" cy="7.5" r="4.6" fill="#1fd16a"/></svg>
       <span><h1>{{SITE_NAME}}</h1></span>
     </a>
     <nav class="tabs" aria-label="Sections">
-      <a href="#home" id="tab-home">Home</a>
-      <a href="#jobs" id="tab-jobs">Jobs</a>
-      <a href="#news" id="tab-news">News</a>
-      <a href="#deals" id="tab-deals">Deals</a>
-      <a href="#research" id="tab-research">Research</a>
-      <a href="#events" id="tab-events">Events</a>
-      <a href="#about" id="tab-about">About</a>
+      <a href="/" id="tab-home">Home</a>
+      <a href="/jobs/" id="tab-jobs">Jobs</a>
+      <a href="/news/" id="tab-news">News</a>
+      <a href="/deals/" id="tab-deals">Deals</a>
+      <a href="/research/" id="tab-research">Research</a>
+      <a href="/events/" id="tab-events">Events</a>
+      <a href="/about/" id="tab-about">About</a>
     </nav>
   </div>
 </header>
@@ -299,33 +299,33 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div class="panel">
         <h2>Latest headlines</h2>
         <ul id="home-news"></ul>
-        <a class="cta" href="#news">All news</a>
+        <a class="cta" href="/news/">All news</a>
       </div>
       <div class="panel">
         <h2>Hiring now</h2>
         <ul id="side-jobs"></ul>
-        <a class="cta" href="#jobs">All jobs</a>
+        <a class="cta" href="/jobs/">All jobs</a>
       </div>
       <div class="panel">
         <h2>Latest Africa deals</h2>
         <ul id="home-deals"></ul>
-        <a class="cta" href="#deals">Deals tracker</a>
+        <a class="cta" href="/deals/">Deals tracker</a>
       </div>
       <div class="panel">
         <h2>Latest research</h2>
         <ul id="home-research"></ul>
-        <a class="cta" href="#research">All research</a>
+        <a class="cta" href="/research/">All research</a>
       </div>
       <div class="panel">
         <h2>Upcoming events</h2>
         <ul id="home-events"></ul>
-        <a class="cta" href="#events">All events</a>
+        <a class="cta" href="/events/">All events</a>
       </div>
       <div class="panel">
         <h2>Starting out?</h2>
         <div><span class="stat" id="early-count">0</span></div>
         <p class="meta" style="margin:0">internship, graduate and early-career roles open right now across the companies we track.</p>
-        <a class="cta" href="#jobs" id="early-link">Show early-career roles</a>
+        <a class="cta" href="/jobs/" id="early-link">Show early-career roles</a>
       </div>
     </div>
   </section>
@@ -355,7 +355,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div>
         <h2>Jobs in satellite and space</h2>
         <p>Openings pulled straight from company career pages. Every listing links to the employer's own application page. Tap the star to save a role on this device.</p>
-        <div class="alerts"><span class="meta" style="margin:0">Job alerts:</span><a href="#subscribe" id="alert-email">Weekly email</a><a href="jobs-early.xml">Early-career feed (RSS)</a><a href="jobs.xml">All new jobs (RSS)</a></div>
+        <div class="alerts"><span class="meta" style="margin:0">Job alerts:</span><a href="#subscribe" id="alert-email">Weekly email</a><a href="/jobs-early.xml">Early-career feed (RSS)</a><a href="/jobs.xml">All new jobs (RSS)</a></div>
       </div>
     </div>
     <div class="toolbar">
@@ -397,7 +397,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
         <div class="panel">
           <h2>Latest Africa headlines</h2>
           <ul id="africa-news"></ul>
-          <a class="cta" href="#news" id="africa-link">More Africa news</a>
+          <a class="cta" href="/news/" id="africa-link">More Africa news</a>
         </div>
       </aside>
     </div>
@@ -439,7 +439,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   </section>
 
   <section class="view" id="view-article" aria-label="Research article" hidden>
-    <a class="back" href="#research">&larr; All research</a>
+    <a class="back" href="/research/">&larr; All research</a>
     <article class="prose" id="article"></article>
   </section>
 
@@ -463,9 +463,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
 <footer>
   <div class="container">
     <nav class="footlinks" aria-label="More">
-      <a href="digest.html">Weekly digest</a>
-      <a href="digest.xml">Digest RSS</a>
-      <a href="jobs-early.xml">Early-career jobs RSS</a>
+      <a href="/digest.html">Weekly digest</a>
+      <a href="/digest.xml">Digest RSS</a>
+      <a href="/jobs-early.xml">Early-career jobs RSS</a>
     </nav>
     <p id="foot-line"></p>
   </div>
@@ -716,7 +716,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('research-list').innerHTML = list.length ? list.map(function (r) {
       var dt = r.date ? new Date(r.date + 'T12:00:00Z') : null;
       var dd = dt ? '<b>' + dt.getUTCDate() + '</b>' + esc(dt.toLocaleDateString(undefined, {month: 'short', year: 'numeric', timeZone: 'UTC'})) : '';
-      return '<a class="rcard" href="#research-' + esc(r.slug) + '"><span class="rdate">' + dd + '</span><span class="rtype ' + esc(r.type) + '">' + esc(r.type) + '</span>' +
+      return '<a class="rcard" href="/research/' + esc(r.slug) + '/"><span class="rdate">' + dd + '</span><span class="rtype ' + esc(r.type) + '">' + esc(r.type) + '</span>' +
         '<h3>' + esc(r.title) + '</h3><p>' + esc(r.summary) + '</p><span class="meta">' + esc(rMeta(r)) + '</span>' +
         (r.tags.length ? '<div class="tags">' + r.tags.map(function (g) { return '<span class="tag">' + esc(g) + '</span>'; }).join('') + '</div>' : '') + '</a>';
     }).join('') : '<div class="empty">No research matches yet. Try another search or filter.</div>';
@@ -732,10 +732,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var r = D.research.filter(function (x) { return x.slug === slug; })[0];
     $('article').innerHTML = r ? '<span class="rtype ' + esc(r.type) + '">' + (TICON[r.type] || '') + esc(r.type) + '</span><h1>' + esc(r.title) + '</h1>' +
       '<p class="lede">' + esc(r.summary) + '</p><p class="meta">' + esc(rMeta(r)) + '</p>' + r.html
-      : '<h1>Not found</h1><p>This piece may have moved. <a href="#research">Back to all research</a>.</p>';
+      : '<h1>Not found</h1><p>This piece may have moved. <a href="/research/">Back to all research</a>.</p>';
   }
   $('home-research').innerHTML = D.research.slice(0, 4).map(function (r) {
-    return '<li><a href="#research-' + esc(r.slug) + '">' + esc(r.title) + '</a><span class="meta">' + esc(r.type) + ' · ' + esc(r.date ? fmtDate(r.date) : '') + '</span></li>';
+    return '<li><a href="/research/' + esc(r.slug) + '/">' + esc(r.title) + '</a><span class="meta">' + esc(r.type) + ' · ' + esc(r.date ? fmtDate(r.date) : '') + '</span></li>';
   }).join('') || '<li class="meta">First pieces coming soon.</li>';
 
   /* events */
@@ -791,11 +791,31 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     el.textContent = k === 'companies' ? companies.length : k === 'deals' ? D.deals.length : k === 'events' ? upcoming.length : k === 'research' ? D.research.length : '';
   });
 
-  /* views */
+  /* views: each section has its own address (/jobs/, /research/<slug>/ ...) */
+  var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', research: 'Research', events: 'Events', about: 'About'};
+  (function legacyHash() {
+    var h = location.hash.slice(1);
+    if (!h) return;
+    if (SECTIONS.indexOf(h) !== -1) history.replaceState(null, '', '/' + h + '/');
+    else if (h === 'home') history.replaceState(null, '', '/');
+    else if (h.indexOf('research-') === 0) history.replaceState(null, '', '/research/' + h.slice(9) + '/');
+  })();
+  function currentView() {
+    var p = location.pathname.split('/').filter(Boolean);
+    if (!p.length) return {v: 'home'};
+    if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
+    if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
+    return {v: 'home'};
+  }
   function route() {
-    var h = location.hash;
-    var v = {'#jobs': 'jobs', '#news': 'news', '#deals': 'deals', '#research': 'research', '#events': 'events', '#about': 'about'}[h] || 'home';
-    if (h.indexOf('#research-') === 0) { v = 'article'; showArticle(h.slice(10)); }
+    var cur = currentView(), v = cur.v, title = TITLES[v];
+    if (v === 'article') {
+      showArticle(cur.slug);
+      var r = D.research.filter(function (x) { return x.slug === cur.slug; })[0];
+      title = r ? r.title : 'Research';
+    }
+    document.title = (title ? title + ' | ' : '') + D.site.name;
     ['home', 'news', 'jobs', 'deals', 'research', 'article', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
@@ -804,7 +824,20 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('view-home2').hidden = v !== 'home';
     $('home-band').hidden = v !== 'home';
   }
-  window.addEventListener('hashchange', function () { route(); window.scrollTo(0, 0); });
+  function isRoute(path) {
+    if (path === '/') return true;
+    var p = path.split('/').filter(Boolean);
+    return SECTIONS.indexOf(p[0]) !== -1 && /\/$/.test(path);
+  }
+  document.addEventListener('click', function (e) {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    var a = e.target.closest('a'); if (!a || a.target === '_blank' || a.origin !== location.origin) return;
+    if (!isRoute(a.pathname)) return;
+    e.preventDefault();
+    if (a.pathname !== location.pathname) history.pushState(null, '', a.pathname);
+    route(); window.scrollTo(0, 0);
+  });
+  window.addEventListener('popstate', route);
   renderResearch(); renderEvents(); route(); renderNews(); renderJobs(); renderDeals();
 })();
 </script>
