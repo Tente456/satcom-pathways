@@ -399,6 +399,92 @@ def build_jobs(cfg):
 
 
 
+# ---------------------------------------------------------------- events from organiser calendars
+
+PLACES = {  # venue/city -> (display location, region)
+    "mclean": ("McLean, Virginia, USA", "Americas"), "washington": ("Washington DC, USA", "Americas"),
+    "new york": ("New York, USA", "Americas"), "los angeles": ("Los Angeles, USA", "Americas"),
+    "london": ("London, UK", "Europe"), "paris": ("Paris, France", "Europe"),
+    "dubai": ("Dubai, UAE", "Middle East"), "lagos": ("Lagos, Nigeria", "Africa"),
+    "nairobi": ("Nairobi, Kenya", "Africa"), "johannesburg": ("Johannesburg, South Africa", "Africa"),
+    "cape town": ("Cape Town, South Africa", "Africa"), "online": ("Online", "Online"),
+    "virtual": ("Online", "Online"),
+}
+
+
+def place(venue):
+    v = clean_text(venue)
+    for key, val in PLACES.items():
+        if key in v.lower():
+            return val
+    return (v or "See event page", "Other")
+
+
+def fetch_sspi_events(src):
+    """SSPI lists its events on sspi.org/events; each entry carries an Outlook calendar link with
+    start, end, title and location, followed by its Glue Up event page."""
+    h = get_text(src["url"])
+    cal = re.findall(r'compose\?[^"]*?startdt=([^&"]+)&(?:amp;)?enddt=([^&"]+)&(?:amp;)?subject=([^&"]+)&(?:amp;)?location=([^"&]*)', h)
+    ids = list(dict.fromkeys(re.findall(r"sspi\.glueup\.com/event/(\d+)", h)))
+    out = []
+    for (start, end, title, loc), eid in zip(cal, ids):
+        url = f"https://sspi.glueup.com/event/{eid}/"
+        venue, summary = loc, ""
+        try:
+            page = get_text(url)
+            m = re.search(r'class="header-venue[^"]*"[^>]*title="([^"]+)"', page)
+            venue = m.group(1) if m else venue
+            m = re.search(r'og:description" content="([^"]*)"', page)
+            if m:
+                d = html.unescape(m.group(1))
+                d = re.sub(r"^[^|]{0,60}\|\s*\d{1,2}:\d{2}\s*[AP]M\s*(?:to|-)\s*\d{1,2}:\d{2}\s*[AP]M", "", d).strip()
+                d = re.split(r"(?<=[.!?])\s", d)[0]
+                summary = d if len(d) <= 160 else d[:157].rsplit(" ", 1)[0] + "…"
+        except Exception as e:
+            log(f"  event page FAIL {url}: {e}")
+        where, region = place(urllib.parse.unquote_plus(venue))
+        t0 = datetime.fromisoformat(start)
+        t1 = datetime.fromisoformat(end)
+        when = f"{t0.strftime('%I:%M %p').lstrip('0')} to {t1.strftime('%I:%M %p').lstrip('0')} local time."
+        out.append({
+            "start": start[:10], "end": end[:10], "name": clean_text(urllib.parse.unquote_plus(title)),
+            "organiser": src.get("organiser", "SSPI"), "where": where, "region": region,
+            "topic": src.get("topic", "Satcom"), "summary": f"{when} {summary}".strip(),
+            "url": url, "confirmed": True, "source": "organiser calendar",
+        })
+    return out
+
+
+EVENT_FETCHERS = {"sspi": fetch_sspi_events}
+
+
+def build_auto_events(cfg):
+    """Pull events from organiser calendars. On failure keep the last good copy."""
+    store = OUT / "data/events-auto.json"
+    events, ok = [], True
+    for src in cfg.get("event_sources", []):
+        try:
+            got = EVENT_FETCHERS[src["type"]](src)
+            log(f"  events {src['type']}: {len(got)}")
+            events.extend(got)
+        except Exception as e:
+            ok = False
+            log(f"  events FAIL {src['type']}: {e}")
+    if ok or not store.exists():
+        store.write_text(json.dumps(events, ensure_ascii=False, indent=1))
+
+
+def load_events():
+    """Hand-kept events.json plus organiser calendars; the hand-kept entry wins on duplicates."""
+    hand = load_json_list("events.json")
+    store = OUT / "data/events-auto.json"
+    auto = json.loads(store.read_text(encoding="utf-8")) if store.exists() else []
+    key = lambda e: (e["start"], re.sub(r"\W+", "", e["name"].lower())[:24])
+    seen = {key(e) for e in hand}
+    merged = hand + [e for e in auto if key(e) not in seen]
+    return sorted(merged, key=lambda e: e["start"])
+
+
 # ---------------------------------------------------------------- research
 
 def load_research():
@@ -586,7 +672,7 @@ def render(cfg, news, jobs, updated, research):
         "marqueeLabel": cfg.get("marquee_label", "Live job listings from"),
         "deals": sorted(json.loads((ROOT / "deals.json").read_text(encoding="utf-8")),
                         key=lambda d: d["date"], reverse=True),
-        "events": load_json_list("events.json"),
+        "events": load_events(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -660,6 +746,8 @@ def main():
         (OUT / "data/news.json").write_text(json.dumps(news, ensure_ascii=False, indent=1))
         (OUT / "data/jobs.json").write_text(json.dumps(jobs, ensure_ascii=False, indent=1))
         (OUT / "data/meta.json").write_text(json.dumps({"updated": updated}))
+        log("Fetching events…")
+        build_auto_events(cfg)
     research = load_research()
     deals = json.loads((ROOT / "deals.json").read_text(encoding="utf-8"))
     digests = build_digest(cfg, news, jobs, deals, research)

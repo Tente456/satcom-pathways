@@ -551,5 +551,13 @@
   "jobs_cap_by_sector": {
     "Data & Earth observation": 25,
     "Launch & spacecraft": 25
-  }
+  },
+  "event_sources": [
+    {
+      "type": "sspi",
+      "url": "https://www.sspi.org/events",
+      "organiser": "SSPI",
+      "topic": "Satcom"
+    }
+  ]
 }
