@@ -1,5 +1,139 @@
 [
  {
+  "title": "Advice for optimizing the space industry with Laura Crabtree",
+  "url": "https://spacenews.com/advice-for-optimizing-the-space-industry-with-laura-crabtree/",
+  "source": "SpaceNews",
+  "date": "2026-10-29T15:01+00:00",
+  "categories": []
+ },
+ {
+  "title": "T-Mobile: We'll be first with 6G, and no to SpaceX MVNO",
+  "url": "https://www.lightreading.com/6g/t-mobile-we-ll-be-first-with-6g-and-no-to-spacex-mvno",
+  "source": "Light Reading",
+  "date": "2026-10-29T14:30+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "SpaceX's spectrum quest could lead to the 600MHz band",
+  "url": "https://www.lightreading.com/satellite/spacex-s-spectrum-quest-could-lead-to-600mhz-band",
+  "source": "Light Reading",
+  "date": "2026-10-29T13:00+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Virgin Galactic Unveils Apeiron, Delays Commercial Flights to Q2 2027",
+  "url": "https://payloadspace.com/virgin-galactic-unveils-apeiron-delays-commercial-flights-to-q2-2027/",
+  "source": "Payload",
+  "date": "2026-10-29T12:11+00:00",
+  "categories": []
+ },
+ {
+  "title": "African Space Agency Begins Recruitment for Director General and Senior Staff",
+  "url": "https://spaceinafrica.com/2026/10/29/african-space-agency-begins-recruitment-for-director-general-and-senior-staff/",
+  "source": "Space in Africa",
+  "date": "2026-10-29T09:57+00:00",
+  "categories": [
+   "Africa"
+  ]
+ },
+ {
+  "title": "Russia to Launch Tanzania’s First EO Satellite in 2027",
+  "url": "https://spaceinafrica.com/2026/10/29/russia-to-launch-tanzanias-first-eo-satellite-in-2027/",
+  "source": "Space in Africa",
+  "date": "2026-10-29T09:05+00:00",
+  "categories": [
+   "Launch",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Seraphim Space Launches Space Academy",
+  "url": "https://payloadspace.com/seraphim-space-launches-space-academy/",
+  "source": "Payload",
+  "date": "2026-10-29T09:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL Recap: Fifteen Minutes from Orbit, and the Bottleneck Is Us",
+  "url": "https://spacewatch.global/2026/10/spacewatchgl-recap-fifteen-minutes-from-orbit-and-the-bottleneck-is-us/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-10-29T09:00+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "UK MOD Awards £15 Million Orbital Warfare Project to Astroscale",
+  "url": "https://europeanspaceflight.com/uk-mod-awards-15-million-orbital-warfare-project-to-astroscale/",
+  "source": "European Spaceflight",
+  "date": "2026-10-29T07:31+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Astroscale Wins £15 Million UK Contract alongside New Space Security Agreement With OHB",
+  "url": "https://spacewatch.global/2026/10/astroscale-wins-15-million-uk-contract-alongside-new-space-security-agreement-with-ohb/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-10-29T07:00+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Defence & security",
+   "Business & funding",
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "The Rubin Observatory in Chile has Discovered a Potential New Dwarf Planet, 2026 ED138, Beyond Pluto",
+  "url": "https://spacewatch.global/2026/10/the-rubin-observatory-in-chile-has-discovered-a-potential-new-dwarf-planet-ed138-beyond-pluto/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-10-29T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Vietnam Joins Artemis Accords as the Country Seeks to Expand its Space Capabilities",
+  "url": "https://spacewatch.global/2026/10/vietnam-joins-artemis-accords-as-the-country-seeks-to-expand-its-space-capabilities/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-10-29T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Canada’s Terrestar joins Equatys",
+  "url": "https://www.advanced-television.com/2026/10/29/canadas-terrestar-joins-equatys/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-10-29T01:19+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Cowboy Space shows off Big Iron",
+  "url": "https://www.advanced-television.com/2026/10/29/cowboy-space-shows-off-big-iron/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-10-29T00:20+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Virgin Galactic returns to flight",
+  "url": "https://www.advanced-television.com/2026/10/29/virgin-galactic-returns-to-flight/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-10-29T00:11+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "ULA's Vulcan rocket is set to return to flight on Friday the 13th",
   "url": "https://arstechnica.com/space/2026/10/ulas-vulcan-rocket-is-set-to-return-to-flight-on-friday-the-13th/",
   "source": "Ars Technica",
@@ -1517,16 +1651,6 @@
   "date": "2026-09-29T15:30+00:00",
   "categories": [
    "Satcom & connectivity"
-  ]
- },
- {
-  "title": "DIU, Space Force team up to kick-start buys of commercial sats for monitoring GEO",
-  "url": "https://breakingdefense.com/2026/09/diu-space-force-team-up-to-kick-start-buys-of-commercial-sats-for-monitoring-geo/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-09-29T12:58+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security"
   ]
  }
 ]
