@@ -5,7 +5,337 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-29T15:24+00:00",
+  "posted": "2026-10-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "SATCOM Systems Engineer",
+  "url": "https://careers.viasat.com/jobs/7287",
+  "company": "Viasat",
+  "sector": "Satcom & connectivity",
+  "location": "Carlsbad, California; Germantown, Maryland; Remote (excluding ND, VT, or RI), United States",
+  "posted": "2026-10-29T21:13+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Manager, Technical Revenue Recognition",
+  "url": "https://careers.viasat.com/jobs/7151",
+  "company": "Viasat",
+  "sector": "Satcom & connectivity",
+  "location": "Carlsbad, California",
+  "posted": "2026-10-29T20:58+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Electrical Engineer I",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8057261003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Pasadena, CA",
+  "posted": "2026-10-29T20:56+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Sr Data & Control Systems Engineer",
+  "url": "https://boards.greenhouse.io/relativity/jobs/8924159002?gh_jid=8924159002",
+  "company": "Relativity Space",
+  "sector": "Launch & spacecraft",
+  "location": "Stennis Space Center, Mississippi, United States",
+  "posted": "2026-10-29T20:54+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Contracts Manager II",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8081513003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Chantilly, VA",
+  "posted": "2026-10-29T20:49+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Contracts Manager II",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8079635003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Tucson, AZ",
+  "posted": "2026-10-29T20:49+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Assoc Electrical Software Test Engr Part Time",
+  "url": "https://ast-science.com/company/careers/?gh_jid=4746198005",
+  "company": "AST SpaceMobile",
+  "sector": "Satcom & connectivity",
+  "location": "Lanham, Maryland, United States",
+  "posted": "2026-10-29T20:20+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Mechanical Engineer I",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8057254003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Pasadena, CA",
+  "posted": "2026-10-29T20:06+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Principle Systems Engineering- Software",
+  "url": "https://ast-science.com/company/careers/?gh_jid=4745944005",
+  "company": "AST SpaceMobile",
+  "sector": "Satcom & connectivity",
+  "location": "Dallas, Texas, United States",
+  "posted": "2026-10-29T19:46+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Launch Pad Technician II",
+  "url": "https://boards.greenhouse.io/relativity/jobs/8911460002?gh_jid=8911460002",
+  "company": "Relativity Space",
+  "sector": "Launch & spacecraft",
+  "location": "Cape Canaveral, Florida, United States",
+  "posted": "2026-10-29T19:19+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Software Engineer Intern",
+  "url": "https://careers.viasat.com/jobs/7172",
+  "company": "Viasat",
+  "sector": "Satcom & connectivity",
+  "location": "Germantown, Maryland",
+  "posted": "2026-10-29T19:08+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": false
+ },
+ {
+  "title": "Procurement Intern (Winter 2027)",
+  "url": "https://job-boards.greenhouse.io/astranis/jobs/4725805006",
+  "company": "Astranis",
+  "sector": "Satcom & connectivity",
+  "location": "San Francisco",
+  "posted": "2026-10-29T18:41+00:00",
+  "function": "Operations & supply chain",
+  "early": true,
+  "remote": false
+ },
+ {
+  "title": "Flight Dynamics Engineer II",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8081555003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, CA",
+  "posted": "2026-10-29T18:35+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Starlink Enterprise Account Lead (Aviation)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8924103002?gh_jid=8924103002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Woodinville, WA",
+  "posted": "2026-10-29T18:32+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Principal Ground Infrastructure Deployment Lead",
+  "url": "https://jobs.ashbyhq.com/elveo/640369f7-5dba-45f6-b7dd-73985b301901",
+  "company": "Elveo (Lynk and Omnispace)",
+  "sector": "Satcom & connectivity",
+  "location": "Chantilly, VA",
+  "posted": "2026-10-29T18:18+00:00",
+  "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Quality Engineering Intern Spring 2027",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8042031003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, CA",
+  "posted": "2026-10-29T18:07+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": false
+ },
+ {
+  "title": "Power Electronics Engineer",
+  "url": "https://jobs.ashbyhq.com/northwoodspace/7d1010db-1830-4e2e-afc1-ed3977396ef3",
+  "company": "Northwood Space",
+  "sector": "Ground segment",
+  "location": "Torrance, CA",
+  "posted": "2026-10-29T18:02+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior RF Electrical Engineer (Amplifiers)",
+  "url": "https://jobs.ashbyhq.com/northwoodspace/70b6c01a-9dd6-49be-8fdc-2fa3444e8ca8",
+  "company": "Northwood Space",
+  "sector": "Ground segment",
+  "location": "Torrance, CA",
+  "posted": "2026-10-29T17:49+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Sr. Manager, Retail Channel Management (Starlink Consumer)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8924036002?gh_jid=8924036002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Bastrop, TX",
+  "posted": "2026-10-29T17:48+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Software, Platform (Early Career)",
+  "url": "https://jobs.ashbyhq.com/northwoodspace/f7b9e8d5-7368-4a54-b445-ff647f12b1b6",
+  "company": "Northwood Space",
+  "sector": "Ground segment",
+  "location": "Torrance, CA",
+  "posted": "2026-10-29T17:43+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": false
+ },
+ {
+  "title": "Software Engineer, Platform",
+  "url": "https://jobs.ashbyhq.com/northwoodspace/09fb47fc-39e0-4fca-9bff-5d19d43f5a44",
+  "company": "Northwood Space",
+  "sector": "Ground segment",
+  "location": "Torrance, CA",
+  "posted": "2026-10-29T17:38+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Manager, Mechanical Engineering",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8080173003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Pasadena, CA",
+  "posted": "2026-10-29T17:13+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Systems Administrator, USG Program",
+  "url": "https://job-boards.greenhouse.io/astranis/jobs/4725641006",
+  "company": "Astranis",
+  "sector": "Satcom & connectivity",
+  "location": "San Francisco",
+  "posted": "2026-10-29T17:03+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Lead Manufacturing Engineer - Avionics & Test",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8079937003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, CA",
+  "posted": "2026-10-29T16:54+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "BD Director - Saudi Arabia",
+  "url": "https://careers.viasat.com/jobs/7115",
+  "company": "Viasat",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Saudi Arabia, Saudi Arabia",
+  "posted": "2026-10-29T16:34+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Lead Test Operations Technician",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8045331003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Stennis Space Center, MS",
+  "posted": "2026-10-29T16:24+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Vehicle Structures Engineer I",
+  "url": "https://boards.greenhouse.io/relativity/jobs/8885688002?gh_jid=8885688002",
+  "company": "Relativity Space",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, California, United States",
+  "posted": "2026-10-29T16:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Lead (Chief) Satellite Systems Engineer",
+  "url": "https://jobs.lever.co/kepler/308e5e2a-5820-42fb-bd4a-98a9adcd404e",
+  "company": "Kepler Communications",
+  "sector": "Satcom & connectivity",
+  "location": "Toronto, Ontario",
+  "posted": "2026-10-29T15:59+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Systems Safety Engineer I",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8049802003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, CA",
+  "posted": "2026-10-29T15:59+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Systems Safety Engineer II",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/7784156003",
+  "company": "Rocket Lab",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, CA",
+  "posted": "2026-10-29T15:59+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -29,17 +359,6 @@
   "location": "Cape Canaveral, Florida, United States",
   "posted": "2026-10-29T14:56+00:00",
   "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior RF Hardware Systems Engineer",
-  "url": "https://careers.viasat.com/jobs/6889",
-  "company": "Viasat",
-  "sector": "Satcom & connectivity",
-  "location": "Tempe, Arizona",
-  "posted": "2026-10-29T14:50+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -253,17 +572,6 @@
   "remote": false
  },
  {
-  "title": "Manager, Technical Revenue Recognition",
-  "url": "https://careers.viasat.com/jobs/7151",
-  "company": "Viasat",
-  "sector": "Satcom & connectivity",
-  "location": "Carlsbad, California",
-  "posted": "2026-10-29T00:18+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Spacecraft Propulsion Systems Engineer II",
   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8057551003",
   "company": "Rocket Lab",
@@ -363,6 +671,28 @@
   "remote": false
  },
  {
+  "title": "Embedded Software Dev Engineer, Amazon Leo Customer Terminal Software",
+  "url": "https://www.amazon.jobs/en/jobs/10592923/embedded-software-dev-engineer-amazon-leo-customer-terminal-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Embedded Software Dev Engineer, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10592922/embedded-software-dev-engineer-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Financial Analyst II, Leo Accounting PMO - Reporting, Testing, Readiness",
   "url": "https://www.amazon.jobs/en/jobs/10591921/financial-analyst-ii-leo-accounting-pmo-reporting-testing-readiness",
   "company": "Amazon Leo",
@@ -370,6 +700,105 @@
   "location": "Seattle, Washington, USA",
   "posted": "2026-10-29T00:00+00:00",
   "function": "Program & project management",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Post Silicon Engineer , Amazon LEO",
+  "url": "https://www.amazon.jobs/en/jobs/10592421/post-silicon-engineer-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Austin, Texas, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Software Development Engineer II, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10592730/software-development-engineer-ii-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "OISL MFG Technician III, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10590597/oisl-mfg-technician-iii-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Software Development Engineer, AI Foundations, Amazon Leo AI Foundations",
+  "url": "https://www.amazon.jobs/en/jobs/10591537/software-development-engineer-ai-foundations-amazon-leo-ai-foundations",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Site HR Partner Manager, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10592441/site-hr-partner-manager-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Bellevue, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "HR Specialist, People Foundations, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10592440/hr-specialist-people-foundations-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Bellevue, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Quality Assurance Engineer II, Amazon Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10591829/quality-assurance-engineer-ii-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Financial Analyst, Amazon Leo FP&A",
+  "url": "https://www.amazon.jobs/en/jobs/10592613/senior-financial-analyst-amazon-leo-fp-a",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Environmental Test Engineer, Space Simulation Lab",
+  "url": "https://www.amazon.jobs/en/jobs/10590082/environmental-test-engineer-space-simulation-lab",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Kirkland, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -385,6 +814,17 @@
   "remote": false
  },
  {
+  "title": "Sr. Product Manager - Tech, Amazon LEO",
+  "url": "https://www.amazon.jobs/en/jobs/10588712/sr-product-manager-tech-amazon-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Systems Engineer, Leo Core Infrastructure Development",
   "url": "https://www.amazon.jobs/en/jobs/10589129/systems-engineer-leo-core-infrastructure-development",
   "company": "Amazon Leo",
@@ -396,122 +836,12 @@
   "remote": false
  },
  {
-  "title": "Senior Spacecraft Propulsion Systems Engineer I - Secret Clearance",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8057045003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:58+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Program Manager I - Flatellite",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056718003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:44+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Program Manager II - Flatellite",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056744003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:44+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Program Manager II - Space Sensing & Domain Awareness (TS/SCI)",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8055778003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:37+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Program Manager I - Space Sensing & Domain Awareness (TS/SCI)",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056563003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:37+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Electrical Engineer II - Secret Clearance",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056521003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:34+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Electrical Engineer I - Secret Clearance",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056572003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:34+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Electrical Engineer I",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056403003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:30+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Electrical Engineer II",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056422003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:30+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Systems Engineer II",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056450003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:30+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Systems Engineer I",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8056294003",
-  "company": "Rocket Lab",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
-  "posted": "2026-10-28T23:24+00:00",
+  "title": "Design Verification Engineer, Leo Payload FPGA",
+  "url": "https://www.amazon.jobs/en/jobs/10583258/design-verification-engineer-leo-payload-fpga",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Sunnyvale, California, USA",
+  "posted": "2026-10-29T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -605,7 +935,7 @@
   "remote": false
  },
  {
-  "title": "Senior Space Systems Engineer (LEO Payloads & Sensing)",
+  "title": "Staff Space Systems Engineer (LEO Payloads & Sensing)",
   "url": "https://jobs.ashbyhq.com/skylo/9523b93b-23ae-4a99-9d0f-46a20b856919",
   "company": "Skylo",
   "sector": "Satcom & connectivity",
@@ -700,17 +1030,6 @@
   "location": "Bastrop, TX",
   "posted": "2026-10-28T18:00+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Facilities Coordinator, Solar Cells (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8917905002?gh_jid=8917905002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Bastrop, TX",
-  "posted": "2026-10-28T17:59+00:00",
-  "function": "Operations & supply chain",
   "early": false,
   "remote": false
  },
@@ -1353,6 +1672,28 @@
   "remote": false
  },
  {
+  "title": "Summer 2027 Internship – Satellite Programs",
+  "url": "https://jobs.lever.co/loftorbital/d49feb08-351a-4f03-84ba-948c8df633ab",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Golden, CO",
+  "posted": "2026-10-27T23:59+00:00",
+  "function": "Other",
+  "early": true,
+  "remote": false
+ },
+ {
+  "title": "Summer 2027 Internship – Mechanical Engineering",
+  "url": "https://jobs.lever.co/loftorbital/34edd0b7-2a5b-4efa-a379-860097784534",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Golden, CO",
+  "posted": "2026-10-27T23:53+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": false
+ },
+ {
   "title": "Structural Technician Lead, 3rd Shift, Site 2",
   "url": "https://ast-science.com/company/careers/?gh_jid=4741234005",
   "company": "AST SpaceMobile",
@@ -1361,6 +1702,17 @@
   "posted": "2026-10-27T23:46+00:00",
   "function": "Engineering & technical",
   "early": false,
+  "remote": false
+ },
+ {
+  "title": "Summer 2027 Internship – Test Engineering",
+  "url": "https://jobs.lever.co/loftorbital/be396d08-738d-4f3d-bea4-cbbdc88c3db9",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Golden, CO",
+  "posted": "2026-10-27T23:42+00:00",
+  "function": "Engineering & technical",
+  "early": true,
   "remote": false
  },
  {
@@ -1654,7 +2006,7 @@
   "url": "https://job-boards.greenhouse.io/muonspace/jobs/5277219007",
   "company": "Muon Space",
   "sector": "Data & Earth observation",
-  "location": "San Jose, CA",
+  "location": "Mountain View, CA",
   "posted": "2026-10-27T17:19+00:00",
   "function": "Business & sales",
   "early": false,
@@ -1676,7 +2028,7 @@
   "url": "https://job-boards.greenhouse.io/muonspace/jobs/5277211007",
   "company": "Muon Space",
   "sector": "Data & Earth observation",
-  "location": "San Jose, CA",
+  "location": "Mountain View, CA",
   "posted": "2026-10-27T17:15+00:00",
   "function": "Business & sales",
   "early": false,
@@ -2134,17 +2486,6 @@
   "remote": false
  },
  {
-  "title": "Software Development Manager, LEO Operation Automation",
-  "url": "https://www.amazon.jobs/en/jobs/10586755/software-development-manager-leo-operation-automation",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-10-27T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Finance Manager, B2B Finance, Amazon Leo",
   "url": "https://www.amazon.jobs/en/jobs/10590371/finance-manager-b2b-finance-amazon-leo",
   "company": "Amazon Leo",
@@ -2299,17 +2640,6 @@
   "remote": false
  },
  {
-  "title": "Full Stack Developer - Internal Tooling",
-  "url": "https://jobs.ashbyhq.com/northwoodspace/09fb47fc-39e0-4fca-9bff-5d19d43f5a44",
-  "company": "Northwood Space",
-  "sector": "Ground segment",
-  "location": "Torrance, CA",
-  "posted": "2026-10-26T18:51+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Staff Program Manager - RF Sensing",
   "url": "https://job-boards.greenhouse.io/muonspace/jobs/5274548007",
   "company": "Muon Space",
@@ -2365,28 +2695,6 @@
   "remote": false
  },
  {
-  "title": "Staff Front-End Software Engineer",
-  "url": "https://boards.greenhouse.io/relativity/jobs/8917347002?gh_jid=8917347002",
-  "company": "Relativity Space",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, California, United States",
-  "posted": "2026-10-26T16:42+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Front-End Software Engineer II",
-  "url": "https://boards.greenhouse.io/relativity/jobs/8917327002?gh_jid=8917327002",
-  "company": "Relativity Space",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, California, United States",
-  "posted": "2026-10-26T16:40+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Talent Acquisition Coordinator, Temporary",
   "url": "https://careers.viasat.com/jobs/7122",
   "company": "Viasat",
@@ -2405,6 +2713,17 @@
   "location": "Arlington, TX",
   "posted": "2026-10-26T15:46+00:00",
   "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Spectrum Engineer",
+  "url": "https://jobs.lever.co/telesat/0dd5a7de-1867-4b36-91ea-b4672e03deb9",
+  "company": "Telesat",
+  "sector": "Satcom & connectivity",
+  "location": "Ottawa, Ontario",
+  "posted": "2026-10-26T15:35+00:00",
+  "function": "Policy, regulatory & spectrum",
   "early": false,
   "remote": false
  },
@@ -2609,17 +2928,6 @@
  {
   "title": "Opto-Mech Lab Engineer, Amazon Leo",
   "url": "https://www.amazon.jobs/en/jobs/10589436/opto-mech-lab-engineer-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-10-26T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Applied Scientist, Amazon Leo, Amazon Leo Networking Software",
-  "url": "https://www.amazon.jobs/en/jobs/10588952/senior-applied-scientist-amazon-leo-amazon-leo-networking-software",
   "company": "Amazon Leo",
   "sector": "Satcom & connectivity",
   "location": "Redmond, Washington, USA",
@@ -2937,17 +3245,6 @@
   "remote": false
  },
  {
-  "title": "Senior Fluids Analyst, Combustion Devices",
-  "url": "https://boards.greenhouse.io/relativity/jobs/8912960002?gh_jid=8912960002",
-  "company": "Relativity Space",
-  "sector": "Launch & spacecraft",
-  "location": "Colorado, USA",
-  "posted": "2026-10-24T21:45+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Engineer, Quality Assurance 1 1",
   "url": "https://careers.ses.com/job/Chennai-Senior-Engineer%2C-Quality-Assurance-1-1/1291005501/",
   "company": "SES",
@@ -3069,17 +3366,6 @@
   "remote": false
  },
  {
-  "title": "Senior Flight Software Designer (6+ month Contract)",
-  "url": "https://jobs.lever.co/kepler/91eb728b-ada1-4f79-ba89-e10717c69527",
-  "company": "Kepler Communications",
-  "sector": "Satcom & connectivity",
-  "location": "Canada",
-  "posted": "2026-10-23T21:02+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "FPGA Digital Design Engineer (6+ month Contract)",
   "url": "https://jobs.lever.co/kepler/14d0ae60-adfa-4456-97f0-3fc71c6968bf",
   "company": "Kepler Communications",
@@ -3174,6 +3460,17 @@
   "sector": "Satcom & connectivity",
   "location": "Tempe, Arizona; Englewood, Colorado",
   "posted": "2026-10-23T19:48+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Lead Mil-Ka Senior System Engineering Specialist",
+  "url": "https://jobs.lever.co/telesat/7fa01adf-4c7d-47ed-9b3e-a6661e45267e",
+  "company": "Telesat",
+  "sector": "Satcom & connectivity",
+  "location": "Ottawa, Ontario",
+  "posted": "2026-10-23T19:23+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3873,10 +4170,10 @@
  },
  {
   "title": "Software Engineer, Linux Kernel (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852119002?gh_jid=8852119002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852114002?gh_jid=8852114002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Redmond, WA",
   "posted": "2026-10-22T16:15+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3884,10 +4181,10 @@
  },
  {
   "title": "Software Engineer, Linux Kernel (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852114002?gh_jid=8852114002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852119002?gh_jid=8852119002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Palo Alto, CA",
   "posted": "2026-10-22T16:15+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4389,61 +4686,6 @@
   "remote": false
  },
  {
-  "title": "Technical Program Manager, Leo Bus & Flight Operations",
-  "url": "https://www.amazon.jobs/en/jobs/10585508/technical-program-manager-leo-bus-flight-operations",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Creative Project Manager, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10587090/creative-project-manager-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Bellevue, Washington, USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Principal Account Executive, Americas Sales, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10585686/principal-account-executive-americas-sales-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Technical Product Manager III, Amazon Leo Government",
-  "url": "https://www.amazon.jobs/en/jobs/10586203/technical-product-manager-iii-amazon-leo-government",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Northridge, California, USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Sr. Account Executive , Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10587078/sr-account-executive-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Principal Systems Engineer - Space Vehicle",
   "url": "https://boards.greenhouse.io/blacksky/jobs/8872096002?gh_jid=8872096002",
   "company": "BlackSky",
@@ -4763,72 +5005,6 @@
   "remote": false
  },
  {
-  "title": "Network Development Engineer, 5G NTN Network Integration and Test, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10585787/network-development-engineer-5g-ntn-network-integration-and-test-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Austin, Texas, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Electric Propulsion Engineer, Amazon Leo, GNC",
-  "url": "https://www.amazon.jobs/en/jobs/10585767/electric-propulsion-engineer-amazon-leo-gnc",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Software Development Engineer, Leo Space Security",
-  "url": "https://www.amazon.jobs/en/jobs/10585267/software-development-engineer-leo-space-security",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Arlington, Virginia, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Associate Prodution Quality Engineer, AMAZON LEO",
-  "url": "https://www.amazon.jobs/en/jobs/10584673/associate-prodution-quality-engineer-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Kirkland, Washington, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Principal PCB Manufacturing Engineer, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10585520/principal-pcb-manufacturing-engineer-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Bellevue, Washington, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Principal GNSS Systems Engineer, Amazon LEO",
-  "url": "https://www.amazon.jobs/en/jobs/10585309/principal-gnss-systems-engineer-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-10-21T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Office Administrator",
   "url": "https://careers.viasat.com/jobs/7017",
   "company": "Viasat",
@@ -4871,17 +5047,6 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
- },
- {
-  "title": "Senior Software Engineer - Product Test Frameworks (.NET/TestStand)",
-  "url": "https://careers.viasat.com/jobs/5962",
-  "company": "Viasat",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Georgia, Georgia; Remote - California, California; Remote - Arizona, Arizona; Carlsbad, California; Tempe, Arizona; Duluth, Georgia; Remote - India; Hyderabad, India",
-  "posted": "2026-10-20T22:04+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
  },
  {
   "title": "Staff Engineer - Terminal Software",
@@ -4961,17 +5126,6 @@
   "remote": false
  },
  {
-  "title": "Data Center Operations Analyst",
-  "url": "https://careers.viasat.com/jobs/6673",
-  "company": "Viasat",
-  "sector": "Satcom & connectivity",
-  "location": "Germantown, Maryland",
-  "posted": "2026-10-20T22:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Embedded Software Engineer",
   "url": "https://careers.viasat.com/jobs/6796",
   "company": "Viasat",
@@ -4987,7 +5141,7 @@
   "url": "https://careers.viasat.com/jobs/6957",
   "company": "Viasat",
   "sector": "Satcom & connectivity",
-  "location": "Duluth, Georgia; Tempe, Arizona; Germantown, Maryland; Carlsbad, California",
+  "location": "Duluth, Georgia; Tempe, Arizona; Carlsbad, California; Germantown, Maryland",
   "posted": "2026-10-20T21:59+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -5742,17 +5896,6 @@
   "remote": false
  },
  {
-  "title": "Senior Financial Analyst, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Financial-Analyst%2C-IRIS2-L-6815/1449081033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Project Controller - Cost, Risk & Performance Management, meoSphere",
   "url": "https://careers.ses.com/job/Betzdorf-Senior-Project-Controller-Cost%2C-Risk-&-Performance-Management%2C-meoSphere-L-6815/1449087833/",
   "company": "SES",
@@ -5786,17 +5929,6 @@
   "remote": false
  },
  {
-  "title": "Senior Satellite Systems Engineer",
-  "url": "https://careers.ses.com/job/Sterling-Senior-Satellite-Systems-Engineer-VA-20163/1449064533/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Sterling, VA, US",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Manager, Engineering Aircraft Technical Services",
   "url": "https://careers.ses.com/job/Chicago-Manager%2C-Engineering-Aircraft-Technical-Services-ND-60606-7205/1449020433/",
   "company": "SES",
@@ -5808,8 +5940,19 @@
   "remote": false
  },
  {
-  "title": "Senior Product Assurance Engineer",
-  "url": "https://careers.ses.com/job/Sterling-Senior-Product-Assurance-Engineer-VA-20163/1449075033/",
+  "title": "Senior 5G Architect, 3GPP NR NTN, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-5G-Architect%2C-3GPP-NR-NTN%2C-meoSphere-L-6815/1449056833/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Satellite Systems Engineer",
+  "url": "https://careers.ses.com/job/Sterling-Senior-Satellite-Systems-Engineer-VA-20163/1449064533/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Sterling, VA, US",
@@ -5819,11 +5962,11 @@
   "remote": false
  },
  {
-  "title": "Senior 5G Architect, 3GPP NR NTN, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-5G-Architect%2C-3GPP-NR-NTN%2C-meoSphere-L-6815/1449056833/",
+  "title": "Senior Product Assurance Engineer",
+  "url": "https://careers.ses.com/job/Sterling-Senior-Product-Assurance-Engineer-VA-20163/1449075033/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
+  "location": "Sterling, VA, US",
   "posted": "2026-10-19T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -6403,10 +6546,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Haarlem, Netherlands",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6414,10 +6557,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Haarlem, Netherlands",
+  "location": "Berlin, Germany",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6821,10 +6964,10 @@
  },
  {
   "title": "Process Specialist, Vendor Management (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8886444002?gh_jid=8886444002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8886412002?gh_jid=8886412002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Bastrop, TX",
+  "location": "Redmond, WA",
   "posted": "2026-10-14T22:22+00:00",
   "function": "Other",
   "early": false,
@@ -6832,10 +6975,10 @@
  },
  {
   "title": "Process Specialist, Vendor Management (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8886412002?gh_jid=8886412002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8886444002?gh_jid=8886444002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Bastrop, TX",
   "posted": "2026-10-14T22:22+00:00",
   "function": "Other",
   "early": false,
@@ -6851,6 +6994,17 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "Platform Owner",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-14T21:14+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Communication Systems Engineer",
@@ -6930,17 +7084,6 @@
   "remote": false
  },
  {
-  "title": "Business Development Manager, Retail Channel (Starlink Growth)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8871799002?gh_jid=8871799002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Bastrop, TX",
-  "posted": "2026-10-14T16:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Mechanical Systems Designer",
   "url": "https://jobs.lever.co/espace/71dfc735-22d4-4e40-89ba-d45e65bce453",
   "company": "E-Space",
@@ -6950,17 +7093,6 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
- },
- {
-  "title": "Platform Owner",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-14T15:24+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
  },
  {
   "title": "Systems Engineering Specialist",
@@ -6997,10 +7129,10 @@
  },
  {
   "title": "Senior Product Designer, Platform (Geospatial)",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8276031",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8278543",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Haarlem, Netherlands",
   "posted": "2026-10-14T09:36+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -7370,6 +7502,17 @@
   "remote": false
  },
  {
+  "title": "Specialist, Facilities Operations",
+  "url": "https://careers.ses.com/job/Kockelscheuer-Specialist%2C-Facilities-Operations-L-1896/1436593833/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Kockelscheuer, LU, L-1896",
+  "posted": "2026-10-13T00:00+00:00",
+  "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "IRIS² Senior SIT Engineer - Labs and Tooling",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Senior-SIT-Engineer-Labs-and-Tooling-92130/1372113557/",
   "company": "Eutelsat OneWeb",
@@ -7464,17 +7607,6 @@
   "sector": "Satcom & connectivity",
   "location": "FR",
   "posted": "2026-10-12T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Project Management Office for System Engineering",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-for-System-Engineering-92130/1372007257/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-10T00:00+00:00",
   "function": "Corporate",
   "early": false,
   "remote": false
@@ -8250,17 +8382,6 @@
   "remote": false
  },
  {
-  "title": "Senior Software Developer In Test - Python Automation Engineer",
-  "url": "https://jobs.lever.co/telesat/d27a192b-7e25-4436-8489-88ef9968ba69",
-  "company": "Telesat",
-  "sector": "Satcom & connectivity",
-  "location": "Ottawa, Ontario",
-  "posted": "2026-10-04T20:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Director, Civil Space Sales",
   "url": "https://job-boards.greenhouse.io/astranis/jobs/4718945006",
   "company": "Astranis",
@@ -8668,7 +8789,18 @@
   "remote": false
  },
  {
-  "title": "General Counsel & Vice President, Legal and Regulatory Affairs",
+  "title": "Vice President, Business Development & Country Manager, India",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-09-30T21:14+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "General Counsel, Legal and Regulatory Affairs",
   "url": "https://jobs.lever.co/kepler/4f75cdff-c889-4722-891c-a50829272260",
   "company": "Kepler Communications",
   "sector": "Satcom & connectivity",
@@ -8690,17 +8822,6 @@
   "remote": false
  },
  {
-  "title": "Vice President, Business Development & Country Manager, India",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-09-30T15:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Cash Analyst",
   "url": "https://jobs.lever.co/loftorbital/69389139-b6e6-43bf-beb6-98bdad470f23",
   "company": "Loft Orbital",
@@ -8708,6 +8829,171 @@
   "location": "San Francisco, CA",
   "posted": "2026-09-30T14:50+00:00",
   "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "System Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Field Dispatch Co-ordinator",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Philippines",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Project Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Project-Engineer_JR11157-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Program & project management",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Aprendiz",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Brazil---Maca/Aprendiz_JR11152",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Brazil - Macaé",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "VP Product Management",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA---Texas/VP-Product-Management_JR11122",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - USA - Texas",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineering Internship",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineering-Internship_JR11156-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": true
+ },
+ {
+  "title": "Business Development Specialist",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA/Business-Development-Specialist_JR11119-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - USA",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Sales Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote--Rio-de-Janeiro/Sales-Director---Energy-South-America_JR11142-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote – Rio de Janeiro",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Business Development Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Australian-Capital-Territory/Business-Development-Manager_JR11064",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Australia - Australian Capital Territory",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IP Architect",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/IP-Architect_JR11117-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Engineer Sr Software",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Systems-Specialist_JR11014-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Brazil",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineer_JR11036-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Edge-Network-Engineer_JR11030-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Indonesia---Selatan/Edge-Network-Engineer_JR11027-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Indonesia - Selatan",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Incident Response Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Tasmania/Incident-Response-Manager_JR10609-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Australia - Tasmania",
+  "posted": "2026-09-29T21:14+00:00",
+  "function": "Other",
   "early": false,
   "remote": false
  },
@@ -8752,171 +9038,6 @@
   "location": "Santa Clara, CA",
   "posted": "2026-09-29T16:44+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "System Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Field Dispatch Co-ordinator",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Philippines",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Project Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Project-Engineer_JR11157-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Aprendiz",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Brazil---Maca/Aprendiz_JR11152",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Brazil - Macaé",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "VP Product Management",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA---Texas/VP-Product-Management_JR11122",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - USA - Texas",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineering Internship",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineering-Internship_JR11156-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": true,
-  "remote": true
- },
- {
-  "title": "Business Development Specialist",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA/Business-Development-Specialist_JR11119-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - USA",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Sales Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote--Rio-de-Janeiro/Sales-Director---Energy-South-America_JR11142-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote – Rio de Janeiro",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Business Development Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Australian-Capital-Territory/Business-Development-Manager_JR11064",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Australia - Australian Capital Territory",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IP Architect",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/IP-Architect_JR11117-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Engineer Sr Software",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Systems-Specialist_JR11014-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Brazil",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineer_JR11036-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Edge-Network-Engineer_JR11030-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Indonesia---Selatan/Edge-Network-Engineer_JR11027-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Indonesia - Selatan",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Incident Response Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Tasmania/Incident-Response-Manager_JR10609-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Australia - Tasmania",
-  "posted": "2026-09-29T15:24+00:00",
-  "function": "Other",
   "early": false,
   "remote": false
  },
@@ -8987,34 +9108,12 @@
   "remote": false
  },
  {
-  "title": "MOPS Automation SW Dev Engineer",
-  "url": "https://ast-science.com/company/careers/?gh_jid=4736496005",
-  "company": "AST SpaceMobile",
-  "sector": "Satcom & connectivity",
-  "location": "Lanham, Maryland, United States",
-  "posted": "2026-09-28T20:32+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Principal Localization Engineer – Location Intelligence",
   "url": "https://hubble.com/careers?gh_jid=5435511008",
   "company": "Hubble Network",
   "sector": "Satcom & connectivity",
   "location": "San Francisco, California, United States; Seattle, Washington, United States",
   "posted": "2026-09-28T19:59+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Spacecraft Power Systems Engineer (Mid/Senior)",
-  "url": "https://ast-science.com/company/careers/?gh_jid=4738656005",
-  "company": "AST SpaceMobile",
-  "sector": "Satcom & connectivity",
-  "location": "Lanham, Maryland, United States",
-  "posted": "2026-09-28T19:51+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9240,7 +9339,7 @@
   "remote": false
  },
  {
-  "title": "Senior RF Hardware Engineer",
+  "title": "Senior RF Electrical Engineer",
   "url": "https://jobs.ashbyhq.com/northwoodspace/5c97671b-8032-4f7e-a81e-262b13d8d79f",
   "company": "Northwood Space",
   "sector": "Ground segment",
@@ -9908,28 +10007,6 @@
   "posted": "2026-09-23T03:18+00:00",
   "function": "Engineering & technical",
   "early": true,
-  "remote": false
- },
- {
-  "title": "Avionics Intern (Winter 2027)",
-  "url": "https://job-boards.greenhouse.io/astranis/jobs/4706025006",
-  "company": "Astranis",
-  "sector": "Satcom & connectivity",
-  "location": "San Francisco",
-  "posted": "2026-09-23T03:18+00:00",
-  "function": "Engineering & technical",
-  "early": true,
-  "remote": false
- },
- {
-  "title": "Avionics Associate Engineer (Winter 2027)",
-  "url": "https://job-boards.greenhouse.io/astranis/jobs/4680321006",
-  "company": "Astranis",
-  "sector": "Satcom & connectivity",
-  "location": "San Francisco",
-  "posted": "2026-09-23T03:17+00:00",
-  "function": "Engineering & technical",
-  "early": false,
   "remote": false
  },
  {
@@ -11605,7 +11682,7 @@
   "remote": false
  },
  {
-  "title": "Sr. Test Engineer",
+  "title": "Test Engineer, RF",
   "url": "https://jobs.lever.co/loftorbital/82b97af9-b18a-4862-b56c-58906e0605e9",
   "company": "Loft Orbital",
   "sector": "Spacecraft & infrastructure",
@@ -11974,17 +12051,6 @@
   "sector": "Satcom & connectivity",
   "location": "Saratoga, CA",
   "posted": "2026-06-25T17:46+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Lead Satellite Systems Engineer",
-  "url": "https://jobs.lever.co/kepler/223eeef2-f0e0-4656-a6d0-538074670f6d",
-  "company": "Kepler Communications",
-  "sector": "Satcom & connectivity",
-  "location": "Toronto, Ontario",
-  "posted": "2026-06-24T17:36+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -12859,6 +12925,17 @@
   "remote": false
  },
  {
+  "title": "Associate Director, Information Systems Security",
+  "url": "https://careers-iridium.icims.com/jobs/5189/associate-director%2c-information-systems-security/job",
+  "company": "Iridium",
+  "sector": "Satcom & connectivity",
+  "location": "McLean, VA, US",
+  "posted": "",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Software Engineer I",
   "url": "https://careers-iridium.icims.com/jobs/5186/software-engineer-i/job",
   "company": "Iridium",
@@ -12903,6 +12980,17 @@
   "remote": false
  },
  {
+  "title": "Senior Network Engineer",
+  "url": "https://careers-iridium.icims.com/jobs/5172/senior-network-engineer/job",
+  "company": "Iridium",
+  "sector": "Satcom & connectivity",
+  "location": "Grand Forks, ND, US",
+  "posted": "",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Senior Systems Administrator",
   "url": "https://careers-iridium.icims.com/jobs/5171/senior-systems-administrator/job",
   "company": "Iridium",
@@ -12932,17 +13020,6 @@
   "location": "McLean, VA, US",
   "posted": "",
   "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Test Engineer II",
-  "url": "https://careers-iridium.icims.com/jobs/5150/test-engineer-ii/job",
-  "company": "Iridium",
-  "sector": "Satcom & connectivity",
-  "location": "Chandler, AZ, US",
-  "posted": "",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -13849,17 +13926,6 @@
   "remote": false
  },
  {
-  "title": "Practicante de Contabilidad",
-  "url": "https://www.comeet.com/jobs/gilat/39.005/practicante-de-contabilidad/84.478",
-  "company": "Gilat",
-  "sector": "Ground segment",
-  "location": "San Isidro, Peru",
-  "posted": "",
-  "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Practicante de Proyectos de Telecomunicaciones",
   "url": "https://www.comeet.com/jobs/gilat/39.005/practicante-de-proyectos-de-telecomunicaciones/F5.478",
   "company": "Gilat",
@@ -13882,6 +13948,17 @@
   "remote": false
  },
  {
+  "title": "Procurement Manager - Avionics",
+  "url": "https://www.comeet.com/jobs/gilat/39.005/procurement-manager---avionics/1F.E65",
+  "company": "Gilat",
+  "sector": "Ground segment",
+  "location": "Fort Worth, TX, USA",
+  "posted": "",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Quality Control Inspector",
   "url": "https://www.comeet.com/jobs/gilat/39.005/quality-control-inspector/15.473",
   "company": "Gilat",
@@ -13900,6 +13977,17 @@
   "location": "Petah Tikva, Israel",
   "posted": "",
   "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Supervisor de Operaciones de Campo",
+  "url": "https://www.comeet.com/jobs/gilat/39.005/supervisor-de-operaciones-de-campo/99.478",
+  "company": "Gilat",
+  "sector": "Ground segment",
+  "location": "San Isidro, Peru",
+  "posted": "",
+  "function": "Other",
   "early": false,
   "remote": false
  },

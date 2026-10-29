@@ -1,5 +1,93 @@
 [
  {
+  "title": "Blue Origin attempts end of year return and eyes Artemis IV selection",
+  "url": "https://www.nasaspaceflight.com/2026/10/blue-origin-update-2/",
+  "source": "NASASpaceflight",
+  "date": "2026-10-29T21:02+00:00",
+  "categories": []
+ },
+ {
+  "title": "Es’hailSat and Arabsat Deepen Ties in the Middle East",
+  "url": "https://www.satellitetoday.com/connectivity/2026/10/29/eshailsat-and-arabsat-deepen-ties-in-the-middle-east/",
+  "source": "Via Satellite",
+  "date": "2026-10-29T21:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "EarthDaily wins $4.3M NASA task order to test its data against Landsat",
+  "url": "https://spaceq.ca/earthdaily-nasa-task-order-landsat/",
+  "source": "SpaceQ",
+  "date": "2026-10-29T20:17+00:00",
+  "categories": [
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "FCC Looks to Update Direct-to-Device Rules and Auction More Spectrum",
+  "url": "https://www.satellitetoday.com/government-military/2026/10/29/fcc-looks-to-update-direct-to-device-rules-and-auction-more-spectrum/",
+  "source": "Via Satellite",
+  "date": "2026-10-29T20:07+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Lite Coms GT3 Vehicle Terminal Connects to Multiple LEO Networks Simultaneously",
+  "url": "https://www.satellitetoday.com/technology/2026/10/29/lite-coms-gt3-vehicle-terminal-connects-to-multiple-leo-networks-simultaneously/",
+  "source": "Via Satellite",
+  "date": "2026-10-29T19:55+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Telesat Delays Lightspeed Service Entry to Mid-2028; Goldberg Addresses Launch Crunch and Sovereign Demand",
+  "url": "https://www.satellitetoday.com/finance/2026/10/29/telesat-delays-lightspeed-service-entry-to-mid-2028-goldberg-addresses-launch-crunch-and-sovereign-demand/",
+  "source": "Via Satellite",
+  "date": "2026-10-29T19:50+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "FCC seeks feedback on carrier warnings about running D2D in 5G bands",
+  "url": "https://www.lightreading.com/satellite/fcc-seeks-feedback-on-carrier-warnings-about-running-d2d-in-5g-bands",
+  "source": "Light Reading",
+  "date": "2026-10-29T19:15+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "CSA opens bids on two RADARSAT+ pathfinder radar missions",
+  "url": "https://spaceq.ca/radarsat-plus-pathfinder-ku-band-x-band-bids/",
+  "source": "SpaceQ",
+  "date": "2026-10-29T17:42+00:00",
+  "categories": [
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "Hire for the gap, not the title",
+  "url": "https://spaceq.ca/startup-job-description-hire-for-the-gap/",
+  "source": "SpaceQ",
+  "date": "2026-10-29T16:11+00:00",
+  "categories": []
+ },
+ {
+  "title": "Consortium appointed to advise on Kenyan spaceport",
+  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21048-consortium-appointed-to-advise-on-kenyan-spaceport.html",
+  "source": "Developing Telecoms",
+  "date": "2026-10-29T16:00+00:00",
+  "categories": [
+   "Launch",
+   "Africa"
+  ]
+ },
+ {
   "title": "Advice for optimizing the space industry with Laura Crabtree",
   "url": "https://spacenews.com/advice-for-optimizing-the-space-industry-with-laura-crabtree/",
   "source": "SpaceNews",
@@ -1500,7 +1588,7 @@
   ]
  },
  {
-  "title": "Oct. 29: Applying AI/SI to the GEOINT Mission",
+  "title": "Applying AI/SI to the GEOINT Mission",
   "url": "https://spacenews.com/applying-ai-si-to-the-geoint-mission-event/",
   "source": "SpaceNews",
   "date": "2026-10-15T20:41+00:00",
@@ -1642,15 +1730,6 @@
   "date": "2026-09-30T17:01+00:00",
   "categories": [
    "Defence & security"
-  ]
- },
- {
-  "title": "HydRON: Fibre in the sky",
-  "url": "https://www.esa.int/ESA_Multimedia/Videos/2026/09/HydRON_Fibre_in_the_sky",
-  "source": "ESA Telecommunications",
-  "date": "2026-09-29T15:30+00:00",
-  "categories": [
-   "Satcom & connectivity"
   ]
  }
 ]
