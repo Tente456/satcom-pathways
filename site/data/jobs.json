@@ -1,13 +1,145 @@
 [
  {
-  "title": "Senior Machine Learning Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote-Madrid/Machine-Learning-Engineer_JR11137-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-10-30T06:01+00:00",
+  "title": "Ground Software Engineer - Core",
+  "url": "https://jobs.lever.co/loftorbital/a2169637-9e0b-4b76-b128-ca4b93bd894f",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "San Francisco, CA",
+  "posted": "2026-10-30T14:48+00:00",
   "function": "Engineering & technical",
   "early": false,
+  "remote": false
+ },
+ {
+  "title": "Ground Software Engineer - Core",
+  "url": "https://jobs.lever.co/loftorbital/518d4f0a-d25a-4203-891a-94e8caf5ac5d",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Golden, CO",
+  "posted": "2026-10-30T14:47+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Manufacturing Specialist, PCBA (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8917862002?gh_jid=8917862002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Bastrop, TX",
+  "posted": "2026-10-30T14:44+00:00",
+  "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Ground Software Engineer - Core",
+  "url": "https://jobs.lever.co/loftorbital/ccb156ad-ccfa-4b2c-8417-59f8d528fa28",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Toulouse, Occitanie",
+  "posted": "2026-10-30T14:30+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Associate Electrical Software Test Engineer",
+  "url": "https://ast-science.com/company/careers/?gh_jid=4746197005",
+  "company": "AST SpaceMobile",
+  "sector": "Satcom & connectivity",
+  "location": "Lanham, Maryland, United States",
+  "posted": "2026-10-30T14:27+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Manufacturing Engineer I, Machining",
+  "url": "https://boards.greenhouse.io/relativity/jobs/8924163002?gh_jid=8924163002",
+  "company": "Relativity Space",
+  "sector": "Launch & spacecraft",
+  "location": "Long Beach, California, United States",
+  "posted": "2026-10-30T13:27+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Engineering Team Lead (Geospatial Analytics)",
+  "url": "https://jobs.ashbyhq.com/iceye/e5082d17-b132-4106-b70d-2a08cdeeb405",
+  "company": "ICEYE",
+  "sector": "Data & Earth observation",
+  "location": "Espoo",
+  "posted": "2026-10-30T12:22+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Embedded Software Engineer",
+  "url": "https://careers.viasat.com/jobs/6925",
+  "company": "Viasat",
+  "sector": "Satcom & connectivity",
+  "location": "Tempe, Arizona",
+  "posted": "2026-10-30T12:16+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Customer Success Operations Specialist",
+  "url": "https://jobs.ashbyhq.com/iceye/cf9eb570-9cd8-492a-adad-51fe246801e9",
+  "company": "ICEYE",
+  "sector": "Data & Earth observation",
+  "location": "Espoo",
+  "posted": "2026-10-30T11:28+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Staff Network Performance Engineer",
+  "url": "https://jobs.ashbyhq.com/skylo/0cb1eeac-eaf7-4620-9dd3-f903b13ff81d",
+  "company": "Skylo",
+  "sector": "Satcom & connectivity",
+  "location": "Bangalore, India",
+  "posted": "2026-10-30T11:14+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Chief Engineer (Optical Comms)",
+  "url": "https://jobs.ashbyhq.com/apolink/338eca04-03cb-4a53-9053-650d17031651",
+  "company": "Apolink",
+  "sector": "Satcom & connectivity",
+  "location": "Palo Alto",
+  "posted": "2026-10-30T10:18+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IT Administrator",
+  "url": "https://jobs.lever.co/loftorbital/08f2ac1a-587d-4519-b7b8-f3c23e1fb3fa",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "Abu Dhabi",
+  "posted": "2026-10-30T09:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Junior / Mid-level Thermal Engineer",
+  "url": "https://jobs.ashbyhq.com/iceye/4e5287d1-69d5-40b9-bc1a-bf6acd944d0a",
+  "company": "ICEYE",
+  "sector": "Data & Earth observation",
+  "location": "Espoo",
+  "posted": "2026-10-30T08:56+00:00",
+  "function": "Engineering & technical",
+  "early": true,
   "remote": false
  },
  {
@@ -22,13 +154,35 @@
   "remote": false
  },
  {
-  "title": "VP, Sales North America",
-  "url": "https://careers.eutelsat.com/job/London-VP%2C-Sales-North-America-OH-E18RU/1371148357/",
-  "company": "Eutelsat OneWeb",
+  "title": "Product Owner",
+  "url": "https://careers.ses.com/job/Bucharest-Product-Owner/1452808833/",
+  "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "US",
+  "location": "Bucharest, RO",
   "posted": "2026-10-30T00:00+00:00",
-  "function": "Business & sales",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Analyst, IFRS Technical Accounting & Group Reporting",
+  "url": "https://careers.ses.com/job/Bucharest-Senior-Analyst%2C-IFRS-Technical-Accounting-&-Group-Reporting/1452796733/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Bucharest, RO",
+  "posted": "2026-10-30T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Analyst, Group Financial Reporting",
+  "url": "https://careers.ses.com/job/Bucharest-Analyst%2C-Group-Financial-Reporting/1452800033/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Bucharest, RO",
+  "posted": "2026-10-30T00:00+00:00",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -40,6 +194,39 @@
   "location": "GB",
   "posted": "2026-10-30T00:00+00:00",
   "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "VP, Sales North America",
+  "url": "https://careers.eutelsat.com/job/London-VP%2C-Sales-North-America-OH-E18RU/1371148357/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "US",
+  "posted": "2026-10-30T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Service Assurance Engineer",
+  "url": "https://careers.eutelsat.com/job/London-Service-Assurance-Engineer-W2-6BD/1376282057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "GB",
+  "posted": "2026-10-30T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Inside Sales Representative - Spanish, Amazon Leo, EU Enterprise Direct",
+  "url": "https://www.amazon.jobs/en/jobs/10593376/inside-sales-representative-spanish-amazon-leo-eu-enterprise-direct",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "London, England, GBR",
+  "posted": "2026-10-30T00:00+00:00",
+  "function": "Business & sales",
   "early": false,
   "remote": false
  },
@@ -297,7 +484,7 @@
   "remote": false
  },
  {
-  "title": "Sr Data & Control Systems Engineer",
+  "title": "Sr Instrumentation and Controls Engineer",
   "url": "https://boards.greenhouse.io/relativity/jobs/8924159002?gh_jid=8924159002",
   "company": "Relativity Space",
   "sector": "Launch & spacecraft",
@@ -583,6 +770,17 @@
   "remote": false
  },
  {
+  "title": "Senior Machine Learning Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote-Madrid/Machine-Learning-Engineer_JR11137-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-10-29T15:07+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Logistics Specialist I - Inventory",
   "url": "https://boards.greenhouse.io/relativity/jobs/8922020002?gh_jid=8922020002",
   "company": "Relativity Space",
@@ -825,17 +1023,6 @@
   "remote": false
  },
  {
-  "title": "Specialist, Customer Operations Specialist 2",
-  "url": "https://careers.ses.com/job/Chennai-Specialist%2C-Customer-Operations-Specialist-2/1442674433/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Chennai, IN",
-  "posted": "2026-10-29T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Sales Representative",
   "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Sales-Representative/1421900733/",
   "company": "SES",
@@ -847,13 +1034,13 @@
   "remote": false
  },
  {
-  "title": "Project Controller",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Project-Controller-92130/1368432057/",
-  "company": "Eutelsat OneWeb",
+  "title": "Specialist, Customer Operations Specialist 2",
+  "url": "https://careers.ses.com/job/Chennai-Specialist%2C-Customer-Operations-Specialist-2/1442674433/",
+  "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "FR",
+  "location": "Chennai, IN",
   "posted": "2026-10-29T00:00+00:00",
-  "function": "Corporate",
+  "function": "Business & sales",
   "early": false,
   "remote": false
  },
@@ -865,6 +1052,17 @@
   "location": "FR",
   "posted": "2026-10-29T00:00+00:00",
   "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Project Controller",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Project-Controller-92130/1368432057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -1205,17 +1403,6 @@
   "sector": "Satcom & connectivity",
   "location": "Bastrop, TX",
   "posted": "2026-10-28T19:42+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Embedded Software Engineer",
-  "url": "https://careers.viasat.com/jobs/6925",
-  "company": "Viasat",
-  "sector": "Satcom & connectivity",
-  "location": "Tempe, Arizona",
-  "posted": "2026-10-28T19:30+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -1683,17 +1870,6 @@
   "remote": false
  },
  {
-  "title": "Senior Manager, Learning and Development",
-  "url": "https://careers.ses.com/job/London-Senior-Manager%2C-Learning-and-Development/1431866133/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "London, GB",
-  "posted": "2026-10-28T00:00+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Technician, Teleport Operations, Castle Rock",
   "url": "https://careers.ses.com/job/Castle-Rock-Technician%2C-Teleport-Operations%2C-Castle-Rock-ND-80104/1391439033/",
   "company": "SES",
@@ -1705,13 +1881,13 @@
   "remote": false
  },
  {
-  "title": "Engineer, Payload",
-  "url": "https://careers.ses.com/job/Betzdorf-Engineer%2C-Payload/1442419033/",
+  "title": "Senior Manager, Learning and Development",
+  "url": "https://careers.ses.com/job/London-Senior-Manager%2C-Learning-and-Development/1431866133/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "London, GB",
   "posted": "2026-10-28T00:00+00:00",
-  "function": "Engineering & technical",
+  "function": "Other",
   "early": false,
   "remote": false
  },
@@ -1723,6 +1899,17 @@
   "location": "McLean, VA, US",
   "posted": "2026-10-28T00:00+00:00",
   "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Engineer, Payload",
+  "url": "https://careers.ses.com/job/Betzdorf-Engineer%2C-Payload/1442419033/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-28T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -1749,17 +1936,6 @@
   "remote": false
  },
  {
-  "title": "Mission Ops Engineer - Mission Planning & Payload Engineering (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Mission-Ops-Engineer-Mission-Planning-&-Payload-Engineering-%28IRIS2%29-92130/1376080657/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-28T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "5G Operational Engineer (IRIS2)",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-5G-Operational-Engineer-%28IRIS2%29-92130/1376082557/",
   "company": "Eutelsat OneWeb",
@@ -1778,6 +1954,17 @@
   "location": "FR",
   "posted": "2026-10-28T00:00+00:00",
   "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Mission Ops Engineer - Mission Planning & Payload Engineering (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Mission-Ops-Engineer-Mission-Planning-&-Payload-Engineering-%28IRIS2%29-92130/1376080657/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-28T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -2464,17 +2651,6 @@
   "remote": false
  },
  {
-  "title": "Senior Robotics Automation and Controls Engineer",
-  "url": "https://boards.greenhouse.io/relativity/jobs/8917602002?gh_jid=8917602002",
-  "company": "Relativity Space",
-  "sector": "Launch & spacecraft",
-  "location": "Long Beach, California, United States",
-  "posted": "2026-10-27T00:13+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Network Engineer Global Network Operations",
   "url": "https://careers.viasat.com/jobs/6926",
   "company": "Viasat",
@@ -2486,22 +2662,11 @@
   "remote": false
  },
  {
-  "title": "Senior Engineer, Quantum Secure Networks, Compliance & Certification",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-Quantum-Secure-Networks%2C-Compliance-&-Certification/1274311201/",
+  "title": "(Senior) Engineer, UHF Payload Systems, IRIS2",
+  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-%28Senior%29-Engineer%2C-UHF-Payload-Systems%2C-IRIS2/1400701533/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-27T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Infrastructure Engineer - Nutanix Virtualized Infrastructure",
-  "url": "https://careers.ses.com/job/Betzdorf-Infrastructure-Engineer-Nutanix-Virtualized-Infrastructure/1441724033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "Munich (Unterföhring), DE",
   "posted": "2026-10-27T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -2519,13 +2684,13 @@
   "remote": false
  },
  {
-  "title": "Ground Operations Engineer, Network, User Terminals & Assurance, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Ground-Operations-Engineer%2C-Network%2C-User-Terminals-&-Assurance%2C-IRIS2/1441798433/",
+  "title": "Senior Engineer, Quantum Secure Networks, Compliance & Certification",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-Quantum-Secure-Networks%2C-Compliance-&-Certification/1274311201/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Betzdorf, LU",
   "posted": "2026-10-27T00:00+00:00",
-  "function": "Engineering & technical",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -2541,11 +2706,22 @@
   "remote": false
  },
  {
-  "title": "(Senior) Engineer, UHF Payload Systems, IRIS2",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-%28Senior%29-Engineer%2C-UHF-Payload-Systems%2C-IRIS2/1400701533/",
+  "title": "Ground Operations Engineer, Network, User Terminals & Assurance, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-Ground-Operations-Engineer%2C-Network%2C-User-Terminals-&-Assurance%2C-IRIS2/1441798433/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-27T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Infrastructure Engineer - Nutanix Virtualized Infrastructure",
+  "url": "https://careers.ses.com/job/Betzdorf-Infrastructure-Engineer-Nutanix-Virtualized-Infrastructure/1441724033/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-27T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -2574,6 +2750,28 @@
   "remote": false
  },
  {
+  "title": "Controller, Spacecraft Operations",
+  "url": "https://careers.ses.com/job/Betzdorf-Controller%2C-Spacecraft-Operations-L-6815/1451841333/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-27T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Controller",
+  "url": "https://careers.ses.com/job/Bucharest-Senior-Controller-RO-020339/1451663033/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Bucharest, RO, RO-020339",
+  "posted": "2026-10-27T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Manager, Enterprise Program",
   "url": "https://careers.ses.com/job/McLean-Manager%2C-Enterprise-Program-OH-22102-5971/1451746233/",
   "company": "SES",
@@ -2596,11 +2794,11 @@
   "remote": false
  },
  {
-  "title": "Controller, Spacecraft Operations",
-  "url": "https://careers.ses.com/job/Betzdorf-Controller%2C-Spacecraft-Operations-L-6815/1451841333/",
-  "company": "SES",
+  "title": "Security Officer - Building & System Security Accreditation (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Security-Officer-Building-&-System-Security-Accreditation-%28IRIS2%29-92130/1375984357/",
+  "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
+  "location": "FR",
   "posted": "2026-10-27T00:00+00:00",
   "function": "Corporate",
   "early": false,
@@ -2614,17 +2812,6 @@
   "location": "FR",
   "posted": "2026-10-27T00:00+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Security Officer - Building & System Security Accreditation (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Security-Officer-Building-&-System-Security-Accreditation-%28IRIS2%29-92130/1375984357/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-27T00:00+00:00",
-  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -2959,7 +3146,7 @@
   "remote": false
  },
  {
-  "title": "Geospatial Image Analyst",
+  "title": "Geospatial Image Analyst (GEOINT)",
   "url": "https://jobs.ashbyhq.com/iceye/83a8f02c-f829-4f49-994a-91fd6716de0a",
   "company": "ICEYE",
   "sector": "Data & Earth observation",
@@ -3399,11 +3586,11 @@
   "remote": false
  },
  {
-  "title": "Satellite Network Simulation & Emulation Engineer",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Satellite-Network-Simulation-&-Emulation-Engineer/1420956133/",
+  "title": "Information Security Analyst, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-Information-Security-Analyst%2C-IRIS2/1420653433/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-25T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3421,11 +3608,11 @@
   "remote": false
  },
  {
-  "title": "Information Security Analyst, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Information-Security-Analyst%2C-IRIS2/1420653433/",
+  "title": "Satellite Network Simulation & Emulation Engineer",
+  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Satellite-Network-Simulation-&-Emulation-Engineer/1420956133/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "Munich (Unterföhring), DE",
   "posted": "2026-10-25T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3439,6 +3626,17 @@
   "location": "FR",
   "posted": "2026-10-25T00:00+00:00",
   "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Analyst, Billing and Revenue Recognition",
+  "url": "https://careers.ses.com/job/Chennai-Analyst%2C-Billing-and-Revenue-Recognition/1426513533/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Chennai, IN",
+  "posted": "2026-10-24T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -3465,17 +3663,6 @@
   "remote": false
  },
  {
-  "title": "Project Manager Security Domain, IRIS2 Programme Office",
-  "url": "https://careers.ses.com/job/Betzdorf-Project-Manager-Security-Domain%2C-IRIS2-Programme-Office/1224473101/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-24T00:00+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Engineer, Payload Systems, meoSphere",
   "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-Payload-Systems%2C-meoSphere/1380509533/",
   "company": "SES",
@@ -3487,13 +3674,24 @@
   "remote": false
  },
  {
-  "title": "Analyst, Billing and Revenue Recognition",
-  "url": "https://careers.ses.com/job/Chennai-Analyst%2C-Billing-and-Revenue-Recognition/1426513533/",
+  "title": "Senior Engineer, IVV & SW O-RAN Integration, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-IVV-&-SW-O-RAN-Integration%2C-IRIS2/1409810033/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Chennai, IN",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-24T00:00+00:00",
   "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Project Manager Security Domain, IRIS2 Programme Office",
+  "url": "https://careers.ses.com/job/Betzdorf-Project-Manager-Security-Domain%2C-IRIS2-Programme-Office/1224473101/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-24T00:00+00:00",
+  "function": "Program & project management",
   "early": false,
   "remote": false
  },
@@ -3505,17 +3703,6 @@
   "location": "Chennai, IN",
   "posted": "2026-10-24T00:00+00:00",
   "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Engineer, IVV & SW O-RAN Integration, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-IVV-&-SW-O-RAN-Integration%2C-IRIS2/1409810033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-24T00:00+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -3762,13 +3949,13 @@
   "remote": false
  },
  {
-  "title": "Customer Excellence Specialist",
-  "url": "https://jobs.ashbyhq.com/iceye/82011247-944a-40bc-883b-add08bd65954",
-  "company": "ICEYE",
-  "sector": "Data & Earth observation",
-  "location": "United Arab Emirates",
-  "posted": "2026-10-23T12:52+00:00",
-  "function": "Business & sales",
+  "title": "Sr. Talent Sourcer (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8907768002?gh_jid=8907768002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, WA",
+  "posted": "2026-10-23T12:47+00:00",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -3778,17 +3965,6 @@
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
   "location": "Bastrop, TX",
-  "posted": "2026-10-23T12:47+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Sr. Talent Sourcer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8907768002?gh_jid=8907768002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
   "posted": "2026-10-23T12:47+00:00",
   "function": "Corporate",
   "early": false,
@@ -3905,33 +4081,22 @@
   "remote": false
  },
  {
-  "title": "Senior Manager, End-to-End System Architecture, Integration & Testing",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Senior-Manager%2C-End-to-End-System-Architecture%2C-Integration-&-Testing/1420182433/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
-  "posted": "2026-10-23T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Architect, Systems Verification & Validation, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Architect%2C-Systems-Verification-&-Validation%2C-meoSphere/1441159433/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-23T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Payload Engineer, Spacecraft Programmes",
   "url": "https://careers.ses.com/job/Sterling-Senior-Payload-Engineer%2C-Spacecraft-Programmes-VA-20163/1441172433/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Sterling, VA, US",
+  "posted": "2026-10-23T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Architect, Test Infrastructure & Automation, meoSphere",
+  "url": "https://careers.ses.com/job/Kockelscheuer-Senior-Architect%2C-Test-Infrastructure-&-Automation%2C-meoSphere-L-1896/1441156233/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Kockelscheuer, LU, L-1896",
   "posted": "2026-10-23T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3949,11 +4114,22 @@
   "remote": false
  },
  {
-  "title": "Engineer, Platform Services Architecture 1",
-  "url": "https://careers.ses.com/job/Chennai-Engineer%2C-Platform-Services-Architecture-1/1441125633/",
+  "title": "Manager, Information Security Management",
+  "url": "https://careers.ses.com/job/McLean-Manager%2C-Information-Security-Management-VA-22101/1430562733/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Chennai, IN",
+  "location": "McLean, VA, US",
+  "posted": "2026-10-23T00:00+00:00",
+  "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Architect, Systems Verification & Validation, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Architect%2C-Systems-Verification-&-Validation%2C-meoSphere/1441159433/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-23T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3982,22 +4158,22 @@
   "remote": false
  },
  {
-  "title": "Manager, Information Security Management",
-  "url": "https://careers.ses.com/job/McLean-Manager%2C-Information-Security-Management-VA-22101/1430562733/",
+  "title": "Engineer, Platform Services Architecture 1",
+  "url": "https://careers.ses.com/job/Chennai-Engineer%2C-Platform-Services-Architecture-1/1441125633/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "McLean, VA, US",
+  "location": "Chennai, IN",
   "posted": "2026-10-23T00:00+00:00",
-  "function": "Operations & supply chain",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "Senior Architect, Test Infrastructure & Automation, meoSphere",
-  "url": "https://careers.ses.com/job/Kockelscheuer-Senior-Architect%2C-Test-Infrastructure-&-Automation%2C-meoSphere-L-1896/1441156233/",
+  "title": "Senior Manager, End-to-End System Architecture, Integration & Testing",
+  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Senior-Manager%2C-End-to-End-System-Architecture%2C-Integration-&-Testing/1420182433/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Kockelscheuer, LU, L-1896",
+  "location": "Munich (Unterföhring), DE",
   "posted": "2026-10-23T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4324,17 +4500,6 @@
  },
  {
   "title": "Embedded Software Engineer, Laser Mesh Routing (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852117002?gh_jid=8852117002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
-  "posted": "2026-10-22T16:15+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Embedded Software Engineer, Laser Mesh Routing (Starlink)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8849599002?gh_jid=8849599002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
@@ -4356,11 +4521,11 @@
   "remote": false
  },
  {
-  "title": "Software Engineer, Linux Kernel (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852114002?gh_jid=8852114002",
+  "title": "Embedded Software Engineer, Laser Mesh Routing (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852117002?gh_jid=8852117002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Palo Alto, CA",
   "posted": "2026-10-22T16:15+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4389,6 +4554,17 @@
   "remote": false
  },
  {
+  "title": "Software Engineer, Linux Kernel (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852114002?gh_jid=8852114002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, WA",
+  "posted": "2026-10-22T16:15+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Software Engineer, Supercomputer Network (Starlink)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8852113002?gh_jid=8852113002",
   "company": "SpaceX (Starlink roles)",
@@ -4401,10 +4577,10 @@
  },
  {
   "title": "Software Engineer, Supercomputer Network (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852123002?gh_jid=8852123002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852122002?gh_jid=8852122002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Bellevue, WA",
+  "location": "Palo Alto, CA",
   "posted": "2026-10-22T16:15+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4412,10 +4588,10 @@
  },
  {
   "title": "Software Engineer, Supercomputer Network (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8852122002?gh_jid=8852122002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8852123002?gh_jid=8852123002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Bellevue, WA",
   "posted": "2026-10-22T16:15+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4441,6 +4617,17 @@
   "posted": "2026-10-22T15:28+00:00",
   "function": "Engineering & technical",
   "early": false,
+  "remote": false
+ },
+ {
+  "title": "ICEYE Engineering Intern Lab 2027",
+  "url": "https://jobs.ashbyhq.com/iceye/1b8f590b-fd9a-4c7a-ae0d-6e15f0bed42f",
+  "company": "ICEYE",
+  "sector": "Data & Earth observation",
+  "location": "Espoo",
+  "posted": "2026-10-22T14:13+00:00",
+  "function": "Engineering & technical",
+  "early": true,
   "remote": false
  },
  {
@@ -4488,17 +4675,6 @@
   "remote": false
  },
  {
-  "title": "Logistics Specialist",
-  "url": "https://jobs.ashbyhq.com/iceye/3a9ddd2c-2c2e-43c2-9e16-45f319ac8f7b",
-  "company": "ICEYE",
-  "sector": "Data & Earth observation",
-  "location": "Espoo",
-  "posted": "2026-10-22T12:44+00:00",
-  "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Manager, Financial Reporting and Accounting Operations",
   "url": "https://jobs.lever.co/loftorbital/6bf5942e-acc4-4fb1-98c2-e59396d6253d",
   "company": "Loft Orbital",
@@ -4510,34 +4686,12 @@
   "remote": false
  },
  {
-  "title": "Quality Management System Specialist",
-  "url": "https://jobs.ashbyhq.com/iceye/b6b2f254-e8af-466c-b08f-75664d5e440d",
-  "company": "ICEYE",
-  "sector": "Data & Earth observation",
-  "location": "Valencia",
-  "posted": "2026-10-22T11:36+00:00",
-  "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Network and IP Engineer",
   "url": "https://jobs.ashbyhq.com/skylo/3cb5a47f-05e4-4f5e-81f4-538cf04b6ffc",
   "company": "Skylo",
   "sector": "Satcom & connectivity",
   "location": "Bangalore, India",
   "posted": "2026-10-22T10:59+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Production Technician (Mechanical & Thermal)",
-  "url": "https://jobs.ashbyhq.com/iceye/1fffccad-6e68-48ae-a23e-483af70d5fb5",
-  "company": "ICEYE",
-  "sector": "Data & Earth observation",
-  "location": "Espoo",
-  "posted": "2026-10-22T09:24+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -4631,41 +4785,19 @@
   "remote": false
  },
  {
+  "title": "Senior Product Program Specialist",
+  "url": "https://careers.ses.com/job/Bucharest-Senior-Product-Program-Specialist/1429505533/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Bucharest, RO",
+  "posted": "2026-10-22T00:00+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Senior Engineer, Quality, Satellite Manufacturing",
   "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-Quality%2C-Satellite-Manufacturing/1380502333/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "(Senior) 5G O-RAN Orchestration & SMO Engineer",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-5G-O-RAN-Orchestration-&-SMO-Engineer/1380516133/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "RAMS Engineer, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-RAMS-Engineer%2C-IRIS2/1380511033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Manager, Enterprise Architecture & Digital Transformation, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Manager%2C-Enterprise-Architecture-&-Digital-Transformation%2C-IRIS2/1429530633/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Betzdorf, LU",
@@ -4686,13 +4818,35 @@
   "remote": false
  },
  {
-  "title": "Senior Product Program Specialist",
-  "url": "https://careers.ses.com/job/Bucharest-Senior-Product-Program-Specialist/1429505533/",
+  "title": "(Senior) 5G O-RAN Orchestration & SMO Engineer",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-5G-O-RAN-Orchestration-&-SMO-Engineer/1380516133/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Bucharest, RO",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-22T00:00+00:00",
-  "function": "Other",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Manager, Enterprise Architecture & Digital Transformation, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-Manager%2C-Enterprise-Architecture-&-Digital-Transformation%2C-IRIS2/1429530633/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-22T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "RAMS Engineer, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-RAMS-Engineer%2C-IRIS2/1380511033/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-22T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -4759,17 +4913,6 @@
   "location": "Dublin, IRL",
   "posted": "2026-10-22T00:00+00:00",
   "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Sr. RF DVT Engineer, Amazon Leo Silicon",
-  "url": "https://www.amazon.jobs/en/jobs/10585902/sr-rf-dvt-engineer-amazon-leo-silicon",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "San Diego, California, USA",
-  "posted": "2026-10-22T00:00+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -5027,22 +5170,22 @@
   "remote": false
  },
  {
-  "title": "Electronics Manufacturing Technician - PCBA & Harness (High-Reliability / Aerospace)",
-  "url": "https://careers.ses.com/job/Betzdorf-Electronics-Manufacturing-Technician-PCBA-&-Harness-%28High-Reliability-Aerospace%29/1398823433/",
+  "title": "Senior Engineer, Spacecraft Subsystems, Payload",
+  "url": "https://careers.ses.com/job/McLean-Senior-Engineer%2C-Spacecraft-Subsystems%2C-Payload-VA-22101/1440201133/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "McLean, VA, US",
   "posted": "2026-10-21T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "Senior Engineer, Spacecraft Subsystems, Payload",
-  "url": "https://careers.ses.com/job/McLean-Senior-Engineer%2C-Spacecraft-Subsystems%2C-Payload-VA-22101/1440201133/",
+  "title": "Electronics Manufacturing Technician - PCBA & Harness (High-Reliability / Aerospace)",
+  "url": "https://careers.ses.com/job/Betzdorf-Electronics-Manufacturing-Technician-PCBA-&-Harness-%28High-Reliability-Aerospace%29/1398823433/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "McLean, VA, US",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-21T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -5984,61 +6127,6 @@
   "remote": false
  },
  {
-  "title": "Senior Project Controller - Cost, Risk & Performance Management, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Project-Controller-Cost%2C-Risk-&-Performance-Management%2C-meoSphere-L-6815/1449087833/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Manager, Engineering Aircraft Technical Services",
-  "url": "https://careers.ses.com/job/Chicago-Manager%2C-Engineering-Aircraft-Technical-Services-ND-60606-7205/1449020433/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Chicago, US, 60606-7205",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior 5G Architect, 3GPP NR NTN, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-5G-Architect%2C-3GPP-NR-NTN%2C-meoSphere-L-6815/1449056833/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "(Senior) Project Controller, IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Project-Controller%2C-IRIS2-L-6815/1449084133/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "(Senior) Engineer, System Integration & Test, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-System-Integration-&-Test%2C-meoSphere-L-6815/1449094933/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU, L-6815",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Satellite Systems Engineer",
   "url": "https://careers.ses.com/job/Sterling-Senior-Satellite-Systems-Engineer-VA-20163/1449064533/",
   "company": "SES",
@@ -6061,6 +6149,61 @@
   "remote": false
  },
  {
+  "title": "(Senior) Project Controller, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Project-Controller%2C-IRIS2-L-6815/1449084133/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior 5G Architect, 3GPP NR NTN, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-5G-Architect%2C-3GPP-NR-NTN%2C-meoSphere-L-6815/1449056833/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Project Controller - Cost, Risk & Performance Management, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Project-Controller-Cost%2C-Risk-&-Performance-Management%2C-meoSphere-L-6815/1449087833/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "(Senior) Engineer, System Integration & Test, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-System-Integration-&-Test%2C-meoSphere-L-6815/1449094933/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU, L-6815",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Manager, Engineering Aircraft Technical Services",
+  "url": "https://careers.ses.com/job/Chicago-Manager%2C-Engineering-Aircraft-Technical-Services-ND-60606-7205/1449020433/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Chicago, US, 60606-7205",
+  "posted": "2026-10-19T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Senior Manager Innovation Programmes",
   "url": "https://careers.eutelsat.com/job/London-Senior-Manager-Innovation-Programmes-E18RU/1358755857/",
   "company": "Eutelsat OneWeb",
@@ -6072,44 +6215,11 @@
   "remote": false
  },
  {
-  "title": "(Senior) Engineer, DSP Systems Engineering, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-DSP-Systems-Engineering%2C-meoSphere/1277305301/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-18T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Engineer, FPGA & ASIC System Architecture, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-FPGA-&-ASIC-System-Architecture%2C-meoSphere/1407759333/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-18T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Media Service Architect, Network Planning 1",
-  "url": "https://careers.ses.com/job/McLean-Media-Service-Architect%2C-Network-Planning-1-VA-22101/1428875133/",
+  "title": "Data Service Architect, Network Planning",
+  "url": "https://careers.ses.com/job/McLean-Data-Service-Architect%2C-Network-Planning-VA-22101/1428873733/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "McLean, VA, US",
-  "posted": "2026-10-18T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Engineer, FPGA, MEO 1",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-FPGA%2C-MEO-1/1400380933/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
   "posted": "2026-10-18T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -6127,11 +6237,44 @@
   "remote": false
  },
  {
-  "title": "Data Service Architect, Network Planning",
-  "url": "https://careers.ses.com/job/McLean-Data-Service-Architect%2C-Network-Planning-VA-22101/1428873733/",
+  "title": "Media Service Architect, Network Planning 1",
+  "url": "https://careers.ses.com/job/McLean-Media-Service-Architect%2C-Network-Planning-1-VA-22101/1428875133/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "McLean, VA, US",
+  "posted": "2026-10-18T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Engineer, FPGA & ASIC System Architecture, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-FPGA-&-ASIC-System-Architecture%2C-meoSphere/1407759333/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-18T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Engineer, FPGA, MEO 1",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Engineer%2C-FPGA%2C-MEO-1/1400380933/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-18T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "(Senior) Engineer, DSP Systems Engineering, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-DSP-Systems-Engineering%2C-meoSphere/1277305301/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-18T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -6149,17 +6292,6 @@
   "remote": false
  },
  {
-  "title": "Senior Release Train Engineer (RTE), meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Release-Train-Engineer-%28RTE%29%2C-meoSphere/1438282633/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-17T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Field Services Representative (Aircraft Maintenance)- France (Toulouse)",
   "url": "https://careers.ses.com/job/Toulouse-Field-Services-Representative-%28Aircraft-Maintenance%29-France-%28Toulouse%29/1438332133/",
   "company": "SES",
@@ -6167,6 +6299,17 @@
   "location": "Toulouse, FR",
   "posted": "2026-10-17T00:00+00:00",
   "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Release Train Engineer (RTE), meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-Senior-Release-Train-Engineer-%28RTE%29%2C-meoSphere/1438282633/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-17T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -6469,10 +6612,10 @@
  },
  {
   "title": "Senior Director, Product Management - Defense and Intelligence",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8263945",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287786",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "San Francisco, CA",
+  "location": "Arlington, VA",
   "posted": "2026-10-16T16:57+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6480,10 +6623,10 @@
  },
  {
   "title": "Senior Director, Product Management - Defense and Intelligence",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287786",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8263945",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Arlington, VA",
+  "location": "San Francisco, CA",
   "posted": "2026-10-16T16:57+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6634,10 +6777,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Haarlem, Netherlands",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6645,10 +6788,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Haarlem, Netherlands",
+  "location": "Berlin, Germany",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6661,6 +6804,17 @@
   "sector": "Satcom & connectivity",
   "location": "Bastrop, TX",
   "posted": "2026-10-16T02:05+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Analyst, Information Security Management",
+  "url": "https://careers.ses.com/job/Bucharest-Senior-Analyst%2C-Information-Security-Management/1172377901/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Bucharest, RO",
+  "posted": "2026-10-16T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -6684,17 +6838,6 @@
   "location": "Bucharest, RO",
   "posted": "2026-10-16T00:00+00:00",
   "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Analyst, Information Security Management",
-  "url": "https://careers.ses.com/job/Bucharest-Senior-Analyst%2C-Information-Security-Management/1172377901/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Bucharest, RO",
-  "posted": "2026-10-16T00:00+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -6842,17 +6985,6 @@
   "remote": false
  },
  {
-  "title": "Platform Owner",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-15T06:01+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
- },
- {
   "title": "(Senior) Engineer, Cloud and System Security",
   "url": "https://careers.ses.com/job/Bucharest-%28Senior%29-Engineer%2C-Cloud-and-System-Security/1231039901/",
   "company": "SES",
@@ -6897,22 +7029,22 @@
   "remote": false
  },
  {
-  "title": "(Senior) Engineer in Test Embedded Software, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer-in-Test-Embedded-Software%2C-meoSphere/1448244733/",
+  "title": "Senior Field Service Engineer, Gateway Operations & Engineering Field Service",
+  "url": "https://careers.ses.com/job/Adelaide-Senior-Field-Service-Engineer%2C-Gateway-Operations-&-Engineering-Field-Service/1447978333/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "Adelaide, AU",
   "posted": "2026-10-15T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "Senior Field Service Engineer, Gateway Operations & Engineering Field Service",
-  "url": "https://careers.ses.com/job/Adelaide-Senior-Field-Service-Engineer%2C-Gateway-Operations-&-Engineering-Field-Service/1447978333/",
+  "title": "(Senior) Engineer in Test Embedded Software, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer-in-Test-Embedded-Software%2C-meoSphere/1448244733/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Adelaide, AU",
+  "location": "Betzdorf, LU",
   "posted": "2026-10-15T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -6930,8 +7062,8 @@
   "remote": false
  },
  {
-  "title": "User Terminal Senior Software Engineer Platform APIs - OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-Senior-Software-Engineer-Platform-APIs-OneWeb-Next-92130/1372296457/",
+  "title": "User Terminal RF Systems Architect UT Modem Antenna - OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-RF-Systems-Architect-UT-Modem-Antenna-OneWeb-Next-92130/1372295357/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -6941,8 +7073,8 @@
   "remote": false
  },
  {
-  "title": "User Terminal RF Systems Architect UT Modem Antenna - OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-RF-Systems-Architect-UT-Modem-Antenna-OneWeb-Next-92130/1372295357/",
+  "title": "User Terminal Senior Software Engineer Platform APIs - OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-Senior-Software-Engineer-Platform-APIs-OneWeb-Next-92130/1372296457/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -7062,17 +7194,6 @@
   "remote": false
  },
  {
-  "title": "Process Specialist, Vendor Management (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8886444002?gh_jid=8886444002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Bastrop, TX",
-  "posted": "2026-10-14T22:22+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Mission Integration Engineer",
   "url": "https://ursamajor.com/careers/?gh_jid=4743934005",
   "company": "Ursa Major",
@@ -7172,6 +7293,17 @@
   "remote": false
  },
  {
+  "title": "Platform Owner",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-14T15:07+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
+ },
+ {
   "title": "Wireless Engineer - Cellular",
   "url": "https://jobs.ashbyhq.com/elveo/5c5bf828-c56a-4fb5-99e2-cd4dcb1bdf1c",
   "company": "Elveo (Lynk and Omnispace)",
@@ -7194,17 +7326,6 @@
   "remote": false
  },
  {
-  "title": "Senior Product Designer, Platform (Geospatial)",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8276031",
-  "company": "Planet",
-  "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
-  "posted": "2026-10-14T09:36+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Technical Project Manager, Composite Structures",
   "url": "https://ast-science.com/company/careers/?gh_jid=4743540005",
   "company": "AST SpaceMobile",
@@ -7212,17 +7333,6 @@
   "location": "Barcelona, Spain",
   "posted": "2026-10-14T07:38+00:00",
   "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Specialist, Talent Acquisition",
-  "url": "https://careers.ses.com/job/Chicago-Specialist%2C-Talent-Acquisition-IL-60290/1427090833/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Chicago, IL, US",
-  "posted": "2026-10-14T00:00+00:00",
-  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -7238,17 +7348,6 @@
   "remote": false
  },
  {
-  "title": "Accountant, Accounts Payable",
-  "url": "https://careers.ses.com/job/Bucharest-Accountant%2C-Accounts-Payable/1437063033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Bucharest, RO",
-  "posted": "2026-10-14T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Director, Sales APAC",
   "url": "https://careers.ses.com/job/Director%2C-Sales-APAC-119963/1428448933/",
   "company": "SES",
@@ -7260,11 +7359,22 @@
   "remote": false
  },
  {
-  "title": "Director, Finance Business Excellence & Global Process Ownership",
-  "url": "https://careers.ses.com/job/Betzdorf-Director%2C-Finance-Business-Excellence-&-Global-Process-Ownership/1447581433/",
+  "title": "Accountant, Accounts Payable",
+  "url": "https://careers.ses.com/job/Bucharest-Accountant%2C-Accounts-Payable/1437063033/",
   "company": "SES",
   "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
+  "location": "Bucharest, RO",
+  "posted": "2026-10-14T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Specialist, Talent Acquisition",
+  "url": "https://careers.ses.com/job/Chicago-Specialist%2C-Talent-Acquisition-IL-60290/1427090833/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Chicago, IL, US",
   "posted": "2026-10-14T00:00+00:00",
   "function": "Corporate",
   "early": false,
@@ -7282,41 +7392,8 @@
   "remote": false
  },
  {
-  "title": "Senior Flight Dynamics Mission Analyst",
-  "url": "https://careers.eutelsat.com/job/London-Senior-Flight-Dynamics-Mission-Analyst-E18RU/826731502/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-10-14T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Physical Layer and Air Interface Engineer OneWeb Next",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Physical-Layer-and-Air-Interface-Engineer-OneWeb-Next-92130/1372229957/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-10-14T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "System Requirements Engineer OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/London-System-Requirements-Engineer-OneWeb-Next-E18RU/1372232757/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-10-14T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "E2E System Performance & Sizing Engineer OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/London-E2E-System-Performance-&-Sizing-Engineer-OneWeb-Next-E18RU/1372233557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -7337,8 +7414,41 @@
   "remote": false
  },
  {
+  "title": "Senior Flight Dynamics Mission Analyst",
+  "url": "https://careers.eutelsat.com/job/London-Senior-Flight-Dynamics-Mission-Analyst-E18RU/826731502/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "GB",
+  "posted": "2026-10-14T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "System Requirements Engineer OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/London-System-Requirements-Engineer-OneWeb-Next-E18RU/1372232757/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "GB",
+  "posted": "2026-10-14T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "RAN System Engineer OneWeb Next",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-RAN-System-Engineer-OneWeb-Next-92130/1372231557/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "GB",
+  "posted": "2026-10-14T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "E2E System Performance & Sizing Engineer OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/London-E2E-System-Performance-&-Sizing-Engineer-OneWeb-Next-E18RU/1372233557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -7368,6 +7478,17 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "Infrastructure Solutions Engineer",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8221849",
+  "company": "Planet",
+  "sector": "Data & Earth observation",
+  "location": "United States, Remote",
+  "posted": "2026-10-13T23:47+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Senior Manager, Test Engineering",
@@ -7546,39 +7667,6 @@
   "remote": false
  },
  {
-  "title": "Senior Architect, Cyber Security IRIS2",
-  "url": "https://careers.ses.com/job/Betzdorf-Senior-Architect%2C-Cyber-Security-IRIS2/1436542033/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Betzdorf, LU",
-  "posted": "2026-10-13T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Engineer, Network Orchestration Lead, IRIS2",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Senior-Engineer%2C-Network-Orchestration-Lead%2C-IRIS2/1406568133/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
-  "posted": "2026-10-13T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Engineer, Resource Optimization & Algorithm, IRIS2",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Senior-Engineer%2C-Resource-Optimization-&-Algorithm%2C-IRIS2/1406569733/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
-  "posted": "2026-10-13T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "IRIS² Senior SIT Engineer - Labs and Tooling",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Senior-SIT-Engineer-Labs-and-Tooling-92130/1372113557/",
   "company": "Eutelsat OneWeb",
@@ -7601,8 +7689,8 @@
   "remote": false
  },
  {
-  "title": "Supply Chain Performance & Digital Solutions Manager",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Supply-Chain-Performance-&-Digital-Solutions-Manager-92130/1374735057/",
+  "title": "Head of Supply Planning & Procurement",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Head-of-Supply-Planning-&-Procurement-92130/1374724457/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -7612,8 +7700,8 @@
   "remote": false
  },
  {
-  "title": "Head of Supply Planning & Procurement",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Head-of-Supply-Planning-&-Procurement-92130/1374724457/",
+  "title": "Supply Chain Performance & Digital Solutions Manager",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Supply-Chain-Performance-&-Digital-Solutions-Manager-92130/1374735057/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -7722,17 +7810,6 @@
   "remote": false
  },
  {
-  "title": "Supply Chain Contract Manager",
-  "url": "https://jobs.lever.co/telesat/e7e5ea74-cbec-4cda-96de-aacde17fb731",
-  "company": "Telesat",
-  "sector": "Satcom & connectivity",
-  "location": "Ottawa, Ontario",
-  "posted": "2026-10-09T17:26+00:00",
-  "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Information Systems Data Engineer",
   "url": "https://jobs.lever.co/loftorbital/7755a71b-9e11-4c1b-9748-1771bf6f28d3",
   "company": "Loft Orbital",
@@ -7810,8 +7887,30 @@
   "remote": false
  },
  {
-  "title": "Satellite Avionics / Data Handling Engineer (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Data-Handling-Engineer-%28IRIS2%29-92130/1371812157/",
+  "title": "IRIS² MCC Integration, Testing & Validation Software Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-MCC-Integration%2C-Testing-&-Validation-Software-Engineer-92130/1371770757/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS² Satellite Ground Stations, Integration, Testing & Validation Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Satellite-Ground-Stations%2C-Integration%2C-Testing-&-Validation-Engineer-92130/1371771057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Satellite Avionics / Attitude Control Engineer (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Attitude-Control-Engineer-%28IRIS2%29-92130/1371810557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -7832,101 +7931,13 @@
   "remote": false
  },
  {
-  "title": "IRIS2 Satellite Telecommunications Payload Engineer - LEO Constellations & Regenerative Payloads",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Engineer-LEO-Constellations-&-Regenerative-Payloads-92130/1371814057/",
+  "title": "IRIS2 Project Management Office for High LEO",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-for-High-LEO-92130/1371825157/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
   "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Project Management Office (PMO)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-%28PMO%29-92130/1371826157/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Systems Engineer (Interfaces)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Systems-Engineer-%28Interfaces%29-92130/1371861857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 End-to-End Network Architect",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Network-Architect-92130/1371863957/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 End-to-End Functional Architect",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Functional-Architect-92130/1371868657/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Configuration and Documentation Specialist (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Configuration-and-Documentation-Specialist-%28IRIS2%29-92130/1371771857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Satellite Avionics / Attitude Control Engineer (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Attitude-Control-Engineer-%28IRIS2%29-92130/1371810557/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Contract & Procurement Manager (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Contract-&-Procurement-Manager-%28IRIS2%29-92130/1371815857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Operations & supply chain",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -7975,28 +7986,6 @@
   "remote": false
  },
  {
-  "title": "IRIS² MCC Integration, Testing & Validation Software Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-MCC-Integration%2C-Testing-&-Validation-Software-Engineer-92130/1371770757/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS² Satellite Ground Stations, Integration, Testing & Validation Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Satellite-Ground-Stations%2C-Integration%2C-Testing-&-Validation-Engineer-92130/1371771057/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-09T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "IRIS2 Risk Manager",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Risk-Manager-92130/1371775057/",
   "company": "Eutelsat OneWeb",
@@ -8008,13 +7997,90 @@
   "remote": false
  },
  {
-  "title": "IRIS2 Project Management Office for High LEO",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-for-High-LEO-92130/1371825157/",
+  "title": "IRIS2 Satellite Telecommunications Payload Engineer - LEO Constellations & Regenerative Payloads",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Engineer-LEO-Constellations-&-Regenerative-Payloads-92130/1371814057/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
   "posted": "2026-10-09T00:00+00:00",
-  "function": "Corporate",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Configuration and Documentation Specialist (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Configuration-and-Documentation-Specialist-%28IRIS2%29-92130/1371771857/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Satellite Avionics / Data Handling Engineer (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Data-Handling-Engineer-%28IRIS2%29-92130/1371812157/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Contract & Procurement Manager (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Contract-&-Procurement-Manager-%28IRIS2%29-92130/1371815857/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Operations & supply chain",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 Systems Engineer (Interfaces)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Systems-Engineer-%28Interfaces%29-92130/1371861857/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 End-to-End Network Architect",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Network-Architect-92130/1371863957/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 End-to-End Functional Architect",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Functional-Architect-92130/1371868657/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-09T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -8415,6 +8481,17 @@
   "remote": false
  },
  {
+  "title": "Head of Talent, Learning & Skills (London/Paris/Turin)",
+  "url": "https://careers.eutelsat.com/job/Turin-Head-of-Talent%2C-Learning-&-Skills-%28LondonParisTurin%29-10151/1373974857/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "IT",
+  "posted": "2026-10-05T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Compensation & Benefits & People Analytics Specialist",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Compensation-&-Benefits-&-People-Analytics-Specialist-92130/1373962457/",
   "company": "Eutelsat OneWeb",
@@ -8433,17 +8510,6 @@
   "location": "FR",
   "posted": "2026-10-05T00:00+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Head of Talent, Learning & Skills (London/Paris/Turin)",
-  "url": "https://careers.eutelsat.com/job/Turin-Head-of-Talent%2C-Learning-&-Skills-%28LondonParisTurin%29-10151/1373974857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "IT",
-  "posted": "2026-10-05T00:00+00:00",
-  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -8679,17 +8745,6 @@
   "remote": false
  },
  {
-  "title": "Vice President, Business Development & Country Manager, India",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-10-01T06:01+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Inventory Specialist",
   "url": "https://jobs.ashbyhq.com/northwoodspace/df79ec41-2102-44fd-93ab-3c5959b8222a",
   "company": "Northwood Space",
@@ -8866,13 +8921,13 @@
   "remote": false
  },
  {
-  "title": "Cash Analyst",
-  "url": "https://jobs.lever.co/loftorbital/69389139-b6e6-43bf-beb6-98bdad470f23",
-  "company": "Loft Orbital",
-  "sector": "Spacecraft & infrastructure",
-  "location": "San Francisco, CA",
-  "posted": "2026-09-30T14:50+00:00",
-  "function": "Corporate",
+  "title": "Vice President, Business Development & Country Manager, India",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-09-30T15:07+00:00",
+  "function": "Business & sales",
   "early": false,
   "remote": false
  },
@@ -8882,7 +8937,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -8893,7 +8948,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -8904,7 +8959,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -8915,7 +8970,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Brazil - Macaé",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Other",
   "early": false,
   "remote": false
@@ -8926,7 +8981,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8937,7 +8992,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -8948,7 +9003,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8959,7 +9014,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8970,7 +9025,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8981,7 +9036,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -8992,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9003,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9014,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9025,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9036,8 +9091,19 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-09-30T06:01+00:00",
+  "posted": "2026-09-30T15:07+00:00",
   "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Cash Analyst",
+  "url": "https://jobs.lever.co/loftorbital/69389139-b6e6-43bf-beb6-98bdad470f23",
+  "company": "Loft Orbital",
+  "sector": "Spacecraft & infrastructure",
+  "location": "San Francisco, CA",
+  "posted": "2026-09-30T14:50+00:00",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -9094,17 +9160,6 @@
   "posted": "2026-09-29T15:00+00:00",
   "function": "Engineering & technical",
   "early": false,
-  "remote": false
- },
- {
-  "title": "Simulation Intern",
-  "url": "https://ast-science.com/company/careers/?gh_jid=4731110005",
-  "company": "AST SpaceMobile",
-  "sector": "Satcom & connectivity",
-  "location": "Hyderabad, Telangana, India",
-  "posted": "2026-09-29T11:57+00:00",
-  "function": "Other",
-  "early": true,
   "remote": false
  },
  {
@@ -10269,17 +10324,6 @@
   "sector": "Satcom & connectivity",
   "location": "Palo Alto",
   "posted": "2026-09-19T00:43+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Chief Engineer (Optical Comms)",
-  "url": "https://jobs.ashbyhq.com/apolink/338eca04-03cb-4a53-9053-650d17031651",
-  "company": "Apolink",
-  "sector": "Satcom & connectivity",
-  "location": "Palo Alto",
-  "posted": "2026-09-19T00:27+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
