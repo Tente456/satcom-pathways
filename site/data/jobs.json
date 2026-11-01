@@ -781,17 +781,6 @@
   "remote": false
  },
  {
-  "title": "Senior Machine Learning Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote-Madrid/Machine-Learning-Engineer_JR11137-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-10-30T06:25+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Summer 2027 Internship - Thermal & Manufacturing Engineering",
   "url": "https://jobs.lever.co/loftorbital/03f948ff-0767-4bb0-a13b-345321d63d71",
   "company": "Loft Orbital",
@@ -1304,6 +1293,17 @@
   "sector": "Satcom & connectivity",
   "location": "Toronto, Ontario",
   "posted": "2026-10-29T15:59+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Machine Learning Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote-Madrid/Machine-Learning-Engineer_JR11137-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-10-29T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -2905,10 +2905,10 @@
  },
  {
   "title": "Senior Director of Engineering - Civil Government and Commercial",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8318600",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8324236",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Ljubljana, Slovenia",
   "posted": "2026-10-27T15:04+00:00",
   "function": "Business & sales",
   "early": false,
@@ -2916,10 +2916,10 @@
  },
  {
   "title": "Senior Director of Engineering - Civil Government and Commercial",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8324236",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8318600",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Ljubljana, Slovenia",
+  "location": "Berlin, Germany",
   "posted": "2026-10-27T15:04+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6920,10 +6920,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Haarlem, Netherlands",
+  "location": "Berlin, Germany",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -6931,10 +6931,10 @@
  },
  {
   "title": "Senior Product Manager, Sovereign & Hybrid Deployments",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8284784",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8287081",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Haarlem, Netherlands",
   "posted": "2026-10-16T10:21+00:00",
   "function": "Business & sales",
   "early": false,
@@ -7093,17 +7093,6 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
- },
- {
-  "title": "Platform Owner",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-15T06:25+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
  },
  {
   "title": "(Senior) Engineer, Cyber Security and SecOps, IRIS2",
@@ -7412,6 +7401,17 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "Platform Owner",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-14T15:17+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Wireless Engineer - Cellular",
@@ -8734,23 +8734,12 @@
   "remote": false
  },
  {
-  "title": "Senior Technical Recruiter",
-  "url": "https://boards.greenhouse.io/blacksky/jobs/8857511002?gh_jid=8857511002",
-  "company": "BlackSky",
-  "sector": "Data & Earth observation",
-  "location": "Herndon, VA or Seattle, WA or Remote",
-  "posted": "2026-10-02T12:32+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": true
- },
- {
   "title": "Vice President, Business Development & Country Manager, India",
   "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8761,7 +8750,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -8772,7 +8761,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Brazil - Macaé",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Other",
   "early": false,
   "remote": false
@@ -8783,7 +8772,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8794,7 +8783,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -8805,7 +8794,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8816,7 +8805,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8827,7 +8816,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8838,7 +8827,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -8849,7 +8838,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -8860,7 +8849,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -8871,7 +8860,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -8882,7 +8871,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -8893,10 +8882,21 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-02T06:25+00:00",
+  "posted": "2026-10-02T15:17+00:00",
   "function": "Other",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "Senior Technical Recruiter",
+  "url": "https://boards.greenhouse.io/blacksky/jobs/8857511002?gh_jid=8857511002",
+  "company": "BlackSky",
+  "sector": "Data & Earth observation",
+  "location": "Herndon, VA or Seattle, WA or Remote",
+  "posted": "2026-10-02T12:32+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Corporate Paralegal",
