@@ -1,5 +1,64 @@
 [
  {
+  "title": "PLD Space Completes MIURA 5 Flight Termination System Test",
+  "url": "https://europeanspaceflight.com/pld-space-completes-miura-5-flight-termination-system-test/",
+  "source": "European Spaceflight",
+  "date": "2026-11-04T10:04+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL Opinion: We Tell Children They Can Become Astronauts. But What About the Other Space Careers?",
+  "url": "https://spacewatch.global/2026/11/we-tell-children-they-can-become-astronauts-but-who-shows-them-everything-else/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-04T09:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Maritime Launch Services Moves to Toronto Stock Exchange as Spaceport Nova Scotia’s Development Progresses",
+  "url": "https://spacewatch.global/2026/11/maritime-launch-services-moves-to-toronto-stock-exchange-as-spaceport-nova-scotias-development-progresses/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-04T07:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Starfish Space Loses Otter 24C Servicing Spacecraft Following Communications Failure",
+  "url": "https://spacewatch.global/2026/11/starfish-space-loses-otter-24c-servicing-spacecraft-following-communications-failure/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-04T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Hydrosat Advances Sovereign Thermal Imaging Offering with Complementary Nyktòs and Osiris Programs",
+  "url": "https://spacewatch.global/2026/11/hydrosat-advances-sovereign-thermal-imaging-offering-with-complementary-nyktos-and-osiris-programs/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-04T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Russia pushes forward with Starlink rival",
+  "url": "https://www.advanced-television.com/2026/11/04/russia-pushes-forward-with-starlink-rival/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-04T01:11+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Rocket Lab wants extra landing pad at Wallops",
+  "url": "https://www.advanced-television.com/2026/11/04/rocket-lab-wants-extra-landing-pad-at-wallops/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-04T00:23+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "NRO Official Details New Cyber Office With $250M Budget; White House Warns of AI-Speed Attacks",
   "url": "https://www.satellitetoday.com/cybersecurity/2026/11/03/nro-official-details-new-cyber-office-with-250m-budget-white-house-warns-of-ai-speed-attacks/",
   "source": "Via Satellite",
@@ -219,6 +278,16 @@
   "date": "2026-11-03T01:51+00:00",
   "categories": [
    "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "South Africa wants a new Space Regulator",
+  "url": "https://www.advanced-television.com/2026/11/03/south-africa-wants-a-new-space-regulator/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-03T01:49+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Africa"
   ]
  },
  {
@@ -2487,12 +2556,5 @@
   "categories": [
    "Defence & security"
   ]
- },
- {
-  "title": "One beam, many possibilities: the ScyLight programme patch",
-  "url": "https://www.esa.int/Applications/Connectivity_and_Secure_Communications/One_beam_many_possibilities_the_ScyLight_programme_patch",
-  "source": "ESA Telecommunications",
-  "date": "2026-10-05T07:00+00:00",
-  "categories": []
  }
 ]
