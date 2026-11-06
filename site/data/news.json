@@ -1,5 +1,48 @@
 [
  {
+  "title": "Paratus Lesotho opens shop with Starlink enterprise offering",
+  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21088-paratus-lesotho-opens-shop-with-starlink-enterprise-offering.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-06T04:50+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Budget 2026 moves forward with medium-lift rockets",
+  "url": "https://spaceq.ca/budget-2026-medium-lift-rockets/",
+  "source": "SpaceQ",
+  "date": "2026-11-06T01:46+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "CesiumAstro Raises $730M, Reaches Valuation Above $4.5B",
+  "url": "https://payloadspace.com/cesiumastro-raises-730m-reaches-valuation-above-4-5b/",
+  "source": "Payload",
+  "date": "2026-11-06T01:43+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "ISS astronauts install final iROSA solar panel to augment aging ISS power systems",
+  "url": "https://www.nasaspaceflight.com/2026/11/final-irosa-install-iss/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-06T01:15+00:00",
+  "categories": []
+ },
+ {
+  "title": "Canadian astronaut Josh Kutryk helps finish complex solar array spacewalks at ISS",
+  "url": "https://spaceq.ca/kutryk-spacewalk-final-solar-array/",
+  "source": "SpaceQ",
+  "date": "2026-11-05T22:57+00:00",
+  "categories": []
+ },
+ {
   "title": "DoD Must Embrace Autonomous On-Orbit Cyber Defense, DoD CIO Official Says",
   "url": "https://www.satellitetoday.com/cybersecurity/2026/11/05/dod-must-embrace-autonomous-on-orbit-cyber-defense-dod-cio-official-says/",
   "source": "Via Satellite",
@@ -143,6 +186,13 @@
   "categories": [
    "Satcom & connectivity"
   ]
+ },
+ {
+  "title": "Why We Are Seeing a Growing Disconnect Between Public and Private Space Markets",
+  "url": "https://payloadspace.com/why-we-are-seeing-a-growing-disconnect-between-public-and-private-space-markets/",
+  "source": "Payload",
+  "date": "2026-11-05T09:09+00:00",
+  "categories": []
  },
  {
   "title": "#SpaceWatchGL Opinion: From Space Law to Space Markets – What UNOOSA’s Kenya Mission Could Change",
@@ -2197,7 +2247,7 @@
   ]
  },
  {
-  "title": "Satellite Mission Management at the Edge",
+  "title": "Replay: Satellite Mission Management at the Edge",
   "url": "https://spacenews.com/satellite-mission-management-at-the-edge-event/",
   "source": "SpaceNews",
   "date": "2026-10-23T19:53+00:00",
