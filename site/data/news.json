@@ -1,5 +1,154 @@
 [
  {
+  "title": "CSA awards ABB $1.5 million to develop a Mars methane detector",
+  "url": "https://spaceq.ca/csa-abb-mars-methane-detector/",
+  "source": "SpaceQ",
+  "date": "2026-11-09T17:12+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "AST SpaceMobile's 'Blacklift' rocket gambit draws skepticism",
+  "url": "https://www.lightreading.com/satellite/ast-spacemobile-s-blacklift-rocket-gambit-draws-skepticism",
+  "source": "Light Reading",
+  "date": "2026-11-09T14:54+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "UK Government Investment Secures More Than 25% Stake in SaxaVord",
+  "url": "https://europeanspaceflight.com/uk-government-investment-secures-more-than-25-stake-in-saxavord/",
+  "source": "European Spaceflight",
+  "date": "2026-11-09T14:29+00:00",
+  "categories": [
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "CCIA Report Highlights Satellite Connectivity’s Potential to Expand Internet Access and Drive Economic Growth",
+  "url": "https://spacenews.com/ccia-report-highlights-satellite-connectivitys-potential-to-expand-internet-access-and-drive-economic-growth/",
+  "source": "SpaceNews",
+  "date": "2026-11-09T14:00+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Apollo and Artemis Astronauts Share the Stage at Gala",
+  "url": "https://payloadspace.com/apollo-and-artemis-astronauts-share-the-stage-at-gala/",
+  "source": "Payload",
+  "date": "2026-11-09T13:45+00:00",
+  "categories": []
+ },
+ {
+  "title": "Canada’s Medium-Lift Rocket Ambitions Confirmed In Budget",
+  "url": "https://payloadspace.com/canadas-medium-lift-rocket-ambitions-confirmed-in-budget/",
+  "source": "Payload",
+  "date": "2026-11-09T13:30+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Eurobites: Vodafone IoT finds space for Skylo",
+  "url": "https://www.lightreading.com/iot/eurobites-vodafone-iot-finds-space-for-skylo",
+  "source": "Light Reading",
+  "date": "2026-11-09T12:41+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Rakuten and AST form D2D joint venture in Japan",
+  "url": "https://www.lightreading.com/satellite/rakuten-and-ast-form-d2d-joint-venture-in-japan",
+  "source": "Light Reading",
+  "date": "2026-11-09T12:14+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "LUNR Aerospace goes public before its first engine test",
+  "url": "https://spaceq.ca/lunr-aerospace-cse-listing/",
+  "source": "SpaceQ",
+  "date": "2026-11-09T12:04+00:00",
+  "categories": [
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "SpaceX and Qualcomm threaten to topple US market's cozy 5G order",
+  "url": "https://www.lightreading.com/5g/spacex-and-qualcomm-threaten-to-topple-us-market-s-cozy-5g-order",
+  "source": "Light Reading",
+  "date": "2026-11-09T08:30+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "NASA Expands Lunar Delivery Network with CLPS 2 and New Moon Base Awards",
+  "url": "https://spacewatch.global/2026/11/nasa-expands-lunar-delivery-network-with-clps-2-and-new-moon-base-awards/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "UK Launches Titania Military Satellite as it Expands Space Defense Investment",
+  "url": "https://spacewatch.global/2026/11/uk-launches-titania-military-satellite-as-it-expands-space-defense-investment/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "ESA’s Hera Captures First Close-Up Image of Didymos Binary Asteroid System",
+  "url": "https://spacewatch.global/2026/11/esas-hera-captures-first-close-up-image-of-didymos-binary-asteroid-system/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "RFA Confirms Inaugural RFA ONE Launch Has Slipped to 2027",
+  "url": "https://europeanspaceflight.com/rfa-confirms-inaugural-rfa-one-launch-has-slipped-to-2027/",
+  "source": "European Spaceflight",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "India’s TRAI eases access for satellite broadband",
+  "url": "https://www.advanced-television.com/2026/11/09/indias-trai-eases-access-for-satellite-broadband/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-09T01:41+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Bezos’s New Glenn delayed until January",
+  "url": "https://www.advanced-television.com/2026/11/09/bezos-new-glenn-delayed-until-january/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-09T00:24+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "What’s Happening in Space Policy November 8-14, 2026",
   "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-november-8-14-2026/",
   "source": "SpacePolicyOnline",
@@ -21,6 +170,16 @@
   "source": "Payload",
   "date": "2026-11-08T16:13+00:00",
   "categories": []
+ },
+ {
+  "title": "AST to build and launch its own rockets",
+  "url": "https://www.advanced-television.com/2026/11/08/ast-to-build-and-launch-its-own-rockets/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-08T09:51+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
  },
  {
   "title": "NASA’s Moon Base plan gains a PROMISE",
