@@ -1,5 +1,149 @@
 [
  {
+  "title": "Es’hailSat Makes Move to Boost AI Capabilities",
+  "url": "https://www.satellitetoday.com/technology/2026/11/10/eshailsat-makes-move-to-boost-ai-capabilities/",
+  "source": "Via Satellite",
+  "date": "2026-11-10T21:08+00:00",
+  "categories": []
+ },
+ {
+  "title": "First Anduril Satellite On Orbit is for Space Domain Awareness",
+  "url": "https://www.satellitetoday.com/technology/2026/11/10/first-anduril-satellite-on-orbit-is-for-space-domain-awareness/",
+  "source": "Via Satellite",
+  "date": "2026-11-10T20:55+00:00",
+  "categories": [
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "Political Paralysis Cannot Be Allowed to Undermine America’s Strategic Edge in Space",
+  "url": "https://www.satellitetoday.com/opinion/2026/11/10/political-paralysis-cannot-be-allowed-to-undermine-americas-strategic-edge-in-space/",
+  "source": "Via Satellite",
+  "date": "2026-11-10T20:23+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Rocket Lab Secures Half a Billion in Neutron Launch Orders in Q3",
+  "url": "https://www.satellitetoday.com/launch/2026/11/10/rocket-lab-secures-half-a-billion-in-neutron-launch-orders-in-q3/",
+  "source": "Via Satellite",
+  "date": "2026-11-10T20:15+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Synspective Orders 10 Launches on Firefly’s Alpha Rocket",
+  "url": "https://www.satellitetoday.com/launch/2026/11/10/synspective-orders-10-launches-on-fireflys-alpha-rocket/",
+  "source": "Via Satellite",
+  "date": "2026-11-10T20:13+00:00",
+  "categories": [
+   "Launch",
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "France awards $1.7 billion contract to Airbus-Thales team for new military satellites",
+  "url": "https://breakingdefense.com/2026/11/france-awards-1-7-billion-contract-to-airbus-thales-team-for-new-military-satellites/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-10T19:45+00:00",
+  "categories": [
+   "Earth observation",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "First Globalstar 2-R satellites pass initial in-orbit tests",
+  "url": "https://spaceq.ca/globalstar-2-r-satellites-pass-in-orbit-tests/",
+  "source": "SpaceQ",
+  "date": "2026-11-10T19:30+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "UK satellite decision looms as political fight heats up",
+  "url": "https://breakingdefense.com/2026/11/uk-satellite-decision-looms-as-political-fight-heats-up/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-10T19:06+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Rep. Mike Haridopolos on NASA’s Future After the Blue Wave",
+  "url": "https://payloadspace.com/rep-mike-haridopolos-on-nasas-future-after-the-blue-wave/",
+  "source": "Payload",
+  "date": "2026-11-10T18:45+00:00",
+  "categories": []
+ },
+ {
+  "title": "AST SpaceMobile D2D satellite launch target slips again",
+  "url": "https://www.lightreading.com/satellite/ast-spacemobile-d2d-satellite-launch-target-slips-again",
+  "source": "Light Reading",
+  "date": "2026-11-10T18:39+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "NASA updates Moon Base CLPS program as Canada weighs Canadarm3’s future",
+  "url": "https://spaceq.ca/nasa-clps-2-canada-canadarm3/",
+  "source": "SpaceQ",
+  "date": "2026-11-10T18:32+00:00",
+  "categories": []
+ },
+ {
+  "title": "Kenya Hosts Regional Space Law Technical Mission for Africa",
+  "url": "https://spaceinafrica.com/2026/11/10/kenya-hosts-regional-space-law-technical-mission-for-africa/",
+  "source": "Space in Africa",
+  "date": "2026-11-10T17:51+00:00",
+  "categories": [
+   "Africa"
+  ]
+ },
+ {
+  "title": "DLR to Purchase 80 Red Kite Sounding Rocket Motors",
+  "url": "https://europeanspaceflight.com/dlr-to-purchase-80-red-kite-sounding-rocket-motors/",
+  "source": "European Spaceflight",
+  "date": "2026-11-10T15:44+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Kratos and Seagate Space Partner to Advance Mobile Offshore Launch Capabilities for National Security Missions",
+  "url": "https://spacenews.com/kratos-and-seagate-space-partner-to-advance-mobile-offshore-launch-capabilities-for-national-security-missions/",
+  "source": "SpaceNews",
+  "date": "2026-11-10T14:00+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Exclusive: Lyra Systems Emerges from Stealth to Solve the Valley of Death",
+  "url": "https://payloadspace.com/exclusive-lyra-systems-emerges-from-stealth-to-solve-the-valley-of-death/",
+  "source": "Payload",
+  "date": "2026-11-10T14:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Rocket Lab Ups Neutron Launch Price Ahead of ‘27 Debut",
+  "url": "https://payloadspace.com/rocket-lab-ups-neutron-launch-price-ahead-of-27-debut/",
+  "source": "Payload",
+  "date": "2026-11-10T13:17+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "Czech Space Week – Michele Iapaolo of ESA on Commercialisation Journey from Idea to Global Market",
   "url": "https://spacewatch.global/2026/11/czech-space-week-michele-iapaolo-of-esa-on-commercialisation-journey-from-idea-to-global-market/",
   "source": "SpaceWatch.Global",
@@ -96,6 +240,16 @@
   "source": "Advanced Television: Satellite",
   "date": "2026-11-10T02:32+00:00",
   "categories": []
+ },
+ {
+  "title": "Rakuten, AST SpaceMobile announce Rakuten AST",
+  "url": "https://www.advanced-television.com/2026/11/10/rakuten-ast-spacemobile-announce-rakuten-ast/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-10T01:32+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
  },
  {
   "title": "Telespazio working with Rivada on Outernet",
@@ -3370,155 +3524,5 @@
   "source": "European Spaceflight",
   "date": "2026-10-20T14:52+00:00",
   "categories": []
- },
- {
-  "title": "AnySignal to Deliver Space-to-Earth Communications for Three Reflect Orbital Missions",
-  "url": "https://spacenews.com/anysignal-to-deliver-space-to-earth-communications-for-three-reflect-orbital-missions/",
-  "source": "SpaceNews",
-  "date": "2026-10-20T13:00+00:00",
-  "categories": []
- },
- {
-  "title": "French MPs propose symbolic €1 budget line for VORTEX spaceplane",
-  "url": "https://europeanspaceflight.com/french-mps-propose-symbolic-e1-budget-line-for-vortex-spaceplane/",
-  "source": "European Spaceflight",
-  "date": "2026-10-20T10:15+00:00",
-  "categories": []
- },
- {
-  "title": "Falcon 9 launches Bandwagon-5 rideshare mission from Florida",
-  "url": "https://www.nasaspaceflight.com/2026/10/bandwagon-5/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-20T05:01+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "JAXA’s MMX Enroute to Mars To Return Samples of Phobos",
-  "url": "https://spacepolicyonline.com/news/jaxas-mmx-enroute-to-mars-to-return-samples-of-phobos/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-10-20T00:12+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Russian satellite stalked ICEYE spacecraft in potentially dangerous on-orbit maneuvers",
-  "url": "https://breakingdefense.com/2026/10/russian-satellite-stalked-iceye-spacecraft-in-potentially-dangerous-on-orbit-maneuvers/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-10-19T20:57+00:00",
-  "categories": []
- },
- {
-  "title": "Russian spacecraft maneuvers in \"extreme proximity\" to satellite used by Ukraine",
-  "url": "https://arstechnica.com/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/",
-  "source": "Ars Technica",
-  "date": "2026-10-19T20:54+00:00",
-  "categories": []
- },
- {
-  "title": "Japanese MMX mission launches to study Martian moons",
-  "url": "https://www.nasaspaceflight.com/2026/10/mmx-launch/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-19T15:44+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "US political uncertainty complicates long-term Artemis commitments, Polish minister says",
-  "url": "https://europeanspaceflight.com/us-political-uncertainty-complicates-long-term-artemis-commitments-polish-minister-says/",
-  "source": "European Spaceflight",
-  "date": "2026-10-19T14:49+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "A Chinese rocket deorbited over Minnesota and left this in a farmer's cornfield",
-  "url": "https://arstechnica.com/space/2026/10/a-chinese-rocket-deorbited-over-minnesota-and-left-this-in-a-farmers-cornfield/",
-  "source": "Ars Technica",
-  "date": "2026-10-19T14:35+00:00",
-  "categories": [
-   "Launch",
-   "Sustainability & debris"
-  ]
- },
- {
-  "title": "PLD Space begins system-level testing of Miura 5 as first three vehicles take shape",
-  "url": "https://www.nasaspaceflight.com/2026/10/pld-system-level-testing-miura-5-three-vehicles/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-19T13:35+00:00",
-  "categories": []
- },
- {
-  "title": "Q-KON and SISTEC Launch Sovereign Satellite Point of Presence in Angola",
-  "url": "https://spaceinafrica.com/2026/10/19/q-kon-and-sistec-launch-sovereign-satellite-point-of-presence-in-angola/",
-  "source": "Space in Africa",
-  "date": "2026-10-19T12:44+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Africa"
-  ]
- },
- {
-  "title": "Kenya Advances Space Cooperation Through Industry Engagements in China",
-  "url": "https://spaceinafrica.com/2026/10/19/kenya-advances-space-cooperation-through-industry-engagements-in-china/",
-  "source": "Space in Africa",
-  "date": "2026-10-19T11:57+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "GGPEN and Portugal’s GEOSAT Sign Letter of Intent on EO and Geospatial Applications",
-  "url": "https://spaceinafrica.com/2026/10/19/ggpen-and-portugals-geosat-sign-letter-of-intent-on-eo-and-geospatial-applications/",
-  "source": "Space in Africa",
-  "date": "2026-10-19T11:02+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Earth observation",
-   "Policy & regulation",
-   "Africa"
-  ]
- },
- {
-  "title": "EUMETSAT Completes 56-Station Network as African Forecasters Put MTG Data into Operational Use",
-  "url": "https://spaceinafrica.com/2026/10/19/eumetsat-completes-56-station-network-as-african-forecasters-put-mtg-data-into-operational-use/",
-  "source": "Space in Africa",
-  "date": "2026-10-19T10:51+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "Paratus Zambia Connects 18 Family Legacy Schools to Starlink",
-  "url": "https://spaceinafrica.com/2026/10/19/paratus-zambia-connects-18-family-legacy-schools-with-starlink/",
-  "source": "Space in Africa",
-  "date": "2026-10-19T10:32+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Africa"
-  ]
- },
- {
-  "title": "What’s Happening in Space Policy October 18-24, 2026",
-  "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-october-18-24-2026/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-10-18T21:25+00:00",
-  "categories": [
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "SpaceX working through Starship Flight 15 and 16 milestones",
-  "url": "https://www.nasaspaceflight.com/2026/10/spacex-flight-15-16-milestones/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-18T16:31+00:00",
-  "categories": [
-   "Launch"
-  ]
  }
 ]
