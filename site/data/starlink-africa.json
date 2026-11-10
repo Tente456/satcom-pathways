@@ -1,0 +1,226 @@
+{
+ "fetched": "2026-11-10T23:19+00:00",
+ "source": "https://starlink.com/public-files/availability.json",
+ "statuses": {
+  "DZ": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "AO": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "BJ": {
+   "status": "available",
+   "expected": ""
+  },
+  "BW": {
+   "status": "launched",
+   "expected": ""
+  },
+  "BF": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "BI": {
+   "status": "launched",
+   "expected": ""
+  },
+  "CV": {
+   "status": "launched",
+   "expected": ""
+  },
+  "CM": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "CF": {
+   "status": "launched",
+   "expected": ""
+  },
+  "TD": {
+   "status": "launched",
+   "expected": ""
+  },
+  "KM": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "CG": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "CD": {
+   "status": "launched",
+   "expected": ""
+  },
+  "CI": {
+   "status": "launched",
+   "expected": ""
+  },
+  "DJ": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "EG": {
+   "status": "unknown",
+   "expected": ""
+  },
+  "GQ": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ER": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "SZ": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ET": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "GA": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "GM": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "GH": {
+   "status": "launched",
+   "expected": ""
+  },
+  "GN": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "GW": {
+   "status": "launched",
+   "expected": ""
+  },
+  "KE": {
+   "status": "launched",
+   "expected": ""
+  },
+  "LS": {
+   "status": "launched",
+   "expected": ""
+  },
+  "LR": {
+   "status": "launched",
+   "expected": ""
+  },
+  "LY": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "MG": {
+   "status": "launched",
+   "expected": ""
+  },
+  "MW": {
+   "status": "available",
+   "expected": ""
+  },
+  "ML": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "MR": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "MU": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "MA": {
+   "status": "unknown",
+   "expected": ""
+  },
+  "MZ": {
+   "status": "launched",
+   "expected": ""
+  },
+  "NA": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "NE": {
+   "status": "launched",
+   "expected": ""
+  },
+  "NG": {
+   "status": "launched",
+   "expected": ""
+  },
+  "RW": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ST": {
+   "status": "launched",
+   "expected": ""
+  },
+  "SN": {
+   "status": "launched",
+   "expected": ""
+  },
+  "SC": {
+   "status": "launched",
+   "expected": ""
+  },
+  "SL": {
+   "status": "launched",
+   "expected": ""
+  },
+  "SO": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ZA": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "SS": {
+   "status": "launched",
+   "expected": ""
+  },
+  "SD": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  },
+  "TZ": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "TG": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "TN": {
+   "status": "coming_soon",
+   "expected": "Starting in 2026"
+  },
+  "UG": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ZM": {
+   "status": "launched",
+   "expected": ""
+  },
+  "ZW": {
+   "status": "launched",
+   "expected": ""
+  },
+  "EH": {
+   "status": "coming_soon",
+   "expected": "Service date is unknown at this time"
+  }
+ }
+}
