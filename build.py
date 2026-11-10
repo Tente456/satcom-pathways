@@ -399,6 +399,55 @@ def build_jobs(cfg):
 
 
 
+# ---------------------------------------------------------------- Africa LEO licensing map
+
+AFRICA = {
+    "DZ": "Algeria", "AO": "Angola", "BJ": "Benin", "BW": "Botswana", "BF": "Burkina Faso", "BI": "Burundi",
+    "CV": "Cabo Verde", "CM": "Cameroon", "CF": "Central African Republic", "TD": "Chad", "KM": "Comoros",
+    "CG": "Congo", "CD": "DR Congo", "CI": "Côte d'Ivoire", "DJ": "Djibouti", "EG": "Egypt",
+    "GQ": "Equatorial Guinea", "ER": "Eritrea", "SZ": "Eswatini", "ET": "Ethiopia", "GA": "Gabon",
+    "GM": "The Gambia", "GH": "Ghana", "GN": "Guinea", "GW": "Guinea-Bissau", "KE": "Kenya", "LS": "Lesotho",
+    "LR": "Liberia", "LY": "Libya", "MG": "Madagascar", "MW": "Malawi", "ML": "Mali", "MR": "Mauritania",
+    "MU": "Mauritius", "MA": "Morocco", "MZ": "Mozambique", "NA": "Namibia", "NE": "Niger", "NG": "Nigeria",
+    "RW": "Rwanda", "ST": "São Tomé and Príncipe", "SN": "Senegal", "SC": "Seychelles", "SL": "Sierra Leone",
+    "SO": "Somalia", "ZA": "South Africa", "SS": "South Sudan", "SD": "Sudan", "TZ": "Tanzania", "TG": "Togo",
+    "TN": "Tunisia", "UG": "Uganda", "ZM": "Zambia", "ZW": "Zimbabwe", "EH": "Western Sahara",
+}
+STARLINK_FILE = "https://starlink.com/public-files/availability.json"
+
+
+def build_starlink_africa():
+    """Read Starlink's own availability file and keep the African entries, logging any status change."""
+    store, hist_f = OUT / "data/starlink-africa.json", OUT / "data/starlink-history.json"
+    prev = json.loads(store.read_text(encoding="utf-8")) if store.exists() else {}
+    history = json.loads(hist_f.read_text(encoding="utf-8")) if hist_f.exists() else []
+    try:
+        req = urllib.request.Request(STARLINK_FILE, headers={"User-Agent": "Mozilla/5.0 (compatible; SatcomPathwaysBot/1.0)"})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            data = json.load(r).get("admin0", {})
+    except Exception as e:
+        log(f"  starlink FAIL: {e}")
+        return
+    statuses = {c: {"status": data.get(c, {}).get("status", "not_listed"),
+                    "expected": data.get(c, {}).get("expected", "")} for c in AFRICA}
+    old = prev.get("statuses", {})
+    today = NOW.date().isoformat()
+    for c, v in statuses.items():
+        if old and old.get(c, {}).get("status") != v["status"]:
+            history.append({"date": today, "code": c, "from": old.get(c, {}).get("status", ""), "to": v["status"]})
+    store.write_text(json.dumps({"fetched": NOW.isoformat(timespec="minutes"), "source": STARLINK_FILE,
+                                 "statuses": statuses}, ensure_ascii=False, indent=1))
+    hist_f.write_text(json.dumps(history[-500:], ensure_ascii=False, indent=1))
+    log(f"  starlink: {sum(v['status'] in ('launched', 'available') for v in statuses.values())} African countries live")
+
+
+def load_leo():
+    store, hist_f = OUT / "data/starlink-africa.json", OUT / "data/starlink-history.json"
+    return {"countries": AFRICA,
+            "starlink": json.loads(store.read_text(encoding="utf-8")) if store.exists() else {},
+            "starlinkHistory": json.loads(hist_f.read_text(encoding="utf-8")) if hist_f.exists() else []}
+
+
 # ---------------------------------------------------------------- events from organiser calendars
 
 PLACES = {  # venue/city -> (display location, region)
@@ -673,6 +722,7 @@ def render(cfg, news, jobs, updated, research):
         "deals": sorted(json.loads((ROOT / "deals.json").read_text(encoding="utf-8")),
                         key=lambda d: d["date"], reverse=True),
         "events": load_events(),
+        "leo": load_leo(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -686,6 +736,7 @@ SECTION_PAGES = {
     "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
     "deals": ("Africa deals tracker", "Satcom licences, contracts and partnerships in Africa, each linked to its source."),
+    "deals/map": ("Africa LEO broadband map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in each of Africa's 54 countries, from operator data and sourced regulatory records."),
     "research": ("Research", "Short research on African satellite communications, built on public data."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),
@@ -748,6 +799,8 @@ def main():
         (OUT / "data/meta.json").write_text(json.dumps({"updated": updated}))
         log("Fetching events…")
         build_auto_events(cfg)
+        log("Fetching Starlink availability…")
+        build_starlink_africa()
     research = load_research()
     deals = json.loads((ROOT / "deals.json").read_text(encoding="utf-8"))
     digests = build_digest(cfg, news, jobs, deals, research)

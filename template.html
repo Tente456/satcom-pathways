@@ -249,6 +249,40 @@ aside { display: grid; gap: 18px; }
 @media (max-width: 520px) { .why { padding: 34px 22px; } .why h1 { font-size: 25px; } .why p:not(.kicker) { font-size: 16px; } }
 .footlinks { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 10px; font-weight: 600; }
 .footlinks a { color: var(--ink); }
+/* LEO broadband map */
+.subnav { display: flex; gap: 6px; flex-wrap: wrap; }
+.subnav a { font-size: 14px; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; background: var(--surface); }
+.subnav a[aria-current="page"] { background: var(--ink); color: var(--bg); border-color: var(--ink); }
+.leo-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-bottom: 10px; }
+@media (max-width: 900px) { .leo-layout { grid-template-columns: 1fr; } }
+.leo-mapwrap { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.leo-map svg { width: 100%; height: auto; display: block; }
+.leo-map path, .leo-map circle { fill: var(--leo-none); stroke: var(--surface); stroke-width: .9; cursor: pointer; transition: opacity .15s; }
+.leo-map path:hover, .leo-map circle:hover, .leo-map .sel { stroke: var(--ink); stroke-width: 1.6; }
+.leo-map .flag { stroke: #e5484d; stroke-width: 2.2; }
+.leo-legend { display: flex; flex-wrap: wrap; gap: 6px 16px; margin-top: 10px; font-size: 13px; color: var(--muted); }
+.leo-legend span::before { content: ""; display: inline-block; width: 11px; height: 11px; border-radius: 3px; margin-right: 6px; vertical-align: -1px; background: var(--sw); }
+.leo-legend span.flagkey::before { background: transparent; border: 2px solid #e5484d; }
+.leo-detail { display: block; }
+.leo-detail p { margin: 0 0 10px; }
+.leo-detail .warn { color: #e5484d; font-weight: 600; font-size: 14px; }
+#leo-tiles { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); }
+@media (max-width: 520px) { #leo-tiles { grid-template-columns: 1fr 1fr; } #leo-tiles .stat { font-size: 22px; } }
+#leo-changes h3 { font-size: 16px; margin: 20px 0 6px; }
+.leo-detail h3 { margin: 0 0 6px; font-size: 19px; }
+.leo-detail .st { display: inline-block; width: fit-content; font-size: 13px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--sw); color: #0b1220; margin-bottom: 10px; }
+.leo-detail ul { margin: 6px 0 0; padding-left: 18px; }
+.leo-detail li { margin-bottom: 8px; font-size: 14px; }
+.leo-table-wrap { overflow-x: auto; }
+.leo-table { width: 100%; border-collapse: collapse; font-size: 14px; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; }
+.leo-table th, .leo-table td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+.leo-table th { font-size: 12px; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+.leo-table tr:hover td { background: var(--bg); cursor: pointer; }
+.leo-table .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--sw); margin-right: 7px; }
+.leo-table .warn { color: #e5484d; font-weight: 600; }
+:root { --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --leo-none: #2a3546; } }
+:root[data-theme="dark"] { --leo-none: #2a3546; }
 /* company band */
 .band-label { text-align: center; font-family: var(--font-display); font-weight: 600; font-size: 15px; }
 .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
@@ -392,6 +426,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div>
         <h2>Africa satcom deals</h2>
       </div>
+      <nav class="subnav" aria-label="Deals views"><a href="/deals/" aria-current="page">Deals tracker</a><a href="/deals/map/">LEO broadband map</a></nav>
     </div>
     <div class="tiles" id="deal-tiles"></div>
     <div class="news-layout">
@@ -415,6 +450,28 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
         </div>
       </aside>
     </div>
+  </section>
+  <section class="view" id="view-leomap" aria-labelledby="leomap-title" hidden>
+    <div class="jobs-head">
+      <div>
+        <h2 id="leomap-title">Africa LEO broadband map</h2>
+      </div>
+      <nav class="subnav" aria-label="Deals views"><a href="/deals/">Deals tracker</a><a href="/deals/map/" aria-current="page">LEO broadband map</a></nav>
+    </div>
+    <div class="chips" id="leo-ops" role="group" aria-label="Choose operator">
+      <button type="button" data-op="starlink" aria-pressed="true">Starlink</button>
+      <button type="button" data-op="amazon" aria-pressed="false">Amazon Leo</button>
+      <button type="button" data-op="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
+    </div>
+    <div class="tiles" id="leo-tiles"></div>
+    <div class="leo-layout">
+      <div class="leo-mapwrap"><div id="leo-map" class="leo-map" aria-hidden="true"></div><div class="leo-legend" id="leo-legend"></div></div>
+      <aside class="panel leo-detail" id="leo-detail" aria-live="polite"></aside>
+    </div>
+    <p class="note" id="leo-note"></p>
+    <div class="toolbar"><input type="search" id="leo-q" placeholder="Find a country" aria-label="Find a country"><select id="leo-filter" aria-label="Filter by status"></select></div>
+    <div class="leo-table-wrap"><table class="leo-table" id="leo-table"></table></div>
+    <div id="leo-changes"></div>
   </section>
   <section class="view" id="view-research" aria-labelledby="tab-research" hidden>
     <div class="rhead">
@@ -796,8 +853,128 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   });
 
   /* views: each section has its own address (/jobs/, /research/<slug>/ ...) */
+  /* Africa LEO broadband map */
+  var LEO = D.leo || {}, LEOC = LEO.countries || {}, SL = (LEO.starlink || {}).statuses || {};
+  var leoOp = 'starlink', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
+  var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
+  Object.keys(LEOC).forEach(function (c) { LEO_ALIAS[LEOC[c].toLowerCase()] = c; });
+  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb'};
+  var leoDeals = {starlink: {}, amazon: {}, oneweb: {}}, leoPan = {starlink: [], amazon: [], oneweb: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}};
+  D.deals.forEach(function (d) {
+    var t = (d.title + ' ' + d.parties.join(' ')).toLowerCase(), ops = [];
+    if (/starlink|spacex/.test(t)) ops.push('starlink');
+    if (/amazon leo|kuiper/.test(t)) ops.push('amazon');
+    if (/oneweb/.test(t) || (/eutelsat/.test(t) && d.segment === 'LEO broadband')) ops.push('oneweb');
+    var neg = (d.type === 'Licence & regulation' || d.type === 'Court ruling') && /denies|refus|suspend|reject|revok|ban/i.test(d.title);
+    ops.forEach(function (op) {
+      d.countries.forEach(function (n) {
+        var c = LEO_ALIAS[n.toLowerCase()];
+        if (!c) { if (/pan-african/i.test(n) && leoPan[op].indexOf(d) === -1) leoPan[op].push(d); return; }
+        (leoDeals[op][c] = leoDeals[op][c] || []).push(d);
+        if (neg) leoFlags[op][c] = d;
+      });
+    });
+  });
+  function leoCat(op, c) {
+    if (op === 'starlink') {
+      var s = SL[c] || {};
+      if (s.status === 'launched' || s.status === 'available') return 'live';
+      if (s.status === 'coming_soon') return /20\d\d/.test(s.expected || '') ? 'soon' : 'unk';
+      return 'none';
+    }
+    var ds = leoDeals[op][c] || [];
+    if (!ds.length) return 'none';
+    if (ds.some(function (d) { return d.type === 'Service launch'; })) return 'live';
+    if (ds.some(function (d) { return d.type === 'Licence & regulation'; })) return 'lic';
+    return 'agr';
+  }
+  var LEO_CATS = {
+    starlink: [['live', 'Live', '--leo-live'], ['soon', 'Listed for a launch year', '--leo-soon'], ['unk', 'Listed, date unknown', '--leo-unk'], ['none', 'Not listed', '--leo-none']],
+    other: [['live', 'Service launch recorded', '--leo-live'], ['lic', 'Licensing activity recorded', '--leo-lic'], ['agr', 'Agreement recorded', '--leo-agr'], ['none', 'Nothing recorded yet', '--leo-none']]
+  };
+  function leoCats() { return LEO_CATS[leoOp === 'starlink' ? 'starlink' : 'other']; }
+  function leoLabel(op, c) {
+    var k = leoCat(op, c), row = LEO_CATS[op === 'starlink' ? 'starlink' : 'other'].filter(function (r) { return r[0] === k; })[0];
+    if (op === 'starlink' && k === 'soon') return 'Listed: ' + SL[c].expected.replace('Starting in ', 'from ');
+    return row[1];
+  }
+  function leoColor(op, c) {
+    var k = leoCat(op, c); return 'var(' + LEO_CATS[op === 'starlink' ? 'starlink' : 'other'].filter(function (r) { return r[0] === k; })[0][2] + ')';
+  }
+  function leoPaint() {
+    var host = $('leo-map'); if (!leoMapLoaded) return;
+    host.querySelectorAll('[data-c]').forEach(function (el) {
+      var c = el.getAttribute('data-c'); if (!LEOC[c]) return;
+      el.style.fill = leoColor(leoOp, c);
+      el.classList.toggle('flag', !!leoFlags[leoOp][c]);
+      el.classList.toggle('sel', c === leoSel);
+      el.setAttribute('aria-label', LEOC[c] + ': ' + leoLabel(leoOp, c));
+    });
+  }
+  function leoDetail(c) {
+    var el = $('leo-detail');
+    if (!c) {
+      el.innerHTML = '<h3>Select a country</h3><p class="meta">Click a country on the map or a row in the table to see its status and the records behind it.</p>';
+      return;
+    }
+    var html = '<h3>' + esc(LEOC[c]) + '</h3><span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c)) + '</span>';
+    if (leoOp === 'starlink') {
+      html += '<p class="meta">From Starlink\'s own availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. <a href="https://www.starlink.com/map" target="_blank" rel="noopener">Starlink map</a></p>';
+    }
+    var flag = leoFlags[leoOp][c];
+    if (flag && leoOp === 'starlink' && leoCat('starlink', c) !== 'none') html += '<p class="warn">Starlink\'s map and the regulatory record below point in different directions.</p>';
+    var ds = (leoDeals[leoOp][c] || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+    html += ds.length ? '<p class="meta" style="margin-top:12px">Records in the deals tracker</p><ul>' + ds.map(function (d) {
+      return '<li><strong>' + esc(fmtDate(d.date)) + '</strong> ' + esc(d.title) + ' <a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.source_name) + '</a></li>';
+    }).join('') + '</ul>' : '<p class="meta">No ' + esc(LEO_OPS[leoOp]) + ' records for ' + esc(LEOC[c]) + ' in the deals tracker yet.</p>';
+    el.innerHTML = html;
+  }
+  function leoSelect(c) { leoSel = c; leoPaint(); leoDetail(c); }
+  function leoRender() {
+    $('leo-ops').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-op') === leoOp ? 'true' : 'false'); });
+    var codes = Object.keys(LEOC), cats = leoCats(), count = {};
+    codes.forEach(function (c) { var k = leoCat(leoOp, c); count[k] = (count[k] || 0) + 1; });
+    var flags = Object.keys(leoFlags[leoOp]).length;
+    $('leo-tiles').innerHTML = cats.slice(0, 3).map(function (r) {
+      return '<div class="tile"><span class="stat">' + (count[r[0]] || 0) + '</span><p class="meta">' + esc(r[1]) + '</p></div>';
+    }).join('') + '<div class="tile"><span class="stat">' + flags + '</span><p class="meta">Regulator refusal or suspension recorded</p></div>';
+    $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>';
+    $('leo-note').innerHTML = leoOp === 'starlink'
+      ? 'Starlink status comes from Starlink\'s own availability file, read on every site refresh' + (LEO.starlink.fetched ? ' (last checked ' + esc(ago(LEO.starlink.fetched)) + ')' : '') + '. A listing is the company\'s plan, not a licence: red outlines mark countries where the deals tracker records a regulator refusing or suspending Starlink.'
+      : esc(LEO_OPS[leoOp]) + ' publishes no country availability file, so this view shows what the deals tracker has recorded: licences, partnerships and service launches, each linked to its source. A blank country means nothing is recorded yet, not that the service is unavailable.' + (leoPan[leoOp].length ? ' Plus ' + leoPan[leoOp].length + ' pan-African agreement' + (leoPan[leoOp].length > 1 ? 's' : '') + ': ' + leoPan[leoOp].map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join('; ') + '.' : '');
+    var sel = $('leo-filter');
+    sel.innerHTML = '<option value="">All statuses</option>' + cats.map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
+    var rows = codes.filter(function (c) {
+      return (!leoFilter || leoCat(leoOp, c) === leoFilter) && (!leoQ || LEOC[c].toLowerCase().indexOf(leoQ) !== -1);
+    }).sort(function (a, b) { return LEOC[a].localeCompare(LEOC[b]); });
+    $('leo-table').innerHTML = '<thead><tr><th>Country</th><th>Starlink (company data)</th><th>Amazon Leo (tracker)</th><th>Eutelsat OneWeb (tracker)</th></tr></thead><tbody>' + rows.map(function (c) {
+      function cell(op) { var w = leoFlags[op][c] ? ' <span class="warn" title="Regulator refusal or suspension recorded">⚠</span>' : ''; return '<td><span class="dot" style="--sw:' + leoColor(op, c) + '"></span>' + esc(leoLabel(op, c)) + w + '</td>'; }
+      return '<tr data-c="' + c + '"><td><strong>' + esc(LEOC[c]) + '</strong></td>' + cell('starlink') + cell('amazon') + cell('oneweb') + '</tr>';
+    }).join('') + '</tbody>';
+    var hist = (LEO.starlinkHistory || []).slice(-10).reverse();
+    $('leo-changes').innerHTML = hist.length ? '<h3>Recent Starlink status changes</h3><ul>' + hist.map(function (h) {
+      return '<li>' + esc(fmtDate(h.date)) + ': ' + esc(LEOC[h.code] || h.code) + ' changed from ' + esc(h.from.replace('_', ' ')) + ' to ' + esc(h.to.replace('_', ' ')) + '</li>';
+    }).join('') + '</ul>' : '';
+    leoPaint(); leoDetail(leoSel);
+  }
+  function renderLeoMap() {
+    if (!leoWired) {
+      leoWired = true;
+      $('leo-ops').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; leoOp = b.getAttribute('data-op'); leoFilter = ''; leoRender(); });
+      $('leo-filter').addEventListener('change', function (e) { leoFilter = e.target.value; leoRender(); });
+      $('leo-q').addEventListener('input', function (e) { leoQ = e.target.value.trim().toLowerCase(); leoRender(); });
+      $('leo-table').addEventListener('click', function (e) { var r = e.target.closest('tr[data-c]'); if (r) { leoSelect(r.getAttribute('data-c')); $('leo-detail').scrollIntoView({block: 'nearest', behavior: 'smooth'}); } });
+      $('leo-map').addEventListener('click', function (e) { var el = e.target.closest('[data-c]'); if (el && LEOC[el.getAttribute('data-c')]) leoSelect(el.getAttribute('data-c')); });
+      fetch('/assets/africa.svg').then(function (r) { return r.text(); }).then(function (svg) {
+        $('leo-map').innerHTML = svg; leoMapLoaded = true;
+        $('leo-map').querySelectorAll('[data-c]').forEach(function (el) { var t = document.createElementNS('http://www.w3.org/2000/svg', 'title'); t.textContent = LEOC[el.getAttribute('data-c')] || ''; el.appendChild(t); });
+        leoPaint();
+      });
+    }
+    leoRender();
+  }
   var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
-  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', research: 'Research', events: 'Events', about: 'About'};
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa LEO broadband map', research: 'Research', events: 'Events', about: 'About'};
   (function legacyHash() {
     var h = location.hash.slice(1);
     if (!h) return;
@@ -809,6 +986,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var p = location.pathname.split('/').filter(Boolean);
     if (!p.length) return {v: 'home'};
     if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
+    if (p[0] === 'deals' && p[1] === 'map') return {v: 'leomap'};
     if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
     return {v: 'home'};
   }
@@ -820,11 +998,12 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       title = r ? r.title : 'Research';
     }
     document.title = (title ? title + ' | ' : '') + D.site.name;
-    ['home', 'news', 'jobs', 'deals', 'research', 'article', 'events', 'about'].forEach(function (k) {
+    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
-      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && v === 'article')) ? 'page' : 'false');
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && v === 'article') || (k === 'deals' && v === 'leomap')) ? 'page' : 'false');
     });
+    if (v === 'leomap') renderLeoMap();
     $('view-home2').hidden = v !== 'home';
     $('home-band').hidden = v !== 'home';
   }
