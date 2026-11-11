@@ -1,22 +1,22 @@
 [
  {
+  "title": "Senior Electronics Technician",
+  "url": "https://jobs.ashbyhq.com/iceye/945a7745-188f-46a5-af37-09e2efe9a39b",
+  "company": "ICEYE",
+  "sector": "Data & Earth observation",
+  "location": "Valencia",
+  "posted": "2026-11-11T12:32+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Lead, AI Hardware Design Skunkworks",
   "url": "https://jobs.ashbyhq.com/iceye/7270373f-9e9c-4608-b492-39afa380fb48",
   "company": "ICEYE",
   "sector": "Data & Earth observation",
   "location": "Valencia",
   "posted": "2026-11-11T12:26+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Electronics Technician",
-  "url": "https://jobs.ashbyhq.com/iceye/945a7745-188f-46a5-af37-09e2efe9a39b",
-  "company": "ICEYE",
-  "sector": "Data & Earth observation",
-  "location": "Valencia",
-  "posted": "2026-11-11T12:24+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -374,8 +374,8 @@
   "remote": false
  },
  {
-  "title": "Software Engineer",
-  "url": "https://careers.eutelsat.com/job/London-Software-Engineer-W2-6BD/1377249457/",
+  "title": "Service Support Engineer",
+  "url": "https://careers.eutelsat.com/job/London-Service-Support-Engineer-E18RU/1377265657/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -385,8 +385,8 @@
   "remote": false
  },
  {
-  "title": "Service Support Engineer",
-  "url": "https://careers.eutelsat.com/job/London-Service-Support-Engineer-E18RU/1377265657/",
+  "title": "Software Engineer",
+  "url": "https://careers.eutelsat.com/job/London-Software-Engineer-W2-6BD/1377249457/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -1903,6 +1903,17 @@
   "remote": false
  },
  {
+  "title": "Site Reliability Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Greece",
+  "posted": "2026-11-09T13:26+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
   "title": "Test Infrastructure Engineer",
   "url": "https://jobs.lever.co/loftorbital/8f6c6aa1-7985-45d9-8d9f-c0fac704de43",
   "company": "Loft Orbital",
@@ -1923,17 +1934,6 @@
   "function": "Corporate",
   "early": false,
   "remote": false
- },
- {
-  "title": "Site Reliability Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Greece",
-  "posted": "2026-11-09T12:27+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
  },
  {
   "title": "ICEYE Intern Lab: Product Management",
@@ -2997,7 +2997,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-11-06T12:27+00:00",
+  "posted": "2026-11-06T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3635,7 +3635,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-11-05T12:27+00:00",
+  "posted": "2026-11-05T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3646,7 +3646,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-11-05T12:27+00:00",
+  "posted": "2026-11-05T13:26+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -4856,7 +4856,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "5 Locations",
-  "posted": "2026-11-03T12:27+00:00",
+  "posted": "2026-11-03T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -5698,8 +5698,8 @@
   "remote": false
  },
  {
-  "title": "Analyst, Group Financial Reporting",
-  "url": "https://careers.ses.com/job/Bucharest-Analyst%2C-Group-Financial-Reporting/1452800033/",
+  "title": "Senior Analyst, IFRS Technical Accounting & Group Reporting",
+  "url": "https://careers.ses.com/job/Bucharest-Senior-Analyst%2C-IFRS-Technical-Accounting-&-Group-Reporting/1452796733/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Bucharest, RO",
@@ -5709,8 +5709,8 @@
   "remote": false
  },
  {
-  "title": "Senior Analyst, IFRS Technical Accounting & Group Reporting",
-  "url": "https://careers.ses.com/job/Bucharest-Senior-Analyst%2C-IFRS-Technical-Accounting-&-Group-Reporting/1452796733/",
+  "title": "Analyst, Group Financial Reporting",
+  "url": "https://careers.ses.com/job/Bucharest-Analyst%2C-Group-Financial-Reporting/1452800033/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Bucharest, RO",
@@ -8871,7 +8871,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-14T12:27+00:00",
+  "posted": "2026-10-14T13:26+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -9091,7 +9091,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9102,7 +9102,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9113,7 +9113,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9124,7 +9124,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9135,7 +9135,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9146,7 +9146,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9157,7 +9157,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9168,7 +9168,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9179,7 +9179,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-12T12:27+00:00",
+  "posted": "2026-10-12T13:26+00:00",
   "function": "Other",
   "early": false,
   "remote": false
