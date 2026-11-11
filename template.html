@@ -1087,7 +1087,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var list = FIB.cables.map(function (cb, i) { return [cb, i]; }).filter(function (x) { return cabOn(x[0]); }).sort(function (a, b) { return a[0].name.localeCompare(b[0].name); });
     cp.innerHTML = '<h4>Subsea cables</h4><div class="cur"></div><ul>' + list.map(function (x) {
       return '<li data-cb="' + x[1] + '"' + (x[0].planned ? ' class="plan"' : '') + '>' + esc(x[0].name) + '</li>';
-    }).join('') + '</ul><div class="src">Landings from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">TeleGeography</a>' + (FIB.checked ? ', ' + esc(fmtDate(FIB.checked)) : '') + '. Schematic routes.</div>';
+    }).join('') + '</ul>';
     cabApply();
   }
   function leoDetail(c) {
