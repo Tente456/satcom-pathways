@@ -1,5 +1,99 @@
 [
   {
+    "date": "2026-11-05",
+    "title": "Paratus launches in Lesotho with Starlink enterprise connectivity",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Lesotho"
+    ],
+    "parties": [
+      "Paratus Group",
+      "Real Image Lesotho",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Paratus Lesotho, a joint venture of Paratus Group and Real Image Lesotho, opened with Starlink enterprise connectivity alongside Paratus network services for businesses and organisations.",
+    "source_name": "Developing Telecoms",
+    "source_url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21088-paratus-lesotho-opens-shop-with-starlink-enterprise-offering.html"
+  },
+  {
+    "date": "2026-10-30",
+    "title": "South Africa publishes draft Space Industry Regulatory Bill to replace the 1993 Act",
+    "type": "Licence & regulation",
+    "segment": "Space policy",
+    "countries": [
+      "South Africa"
+    ],
+    "parties": [
+      "Department of Trade, Industry and Competition"
+    ],
+    "value_usd": null,
+    "value_text": "Not applicable",
+    "summary": "Published in the Government Gazette by Minister Parks Tau. If enacted it becomes the Space Industry Regulatory Act, 2026, replacing the Space Affairs Act, 1993.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/10/30/south-africa-proposes-new-space-industry-bill-to-replace-1993-act/"
+  },
+  {
+    "date": "2026-10-29",
+    "title": "Tanzania and Angola sign ICT cooperation MoU covering ANGOSAT-2 services",
+    "type": "Partnership",
+    "segment": "GEO broadband",
+    "countries": [
+      "Tanzania",
+      "Angola"
+    ],
+    "parties": [
+      "Government of Tanzania",
+      "Government of Angola"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Signed in Dar es Salaam during President Lourenço's state visit. Tanzania stated interest in using ANGOSAT-2 services; the MoU is a cooperation framework, not a capacity contract.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/11/02/tanzania-signals-interest-in-angosat-2-services-through-new-angola-partnership/"
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Roscosmos and Tanzania sign space memorandum; Russia to launch Tanzania's first EO satellite in 2027",
+    "type": "Government programme",
+    "segment": "Earth observation",
+    "countries": [
+      "Tanzania"
+    ],
+    "parties": [
+      "Roscosmos",
+      "Tanzania Ministry of Communication and Information Technology"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Framework memorandum signed at the Russia-Africa Summit in Moscow. Roscosmos confirmed a March 2027 launch for Tanzania's first Earth remote-sensing satellite.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/10/29/russia-to-launch-tanzanias-first-eo-satellite-in-2027/"
+  },
+  {
+    "date": "2026-10-28",
+    "title": "Kenya appoints Salience Consulting-led consortium to advise on commercial spaceport",
+    "type": "Contract",
+    "segment": "Launch",
+    "countries": [
+      "Kenya"
+    ],
+    "parties": [
+      "Kenya Space Agency",
+      "National Treasury PPP Directorate",
+      "Salience Consulting",
+      "SpaceDreamS",
+      "Gauff Consultants Africa"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Transaction advisory for a proposed commercial spaceport, following a funding agreement for the feasibility study signed on 1 October 2026.",
+    "source_name": "Developing Telecoms",
+    "source_url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21048-consortium-appointed-to-advise-on-kenyan-spaceport.html"
+  },
+  {
     "date": "2026-10-07",
     "title": "Eutelsat renews TV capacity deal with Télédiffusion d'Algérie",
     "type": "Capacity agreement",
@@ -125,6 +219,24 @@
     "summary": "Federal Executive Council approves two high-throughput satellites to replace NigComSat-1R; launches targeted for 2028 and 2029.",
     "source_name": "Space in Africa",
     "source_url": "https://spaceinafrica.com/2026/08/23/nigeria-approves-nigcomsat-2a-2b-in-push-to-expand-broadband-and-boost-national-security/"
+  },
+  {
+    "date": "2026-08-14",
+    "title": "Airtel Africa launches Starlink Mobile commercially in DR Congo",
+    "type": "Service launch",
+    "segment": "Direct-to-device",
+    "countries": [
+      "DR Congo"
+    ],
+    "parties": [
+      "Airtel Africa",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "First commercial satellite-to-mobile service in Africa, launched in Kinshasa under Airtel Africa's December 2025 Direct to Cell agreement with SpaceX.",
+    "source_name": "Connecting Africa",
+    "source_url": "https://www.connectingafrica.com/connectivity/airtel-africa-starlink-launch-satellite-to-mobile-service-in-drc"
   },
   {
     "date": "2026-07-15",
