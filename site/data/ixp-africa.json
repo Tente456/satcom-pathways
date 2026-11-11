@@ -1,0 +1,824 @@
+{
+ "fetched": "2026-11-11T15:54+00:00",
+ "source": "https://www.peeringdb.com",
+ "ixs": [
+  {
+   "id": 129,
+   "name": "JINX",
+   "city": "Johannesburg",
+   "country": "ZA",
+   "networks": 209,
+   "lat": -26.138,
+   "lon": 28.198
+  },
+  {
+   "id": 236,
+   "name": "KIXP - Nairobi",
+   "city": "Nairobi",
+   "country": "KE",
+   "networks": 146,
+   "lat": -1.34,
+   "lon": 36.897
+  },
+  {
+   "id": 344,
+   "name": "CINX",
+   "city": "Cape Town",
+   "country": "ZA",
+   "networks": 123,
+   "lat": -33.919,
+   "lon": 18.421
+  },
+  {
+   "id": 361,
+   "name": "TIX Tanzania - Dar es Salaam",
+   "city": "Dar es Salaam",
+   "country": "TZ",
+   "networks": 32,
+   "lat": -6.813,
+   "lon": 39.289
+  },
+  {
+   "id": 421,
+   "name": "Angola IXP",
+   "city": "Luanda",
+   "country": "AO",
+   "networks": 13,
+   "lat": -8.958,
+   "lon": 13.197
+  },
+  {
+   "id": 422,
+   "name": "UIXP",
+   "city": "Kampala",
+   "country": "UG",
+   "networks": 29,
+   "lat": 0.314,
+   "lon": 32.584
+  },
+  {
+   "id": 488,
+   "name": "IXPN Lagos",
+   "city": "Lagos",
+   "country": "NG",
+   "networks": 125,
+   "lat": 6.427,
+   "lon": 3.418
+  },
+  {
+   "id": 528,
+   "name": "MOZIX",
+   "city": "Maputo",
+   "country": "MZ",
+   "networks": 18,
+   "lat": -25.97,
+   "lon": 32.57
+  },
+  {
+   "id": 592,
+   "name": "NAPAfrica IX Johannesburg",
+   "city": "Johannesburg",
+   "country": "ZA",
+   "networks": 546,
+   "lat": -26.138,
+   "lon": 28.198
+  },
+  {
+   "id": 597,
+   "name": "NAPAfrica IX Cape Town",
+   "city": "Cape Town",
+   "country": "ZA",
+   "networks": 280,
+   "lat": -33.971,
+   "lon": 18.465
+  },
+  {
+   "id": 610,
+   "name": "DINX",
+   "city": "Durban",
+   "country": "ZA",
+   "networks": 99,
+   "lat": -29.783,
+   "lon": 30.99
+  },
+  {
+   "id": 615,
+   "name": "Lusaka Internet Exchange Point",
+   "city": "Lusaka",
+   "country": "ZM",
+   "networks": 12,
+   "lat": -15.39,
+   "lon": 28.32
+  },
+  {
+   "id": 628,
+   "name": "KINIX",
+   "city": "Kinshasa",
+   "country": "CD",
+   "networks": 24,
+   "lat": -4.321,
+   "lon": 15.275
+  },
+  {
+   "id": 694,
+   "name": "GIXA",
+   "city": "Accra",
+   "country": "GH",
+   "networks": 24,
+   "lat": 5.803,
+   "lon": -0.094
+  },
+  {
+   "id": 727,
+   "name": "MIX-BT",
+   "city": "Blantyre",
+   "country": "MW",
+   "networks": 10,
+   "lat": -15.796,
+   "lon": 35.036
+  },
+  {
+   "id": 810,
+   "name": "CIVIX",
+   "city": "Abidjan",
+   "country": "CI",
+   "networks": 14,
+   "lat": 5.36,
+   "lon": -4.01
+  },
+  {
+   "id": 922,
+   "name": "IXP Namibia",
+   "city": "Windhoek",
+   "country": "NA",
+   "networks": 7,
+   "lat": -22.56,
+   "lon": 17.08
+  },
+  {
+   "id": 967,
+   "name": "AMS-IX Djibouti",
+   "city": "Djibouti",
+   "country": "DJ",
+   "networks": 20,
+   "lat": 11.59,
+   "lon": 43.15
+  },
+  {
+   "id": 969,
+   "name": "NAPAfrica IX Durban",
+   "city": "Durban",
+   "country": "ZA",
+   "networks": 139,
+   "lat": -29.783,
+   "lon": 30.99
+  },
+  {
+   "id": 1007,
+   "name": "angonix",
+   "city": "Luanda",
+   "country": "AO",
+   "networks": 24,
+   "lat": -8.915,
+   "lon": 13.181
+  },
+  {
+   "id": 1017,
+   "name": "BENIN-IX",
+   "city": "Cotonou",
+   "country": "BJ",
+   "networks": 5,
+   "lat": 6.37,
+   "lon": 2.39
+  },
+  {
+   "id": 1032,
+   "name": "RINEX",
+   "city": "Kigali",
+   "country": "RW",
+   "networks": 17,
+   "lat": -1.95,
+   "lon": 30.06
+  },
+  {
+   "id": 1046,
+   "name": "CGIX-BZV",
+   "city": "Brazzaville",
+   "country": "CG",
+   "networks": 9,
+   "lat": -4.276,
+   "lon": 15.273
+  },
+  {
+   "id": 1105,
+   "name": "TunIXP",
+   "city": "Tunis",
+   "country": "TN",
+   "networks": 4,
+   "lat": 36.81,
+   "lon": 10.18
+  },
+  {
+   "id": 1201,
+   "name": "TIX Tanzania - Arusha (AIXP)",
+   "city": "Arusha",
+   "country": "TZ",
+   "networks": 16,
+   "lat": -3.37,
+   "lon": 36.68
+  },
+  {
+   "id": 1335,
+   "name": "MGIX",
+   "city": "Antananarivo",
+   "country": "MG",
+   "networks": 5,
+   "lat": -18.881,
+   "lon": 47.508
+  },
+  {
+   "id": 1409,
+   "name": "BINX",
+   "city": "Gaborone",
+   "country": "BW",
+   "networks": 0,
+   "lat": -24.65,
+   "lon": 25.91
+  },
+  {
+   "id": 1508,
+   "name": "MIXP",
+   "city": "Ebene",
+   "country": "MU",
+   "networks": 21,
+   "lat": -20.245,
+   "lon": 57.492
+  },
+  {
+   "id": 1574,
+   "name": "TIX Tanzania - Mwanza",
+   "city": "Mwanza",
+   "country": "TZ",
+   "networks": 6,
+   "lat": -2.52,
+   "lon": 32.9
+  },
+  {
+   "id": 1776,
+   "name": "GABIX",
+   "city": "Libreville",
+   "country": "GA",
+   "networks": 8,
+   "lat": 0.522,
+   "lon": 9.393
+  },
+  {
+   "id": 1870,
+   "name": "IXPN Abuja",
+   "city": "Abuja",
+   "country": "NG",
+   "networks": 17,
+   "lat": 9.06,
+   "lon": 7.49
+  },
+  {
+   "id": 2208,
+   "name": "TIX Tanzania - Zanzibar",
+   "city": "Zanzibar",
+   "country": "TZ",
+   "networks": 6,
+   "lat": -6.16,
+   "lon": 39.19
+  },
+  {
+   "id": 2320,
+   "name": "SIXP Sudan",
+   "city": "Khartoum",
+   "country": "SD",
+   "networks": 4,
+   "lat": 15.5,
+   "lon": 32.56
+  },
+  {
+   "id": 2362,
+   "name": "KIXP-Mombasa",
+   "city": "Mombasa",
+   "country": "KE",
+   "networks": 41,
+   "lat": -4.008,
+   "lon": 39.59
+  },
+  {
+   "id": 2381,
+   "name": "AMS-IX Lagos",
+   "city": "Lagos",
+   "country": "NG",
+   "networks": 54,
+   "lat": 6.45,
+   "lon": 3.588
+  },
+  {
+   "id": 2388,
+   "name": "TGIX",
+   "city": "Lomé",
+   "country": "TG",
+   "networks": 9,
+   "lat": 6.13,
+   "lon": 1.22
+  },
+  {
+   "id": 2410,
+   "name": "SoIXP",
+   "city": "Mogadishu",
+   "country": "SO",
+   "networks": 0,
+   "lat": 2.05,
+   "lon": 45.32
+  },
+  {
+   "id": 2414,
+   "name": "IXPN Kano",
+   "city": "Kano",
+   "country": "NG",
+   "networks": 6,
+   "lat": 12.0,
+   "lon": 8.52
+  },
+  {
+   "id": 2415,
+   "name": "IXPN Port Harcourt",
+   "city": "Port Harcourt",
+   "country": "NG",
+   "networks": 3,
+   "lat": 4.82,
+   "lon": 7.03
+  },
+  {
+   "id": 2520,
+   "name": "IXP-GUINEE",
+   "city": "Conakry",
+   "country": "GN",
+   "networks": 10,
+   "lat": 9.64,
+   "lon": -13.58
+  },
+  {
+   "id": 2541,
+   "name": "CAMIX Douala",
+   "city": "Douala",
+   "country": "CM",
+   "networks": 10,
+   "lat": 4.06,
+   "lon": 9.726
+  },
+  {
+   "id": 2552,
+   "name": "BDIXP",
+   "city": "Bujumbura",
+   "country": "BI",
+   "networks": 9,
+   "lat": -3.38,
+   "lon": 29.36
+  },
+  {
+   "id": 2554,
+   "name": "CAMIX Yaounde",
+   "city": "Yaoundé",
+   "country": "CM",
+   "networks": 4,
+   "lat": 3.868,
+   "lon": 11.513
+  },
+  {
+   "id": 2617,
+   "name": "Harare IX",
+   "city": "Harare",
+   "country": "ZW",
+   "networks": 2,
+   "lat": -17.83,
+   "lon": 31.05
+  },
+  {
+   "id": 2624,
+   "name": "TIX Tanzania - Dodoma",
+   "city": "Dodoma",
+   "country": "TZ",
+   "networks": 8,
+   "lat": -6.16,
+   "lon": 35.75
+  },
+  {
+   "id": 2665,
+   "name": "MLIX",
+   "city": "Bamako",
+   "country": "ML",
+   "networks": 8,
+   "lat": 12.64,
+   "lon": -8.0
+  },
+  {
+   "id": 2682,
+   "name": "SIXP Gambia",
+   "city": "Serekunda",
+   "country": "GM",
+   "networks": 2,
+   "lat": 13.44,
+   "lon": -16.68
+  },
+  {
+   "id": 2713,
+   "name": "CAS-IX",
+   "city": "Casablanca",
+   "country": "MA",
+   "networks": 3,
+   "lat": 33.57,
+   "lon": -7.59
+  },
+  {
+   "id": 2722,
+   "name": "LUBIX",
+   "city": "Lubumbashi",
+   "country": "CD",
+   "networks": 12,
+   "lat": -11.66,
+   "lon": 27.48
+  },
+  {
+   "id": 2729,
+   "name": "BFIX Ouagadougou",
+   "city": "Ouagadougou",
+   "country": "BF",
+   "networks": 16,
+   "lat": 12.374,
+   "lon": -1.512
+  },
+  {
+   "id": 2815,
+   "name": "Asteroid Mombasa",
+   "city": "Mombasa",
+   "country": "KE",
+   "networks": 1,
+   "lat": -4.04,
+   "lon": 39.67
+  },
+  {
+   "id": 2861,
+   "name": "JINX Voice",
+   "city": "Johannesburg",
+   "country": "ZA",
+   "networks": 4,
+   "lat": -26.138,
+   "lon": 28.198
+  },
+  {
+   "id": 2899,
+   "name": "CINX Voice",
+   "city": "Cape Town",
+   "country": "ZA",
+   "networks": 0,
+   "lat": -33.919,
+   "lon": 18.421
+  },
+  {
+   "id": 3097,
+   "name": "TIX Tanzania - Mbeya",
+   "city": "Mbeya",
+   "country": "TZ",
+   "networks": 2,
+   "lat": -8.9,
+   "lon": 33.46
+  },
+  {
+   "id": 3117,
+   "name": "FEZIX",
+   "city": "Fez",
+   "country": "MA",
+   "networks": 3,
+   "lat": 34.037,
+   "lon": -5.0
+  },
+  {
+   "id": 3302,
+   "name": "PyramIX",
+   "city": "Cairo",
+   "country": "EG",
+   "networks": 16,
+   "lat": 52.356,
+   "lon": 4.951
+  },
+  {
+   "id": 3401,
+   "name": "BFIX Bobo-Dioulasso",
+   "city": "Bobo-Dioulasso",
+   "country": "BF",
+   "networks": 6,
+   "lat": 11.18,
+   "lon": -4.3
+  },
+  {
+   "id": 3403,
+   "name": "NAPAfrica MAPS Johannesburg",
+   "city": "Johannesburg",
+   "country": "ZA",
+   "networks": 26,
+   "lat": -26.138,
+   "lon": 28.198
+  },
+  {
+   "id": 3561,
+   "name": "Douala-IX",
+   "city": "Douala",
+   "country": "CM",
+   "networks": 8,
+   "lat": 4.057,
+   "lon": 9.696
+  },
+  {
+   "id": 3633,
+   "name": "GOMIX",
+   "city": "Goma",
+   "country": "CD",
+   "networks": 11,
+   "lat": -1.68,
+   "lon": 29.22
+  },
+  {
+   "id": 3734,
+   "name": "Asteroid Nairobi",
+   "city": "Nairobi",
+   "country": "KE",
+   "networks": 5,
+   "lat": -1.29,
+   "lon": 36.82
+  },
+  {
+   "id": 3843,
+   "name": "ixFabric - Johannesburg",
+   "city": "Johannesburg",
+   "country": "ZA",
+   "networks": 16,
+   "lat": -26.2,
+   "lon": 28.05
+  },
+  {
+   "id": 3884,
+   "name": "NAPAfrica MAPS Cape Town",
+   "city": "Cape Town",
+   "country": "ZA",
+   "networks": 5,
+   "lat": -33.92,
+   "lon": 18.42
+  },
+  {
+   "id": 4000,
+   "name": "AF-CIX",
+   "city": "Lagos",
+   "country": "NG",
+   "networks": 41,
+   "lat": 6.598,
+   "lon": 3.373
+  },
+  {
+   "id": 4037,
+   "name": "CV-IXP",
+   "city": "Praia",
+   "country": "CV",
+   "networks": 5,
+   "lat": 14.93,
+   "lon": -23.51
+  },
+  {
+   "id": 4081,
+   "name": "N'Djamena IX",
+   "city": "N'Djamena",
+   "country": "TD",
+   "networks": 9,
+   "lat": 12.13,
+   "lon": 15.06
+  },
+  {
+   "id": 4122,
+   "name": "ACIX",
+   "city": "Kinshasa",
+   "country": "CD",
+   "networks": 6,
+   "lat": -4.317,
+   "lon": 15.279
+  },
+  {
+   "id": 4148,
+   "name": "NMBINX",
+   "city": "Gqeberha",
+   "country": "ZA",
+   "networks": 11,
+   "lat": -33.951,
+   "lon": 25.574
+  },
+  {
+   "id": 4231,
+   "name": "LINX Nairobi",
+   "city": "Nairobi",
+   "country": "KE",
+   "networks": 66,
+   "lat": -1.34,
+   "lon": 36.897
+  },
+  {
+   "id": 4259,
+   "name": "Accra Internet Exchange LBG",
+   "city": "Accra",
+   "country": "GH",
+   "networks": 24,
+   "lat": 5.573,
+   "lon": -0.203
+  },
+  {
+   "id": 4293,
+   "name": "CGIX-PNR",
+   "city": "Pointe-Noire",
+   "country": "CG",
+   "networks": 1,
+   "lat": -4.78,
+   "lon": 11.86
+  },
+  {
+   "id": 4357,
+   "name": "Addix",
+   "city": "Addis Ababa",
+   "country": "ET",
+   "networks": 3,
+   "lat": 9.03,
+   "lon": 38.74
+  },
+  {
+   "id": 4446,
+   "name": "LIONEX1",
+   "city": "Lilongwe",
+   "country": "MW",
+   "networks": 5,
+   "lat": -13.96,
+   "lon": 33.79
+  },
+  {
+   "id": 4450,
+   "name": "Tripoli IXP",
+   "city": "Tripoli",
+   "country": "LY",
+   "networks": 0,
+   "lat": 32.89,
+   "lon": 13.19
+  },
+  {
+   "id": 4573,
+   "name": "DarIX",
+   "city": "Dar es Salaam",
+   "country": "TZ",
+   "networks": 5,
+   "lat": -6.79,
+   "lon": 39.21
+  },
+  {
+   "id": 4653,
+   "name": "LINX Mombasa",
+   "city": "Mombasa",
+   "country": "KE",
+   "networks": 55,
+   "lat": -4.008,
+   "lon": 39.59
+  },
+  {
+   "id": 4724,
+   "name": "ixFabric - Nairobi",
+   "city": "Nairobi",
+   "country": "KE",
+   "networks": 0,
+   "lat": -1.34,
+   "lon": 36.897
+  },
+  {
+   "id": 4769,
+   "name": "LINX Accra",
+   "city": "Accra",
+   "country": "GH",
+   "networks": 8,
+   "lat": 5.573,
+   "lon": -0.203
+  },
+  {
+   "id": 4892,
+   "name": "Michcom-IX",
+   "city": "Freetown",
+   "country": "SL",
+   "networks": 5,
+   "lat": 9.606,
+   "lon": -13.652
+  },
+  {
+   "id": 4898,
+   "name": "PLUGINS IX",
+   "city": "NAIROBI",
+   "country": "KE",
+   "networks": 0,
+   "lat": -1.34,
+   "lon": 36.897
+  },
+  {
+   "id": 4920,
+   "name": "HubSIX",
+   "city": "Dakar",
+   "country": "SN",
+   "networks": 6,
+   "lat": 14.676,
+   "lon": -17.446
+  },
+  {
+   "id": 5002,
+   "name": "Digital Delta IX",
+   "city": "Gaborone",
+   "country": "BW",
+   "networks": 5,
+   "lat": -24.588,
+   "lon": 25.907
+  },
+  {
+   "id": 5015,
+   "name": "Lesotho Internet Exchange Point",
+   "city": "Maseru",
+   "country": "LS",
+   "networks": 3,
+   "lat": -29.31,
+   "lon": 27.48
+  },
+  {
+   "id": 5080,
+   "name": "Lilongwe Internet Exchange, LLIX",
+   "city": "Lilongwe",
+   "country": "MW",
+   "networks": 2,
+   "lat": -13.96,
+   "lon": 33.79
+  }
+ ],
+ "links": [
+  {
+   "operator": "Avanti",
+   "ix_id": 592,
+   "mbps": 20000
+  },
+  {
+   "operator": "Avanti",
+   "ix_id": 2381,
+   "mbps": 2000
+  },
+  {
+   "operator": "Gilat Telecom",
+   "ix_id": 422,
+   "mbps": 2000
+  },
+  {
+   "operator": "SES",
+   "ix_id": 597,
+   "mbps": 10000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 129,
+   "mbps": 200000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 236,
+   "mbps": 200000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 422,
+   "mbps": 100000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 488,
+   "mbps": 600000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 592,
+   "mbps": 200000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 2381,
+   "mbps": 300000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 4231,
+   "mbps": 200000
+  },
+  {
+   "operator": "Starlink",
+   "ix_id": 4920,
+   "mbps": 200000
+  }
+ ]
+}
