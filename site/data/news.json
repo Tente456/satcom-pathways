@@ -1,5 +1,74 @@
 [
  {
+  "title": "Starship Flight 15 to attempt first catch of both stages",
+  "url": "https://spaceq.ca/starship-flight-15-catch-both-stages-preview/",
+  "source": "SpaceQ",
+  "date": "2026-11-11T12:08+00:00",
+  "categories": [
+   "Launch",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Vodacom Plans Satellite-to-Phone Connectivity in South Africa by 2027",
+  "url": "https://spaceinafrica.com/2026/11/11/vodacom-plans-satellite-to-phone-connectivity-in-south-africa-by-2027/",
+  "source": "Space in Africa",
+  "date": "2026-11-11T09:41+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Africa"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL Opinion: Who Takes Responsibility When Manufacturing Moves into Orbit?",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinionwho-takes-responsibility-when-manufacturing-moves-into-orbit/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-11T09:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "BT cools on Starlink",
+  "url": "https://www.advanced-television.com/2026/11/11/bt-cools-on-starlink/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-11T08:21+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "INNOSPACE Prepares SEBIT for Second Test Flight",
+  "url": "https://spacewatch.global/2026/11/innospace-prepares-sebit-for-second-test-flight/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-11T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "ENPULSION Brings Orbion’s Hall-Effect Propulsion to Europe’s Satellite Market",
+  "url": "https://spacewatch.global/2026/11/enpulsion-brings-orbions-hall-effect-propulsion-to-europes-satellite-market/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-11T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Synspective Secures Up to 10 Firefly Alpha Launches to Ramp Up Deployment of its StriX Constellation",
+  "url": "https://spacewatch.global/2026/11/synspective-secures-up-to-10-firefly-alpha-launches-to-ramp-up-deployment-of-its-strix-constellation/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-11T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Fire Damage Delays Installation of Simulated Lunar Greenhouse in Germany",
+  "url": "https://europeanspaceflight.com/fire-damage-delays-installation-of-simulated-lunar-greenhouse-in-germany/",
+  "source": "European Spaceflight",
+  "date": "2026-11-11T07:00+00:00",
+  "categories": []
+ },
+ {
   "title": "👨🏿‍🚀TechCabal Daily – Signed, sealed, remitted",
   "url": "https://techcabal.com/2026/11/11/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-signed-sealed-remitted/",
   "source": "TechCabal",
@@ -14,6 +83,46 @@
   "url": "https://www.nasaspaceflight.com/2026/11/isaacman-sls-2030s/",
   "source": "NASASpaceflight",
   "date": "2026-11-11T04:02+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Amazon Leo will launch 40 satellites on ULA",
+  "url": "https://www.advanced-television.com/2026/11/11/amazon-leo-will-launch-40-satellites-on-ula/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-11T01:28+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Eutelsat, SpaceX ready for OneWeb launch",
+  "url": "https://www.advanced-television.com/2026/11/11/eutelsat-spacex-ready-for-oneweb-launch/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-11T00:29+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Korea: Skylo, KT Sat sign distribution deal",
+  "url": "https://www.advanced-television.com/2026/11/11/korea-skylo-kt-sat-sign-distribution-deal/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-11T00:12+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Rocket Factory Augsberg Scottish launch slips",
+  "url": "https://www.advanced-television.com/2026/11/11/rocket-factory-augsberg-scottish-launch-slips/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-11T00:10+00:00",
   "categories": [
    "Launch"
   ]
@@ -3422,110 +3531,6 @@
   "categories": [
    "Launch",
    "Earth observation"
-  ]
- },
- {
-  "title": "NordSpace Secures C$20 Million Canadian Defense Contract for Responsive Space Launch",
-  "url": "https://spacewatch.global/2026/10/nordspace-secures-c20-million-canadian-defense-contract-for-responsive-space-launch/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-22T06:00+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Remondo and Meissa Partner to Advance AI-Powered Earth Observation Solutions",
-  "url": "https://spacewatch.global/2026/10/remondo-and-meissa-partner-to-advance-ai-powered-earth-observation-solutions/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-22T06:00+00:00",
-  "categories": [
-   "Earth observation",
-   "Business & funding"
-  ]
- },
- {
-  "title": "China readies first commercial resupply craft, first booster reflight, and next landing attempt",
-  "url": "https://www.nasaspaceflight.com/2026/10/china-roundup-102026/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-21T20:25+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "TechnoMile Recognized as a 2026 Inc. Power Partner Award Winner",
-  "url": "https://spacenews.com/technomile-recognized-as-a-2026-inc-power-partner-award-winner/",
-  "source": "SpaceNews",
-  "date": "2026-10-21T15:26+00:00",
-  "categories": []
- },
- {
-  "title": "Global Satcom Services Revenues to Reach $145 Billion by 2035",
-  "url": "https://spacenews.com/global-satcom-services-revenues-to-reach-145-billion-by-2035/",
-  "source": "SpaceNews",
-  "date": "2026-10-21T15:00+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Airbus Ships First Lightweight Vulcain Aft Bay for Ariane 6 Block 2",
-  "url": "https://europeanspaceflight.com/airbus-ships-first-lightweight-vulcain-aft-bay-for-ariane-6-block-2/",
-  "source": "European Spaceflight",
-  "date": "2026-10-21T14:34+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Space Nuclear Power Corporation Awarded DARPA Agreement for Ground Test of Autonomous Nuclear Reactor Controller",
-  "url": "https://spacenews.com/space-nuclear-power-corporation-awarded-darpa-agreement-for-ground-test-of-autonomous-nuclear-reactor-controller/",
-  "source": "SpaceNews",
-  "date": "2026-10-21T14:29+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "ESPI AC 2026 – “The Moon Is Not Yours. It’s Ours.” Ricardo Conde on Europe’s Future in Space",
-  "url": "https://spacewatch.global/2026/10/espi-ac-2026-the-moon-is-not-yours-its-ours-ricardo-conde-on-europes-future-in-space/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-21T14:00+00:00",
-  "categories": []
- },
- {
-  "title": "SpaceX eyes full Starship recovery as Starlink subs miss estimates",
-  "url": "https://www.lightreading.com/satellite/spacex-eyes-full-starship-recovery-as-starlink-subs-miss-estimates",
-  "source": "Light Reading",
-  "date": "2026-10-21T13:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch"
-  ]
- },
- {
-  "title": "Hewlett Packard Enterprise to Send AI Compute Module to the Moon",
-  "url": "https://payloadspace.com/hewlett-packard-enterprise-to-send-ai-compute-module-to-the-moon/",
-  "source": "Payload",
-  "date": "2026-10-21T12:14+00:00",
-  "categories": []
- },
- {
-  "title": "Summer of Quantum: Building momentum for space-based QKD",
-  "url": "https://spacenews.com/summer-of-quantum-building-momentum-for-space-based-qkd/",
-  "source": "SpaceNews",
-  "date": "2026-10-21T11:54+00:00",
-  "categories": []
- },
- {
-  "title": "AST SpaceMobile limited coverage coming soon in US and beyond",
-  "url": "https://www.lightreading.com/satellite/ast-spacemobile-says-limited-coverage-coming-soon-in-us-and-beyond",
-  "source": "Light Reading",
-  "date": "2026-10-21T09:27+00:00",
-  "categories": [
-   "Satcom & connectivity"
   ]
  }
 ]
