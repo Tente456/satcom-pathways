@@ -315,12 +315,30 @@ aside { display: grid; gap: 18px; }
 .leo-map .gpt.hollow { fill: var(--surface) !important; stroke: var(--gc); stroke-width: 2.6; }
 .leo-map .gpt:hover, .leo-map .xpt:hover { stroke: var(--ink); }
 .leo-map .xpt { stroke: var(--surface); stroke-width: 1.4; cursor: pointer; fill: var(--leo-unk); }
-.leo-map .cbl path { fill: none; stroke-width: 1.5; stroke-opacity: .85; stroke-linejoin: round; transition: stroke-opacity .15s; }
-.leo-map .cbl path.plan { stroke-dasharray: 4 3; }
-.leo-map .cbl path.dim { stroke-opacity: .08; }
-.leo-map .cbl path.hi { stroke-width: 2.4; stroke-opacity: 1; }
+.leo-map .cbl path.cv { fill: none; stroke: #0e7c86; stroke-width: 1.1; stroke-opacity: .45; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; transition: stroke-opacity .15s, stroke-width .15s; }
+.leo-map .cbl path.cv.plan { stroke-dasharray: 3 3; }
+.leo-map .cbl path.cv.on { stroke-opacity: .95; stroke-width: 1.6; }
+.leo-map .cbl path.cv.dim { stroke-opacity: .07; }
+.leo-map .cbl path.cv.hov { stroke: #d6336c; stroke-opacity: 1; stroke-width: 3; }
+.leo-map .cbl path.ch { fill: none; stroke: transparent; stroke-width: 8; pointer-events: stroke; cursor: pointer; }
 .leo-legend .ln::before { width: 18px; height: 3px; border-radius: 0; background: var(--sw); }
 .leo-legend .ln.plan::before { background: repeating-linear-gradient(90deg, var(--sw) 0 4px, transparent 4px 7px); }
+.leo-legend .src { margin-left: auto; font-size: 12px; }
+.leo-legend .src::before { display: none; }
+.leo-mapbox { position: relative; }
+.cab-panel { position: absolute; left: 0; bottom: 1%; width: 29%; max-height: 37%; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: 12px; box-shadow: 0 2px 8px rgba(16, 24, 40, .06); }
+.cab-panel[hidden] { display: none; }
+.cab-panel h4, .cab-panel .cur, .cab-panel .src { flex: none; }
+.cab-panel h4 { margin: 0; padding: 9px 10px 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+.cab-panel .cur { padding: 0 10px 6px; font-weight: 600; font-size: 13px; color: var(--ink); min-height: 1.35em; }
+.cab-panel ul { list-style: none; margin: 0; padding: 0 4px 4px; overflow-y: auto; flex: 1; }
+.cab-panel li { display: flex; gap: 7px; align-items: center; padding: 3px 6px; border-radius: 4px; cursor: pointer; line-height: 1.3; }
+.cab-panel li::before { content: ''; flex: none; width: 14px; height: 2px; background: #0e7c86; }
+.cab-panel li.plan::before { background: repeating-linear-gradient(90deg, #0e7c86 0 3px, transparent 3px 5px); }
+.cab-panel li.hov { background: rgba(214, 51, 108, .08); color: #d6336c; }
+.cab-panel li.hov::before { background: #d6336c; }
+.cab-panel .src { padding: 6px 10px 8px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
+@media (max-width: 760px) { .cab-panel { position: static; width: auto; max-height: 230px; margin-top: 8px; } }
 .leo-map .xpt.sat { fill: var(--gm-pop); stroke-width: 1.8; }
 .leo-legend .mk::before { border-radius: 50%; background: var(--sw); }
 .leo-legend .mk.hollow::before { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
@@ -512,7 +530,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
-      <div class="leo-mapwrap"><div id="leo-map" class="leo-map" aria-hidden="true"></div><div class="leo-legend" id="leo-legend"></div></div>
+      <div class="leo-mapwrap"><div class="leo-mapbox"><div id="leo-map" class="leo-map" aria-hidden="true"></div><div id="cab-panel" class="cab-panel" hidden></div></div><div class="leo-legend" id="leo-legend"></div></div>
       <aside class="panel leo-detail" id="leo-detail" aria-live="polite"></aside>
     </div>
     <p class="note" id="leo-note"></p>
@@ -1022,26 +1040,54 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var cg = svg && svg.querySelector('#cbl');
     if (svg && !cg && (FIB.cables || []).length) {
       cg = document.createElementNS('http://www.w3.org/2000/svg', 'g'); cg.id = 'cbl'; cg.setAttribute('class', 'cbl');
-      var K3 = 1000 / 86, KY3 = K3 / Math.cos(2 * Math.PI / 180), PAL = ['#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4', '#2bb5b5', '#f032e6', '#9a6324', '#008080', '#b03060', '#3d5afe', '#808000'];
+      var K3 = 1000 / 86, KY3 = K3 / Math.cos(2 * Math.PI / 180), hits = [];
+      var sm = function (p) {
+        if (p.length < 3) return 'M' + p.join('L');
+        var d = 'M' + p[0];
+        for (var k = 1; k < p.length - 1; k++) d += 'Q' + p[k] + ' ' + ((p[k][0] + p[k + 1][0]) / 2).toFixed(1) + ',' + ((p[k][1] + p[k + 1][1]) / 2).toFixed(1);
+        return d + 'L' + p[p.length - 1];
+      };
       FIB.cables.forEach(function (cb, i) {
         cb.paths.forEach(function (pts) {
-          var pth = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-          pth.setAttribute('d', 'M' + pts.map(function (q) { return ((q[1] + 26) * K3).toFixed(1) + ',' + ((38.5 - q[0]) * KY3).toFixed(1); }).join('L'));
-          pth.style.stroke = PAL[i % PAL.length]; pth.style.cursor = 'default'; pth.setAttribute('data-cb', i);
-          if (cb.planned) pth.setAttribute('class', 'plan');
-          var t = document.createElementNS('http://www.w3.org/2000/svg', 'title'); t.textContent = cb.name + (cb.planned ? ' (planned, ' : ' (') + (cb.rfs || '') + ')'; pth.appendChild(t);
-          cg.appendChild(pth);
+          var d = sm(pts.map(function (q) { return [+((q[1] + 26) * K3).toFixed(1), +((38.5 - q[0]) * KY3).toFixed(1)]; }));
+          var v = document.createElementNS('http://www.w3.org/2000/svg', 'path'), h = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          v.setAttribute('d', d); v.setAttribute('class', 'cv' + (cb.planned ? ' plan' : '')); v.setAttribute('data-cv', i); cg.appendChild(v);
+          h.setAttribute('d', d); h.setAttribute('class', 'ch'); h.setAttribute('data-cb', i); hits.push(h);
         });
       });
+      hits.forEach(function (h) { cg.appendChild(h); });
+      cg.addEventListener('mouseover', function (e) { var t = e.target.closest('[data-cb]'); if (t) cabHi(+t.getAttribute('data-cb')); });
+      cg.addEventListener('mouseout', function () { cabHi(-1); });
       svg.insertBefore(cg, svg.querySelector('#gpts') || null);
     }
-    if (cg) {
-      cg.style.display = leoOp === 'fibre' ? '' : 'none';
-      cg.querySelectorAll('path').forEach(function (pth) {
-        var cb = FIB.cables[+pth.getAttribute('data-cb')], on = leoSel && cb.countries.indexOf(leoSel) !== -1;
-        pth.classList.toggle('dim', !!(leoOp === 'fibre' && leoSel && !on)); pth.classList.toggle('hi', !!(leoOp === 'fibre' && on));
-      });
-    }
+    if (cg) cg.style.display = leoOp === 'fibre' ? '' : 'none';
+    cabPanel();
+  }
+  var cabHov = -1;
+  function cabOn(cb) { return !leoSel || cb.countries.indexOf(leoSel) !== -1; }
+  function cabApply() {
+    var cg = document.getElementById('cbl');
+    if (cg) cg.querySelectorAll('path.cv').forEach(function (v) {
+      var i = +v.getAttribute('data-cv'), cb = FIB.cables[i];
+      v.classList.toggle('on', !!(leoSel && cabOn(cb))); v.classList.toggle('dim', !!(leoSel && !cabOn(cb)) && i !== cabHov); v.classList.toggle('hov', i === cabHov);
+      if (i === cabHov) cg.insertBefore(v, cg.querySelector('path.ch'));
+    });
+    var cp = $('cab-panel'); if (!cp || cp.hidden) return;
+    cp.querySelectorAll('li').forEach(function (li) { li.classList.toggle('hov', +li.getAttribute('data-cb') === cabHov); });
+    var cb = FIB.cables[cabHov], list = FIB.cables.filter(cabOn), inS = list.filter(function (x) { return !x.planned; }).length;
+    cp.querySelector('.cur').textContent = cb ? cb.name + (cb.planned ? ', planned ' : ', ready ') + (cb.rfs || '') + ', ' + cb.countries.length + ' African ' + (cb.countries.length === 1 ? 'country' : 'countries')
+      : (leoSel ? LEOC[leoSel] + ', ' : '') + inS + ' in service' + (list.length > inS ? ', ' + (list.length - inS) + ' planned' : '');
+  }
+  function cabHi(i) { cabHov = i; cabApply(); }
+  function cabPanel() {
+    var cp = $('cab-panel'); if (!cp) return;
+    cp.hidden = leoOp !== 'fibre' || !(FIB.cables || []).length;
+    if (cp.hidden) return;
+    var list = FIB.cables.map(function (cb, i) { return [cb, i]; }).filter(function (x) { return cabOn(x[0]); }).sort(function (a, b) { return a[0].name.localeCompare(b[0].name); });
+    cp.innerHTML = '<h4>Subsea cables</h4><div class="cur"></div><ul>' + list.map(function (x) {
+      return '<li data-cb="' + x[1] + '"' + (x[0].planned ? ' class="plan"' : '') + '>' + esc(x[0].name) + '</li>';
+    }).join('') + '</ul><div class="src">Landings from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">TeleGeography</a>' + (FIB.checked ? ', ' + esc(fmtDate(FIB.checked)) : '') + '. Schematic routes.</div>';
+    cabApply();
   }
   function leoDetail(c) {
     var el = $('leo-detail');
@@ -1105,10 +1151,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('leo-tiles').innerHTML = cats.slice(0, 3).map(function (r) {
       return '<div class="tile"><span class="stat">' + (count[r[0]] || 0) + '</span><p class="meta">' + esc(r[1]) + '</p></div>';
     }).join('') + '<div class="tile"><span class="stat">' + flags + '</span><p class="meta">Regulator refusal or suspension recorded</p></div>';
-    $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>';
-    $('leo-note').innerHTML = leoOp === 'starlink'
-      ? 'Starlink status comes from Starlink\'s own availability file, read on every site refresh' + (LEO.starlink.fetched ? ' (last checked ' + esc(ago(LEO.starlink.fetched)) + ')' : '') + '. A listing is the company\'s plan, not a licence: red outlines mark countries where the deals tracker records a regulator refusing or suspending Starlink.'
-      : esc(LEO_OPS[leoOp]) + ' publishes no country availability file, so this view shows what the deals tracker has recorded: licences, partnerships and service launches, each linked to its source. A blank country means nothing is recorded yet, not that the service is unavailable.' + (leoPan[leoOp].length ? ' Plus ' + leoPan[leoOp].length + ' pan-African agreement' + (leoPan[leoOp].length > 1 ? 's' : '') + ': ' + leoPan[leoOp].map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join('; ') + '.' : '');
+    $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>' +
+      '<span class="src">' + (leoOp === 'starlink' ? 'Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') : 'From the deals tracker') + '</span>';
+    $('leo-note').innerHTML = leoOp !== 'starlink' && leoPan[leoOp].length ? 'Pan-African agreements ' + leoPan[leoOp].map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join(', ') : '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All statuses</option>' + cats.map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
     var rows = codes.filter(function (c) {
@@ -1132,8 +1177,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
     }).join('');
     $('leo-legend').innerHTML = GTYPES.map(function (t) { return '<span class="mk" style="--sw:var(' + t[1] + ')">' + esc(t[0]) + '</span>'; }).join('') + '<span class="mk hollow">Not yet operational or out of service</span>' +
-      leoCats().slice(0, 3).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">Country with ' + esc(r[1]) + '</span>'; }).join('');
-    $('leo-note').innerHTML = 'Gateways, teleports, tracking stations and internet points of presence on the continent, each from a public source. Where an operator has not published the exact site, the marker sits in the country and the record says so. A country with nothing recorded may still have ground sites that have not been publicly reported.';
+      leoCats().slice(0, 3).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">Country with ' + esc(r[1]) + '</span>'; }).join('') + '<span class="src">Public sources, linked in each record</span>';
+    $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All site types</option>' + GTYPES.map(function (t) { return '<option value="' + esc(t[0]) + '"' + (leoFilter === t[0] ? ' selected' : '') + '>' + esc(t[0]) + '</option>'; }).join('');
     var rows = GROUND.filter(function (g) {
@@ -1152,7 +1197,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       return '<div class="tile"><span class="stat">' + esc(String(t[0])) + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
     }).join('');
     $('leo-legend').innerHTML = '<span class="mk" style="--sw:var(--gm-pop)">Exchange with a satellite operator, sized by capacity</span><span class="mk" style="--sw:var(--leo-unk)">Other exchange</span>' +
-      leoCats().slice(0, 2).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
+      leoCats().slice(0, 2).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="src">PeeringDB data</span>';
     $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All exchanges</option><option value="__sat"' + (leoFilter === '__sat' ? ' selected' : '') + '>With a satellite operator</option>' + IX_OPS.map(function (o) { return '<option value="' + esc(o) + '"' + (leoFilter === o ? ' selected' : '') + '>' + esc(o) + '</option>'; }).join('');
@@ -1178,8 +1223,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('leo-tiles').innerHTML = [[liveC, 'Subsea cables in service landing in Africa'], [ll.length, 'Landlocked countries'], [llGw, 'Operational satellite gateways in landlocked countries'], [one.length, 'Coastal countries with a single subsea cable: ' + one.map(function (c) { return LEOC[c]; }).join(', ')]].map(function (t) {
       return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
     }).join('');
-    $('leo-legend').innerHTML = '<span class="ln" style="--sw:#4363d8">Subsea cable in service</span><span class="ln plan" style="--sw:#4363d8">Planned cable</span>' + leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
-    $('leo-note').innerHTML = 'Cable landings from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '. Routes are drawn schematically.';
+    $('leo-legend').innerHTML = '<span class="ln" style="--sw:#0e7c86">Subsea cable in service</span><span class="ln plan" style="--sw:#0e7c86">Planned cable</span>' + leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
+    $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All countries</option>' + leoCats().map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
     var rows = codes.filter(function (c) {
@@ -1199,7 +1244,11 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       $('leo-filter').addEventListener('change', function (e) { leoFilter = e.target.value; leoRender(); });
       $('leo-q').addEventListener('input', function (e) { leoQ = e.target.value.trim().toLowerCase(); leoRender(); });
       $('leo-table').addEventListener('click', function (e) { var r = e.target.closest('tr[data-c]'); if (r) { leoSelect(r.getAttribute('data-c')); $('leo-detail').scrollIntoView({block: 'nearest', behavior: 'smooth'}); } });
+      $('cab-panel').addEventListener('mouseover', function (e) { var li = e.target.closest('li[data-cb]'); if (li) cabHi(+li.getAttribute('data-cb')); });
+      $('cab-panel').addEventListener('click', function (e) { var li = e.target.closest('li[data-cb]'); if (li) cabHi(+li.getAttribute('data-cb')); });
+      $('cab-panel').addEventListener('mouseleave', function () { cabHi(-1); });
       $('leo-map').addEventListener('click', function (e) {
+        var cbt = e.target.closest('[data-cb]'); if (cbt) { cabHi(+cbt.getAttribute('data-cb')); return; }
         var m = e.target.closest('[data-gi]'); if (m) { var g = GROUND[+m.getAttribute('data-gi')]; if (g && g.code) leoSelect(g.code); return; }
         var xm = e.target.closest('[data-xc]'); if (xm) { if (LEOC[xm.getAttribute('data-xc')]) leoSelect(xm.getAttribute('data-xc')); return; }
         var el = e.target.closest('[data-c]'); if (el && LEOC[el.getAttribute('data-c')]) leoSelect(el.getAttribute('data-c'));
