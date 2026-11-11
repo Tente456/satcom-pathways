@@ -531,6 +531,11 @@ def load_ixp():
     return d
 
 
+def load_fibre():
+    f = ROOT / "fibre.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
 def load_ground():
     f = ROOT / "ground.json"
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
@@ -826,6 +831,7 @@ def render(cfg, news, jobs, updated, research):
         "profiles": load_profiles(),
         "ground": load_ground(),
         "ixp": load_ixp(),
+        "fibre": load_fibre(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")

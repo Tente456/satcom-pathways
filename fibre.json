@@ -1,0 +1,337 @@
+{
+ "checked": "2026-11-11",
+ "source_name": "TeleGeography Submarine Cable Map",
+ "source_url": "https://www.submarinecablemap.com/",
+ "countries": {
+  "DZ": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 1,
+   "lake": 0
+  },
+  "AO": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "BJ": {
+   "landlocked": false,
+   "cables": 3,
+   "planned": 0,
+   "lake": 0
+  },
+  "BW": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "BF": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "BI": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "CV": {
+   "landlocked": false,
+   "cables": 6,
+   "planned": 0,
+   "lake": 0
+  },
+  "CM": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "CF": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "TD": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "KM": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "CG": {
+   "landlocked": false,
+   "cables": 2,
+   "planned": 0,
+   "lake": 0
+  },
+  "CD": {
+   "landlocked": false,
+   "cables": 2,
+   "planned": 0,
+   "lake": 3
+  },
+  "CI": {
+   "landlocked": false,
+   "cables": 6,
+   "planned": 0,
+   "lake": 0
+  },
+  "DJ": {
+   "landlocked": false,
+   "cables": 8,
+   "planned": 4,
+   "lake": 0
+  },
+  "EG": {
+   "landlocked": false,
+   "cables": 18,
+   "planned": 6,
+   "lake": 0
+  },
+  "GQ": {
+   "landlocked": false,
+   "cables": 4,
+   "planned": 0,
+   "lake": 0
+  },
+  "ER": {
+   "landlocked": false,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "SZ": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "ET": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "GA": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "GM": {
+   "landlocked": false,
+   "cables": 1,
+   "planned": 0,
+   "lake": 0
+  },
+  "GH": {
+   "landlocked": false,
+   "cables": 6,
+   "planned": 0,
+   "lake": 0
+  },
+  "GN": {
+   "landlocked": false,
+   "cables": 1,
+   "planned": 0,
+   "lake": 0
+  },
+  "GW": {
+   "landlocked": false,
+   "cables": 1,
+   "planned": 0,
+   "lake": 0
+  },
+  "KE": {
+   "landlocked": false,
+   "cables": 7,
+   "planned": 2,
+   "lake": 0
+  },
+  "LS": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "LR": {
+   "landlocked": false,
+   "cables": 1,
+   "planned": 0,
+   "lake": 0
+  },
+  "LY": {
+   "landlocked": false,
+   "cables": 6,
+   "planned": 0,
+   "lake": 0
+  },
+  "MG": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "MW": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "ML": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "MR": {
+   "landlocked": false,
+   "cables": 2,
+   "planned": 0,
+   "lake": 0
+  },
+  "MU": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "MA": {
+   "landlocked": false,
+   "cables": 6,
+   "planned": 1,
+   "lake": 0
+  },
+  "MZ": {
+   "landlocked": false,
+   "cables": 4,
+   "planned": 0,
+   "lake": 0
+  },
+  "NA": {
+   "landlocked": false,
+   "cables": 2,
+   "planned": 0,
+   "lake": 0
+  },
+  "NE": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "NG": {
+   "landlocked": false,
+   "cables": 8,
+   "planned": 0,
+   "lake": 0
+  },
+  "RW": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "ST": {
+   "landlocked": false,
+   "cables": 2,
+   "planned": 0,
+   "lake": 0
+  },
+  "SN": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "SC": {
+   "landlocked": false,
+   "cables": 3,
+   "planned": 0,
+   "lake": 0
+  },
+  "SL": {
+   "landlocked": false,
+   "cables": 1,
+   "planned": 0,
+   "lake": 0
+  },
+  "SO": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 1,
+   "lake": 0
+  },
+  "ZA": {
+   "landlocked": false,
+   "cables": 12,
+   "planned": 3,
+   "lake": 0
+  },
+  "SS": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "SD": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "TZ": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "TG": {
+   "landlocked": false,
+   "cables": 3,
+   "planned": 0,
+   "lake": 0
+  },
+  "TN": {
+   "landlocked": false,
+   "cables": 5,
+   "planned": 0,
+   "lake": 0
+  },
+  "UG": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 2
+  },
+  "ZM": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "ZW": {
+   "landlocked": true,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  },
+  "EH": {
+   "landlocked": false,
+   "cables": 0,
+   "planned": 0,
+   "lake": 0
+  }
+ }
+}

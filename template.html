@@ -502,6 +502,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <button type="button" data-op="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
       <button type="button" data-op="ground" aria-pressed="false">Ground infrastructure</button>
       <button type="button" data-op="ixp" aria-pressed="false">Internet exchanges</button>
+      <button type="button" data-op="fibre" aria-pressed="false">Fibre and satellite</button>
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
@@ -903,8 +904,15 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   var leoOp = 'starlink', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
   var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
   Object.keys(LEOC).forEach(function (c) { LEO_ALIAS[LEOC[c].toLowerCase()] = c; });
-  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure', ixp: 'Internet exchanges'};
-  var leoDeals = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}}, leoPan = {starlink: [], amazon: [], oneweb: [], ground: [], ixp: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}};
+  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure', ixp: 'Internet exchanges', fibre: 'Fibre and satellite'};
+  var leoDeals = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}, fibre: {}}, leoPan = {starlink: [], amazon: [], oneweb: [], ground: [], ixp: [], fibre: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}, fibre: {}};
+  var FIB = D.fibre || {}, FIBC = FIB.countries || {};
+  function fib(c) { return FIBC[c] || {landlocked: false, cables: 0, planned: 0, lake: 0}; }
+  function fibText(c) {
+    var f = fib(c);
+    if (f.landlocked) return 'Landlocked' + (f.lake ? ', ' + f.lake + ' lake cable' + (f.lake > 1 ? 's' : '') : '');
+    return f.cables ? f.cables + ' subsea cable' + (f.cables > 1 ? 's' : '') + (f.planned ? ', ' + f.planned + ' planned' : '') : 'No subsea cable listed';
+  }
   var IXD = D.ixp || {}, IXS = (IXD.ixs || []).map(function (x) { x.ops = []; x.mbps = 0; return x; }), IXBY = {};
   IXS.forEach(function (x) { IXBY[x.id] = x; });
   (IXD.links || []).forEach(function (l) { var x = IXBY[l.ix_id]; if (x) { x.ops.push(l); x.mbps += l.mbps; } });
@@ -936,6 +944,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function leoCat(op, c) {
     if (op === 'ground') { var n = gByCountry(c).length; return n >= 4 ? 'g4' : n >= 2 ? 'g2' : n === 1 ? 'g1' : 'g0'; }
     if (op === 'ixp') { var xs = ixByCountry(c); return xs.some(function (x) { return x.ops.length; }) ? 'x2' : xs.length ? 'x1' : 'x0'; }
+    if (op === 'fibre') { var f = fib(c); return f.landlocked ? 'll' : f.cables >= 5 ? 'c5' : f.cables >= 2 ? 'c2' : f.cables === 1 ? 'c1' : 'c0'; }
     if (op === 'starlink') {
       var s = SL[c] || {};
       if (s.status === 'launched' || s.status === 'available') return 'live';
@@ -952,9 +961,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     starlink: [['live', 'Live', '--leo-live'], ['soon', 'Listed for a launch year', '--leo-soon'], ['unk', 'Listed, date unknown', '--leo-unk'], ['none', 'Not listed', '--leo-none']],
     other: [['live', 'Service launch recorded', '--leo-live'], ['lic', 'Licensing activity recorded', '--leo-lic'], ['agr', 'Agreement recorded', '--leo-agr'], ['none', 'Nothing recorded yet', '--leo-none']],
     ground: [['g4', '4 or more sites', '--g3'], ['g2', '2 to 3 sites', '--g2'], ['g1', '1 site', '--g1'], ['g0', 'None recorded yet', '--leo-none']],
-    ixp: [['x2', 'Exchange with a satellite operator connected', '--g3'], ['x1', 'Exchange, no satellite operator listed', '--g1'], ['x0', 'No exchange listed', '--leo-none']]
+    ixp: [['x2', 'Exchange with a satellite operator connected', '--g3'], ['x1', 'Exchange, no satellite operator listed', '--g1'], ['x0', 'No exchange listed', '--leo-none']],
+    fibre: [['c5', '5 or more subsea cables', '--g3'], ['c2', '2 to 4 subsea cables', '--g2'], ['c1', '1 subsea cable', '--leo-agr'], ['ll', 'Landlocked', '--leo-soon'], ['c0', 'No subsea cable listed', '--leo-none']]
   };
-  function catsFor(op) { return LEO_CATS[op === 'starlink' || op === 'ground' || op === 'ixp' ? op : 'other']; }
+  function catsFor(op) { return LEO_CATS[op === 'starlink' || op === 'ground' || op === 'ixp' || op === 'fibre' ? op : 'other']; }
   function leoCats() { return catsFor(leoOp); }
   function leoLabel(op, c) {
     var k = leoCat(op, c), row = catsFor(op).filter(function (r) { return r[0] === k; })[0];
@@ -1010,6 +1020,16 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       el.innerHTML = '<h3>Select a country</h3><p class="meta">Click a country on the map or a row in the table to see its status and the records behind it.</p>';
       return;
     }
+    if (leoOp === 'fibre') {
+      var fh = '<h3>' + esc(LEOC[c]) + '</h3>';
+      if (PROF[c]) fh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
+      var gsn = gByCountry(c).filter(gLive), satx = ixByCountry(c).filter(function (x) { return x.ops.length; });
+      fh += '<ul><li><strong>Fibre</strong> ' + esc(fibText(c)) + '</li><li><strong>Starlink</strong> ' + esc(leoLabel('starlink', c)) + '</li>' +
+        '<li><strong>Operational ground sites</strong> ' + gsn.length + (gsn.length ? ' (' + esc(gsn.map(function (g) { return g.name; }).join(', ')) + ')' : '') + '</li>' +
+        '<li><strong>Exchanges with a satellite operator</strong> ' + (satx.length ? esc(satx.map(function (x) { return x.name; }).join(', ')) : 'None') + '</li></ul>' +
+        '<p class="meta">Cable count from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '.</p>';
+      el.innerHTML = fh; return;
+    }
     if (leoOp === 'ixp') {
       var xs = ixByCountry(c), xh = '<h3>' + esc(LEOC[c]) + '</h3>';
       if (PROF[c]) xh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
@@ -1048,6 +1068,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('leo-ops').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-op') === leoOp ? 'true' : 'false'); });
     if (leoOp === 'ground') { groundRender(); return; }
     if (leoOp === 'ixp') { ixpRender(); return; }
+    if (leoOp === 'fibre') { fibreRender(); return; }
     var codes = Object.keys(LEOC), cats = leoCats(), count = {};
     codes.forEach(function (c) { var k = leoCat(leoOp, c); count[k] = (count[k] || 0) + 1; });
     var flags = Object.keys(leoFlags[leoOp]).length;
@@ -1102,7 +1123,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     }).join('');
     $('leo-legend').innerHTML = '<span class="mk" style="--sw:var(--gm-pop)">Exchange with a satellite operator, sized by capacity</span><span class="mk" style="--sw:var(--leo-unk)">Other exchange</span>' +
       leoCats().slice(0, 2).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
-    $('leo-note').innerHTML = 'Where satellite traffic meets the internet in Africa. Exchange connections come from PeeringDB, where networks publish their own records, read on every site refresh' + (IXD.fetched ? ' (last checked ' + esc(ago(IXD.fetched)) + ')' : '') + '. Capacity is the port size each operator lists. An operator missing here may connect privately or may not publish its records.';
+    $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All exchanges</option><option value="__sat"' + (leoFilter === '__sat' ? ' selected' : '') + '>With a satellite operator</option>' + IX_OPS.map(function (o) { return '<option value="' + esc(o) + '"' + (leoFilter === o ? ' selected' : '') + '>' + esc(o) + '</option>'; }).join('');
     var rows = IXS.filter(function (x) {
@@ -1117,6 +1138,27 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('leo-changes').innerHTML = hist.length ? '<h3>Recent changes</h3><ul>' + hist.map(function (h) {
       return '<li>' + esc(fmtDate(h.date)) + ': ' + esc(h.operator) + ' ' + esc(h.change) + ' ' + esc(h.ix) + '</li>';
     }).join('') + '</ul>' : '';
+    leoPaint(); leoDetail(leoSel);
+  }
+  function fibreRender() {
+    var codes = Object.keys(LEOC), live = function (c) { return leoCat('starlink', c) === 'live'; };
+    var ll = codes.filter(function (c) { return fib(c).landlocked; }), one = codes.filter(function (c) { return !fib(c).landlocked && fib(c).cables === 1; });
+    var llLive = ll.filter(live), llNoGround = llLive.filter(function (c) { return !gByCountry(c).filter(gLive).length; });
+    $('leo-tiles').innerHTML = [[ll.length, 'Landlocked countries'], [llLive.length, 'Landlocked countries with Starlink live'], [llNoGround.length, 'Of those, with no satellite ground site recorded'], [one.length, 'Coastal countries with a single subsea cable: ' + one.map(function (c) { return LEOC[c]; }).join(', ')]].map(function (t) {
+      return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
+    }).join('');
+    $('leo-legend').innerHTML = leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
+    $('leo-note').innerHTML = 'Subsea cable counts from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '.';
+    var sel = $('leo-filter');
+    sel.innerHTML = '<option value="">All countries</option>' + leoCats().map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
+    var rows = codes.filter(function (c) {
+      return (!leoFilter || leoCat('fibre', c) === leoFilter) && (!leoQ || LEOC[c].toLowerCase().indexOf(leoQ) !== -1);
+    }).sort(function (a, b) { return LEOC[a].localeCompare(LEOC[b]); });
+    $('leo-table').innerHTML = '<thead><tr><th>Country</th><th>Fibre</th><th>Starlink</th><th>Ground sites</th><th>Exchange with a satellite operator</th></tr></thead><tbody>' + rows.map(function (c) {
+      var gsn = gByCountry(c).filter(gLive).length, satx = ixByCountry(c).filter(function (x) { return x.ops.length; });
+      return '<tr data-c="' + c + '"><td><strong>' + esc(LEOC[c]) + '</strong></td><td><span class="dot" style="--sw:' + leoColor('fibre', c) + '"></span>' + esc(fibText(c)) + '</td><td><span class="dot" style="--sw:' + leoColor('starlink', c) + '"></span>' + esc(leoLabel('starlink', c)) + '</td><td>' + (gsn || '<span class="meta">0</span>') + '</td><td>' + (satx.length ? esc(satx.map(function (x) { return x.name; }).join(', ')) : '<span class="meta">None</span>') + '</td></tr>';
+    }).join('') + '</tbody>';
+    $('leo-changes').innerHTML = '';
     leoPaint(); leoDetail(leoSel);
   }
   function renderLeoMap() {
@@ -1177,6 +1219,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       '<div><dt>Eutelsat OneWeb</dt><dd>' + cpStatus('oneweb', c) + '</dd></div>' +
       '<div><dt>Deals and milestones tracked</dt><dd>' + ds.length + '</dd></div>' +
       '<div><dt>Ground sites recorded</dt><dd>' + gByCountry(c).length + '</dd></div>' +
+      '<div><dt>Fibre</dt><dd>' + esc(fibText(c)) + '</dd></div>' +
       '<div><dt>Open roles here on the jobs board</dt><dd>' + nJobs + '</dd></div>' +
       '</dl><p class="meta">Starlink status comes from Starlink\'s own availability file' + (LEO.starlink && LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. Amazon Leo and OneWeb status comes from tracker records. <a href="/deals/map/">See the map</a></p></aside>';
     var main = '<div class="cp-main">' +
