@@ -1101,10 +1101,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       if (PROF[c]) fh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
       var gsn = gByCountry(c).filter(gLive), satx = ixByCountry(c).filter(function (x) { return x.ops.length; });
       var cbs = (FIB.cables || []).filter(function (cb) { return cb.countries.indexOf(c) !== -1; });
-      fh += '<ul><li><strong>Fibre</strong> ' + esc(fibText(c)) + (cbs.length ? '<br><span class="meta">' + esc(cbs.map(function (cb) { return cb.name + (cb.planned ? ' (planned)' : ''); }).join(', ')) + '</span>' : '') + '</li><li><strong>Starlink</strong> ' + esc(leoLabel('starlink', c)) + '</li>' +
+      fh += '<ul><li><strong>Fibre</strong> <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener" title="Source ' + esc(FIB.source_name || 'TeleGeography') + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '">' + esc(fibText(c)) + '</a>' + (cbs.length ? '<br><span class="meta">' + esc(cbs.map(function (cb) { return cb.name + (cb.planned ? ' (planned)' : ''); }).join(', ')) + '</span>' : '') + '</li><li><strong>Starlink</strong> ' + esc(leoLabel('starlink', c)) + '</li>' +
         '<li><strong>Operational ground sites</strong> ' + gsn.length + (gsn.length ? ' (' + esc(gsn.map(function (g) { return g.name; }).join(', ')) + ')' : '') + '</li>' +
-        '<li><strong>Exchanges with a satellite operator</strong> ' + (satx.length ? esc(satx.map(function (x) { return x.name; }).join(', ')) : 'None') + '</li></ul>' +
-        '<p class="meta">Cable count from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '.</p>';
+        '<li><strong>Exchanges with a satellite operator</strong> ' + (satx.length ? esc(satx.map(function (x) { return x.name; }).join(', ')) : 'None') + '</li></ul>';
       el.innerHTML = fh; return;
     }
     if (leoOp === 'ixp') {
