@@ -441,6 +441,96 @@ def build_starlink_africa():
     log(f"  starlink: {sum(v['status'] in ('launched', 'available') for v in statuses.values())} African countries live")
 
 
+PEERINGDB = "https://www.peeringdb.com/api/"
+IX_CITY = {  # fallback coordinates when PeeringDB has no facility location
+    "lagos": (6.45, 3.40), "abuja": (9.06, 7.49), "kano": (12.0, 8.52), "port harcourt": (4.82, 7.03),
+    "nairobi": (-1.29, 36.82), "mombasa": (-4.04, 39.67), "johannesburg": (-26.2, 28.05), "cape town": (-33.92, 18.42),
+    "durban": (-29.86, 31.03), "gqeberha": (-33.96, 25.6), "port elizabeth": (-33.96, 25.6), "east london": (-33.02, 27.91),
+    "bloemfontein": (-29.12, 26.21), "pretoria": (-25.75, 28.19), "maputo": (-25.97, 32.57), "lusaka": (-15.39, 28.32),
+    "abidjan": (5.36, -4.01), "windhoek": (-22.56, 17.08), "djibouti": (11.59, 43.15), "cotonou": (6.37, 2.39),
+    "kigali": (-1.95, 30.06), "tunis": (36.81, 10.18), "arusha": (-3.37, 36.68), "gaborone": (-24.65, 25.91),
+    "francistown": (-21.17, 27.51), "mwanza": (-2.52, 32.9), "zanzibar": (-6.16, 39.19), "dar es salaam": (-6.79, 39.21),
+    "dodoma": (-6.16, 35.75), "mbeya": (-8.9, 33.46), "khartoum": (15.5, 32.56), "lom": (6.13, 1.22),
+    "mogadishu": (2.05, 45.32), "conakry": (9.64, -13.58), "bujumbura": (-3.38, 29.36), "harare": (-17.83, 31.05),
+    "bamako": (12.64, -8.0), "serekunda": (13.44, -16.68), "banjul": (13.45, -16.58), "casablanca": (33.57, -7.59),
+    "rabat": (34.02, -6.84), "lubumbashi": (-11.66, 27.48), "goma": (-1.68, 29.22), "kinshasa": (-4.32, 15.31),
+    "brazzaville": (-4.27, 15.28), "pointe-noire": (-4.78, 11.86), "bobo-dioulasso": (11.18, -4.3),
+    "ouagadougou": (12.37, -1.52), "praia": (14.93, -23.51), "n'djamena": (12.13, 15.06), "addis ababa": (9.03, 38.74),
+    "lilongwe": (-13.96, 33.79), "blantyre": (-15.79, 35.0), "mzuzu": (-11.46, 34.02), "tripoli": (32.89, 13.19),
+    "douala": (4.05, 9.7), "yaound": (3.87, 11.52), "accra": (5.6, -0.19), "kumasi": (6.69, -1.62), "tamale": (9.4, -0.85),
+    "luanda": (-8.84, 13.23), "antananarivo": (-18.88, 47.51), "port louis": (-20.16, 57.5), "ebene": (-20.24, 57.49),
+    "libreville": (0.42, 9.47), "freetown": (8.48, -13.23), "dakar": (14.69, -17.45), "maseru": (-29.31, 27.48),
+    "kampala": (0.35, 32.58), "cairo": (30.04, 31.24), "monrovia": (6.3, -10.8), "niamey": (13.51, 2.11),
+    "nouakchott": (18.08, -15.98), "bangui": (4.39, 18.56), "juba": (4.85, 31.58), "asmara": (15.32, 38.93),
+    "mbabane": (-26.31, 31.14), "victoria": (-4.62, 55.45), "moroni": (-11.7, 43.26), "bissau": (11.86, -15.6),
+    "malabo": (3.75, 8.78), "algiers": (36.75, 3.06), "kisumu": (-0.09, 34.77), "lubango": (-14.92, 13.49),
+}
+
+
+def build_ixp_africa(cfg):
+    """Read PeeringDB: every African internet exchange, and which satellite operators connect at each.
+    Logs any connection that appears or disappears."""
+    ops = {int(k): v for k, v in cfg.get("ixp_operators", {}).items()}
+    if not ops:
+        return
+    store, hist_f = OUT / "data/ixp-africa.json", OUT / "data/ixp-history.json"
+    prev = json.loads(store.read_text(encoding="utf-8")) if store.exists() else {}
+    history = json.loads(hist_f.read_text(encoding="utf-8")) if hist_f.exists() else []
+
+    def pdb(q):
+        req = urllib.request.Request(PEERINGDB + q, headers={"User-Agent": "SatcomPathwaysBot/1.0 (+https://satcompathways.com)"})
+        with urllib.request.urlopen(req, timeout=40) as r:
+            return json.load(r)["data"]
+    try:
+        ixs = [x for x in pdb("ix?region_continent=Africa&fields=id,name,city,country,net_count") if x["country"] in AFRICA]
+        ids = ",".join(str(x["id"]) for x in ixs)
+        ixfac = pdb("ixfac?ix_id__in=" + ids + "&fields=ix_id,fac_id")
+        facids = ",".join(sorted({str(x["fac_id"]) for x in ixfac}))
+        facs = {f["id"]: f for f in pdb("fac?id__in=" + facids + "&fields=id,latitude,longitude")} if facids else {}
+        links = pdb("netixlan?asn__in=" + ",".join(map(str, ops)) + "&ix_id__in=" + ids + "&fields=asn,ix_id,speed")
+    except Exception as e:
+        log(f"  peeringdb FAIL: {e}")
+        return
+    loc = {}
+    for x in ixfac:
+        f = facs.get(x["fac_id"]) or {}
+        if f.get("latitude") and x["ix_id"] not in loc:
+            loc[x["ix_id"]] = (round(f["latitude"], 3), round(f["longitude"], 3))
+    out_ix = []
+    for x in ixs:
+        ll = loc.get(x["id"])
+        if not ll:
+            city = (x["city"] or "").lower()
+            ll = next((v for k, v in IX_CITY.items() if k in city), None)
+        out_ix.append({"id": x["id"], "name": x["name"], "city": x["city"], "country": x["country"],
+                       "networks": x.get("net_count") or 0, "lat": ll[0] if ll else None, "lon": ll[1] if ll else None})
+    agg = {}
+    for l in links:
+        key = (ops[l["asn"]], l["ix_id"])
+        agg[key] = agg.get(key, 0) + (l.get("speed") or 0)
+    out_links = [{"operator": k[0], "ix_id": k[1], "mbps": v} for k, v in sorted(agg.items())]
+    today = NOW.date().isoformat()
+    names = {x["id"]: x["name"] for x in out_ix}
+    if prev.get("links") is not None:
+        old = {(l["operator"], l["ix_id"]) for l in prev["links"]}
+        new = {(l["operator"], l["ix_id"]) for l in out_links}
+        for k in sorted(new - old):
+            history.append({"date": today, "operator": k[0], "ix": names.get(k[1], str(k[1])), "change": "joined"})
+        for k in sorted(old - new):
+            history.append({"date": today, "operator": k[0], "ix": names.get(k[1], str(k[1])), "change": "left"})
+    store.write_text(json.dumps({"fetched": NOW.isoformat(timespec="minutes"), "source": "https://www.peeringdb.com",
+                                 "ixs": out_ix, "links": out_links}, ensure_ascii=False, indent=1))
+    hist_f.write_text(json.dumps(history[-500:], ensure_ascii=False, indent=1))
+    log(f"  peeringdb: {len(out_ix)} African exchanges, {len(out_links)} satellite operator connections")
+
+
+def load_ixp():
+    store, hist_f = OUT / "data/ixp-africa.json", OUT / "data/ixp-history.json"
+    d = json.loads(store.read_text(encoding="utf-8")) if store.exists() else {}
+    d["history"] = json.loads(hist_f.read_text(encoding="utf-8")) if hist_f.exists() else []
+    return d
+
+
 def load_ground():
     f = ROOT / "ground.json"
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
@@ -735,6 +825,7 @@ def render(cfg, news, jobs, updated, research):
         "leo": load_leo(),
         "profiles": load_profiles(),
         "ground": load_ground(),
+        "ixp": load_ixp(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -820,6 +911,7 @@ def main():
         build_auto_events(cfg)
         log("Fetching Starlink availability…")
         build_starlink_africa()
+        build_ixp_africa(cfg)
     research = load_research()
     deals = json.loads((ROOT / "deals.json").read_text(encoding="utf-8"))
     digests = build_digest(cfg, news, jobs, deals, research)

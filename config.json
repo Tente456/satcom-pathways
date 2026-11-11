@@ -559,5 +559,23 @@
       "organiser": "SSPI",
       "topic": "Satcom"
     }
-  ]
+  ],
+  "ixp_operators": {
+    "14593": "Starlink",
+    "800": "Eutelsat OneWeb",
+    "34444": "Eutelsat",
+    "29286": "Eutelsat",
+    "12684": "SES",
+    "60725": "SES",
+    "22351": "Intelsat",
+    "7155": "Viasat",
+    "31515": "Inmarsat",
+    "39356": "Avanti",
+    "328306": "Avanti",
+    "57888": "Telesat",
+    "12440": "Hughes",
+    "6621": "Hughes",
+    "1358": "Hughes",
+    "12491": "Gilat Telecom"
+  }
 }
