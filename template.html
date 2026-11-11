@@ -326,11 +326,12 @@ aside { display: grid; gap: 18px; }
 .leo-legend .src { margin-left: auto; font-size: 12px; }
 .leo-legend .src::before { display: none; }
 .leo-mapbox { position: relative; }
-.cab-panel { position: absolute; left: 0; bottom: 1%; width: 29%; max-height: 37%; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: 12px; box-shadow: 0 2px 8px rgba(16, 24, 40, .06); }
+.leo-side { display: flex; flex-direction: column; gap: 14px; min-width: 0; }
+.cab-panel { max-height: 600px; display: flex; flex-direction: column; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; font-size: 12px; }
 .cab-panel[hidden] { display: none; }
 .cab-panel h4, .cab-panel .cur, .cab-panel .src { flex: none; }
 .cab-panel h4 { margin: 0; padding: 9px 10px 2px; font-size: 11px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-.cab-panel .cur { padding: 0 10px 6px; font-weight: 600; font-size: 13px; color: var(--ink); min-height: 1.35em; }
+.cab-panel .cur { margin: 0 10px 6px; font-weight: 600; font-size: 13px; line-height: 1.35; color: var(--ink); height: 2.7em; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; }
 .cab-panel ul { list-style: none; margin: 0; padding: 0 4px 4px; overflow-y: auto; flex: 1; }
 .cab-panel li { display: flex; gap: 7px; align-items: center; padding: 3px 6px; border-radius: 4px; cursor: pointer; line-height: 1.3; }
 .cab-panel li::before { content: ''; flex: none; width: 14px; height: 2px; background: #0e7c86; }
@@ -338,7 +339,7 @@ aside { display: grid; gap: 18px; }
 .cab-panel li.hov { background: rgba(214, 51, 108, .08); color: #d6336c; }
 .cab-panel li.hov::before { background: #d6336c; }
 .cab-panel .src { padding: 6px 10px 8px; border-top: 1px solid var(--line); color: var(--muted); font-size: 11px; }
-@media (max-width: 760px) { .cab-panel { position: static; width: auto; max-height: 230px; margin-top: 8px; } }
+@media (max-width: 900px) { .cab-panel { max-height: 300px; } }
 .leo-map .xpt.sat { fill: var(--gm-pop); stroke-width: 1.8; }
 .leo-legend .mk::before { border-radius: 50%; background: var(--sw); }
 .leo-legend .mk.hollow::before { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
@@ -530,8 +531,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
-      <div class="leo-mapwrap"><div class="leo-mapbox"><div id="leo-map" class="leo-map" aria-hidden="true"></div><div id="cab-panel" class="cab-panel" hidden></div></div><div class="leo-legend" id="leo-legend"></div></div>
-      <aside class="panel leo-detail" id="leo-detail" aria-live="polite"></aside>
+      <div class="leo-mapwrap"><div class="leo-mapbox"><div id="leo-map" class="leo-map" aria-hidden="true"></div></div><div class="leo-legend" id="leo-legend"></div></div>
+      <div class="leo-side"><aside class="panel leo-detail" id="leo-detail" aria-live="polite"></aside><div id="cab-panel" class="cab-panel" hidden></div></div>
     </div>
     <p class="note" id="leo-note"></p>
     <div class="toolbar"><input type="search" id="leo-q" placeholder="Find a country" aria-label="Find a country"><select id="leo-filter" aria-label="Filter by status"></select></div>
