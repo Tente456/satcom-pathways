@@ -1,5 +1,16 @@
 [
  {
+  "title": "Weekend Shift, Machine Shop Supervisor",
+  "url": "https://ursamajor.com/careers/?gh_jid=4753542005",
+  "company": "Ursa Major",
+  "sector": "Launch & spacecraft",
+  "location": "Berthoud, Colorado",
+  "posted": "2026-11-11T22:56+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Radiation Effects Engineer",
   "url": "https://careers.viasat.com/jobs/7355",
   "company": "Viasat",
@@ -667,6 +678,94 @@
   "location": "Redmond, Washington, USA",
   "posted": "2026-11-11T00:00+00:00",
   "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Software Engineer, Requirements , Amazon LEO, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602871/senior-software-engineer-requirements-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Principal Technical Program Manager, IVR, Labs & Release Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602869/principal-technical-program-manager-ivr-labs-release-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Program & project management",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Software Engineer, Interfaces and Contracts, Amazon LEO, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602872/senior-software-engineer-interfaces-and-contracts-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Manager, Automation & Analytics Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602866/senior-manager-automation-analytics-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Manager, Critical Issues & Operations Readiness Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602868/senior-manager-critical-issues-operations-readiness-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Manager, Change & Configuration Management Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602867/senior-manager-change-configuration-management-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Technical Program Manager, Ground Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602863/senior-technical-program-manager-ground-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Program & project management",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Technical Program Manager, Satellite Amazon Leo, D2D Software",
+  "url": "https://www.amazon.jobs/en/jobs/10602862/senior-technical-program-manager-satellite-amazon-leo-d2d-software",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, Washington, USA",
+  "posted": "2026-11-11T00:00+00:00",
+  "function": "Program & project management",
   "early": false,
   "remote": false
  },
@@ -1903,6 +2002,17 @@
   "remote": false
  },
  {
+  "title": "Site Reliability Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Greece",
+  "posted": "2026-11-09T23:11+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
   "title": "Software Engineer I",
   "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8057246003",
   "company": "Rocket Lab",
@@ -1912,17 +2022,6 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
- },
- {
-  "title": "Site Reliability Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Greece",
-  "posted": "2026-11-09T22:50+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
  },
  {
   "title": "DSP Engineer (Platform)",
@@ -3080,6 +3179,17 @@
   "remote": false
  },
  {
+  "title": "AI Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Spain/AI-Engineer_JR11136-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-11-06T23:11+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Hardware Test Engineer",
   "url": "https://job-boards.greenhouse.io/astranis/jobs/4727979006",
   "company": "Astranis",
@@ -3097,17 +3207,6 @@
   "sector": "Satcom & connectivity",
   "location": "Bastrop, TX",
   "posted": "2026-11-06T22:52+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "AI Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Spain/AI-Engineer_JR11136-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-11-06T22:50+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3630,94 +3729,6 @@
   "remote": false
  },
  {
-  "title": "Senior Software Dev Engineer, Amazon Leo Customer Terminal Software",
-  "url": "https://www.amazon.jobs/en/jobs/10598885/senior-software-dev-engineer-amazon-leo-customer-terminal-software",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Graphic Designer, Leo Industrial Design",
-  "url": "https://www.amazon.jobs/en/jobs/10599195/senior-graphic-designer-leo-industrial-design",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "System Development Engineer, Leo Network Services",
-  "url": "https://www.amazon.jobs/en/jobs/10596878/system-development-engineer-leo-network-services",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Sunnyvale, California, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "System Development Engineer, Leo Network Services",
-  "url": "https://www.amazon.jobs/en/jobs/10596877/system-development-engineer-leo-network-services",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Executive Assistant, Amazon Leo Global B2B",
-  "url": "https://www.amazon.jobs/en/jobs/10598726/executive-assistant-amazon-leo-global-b2b",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Bellevue, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "System Development Engineer, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10598285/system-development-engineer-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Bellevue, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Electrical Engineer, Amazon Leo Government, Amazon Leo Government",
-  "url": "https://www.amazon.jobs/en/jobs/10598832/electrical-engineer-amazon-leo-government-amazon-leo-government",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Northridge, California, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Program Manager, NA Consumer Funding, Amazon Leo",
-  "url": "https://www.amazon.jobs/en/jobs/10593960/program-manager-na-consumer-funding-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Bellevue, Washington, USA",
-  "posted": "2026-11-06T00:00+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Site Reliability Engineer (Starlink)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8886620002?gh_jid=8886620002",
   "company": "SpaceX (Starlink roles)",
@@ -3751,23 +3762,12 @@
   "remote": false
  },
  {
-  "title": "Mechanical Engineer, Electro-Mechanical (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8920975002?gh_jid=8920975002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
-  "posted": "2026-11-05T23:01+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "System Engineer",
   "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-11-05T22:50+00:00",
+  "posted": "2026-11-05T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3778,10 +3778,21 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-11-05T22:50+00:00",
+  "posted": "2026-11-05T23:11+00:00",
   "function": "Other",
   "early": false,
   "remote": true
+ },
+ {
+  "title": "Mechanical Engineer, Electro-Mechanical (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8920975002?gh_jid=8920975002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Redmond, WA",
+  "posted": "2026-11-05T23:01+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
  },
  {
   "title": "Sourcing Manager, Mechanical & Optical Commodities (Starlink)",
@@ -4581,7 +4592,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "5 Locations",
-  "posted": "2026-11-03T22:50+00:00",
+  "posted": "2026-11-03T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -7502,17 +7513,6 @@
   "remote": false
  },
  {
-  "title": "Senior Manager, End-to-End System Architecture, Integration & Testing",
-  "url": "https://careers.ses.com/job/Munich-%28Unterf%C3%B6hring%29-Senior-Manager%2C-End-to-End-System-Architecture%2C-Integration-&-Testing/1420182433/",
-  "company": "SES",
-  "sector": "Satcom & connectivity",
-  "location": "Munich (Unterföhring), DE",
-  "posted": "2026-10-23T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Architect, Test Infrastructure & Automation, meoSphere",
   "url": "https://careers.ses.com/job/Kockelscheuer-Senior-Architect%2C-Test-Infrastructure-&-Automation%2C-meoSphere-L-1896/1441156233/",
   "company": "SES",
@@ -7733,8 +7733,8 @@
   "remote": false
  },
  {
-  "title": "(Senior) 5G O-RAN Orchestration & SMO Engineer",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-5G-O-RAN-Orchestration-&-SMO-Engineer/1380516133/",
+  "title": "(Senior) Engineer, 5G NTN Integration & Verification, meoSphere",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-5G-NTN-Integration-&-Verification%2C-meoSphere/1380527333/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Betzdorf, LU",
@@ -7755,8 +7755,19 @@
   "remote": false
  },
  {
-  "title": "(Senior) Engineer, 5G NTN Integration & Verification, meoSphere",
-  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-Engineer%2C-5G-NTN-Integration-&-Verification%2C-meoSphere/1380527333/",
+  "title": "(Senior) 5G O-RAN Orchestration & SMO Engineer",
+  "url": "https://careers.ses.com/job/Betzdorf-%28Senior%29-5G-O-RAN-Orchestration-&-SMO-Engineer/1380516133/",
+  "company": "SES",
+  "sector": "Satcom & connectivity",
+  "location": "Betzdorf, LU",
+  "posted": "2026-10-22T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "RAMS Engineer, IRIS2",
+  "url": "https://careers.ses.com/job/Betzdorf-RAMS-Engineer%2C-IRIS2/1380511033/",
   "company": "SES",
   "sector": "Satcom & connectivity",
   "location": "Betzdorf, LU",
@@ -8591,17 +8602,6 @@
   "remote": false
  },
  {
-  "title": "Assistant Facility Security Officer",
-  "url": "https://ursamajor.com/careers/?gh_jid=4744554005",
-  "company": "Ursa Major",
-  "sector": "Launch & spacecraft",
-  "location": "Berthoud, Colorado",
-  "posted": "2026-10-16T17:10+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior User Terminal System Engineering Specialist",
   "url": "https://jobs.lever.co/telesat/1e4a7d15-92a5-4c14-8dab-4c57429528a7",
   "company": "Telesat",
@@ -8805,7 +8805,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-14T22:50+00:00",
+  "posted": "2026-10-14T23:11+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -9091,7 +9091,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9102,7 +9102,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9113,7 +9113,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9124,7 +9124,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9135,7 +9135,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9146,7 +9146,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9157,7 +9157,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9168,7 +9168,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9179,7 +9179,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-12T22:50+00:00",
+  "posted": "2026-10-12T23:11+00:00",
   "function": "Other",
   "early": false,
   "remote": false
