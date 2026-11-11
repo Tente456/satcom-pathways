@@ -748,7 +748,7 @@ SECTION_PAGES = {
     "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
     "deals": ("Africa deals tracker", "Satellite and space licences, contracts and partnerships in Africa, each linked to its source."),
-    "deals/map": ("Africa LEO broadband map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in each of Africa's 54 countries, plus the gateways, teleports and ground stations on the continent, each from operator data or a sourced record."),
+    "deals/map": ("Africa satellite map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in every African country, and the gateways, teleports and ground stations that serve them, each from operator data or a sourced record."),
     "research": ("Research", "Research and country profiles on African satellite and space markets, built on public data."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),

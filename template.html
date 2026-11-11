@@ -461,7 +461,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div>
         <h2>Africa satcom deals</h2>
       </div>
-      <nav class="subnav" aria-label="Deals views"><a href="/deals/" aria-current="page">Deals tracker</a><a href="/deals/map/">LEO broadband map</a></nav>
+      <nav class="subnav" aria-label="Deals views"><a href="/deals/" aria-current="page">Deals tracker</a><a href="/deals/map/">Africa satellite map</a></nav>
     </div>
     <div class="tiles" id="deal-tiles"></div>
     <div class="news-layout">
@@ -489,9 +489,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   <section class="view" id="view-leomap" aria-labelledby="leomap-title" hidden>
     <div class="jobs-head">
       <div>
-        <h2 id="leomap-title">Africa LEO broadband map</h2>
+        <h2 id="leomap-title">Africa satellite map</h2>
+        <p class="cp-lede">Where Starlink, Amazon Leo and Eutelsat OneWeb stand in every African country, and the ground stations that serve them.</p>
       </div>
-      <nav class="subnav" aria-label="Deals views"><a href="/deals/">Deals tracker</a><a href="/deals/map/" aria-current="page">LEO broadband map</a></nav>
+      <nav class="subnav" aria-label="Deals views"><a href="/deals/">Deals tracker</a><a href="/deals/map/" aria-current="page">Africa satellite map</a></nav>
     </div>
     <div class="chips" id="leo-ops" role="group" aria-label="Choose operator">
       <button type="button" data-op="starlink" aria-pressed="true">Starlink</button>
@@ -894,7 +895,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   });
 
   /* views: each section has its own address (/jobs/, /research/<slug>/ ...) */
-  /* Africa LEO broadband map */
+  /* Africa satellite map */
   var LEO = D.leo || {}, LEOC = LEO.countries || {}, SL = (LEO.starlink || {}).statuses || {};
   var leoOp = 'starlink', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
   var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
@@ -1126,7 +1127,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   }
 
   var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
-  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa LEO broadband map', research: 'Research', events: 'Events', about: 'About'};
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa satellite map', research: 'Research', events: 'Events', about: 'About'};
   (function legacyHash() {
     var h = location.hash.slice(1);
     if (!h) return;
