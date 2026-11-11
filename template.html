@@ -256,6 +256,7 @@ aside { display: grid; gap: 18px; }
 .leo-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: 18px; align-items: start; margin-bottom: 10px; }
 @media (max-width: 900px) { .leo-layout { grid-template-columns: 1fr; } }
 .leo-mapwrap { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 12px; }
+.leo-map { aspect-ratio: 1000 / 867; }
 .leo-map svg { width: 100%; height: auto; display: block; }
 .leo-map path, .leo-map circle { fill: var(--leo-none); stroke: var(--surface); stroke-width: .9; cursor: pointer; transition: opacity .15s; }
 .leo-map path:hover, .leo-map circle:hover, .leo-map .sel { stroke: var(--ink); stroke-width: 1.6; }
