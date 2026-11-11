@@ -441,6 +441,11 @@ def build_starlink_africa():
     log(f"  starlink: {sum(v['status'] in ('launched', 'available') for v in statuses.values())} African countries live")
 
 
+def load_ground():
+    f = ROOT / "ground.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else []
+
+
 def load_profiles():
     f = ROOT / "countries.json"
     return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
@@ -729,6 +734,7 @@ def render(cfg, news, jobs, updated, research):
         "events": load_events(),
         "leo": load_leo(),
         "profiles": load_profiles(),
+        "ground": load_ground(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -742,7 +748,7 @@ SECTION_PAGES = {
     "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
     "deals": ("Africa deals tracker", "Satellite and space licences, contracts and partnerships in Africa, each linked to its source."),
-    "deals/map": ("Africa LEO broadband map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in each of Africa's 54 countries, from operator data and sourced regulatory records."),
+    "deals/map": ("Africa LEO broadband map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in each of Africa's 54 countries, plus the gateways, teleports and ground stations on the continent, each from operator data or a sourced record."),
     "research": ("Research", "Research and country profiles on African satellite and space markets, built on public data."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),

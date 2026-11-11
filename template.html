@@ -308,9 +308,16 @@ aside { display: grid; gap: 18px; }
 .leo-table tr:hover td { background: var(--bg); cursor: pointer; }
 .leo-table .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--sw); margin-right: 7px; }
 .leo-table .warn { color: #e5484d; font-weight: 600; }
-:root { --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; }
-@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --leo-none: #2a3546; } }
-:root[data-theme="dark"] { --leo-none: #2a3546; }
+:root { --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; --g1: #c9d4e3; --g2: #9fb2cc; --g3: #7189ad; --gm-leo: #12b85a; --gm-pop: #f59e0b; --gm-ttc: #8b5cf6; --gm-geo: #0ea5e9; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; } }
+:root[data-theme="dark"] { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; }
+.leo-map .gpt { stroke: var(--surface); stroke-width: 1.6; cursor: pointer; }
+.leo-map .gpt.hollow { fill: var(--surface) !important; stroke: var(--gc); stroke-width: 2.6; }
+.leo-map .gpt:hover { stroke: var(--ink); }
+.leo-legend .mk::before { border-radius: 50%; background: var(--sw); }
+.leo-legend .mk.hollow::before { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
+.gtype { display: inline-flex; align-items: center; gap: 6px; }
+.gtype::before { content: ""; width: 9px; height: 9px; border-radius: 50%; background: var(--sw); flex: none; }
 /* company band */
 .band-label { text-align: center; font-family: var(--font-display); font-weight: 600; font-size: 15px; }
 .marquee { overflow: hidden; -webkit-mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent); }
@@ -490,6 +497,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <button type="button" data-op="starlink" aria-pressed="true">Starlink</button>
       <button type="button" data-op="amazon" aria-pressed="false">Amazon Leo</button>
       <button type="button" data-op="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
+      <button type="button" data-op="ground" aria-pressed="false">Ground infrastructure</button>
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
@@ -891,8 +899,13 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   var leoOp = 'starlink', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
   var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
   Object.keys(LEOC).forEach(function (c) { LEO_ALIAS[LEOC[c].toLowerCase()] = c; });
-  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb'};
-  var leoDeals = {starlink: {}, amazon: {}, oneweb: {}}, leoPan = {starlink: [], amazon: [], oneweb: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}};
+  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure'};
+  var leoDeals = {starlink: {}, amazon: {}, oneweb: {}, ground: {}}, leoPan = {starlink: [], amazon: [], oneweb: [], ground: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}, ground: {}};
+  var GROUND = (D.ground || []).map(function (g, i) { g.i = i; g.code = LEO_ALIAS[g.country.toLowerCase()] || ''; return g; });
+  var GTYPES = [['LEO gateway', '--gm-leo'], ['Internet point of presence', '--gm-pop'], ['TT&C and EO ground station', '--gm-ttc'], ['Teleport or GEO ground station', '--gm-geo']];
+  function gColor(t) { var r = GTYPES.filter(function (x) { return x[0] === t; })[0]; return 'var(' + (r ? r[1] : '--gm-geo') + ')'; }
+  function gLive(g) { return g.status === 'Operational'; }
+  function gByCountry(c) { return GROUND.filter(function (g) { return g.code === c; }); }
   D.deals.forEach(function (d) {
     var t = (d.title + ' ' + d.parties.join(' ')).toLowerCase(), ops = [];
     if (/starlink|spacex/.test(t)) ops.push('starlink');
@@ -909,6 +922,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     });
   });
   function leoCat(op, c) {
+    if (op === 'ground') { var n = gByCountry(c).length; return n >= 4 ? 'g4' : n >= 2 ? 'g2' : n === 1 ? 'g1' : 'g0'; }
     if (op === 'starlink') {
       var s = SL[c] || {};
       if (s.status === 'launched' || s.status === 'available') return 'live';
@@ -923,16 +937,18 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   }
   var LEO_CATS = {
     starlink: [['live', 'Live', '--leo-live'], ['soon', 'Listed for a launch year', '--leo-soon'], ['unk', 'Listed, date unknown', '--leo-unk'], ['none', 'Not listed', '--leo-none']],
-    other: [['live', 'Service launch recorded', '--leo-live'], ['lic', 'Licensing activity recorded', '--leo-lic'], ['agr', 'Agreement recorded', '--leo-agr'], ['none', 'Nothing recorded yet', '--leo-none']]
+    other: [['live', 'Service launch recorded', '--leo-live'], ['lic', 'Licensing activity recorded', '--leo-lic'], ['agr', 'Agreement recorded', '--leo-agr'], ['none', 'Nothing recorded yet', '--leo-none']],
+    ground: [['g4', '4 or more sites', '--g3'], ['g2', '2 to 3 sites', '--g2'], ['g1', '1 site', '--g1'], ['g0', 'None recorded yet', '--leo-none']]
   };
-  function leoCats() { return LEO_CATS[leoOp === 'starlink' ? 'starlink' : 'other']; }
+  function catsFor(op) { return LEO_CATS[op === 'starlink' || op === 'ground' ? op : 'other']; }
+  function leoCats() { return catsFor(leoOp); }
   function leoLabel(op, c) {
-    var k = leoCat(op, c), row = LEO_CATS[op === 'starlink' ? 'starlink' : 'other'].filter(function (r) { return r[0] === k; })[0];
+    var k = leoCat(op, c), row = catsFor(op).filter(function (r) { return r[0] === k; })[0];
     if (op === 'starlink' && k === 'soon') return 'Listed: ' + SL[c].expected.replace('Starting in ', 'from ');
     return row[1];
   }
   function leoColor(op, c) {
-    var k = leoCat(op, c); return 'var(' + LEO_CATS[op === 'starlink' ? 'starlink' : 'other'].filter(function (r) { return r[0] === k; })[0][2] + ')';
+    var k = leoCat(op, c); return 'var(' + catsFor(op).filter(function (r) { return r[0] === k; })[0][2] + ')';
   }
   function leoPaint() {
     var host = $('leo-map'); if (!leoMapLoaded) return;
@@ -943,12 +959,33 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       el.classList.toggle('sel', c === leoSel);
       el.setAttribute('aria-label', LEOC[c] + ': ' + leoLabel(leoOp, c));
     });
+    var svg = host.querySelector('svg'), gp = svg && svg.querySelector('#gpts');
+    if (svg && !gp) {
+      gp = document.createElementNS('http://www.w3.org/2000/svg', 'g'); gp.id = 'gpts';
+      var K = 1000 / 86, KY = K / Math.cos(2 * Math.PI / 180);
+      GROUND.slice().sort(function (a, b) { return gLive(a) - gLive(b); }).forEach(function (g) {
+        var m = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        m.setAttribute('cx', ((g.lon + 26) * K).toFixed(1)); m.setAttribute('cy', ((38.5 - g.lat) * KY).toFixed(1)); m.setAttribute('r', '5.5');
+        m.setAttribute('class', 'gpt' + (gLive(g) ? '' : ' hollow')); m.setAttribute('data-gi', g.i);
+        m.style.fill = gColor(g.type); m.style.setProperty('--gc', gColor(g.type));
+        var t = document.createElementNS('http://www.w3.org/2000/svg', 'title'); t.textContent = g.name + ' (' + g.status + ')'; m.appendChild(t);
+        gp.appendChild(m);
+      });
+      svg.appendChild(gp);
+    }
+    if (gp) gp.style.display = leoOp === 'ground' ? '' : 'none';
   }
   function leoDetail(c) {
     var el = $('leo-detail');
     if (!c) {
       el.innerHTML = '<h3>Select a country</h3><p class="meta">Click a country on the map or a row in the table to see its status and the records behind it.</p>';
       return;
+    }
+    if (leoOp === 'ground') {
+      var gs = gByCountry(c), gh = '<h3>' + esc(LEOC[c]) + '</h3>';
+      if (PROF[c]) gh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
+      gh += gs.length ? '<p class="meta">' + gs.length + (gs.length === 1 ? ' site recorded' : ' sites recorded') + '</p><ul>' + gs.map(gLi).join('') + '</ul>' : '<p class="meta">No ground sites recorded for ' + esc(LEOC[c]) + ' yet. That means none has been found in a public source, not that none exists.</p>';
+      el.innerHTML = gh; return;
     }
     var html = '<h3>' + esc(LEOC[c]) + '</h3><span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c)) + '</span>';
     if (PROF[c]) html += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
@@ -963,9 +1000,13 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     }).join('') + '</ul>' : '<p class="meta">No ' + esc(LEO_OPS[leoOp]) + ' records for ' + esc(LEOC[c]) + ' in the deals tracker yet.</p>';
     el.innerHTML = html;
   }
+  function gLi(g) {
+    return '<li><strong>' + esc(g.name) + '</strong> <span class="gtype" style="--sw:' + gColor(g.type) + '">' + esc(g.type) + '</span><br><span class="meta">' + esc(g.operator) + ' · ' + esc(g.status) + ' · ' + esc(g.place) + '</span><br>' + esc(g.note) + ' <a href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></li>';
+  }
   function leoSelect(c) { leoSel = c; leoPaint(); leoDetail(c); }
   function leoRender() {
     $('leo-ops').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-op') === leoOp ? 'true' : 'false'); });
+    if (leoOp === 'ground') { groundRender(); return; }
     var codes = Object.keys(LEOC), cats = leoCats(), count = {};
     codes.forEach(function (c) { var k = leoCat(leoOp, c); count[k] = (count[k] || 0) + 1; });
     var flags = Object.keys(leoFlags[leoOp]).length;
@@ -991,6 +1032,27 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     }).join('') + '</ul>' : '';
     leoPaint(); leoDetail(leoSel);
   }
+  function groundRender() {
+    var live = GROUND.filter(gLive), gw = live.filter(function (g) { return g.type === 'LEO gateway'; }).length;
+    var ttc = live.filter(function (g) { return g.type === 'TT&C and EO ground station'; }).length;
+    var pend = GROUND.length - live.length, nc = {}; GROUND.forEach(function (g) { nc[g.code] = 1; });
+    $('leo-tiles').innerHTML = [[GROUND.length, 'Sites recorded in ' + Object.keys(nc).length + ' countries'], [gw, 'Operational LEO gateways'], [ttc, 'Operational tracking and Earth observation stations'], [pend, 'Planned, in development or out of service']].map(function (t) {
+      return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
+    }).join('');
+    $('leo-legend').innerHTML = GTYPES.map(function (t) { return '<span class="mk" style="--sw:var(' + t[1] + ')">' + esc(t[0]) + '</span>'; }).join('') + '<span class="mk hollow">Not yet operational or out of service</span>' +
+      leoCats().slice(0, 3).map(function (r) { return '<span style="--sw:var(' + r[2] + ')">Country with ' + esc(r[1]) + '</span>'; }).join('');
+    $('leo-note').innerHTML = 'Gateways, teleports, tracking stations and internet points of presence on the continent, each from a public source. Where an operator has not published the exact site, the marker sits in the country and the record says so. A country with nothing recorded may still have ground sites that have not been publicly reported.';
+    var sel = $('leo-filter');
+    sel.innerHTML = '<option value="">All site types</option>' + GTYPES.map(function (t) { return '<option value="' + esc(t[0]) + '"' + (leoFilter === t[0] ? ' selected' : '') + '>' + esc(t[0]) + '</option>'; }).join('');
+    var rows = GROUND.filter(function (g) {
+      return (!leoFilter || g.type === leoFilter) && (!leoQ || (g.country + ' ' + g.name + ' ' + g.operator).toLowerCase().indexOf(leoQ) !== -1);
+    }).sort(function (a, b) { return a.country.localeCompare(b.country) || a.name.localeCompare(b.name); });
+    $('leo-table').innerHTML = '<thead><tr><th>Site</th><th>Country</th><th>Type</th><th>Operator</th><th>Status</th></tr></thead><tbody>' + rows.map(function (g) {
+      return '<tr data-c="' + g.code + '"><td><strong>' + esc(g.name) + '</strong><br><a class="meta" href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></td><td>' + esc(g.country) + '</td><td><span class="gtype" style="--sw:' + gColor(g.type) + '">' + esc(g.type) + '</span></td><td>' + esc(g.operator) + '</td><td>' + esc(g.status) + '</td></tr>';
+    }).join('') + '</tbody>';
+    $('leo-changes').innerHTML = '';
+    leoPaint(); leoDetail(leoSel);
+  }
   function renderLeoMap() {
     if (!leoWired) {
       leoWired = true;
@@ -998,7 +1060,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       $('leo-filter').addEventListener('change', function (e) { leoFilter = e.target.value; leoRender(); });
       $('leo-q').addEventListener('input', function (e) { leoQ = e.target.value.trim().toLowerCase(); leoRender(); });
       $('leo-table').addEventListener('click', function (e) { var r = e.target.closest('tr[data-c]'); if (r) { leoSelect(r.getAttribute('data-c')); $('leo-detail').scrollIntoView({block: 'nearest', behavior: 'smooth'}); } });
-      $('leo-map').addEventListener('click', function (e) { var el = e.target.closest('[data-c]'); if (el && LEOC[el.getAttribute('data-c')]) leoSelect(el.getAttribute('data-c')); });
+      $('leo-map').addEventListener('click', function (e) {
+        var m = e.target.closest('[data-gi]'); if (m) { var g = GROUND[+m.getAttribute('data-gi')]; if (g && g.code) leoSelect(g.code); return; }
+        var el = e.target.closest('[data-c]'); if (el && LEOC[el.getAttribute('data-c')]) leoSelect(el.getAttribute('data-c'));
+      });
       fetch('/assets/africa.svg').then(function (r) { return r.text(); }).then(function (svg) {
         $('leo-map').innerHTML = svg; leoMapLoaded = true;
         $('leo-map').querySelectorAll('[data-c]').forEach(function (el) { var t = document.createElementNS('http://www.w3.org/2000/svg', 'title'); t.textContent = LEOC[el.getAttribute('data-c')] || ''; el.appendChild(t); });
@@ -1044,12 +1109,14 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       '<div><dt>Amazon Leo</dt><dd>' + cpStatus('amazon', c) + '</dd></div>' +
       '<div><dt>Eutelsat OneWeb</dt><dd>' + cpStatus('oneweb', c) + '</dd></div>' +
       '<div><dt>Deals and milestones tracked</dt><dd>' + ds.length + '</dd></div>' +
+      '<div><dt>Ground sites recorded</dt><dd>' + gByCountry(c).length + '</dd></div>' +
       '<div><dt>Open roles here on the jobs board</dt><dd>' + nJobs + '</dd></div>' +
       '</dl><p class="meta">Starlink status comes from Starlink\'s own availability file' + (LEO.starlink && LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. Amazon Leo and OneWeb status comes from tracker records. <a href="/deals/map/">See the map</a></p></aside>';
     var main = '<div class="cp-main">' +
       (flag ? '<p class="cp-flag">Starlink lists ' + esc(name) + ' but the tracker records a regulator decision against it. <a href="' + esc(flag.source_url) + '" target="_blank" rel="noopener">' + esc(flag.title) + '</a></p>' : '') +
       (P.context && P.context.length ? '<section><h3>Background</h3><ul>' + P.context.map(function (x) { return '<li><span>' + esc(x.text) + '</span><span class="meta"><a href="' + esc(x.source_url) + '" target="_blank" rel="noopener">' + esc(x.source_name) + '</a></span></li>'; }).join('') + '</ul></section>' : '') +
       '<section><h3>Deals and milestones</h3>' + (ds.length ? '<ul>' + ds.map(cpDealLi).join('') + '</ul>' : '<p class="meta">Nothing recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/deals/">Open the full deals tracker</a></p></section>' +
+      '<section><h3>Ground infrastructure</h3>' + (gByCountry(c).length ? '<ul>' + gByCountry(c).map(gLi).join('') + '</ul>' : '<p class="meta">No gateways, teleports or ground stations recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/deals/map/">See all sites on the map</a></p></section>' +
       '<section><h3>Recent headlines</h3>' + (heads.length ? '<ul>' + heads.map(function (n) { return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No headlines mentioning ' + esc(name) + ' in the current news feed.</p>') + '</section>' +
       '<section><h3>Upcoming events</h3>' + (evs.length ? '<ul>' + evs.map(function (e) { return '<li><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a><span class="meta">' + esc(evWhen(e)) + ' · ' + esc(e.where) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No upcoming events listed in ' + esc(name) + '.</p>') + '</section>' +
       '<section><h3>Jobs</h3><p class="meta">' + (nJobs ? nJobs + ' open roles on the jobs board are based in ' + esc(name) + '. <a href="/jobs/">See jobs</a>' : 'None of the ' + companies.length + ' companies on the jobs board lists an open role in ' + esc(name) + ' today.') + '</p></section>' +
