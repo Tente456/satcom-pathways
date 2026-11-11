@@ -441,6 +441,11 @@ def build_starlink_africa():
     log(f"  starlink: {sum(v['status'] in ('launched', 'available') for v in statuses.values())} African countries live")
 
 
+def load_profiles():
+    f = ROOT / "countries.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
 def load_leo():
     store, hist_f = OUT / "data/starlink-africa.json", OUT / "data/starlink-history.json"
     return {"countries": AFRICA,
@@ -723,6 +728,7 @@ def render(cfg, news, jobs, updated, research):
                         key=lambda d: d["date"], reverse=True),
         "events": load_events(),
         "leo": load_leo(),
+        "profiles": load_profiles(),
         "aboutHtml": load_about(cfg),
     }
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -735,9 +741,9 @@ def render(cfg, news, jobs, updated, research):
 SECTION_PAGES = {
     "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
-    "deals": ("Africa deals tracker", "Satcom licences, contracts and partnerships in Africa, each linked to its source."),
+    "deals": ("Africa deals tracker", "Satellite and space licences, contracts and partnerships in Africa, each linked to its source."),
     "deals/map": ("Africa LEO broadband map", "Where Starlink, Amazon Leo and Eutelsat OneWeb stand in each of Africa's 54 countries, from operator data and sourced regulatory records."),
-    "research": ("Research", "Short research on African satellite communications, built on public data."),
+    "research": ("Research", "Research and country profiles on African satellite and space markets, built on public data."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),
 }
@@ -765,6 +771,13 @@ def write_pages(cfg, page, research):
         targets[f"/{key}/"] = (f"{label} | {name}", desc)
     for r in research:
         targets[f"/research/{r['slug']}/"] = (f"{r['title']} | {name}", r.get("summary") or r["title"])
+    profiles = load_profiles()
+    if profiles:
+        targets["/research/countries/"] = (f"Country profiles | {name}", "Satellite and space profiles of African countries: regulators, Starlink and LEO status, deals and events, each linked to its source.")
+        for code, pr in profiles.items():
+            targets[f"/research/countries/{pr['slug']}/"] = (
+                f"{pr['name']} satellite and space profile | {name}",
+                f"{pr['name']}: regulator, Starlink and LEO broadband status, satcom deals, events and headlines, each linked to its source.")
     for path, (title, desc) in targets.items():
         dest = OUT / path.strip("/") / "index.html" if path != "/" else OUT / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)

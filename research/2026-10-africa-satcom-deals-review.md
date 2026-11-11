@@ -9,7 +9,7 @@ tags: deals, LEO broadband, regulation, direct-to-device, Nigeria
 
 ## The dataset
 
-The Satcom Pathways deals tracker holds **36 entries** dated January 2025 to October 2026: 10 from 2025 and 26 from 2026. Each entry comes from a public announcement and links to its source. The tracker covers satellite communications, telecom and rural connectivity. It leaves out Earth observation, weather, navigation and launch.
+The Satcom Pathways deals tracker holds **36 entries** dated January 2025 to October 2026: 10 from 2025 and 26 from 2026. Each entry comes from a public announcement and links to its source. The tracker covers satellite communications, telecom and rural connectivity. At the time of writing it left out Earth observation, weather, navigation and launch. Since November 2026 the tracker also records Earth observation, launch and space policy, in line with the site's satellite and space scope.
 
 Only two entries have a disclosed dollar value: Satlyt's $8M seed round and the $1M feasibility study for an East African communications satellite. This review counts deals rather than adding up money.
 

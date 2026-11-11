@@ -249,6 +249,33 @@ aside { display: grid; gap: 18px; }
 @media (max-width: 520px) { .why { padding: 34px 22px; } .why h1 { font-size: 25px; } .why p:not(.kicker) { font-size: 16px; } }
 .footlinks { display: flex; flex-wrap: wrap; gap: 6px 18px; margin-bottom: 10px; font-weight: 600; }
 .footlinks a { color: var(--ink); }
+/* country profiles */
+.crumbs { font-size: 14px; color: var(--muted); margin-bottom: 14px; }
+.crumbs a { color: var(--link); }
+.cp-grid { display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 20px; align-items: start; }
+.cp-main { display: grid; gap: 18px; }
+.cp-main section, .cp-facts { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; }
+.cp-main h3, .cp-facts h3 { font-size: 18px; margin: 0 0 10px; }
+.cp-main ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 12px; }
+.cp-main li { display: grid; gap: 2px; }
+.cp-main li a { font-weight: 600; color: var(--ink); text-decoration: none; }
+.cp-main li a:hover { color: var(--link); text-decoration: underline; }
+.cp-facts dl { margin: 0; display: grid; gap: 12px; }
+.cp-facts dt { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); }
+.cp-facts dd { margin: 2px 0 0; font-weight: 600; }
+.cp-facts dd a { color: var(--ink); }
+.cp-facts .st { display: inline-flex; align-items: center; gap: 8px; }
+.cp-facts .st::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--sw); }
+.cp-flag { border-left: 3px solid #e5484d; padding: 8px 12px; background: var(--bg); border-radius: 4px; font-size: 14px; }
+.cp-lede { color: var(--muted); max-width: 70ch; margin: 6px 0 0; }
+.cp-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 14px; }
+.cp-card { display: grid; gap: 6px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 20px; text-decoration: none; color: var(--ink); }
+.cp-card:hover { border-color: var(--accent-text); }
+.cp-card h3 { font-size: 21px; margin: 0; }
+.rcountries { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin-bottom: 18px; padding: 12px 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; font-size: 15px; }
+.rcountries b { font-weight: 700; }
+.rcountries a { color: var(--link); font-weight: 600; }
+@media (max-width: 860px) { .cp-grid { grid-template-columns: 1fr; } .cp-facts { order: -1; } }
 /* LEO broadband map */
 .subnav { display: flex; gap: 6px; flex-wrap: wrap; }
 .subnav a { font-size: 14px; font-weight: 600; padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); color: var(--ink); text-decoration: none; background: var(--surface); }
@@ -490,8 +517,13 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       </div>
       <input type="search" id="research-q" placeholder="Search research" aria-label="Search research">
     </div>
+    <div class="rcountries" id="research-countries" hidden></div>
     <div class="count" id="research-count"></div>
     <div class="rlist" id="research-list"></div>
+  </section>
+  <section class="view" id="view-country" hidden>
+    <nav class="crumbs" aria-label="Breadcrumb"><a href="/research/">Research</a> › <a href="/research/countries/">Country profiles</a></nav>
+    <div id="country"></div>
   </section>
 
   <section class="view" id="view-events" aria-labelledby="events-title" hidden>
@@ -919,6 +951,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       return;
     }
     var html = '<h3>' + esc(LEOC[c]) + '</h3><span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c)) + '</span>';
+    if (PROF[c]) html += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
     if (leoOp === 'starlink') {
       html += '<p class="meta">From Starlink\'s own availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. <a href="https://www.starlink.com/map" target="_blank" rel="noopener">Starlink map</a></p>';
     }
@@ -974,6 +1007,57 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     }
     leoRender();
   }
+  /* country profiles */
+  var PROF = D.profiles || {}, PROF_CODES = Object.keys(PROF).sort(function (a, b) { return PROF[a].name.localeCompare(PROF[b].name); });
+  function cpDeals(c) { return D.deals.filter(function (d) { return d.countries.some(function (n) { return LEO_ALIAS[n.toLowerCase()] === c; }); }); }
+  function cpRe(c) { return new RegExp('\\b(' + PROF[c].match + ')\\b', 'i'); }
+  function cpLink(o) { return o ? '<a href="' + esc(o.url) + '" target="_blank" rel="noopener">' + esc(o.name) + '</a>' : ''; }
+  function cpStatus(op, c) { return '<span class="st" style="--sw:' + leoColor(op, c) + '">' + esc(leoLabel(op, c)) + '</span>'; }
+  function cpDealLi(d) {
+    return '<li><a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a><span class="meta">' + esc(fmtDate(d.date)) + ' · ' + esc(d.type) + ' · ' + esc(d.segment) + ' · ' + esc(d.source_name) + '</span></li>';
+  }
+  if (PROF_CODES.length) {
+    $('research-countries').hidden = false;
+    $('research-countries').innerHTML = '<b>Country profiles</b>' + PROF_CODES.map(function (c) { return '<a href="/research/countries/' + esc(PROF[c].slug) + '/">' + esc(PROF[c].name) + '</a>'; }).join('') + '<a href="/research/countries/">All profiles</a>';
+  }
+  function renderCountry(slug) {
+    var c = PROF_CODES.filter(function (k) { return PROF[k].slug === slug; })[0];
+    if (!slug) {
+      $('country').innerHTML = '<div class="rhead"><div><h2>Country profiles</h2><p>Where each market stands on satellite and space. Regulators, Starlink and LEO broadband status, deals, events and headlines in one place, each linked to its source and updated with every site refresh.</p></div></div>' +
+        '<div class="cp-cards">' + PROF_CODES.map(function (k) {
+          var ds = cpDeals(k);
+          return '<a class="cp-card" href="/research/countries/' + esc(PROF[k].slug) + '/"><h3>' + esc(PROF[k].name) + '</h3><span class="meta">Starlink ' + esc(leoLabel('starlink', k).toLowerCase()) + '</span><span class="meta">' + ds.length + (ds.length === 1 ? ' tracker record' : ' tracker records') + (ds.length ? ', latest ' + esc(fmtDate(ds[0].date)) : '') + '</span></a>';
+        }).join('') + '</div>';
+      return 'Country profiles';
+    }
+    if (!c) { $('country').innerHTML = '<h2>Not found</h2><p><a href="/research/countries/">See all country profiles</a>.</p>'; return 'Country profiles'; }
+    var P = PROF[c], name = P.name, re = cpRe(c), ds = cpDeals(c);
+    var heads = D.news.filter(function (n) { return re.test(n.title); }).slice(0, 6);
+    var evs = upcoming.filter(function (e) { return re.test(e.where + ' ' + e.name); });
+    var nJobs = D.jobs.filter(function (j) { return re.test(j.location || ''); }).length;
+    var flag = leoFlags.starlink[c];
+    var facts = '<aside class="cp-facts"><h3>Key facts</h3><dl>' +
+      '<div><dt>Regulator</dt><dd>' + cpLink(P.regulator) + '</dd></div>' +
+      (P.space_agency ? '<div><dt>Space agency</dt><dd>' + cpLink(P.space_agency) + '</dd></div>' : '') +
+      (P.satellite_operator ? '<div><dt>National satellite operator</dt><dd>' + cpLink(P.satellite_operator) + '</dd></div>' : '') +
+      '<div><dt>Starlink</dt><dd>' + cpStatus('starlink', c) + '</dd></div>' +
+      '<div><dt>Amazon Leo</dt><dd>' + cpStatus('amazon', c) + '</dd></div>' +
+      '<div><dt>Eutelsat OneWeb</dt><dd>' + cpStatus('oneweb', c) + '</dd></div>' +
+      '<div><dt>Deals and milestones tracked</dt><dd>' + ds.length + '</dd></div>' +
+      '<div><dt>Open roles here on the jobs board</dt><dd>' + nJobs + '</dd></div>' +
+      '</dl><p class="meta">Starlink status comes from Starlink\'s own availability file' + (LEO.starlink && LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. Amazon Leo and OneWeb status comes from tracker records. <a href="/deals/map/">See the map</a></p></aside>';
+    var main = '<div class="cp-main">' +
+      (flag ? '<p class="cp-flag">Starlink lists ' + esc(name) + ' but the tracker records a regulator decision against it. <a href="' + esc(flag.source_url) + '" target="_blank" rel="noopener">' + esc(flag.title) + '</a></p>' : '') +
+      (P.context && P.context.length ? '<section><h3>Background</h3><ul>' + P.context.map(function (x) { return '<li><span>' + esc(x.text) + '</span><span class="meta"><a href="' + esc(x.source_url) + '" target="_blank" rel="noopener">' + esc(x.source_name) + '</a></span></li>'; }).join('') + '</ul></section>' : '') +
+      '<section><h3>Deals and milestones</h3>' + (ds.length ? '<ul>' + ds.map(cpDealLi).join('') + '</ul>' : '<p class="meta">Nothing recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/deals/">Open the full deals tracker</a></p></section>' +
+      '<section><h3>Recent headlines</h3>' + (heads.length ? '<ul>' + heads.map(function (n) { return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No headlines mentioning ' + esc(name) + ' in the current news feed.</p>') + '</section>' +
+      '<section><h3>Upcoming events</h3>' + (evs.length ? '<ul>' + evs.map(function (e) { return '<li><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a><span class="meta">' + esc(evWhen(e)) + ' · ' + esc(e.where) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No upcoming events listed in ' + esc(name) + '.</p>') + '</section>' +
+      '<section><h3>Jobs</h3><p class="meta">' + (nJobs ? nJobs + ' open roles on the jobs board are based in ' + esc(name) + '. <a href="/jobs/">See jobs</a>' : 'None of the ' + companies.length + ' companies on the jobs board lists an open role in ' + esc(name) + ' today.') + '</p></section>' +
+      '</div>';
+    $('country').innerHTML = '<div class="rhead"><div><h2>' + esc(name) + '</h2><p class="cp-lede">Satellite and space profile. Every item links to its source and the page updates with each site refresh.</p></div></div><div class="cp-grid">' + main + facts + '</div>';
+    return name + ' satellite and space profile';
+  }
+
   var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
   var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa LEO broadband map', research: 'Research', events: 'Events', about: 'About'};
   (function legacyHash() {
@@ -986,6 +1070,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function currentView() {
     var p = location.pathname.split('/').filter(Boolean);
     if (!p.length) return {v: 'home'};
+    if (p[0] === 'research' && p[1] === 'countries') return {v: 'country', slug: p[2] || ''};
     if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
     if (p[0] === 'deals' && p[1] === 'map') return {v: 'leomap'};
     if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
@@ -998,11 +1083,12 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       var r = D.research.filter(function (x) { return x.slug === cur.slug; })[0];
       title = r ? r.title : 'Research';
     }
+    if (v === 'country') title = renderCountry(cur.slug);
     document.title = (title ? title + ' | ' : '') + D.site.name;
-    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'events', 'about'].forEach(function (k) {
+    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
-      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && v === 'article') || (k === 'deals' && v === 'leomap')) ? 'page' : 'false');
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country')) || (k === 'deals' && v === 'leomap')) ? 'page' : 'false');
     });
     if (v === 'leomap') renderLeoMap();
     $('view-home2').hidden = v !== 'home';

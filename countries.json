@@ -1,0 +1,35 @@
+{
+  "NG": {
+    "slug": "nigeria",
+    "name": "Nigeria",
+    "match": "nigeria|lagos|abuja|ncc|nigcomsat|nasrda",
+    "regulator": {"name": "Nigerian Communications Commission (NCC)", "url": "https://ncc.gov.ng"},
+    "space_agency": {"name": "National Space Research and Development Agency (NASRDA)", "url": "https://nasrda.gov.ng"},
+    "satellite_operator": {"name": "Nigerian Communications Satellite Ltd (NIGCOMSAT)", "url": "https://nigcomsat.gov.ng"},
+    "context": [
+      {"text": "Starlink went live in Nigeria on 30 January 2023, its first market in Africa.", "source_name": "Techloy", "source_url": "https://www.techloy.com/spacex-satellite-internet-service-starlink-launches-in-nigeria"}
+    ]
+  },
+  "KE": {
+    "slug": "kenya",
+    "name": "Kenya",
+    "match": "kenya|nairobi|mombasa",
+    "regulator": {"name": "Communications Authority of Kenya (CA)", "url": "https://www.ca.go.ke"},
+    "space_agency": {"name": "Kenya Space Agency (KSA)", "url": "https://ksa.go.ke"},
+    "satellite_operator": null,
+    "context": [
+      {"text": "Starlink went live in Kenya in July 2023.", "source_name": "Connecting Africa", "source_url": "https://connectingafrica.com/broadband/elon-musk-s-starlink-enters-kenya"}
+    ]
+  },
+  "ZA": {
+    "slug": "south-africa",
+    "name": "South Africa",
+    "match": "south africa|icasa|sansa|johannesburg|cape town|pretoria",
+    "regulator": {"name": "Independent Communications Authority of South Africa (ICASA)", "url": "https://www.icasa.org.za"},
+    "space_agency": {"name": "South African National Space Agency (SANSA)", "url": "https://www.sansa.org.za"},
+    "satellite_operator": null,
+    "context": [
+      {"text": "In June 2026 the Department of Communications and Digital Technologies told Parliament that Starlink had not yet formally applied for a licence.", "source_name": "ITWeb", "source_url": "https://www.itweb.co.za/article/no-starlink-licence-application-in-sa-yet/5yONPvErdlP7XWrb"}
+    ]
+  }
+}

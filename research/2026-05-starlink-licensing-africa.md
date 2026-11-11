@@ -7,6 +7,8 @@ summary: 29 African countries had granted Starlink a licence by May 2026 and 16 
 tags: Starlink, regulation, LEO broadband
 ---
 
+Updated figures for November 2026 are in [Starlink in Africa, November 2026](/research/2026-11-starlink-africa-status/).
+
 ## Key figures
 
 - **29 countries** had granted Starlink a licence as of May 2026, according to Le360 Afrique's country-by-country tally.
