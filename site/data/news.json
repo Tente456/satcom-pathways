@@ -1,5 +1,61 @@
 [
  {
+  "title": "Kratos to Upgrade Gateway Antenna Systems for Thaicom-10 Satellite",
+  "url": "https://www.satellitetoday.com/technology/2026/11/11/kratos-to-upgrade-gateway-antenna-systems-for-thaicom-10-satellite/",
+  "source": "Via Satellite",
+  "date": "2026-11-11T21:34+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "8 Globalstar Refresh Satellites Complete Initial Tests In-Orbit",
+  "url": "https://www.satellitetoday.com/manufacturing/2026/11/11/8-globalstar-refresh-satellites-complete-initial-tests-in-orbit/",
+  "source": "Via Satellite",
+  "date": "2026-11-11T20:40+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Skylo Lands Distribution in South Korea With KT SAT Deal",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/11/skylo-lands-distribution-in-south-korea-with-kt-sat-deal/",
+  "source": "Via Satellite",
+  "date": "2026-11-11T20:36+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Anduril says its first satellite can see adversaries maneuver in orbital night",
+  "url": "https://arstechnica.com/space/2026/11/anduril-demos-night-vision-sensor-for-tracking-satellites-in-darkness/",
+  "source": "Ars Technica",
+  "date": "2026-11-11T20:22+00:00",
+  "categories": []
+ },
+ {
+  "title": "DoD pushes out 3 loans totaling $450M to bolster US space companies",
+  "url": "https://breakingdefense.com/2026/11/dod-pushes-out-3-loans-totally-450m-to-bolster-us-space-companies/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-11T20:15+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Launch Delays and Slow Rollouts Push Gilat to Downgrade 2026 Outlook",
+  "url": "https://www.satellitetoday.com/finance/2026/11/11/launch-delays-and-slow-rollouts-push-gilat-to-downgrade-2026-outlook/",
+  "source": "Via Satellite",
+  "date": "2026-11-11T20:10+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
   "title": "Starlink gets faster ahead of 'V3' launches, but shift to dynamic pricing could backfire",
   "url": "https://www.lightreading.com/satellite/starlink-gets-faster-ahead-of-v3-launches-but-shift-to-dynamic-pricing-could-backfire",
   "source": "Light Reading",
@@ -3482,53 +3538,5 @@
    "Defence & security",
    "Business & funding"
   ]
- },
- {
-  "title": "ESA Provides New Details on Failed Space Rider Drop Test",
-  "url": "https://europeanspaceflight.com/esa-provides-new-details-on-failed-space-rider-drop-test/",
-  "source": "European Spaceflight",
-  "date": "2026-10-22T15:02+00:00",
-  "categories": []
- },
- {
-  "title": "Alex MacDonald: Space firms see an Arctic opening in defence",
-  "url": "https://spaceq.ca/alex-macdonald-spacebound-arctic-defence/",
-  "source": "SpaceQ",
-  "date": "2026-10-22T14:22+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Xona Raises $250M Series D to Scale Commercial GPS Constellation",
-  "url": "https://payloadspace.com/xona-raises-250m-series-d-to-scale-commercial-gps-constellation/",
-  "source": "Payload",
-  "date": "2026-10-22T13:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "ESPI AC 2026 Wrap-Up – Collaboration or Fragmentation? What We Heard at ESPI’s 20th Annual Conference",
-  "url": "https://spacewatch.global/2026/10/espi-ac-2026-wrap-up-collaboration-or-fragmentation-what-we-heard-at-espis-20th-annual-conference/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-22T13:00+00:00",
-  "categories": []
- },
- {
-  "title": "Orange to test D2D service next year as it waits for satellite coverage",
-  "url": "https://www.lightreading.com/satellite/limited-satellite-coverage-delays-orange-direct-to-device-tests",
-  "source": "Light Reading",
-  "date": "2026-10-22T12:44+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "National Academies Rank Nonpolar Moon Sites",
-  "url": "https://payloadspace.com/national-academies-rank-ideal-nonpolar-moon-sites/",
-  "source": "Payload",
-  "date": "2026-10-22T12:30+00:00",
-  "categories": []
  }
 ]
