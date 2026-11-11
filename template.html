@@ -315,6 +315,12 @@ aside { display: grid; gap: 18px; }
 .leo-map .gpt.hollow { fill: var(--surface) !important; stroke: var(--gc); stroke-width: 2.6; }
 .leo-map .gpt:hover, .leo-map .xpt:hover { stroke: var(--ink); }
 .leo-map .xpt { stroke: var(--surface); stroke-width: 1.4; cursor: pointer; fill: var(--leo-unk); }
+.leo-map .cbl path { fill: none; stroke-width: 1.5; stroke-opacity: .85; stroke-linejoin: round; transition: stroke-opacity .15s; }
+.leo-map .cbl path.plan { stroke-dasharray: 4 3; }
+.leo-map .cbl path.dim { stroke-opacity: .08; }
+.leo-map .cbl path.hi { stroke-width: 2.4; stroke-opacity: 1; }
+.leo-legend .ln::before { width: 18px; height: 3px; border-radius: 0; background: var(--sw); }
+.leo-legend .ln.plan::before { background: repeating-linear-gradient(90deg, var(--sw) 0 4px, transparent 4px 7px); }
 .leo-map .xpt.sat { fill: var(--gm-pop); stroke-width: 1.8; }
 .leo-legend .mk::before { border-radius: 50%; background: var(--sw); }
 .leo-legend .mk.hollow::before { background: transparent; box-shadow: inset 0 0 0 2px var(--ink); }
@@ -1013,6 +1019,29 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       svg.appendChild(xp);
     }
     if (xp) xp.style.display = leoOp === 'ixp' ? '' : 'none';
+    var cg = svg && svg.querySelector('#cbl');
+    if (svg && !cg && (FIB.cables || []).length) {
+      cg = document.createElementNS('http://www.w3.org/2000/svg', 'g'); cg.id = 'cbl'; cg.setAttribute('class', 'cbl');
+      var K3 = 1000 / 86, KY3 = K3 / Math.cos(2 * Math.PI / 180), PAL = ['#e6194b', '#3cb44b', '#4363d8', '#f58231', '#911eb4', '#2bb5b5', '#f032e6', '#9a6324', '#008080', '#b03060', '#3d5afe', '#808000'];
+      FIB.cables.forEach(function (cb, i) {
+        cb.paths.forEach(function (pts) {
+          var pth = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+          pth.setAttribute('d', 'M' + pts.map(function (q) { return ((q[1] + 26) * K3).toFixed(1) + ',' + ((38.5 - q[0]) * KY3).toFixed(1); }).join('L'));
+          pth.style.stroke = PAL[i % PAL.length]; pth.style.cursor = 'default'; pth.setAttribute('data-cb', i);
+          if (cb.planned) pth.setAttribute('class', 'plan');
+          var t = document.createElementNS('http://www.w3.org/2000/svg', 'title'); t.textContent = cb.name + (cb.planned ? ' (planned, ' : ' (') + (cb.rfs || '') + ')'; pth.appendChild(t);
+          cg.appendChild(pth);
+        });
+      });
+      svg.insertBefore(cg, svg.querySelector('#gpts') || null);
+    }
+    if (cg) {
+      cg.style.display = leoOp === 'fibre' ? '' : 'none';
+      cg.querySelectorAll('path').forEach(function (pth) {
+        var cb = FIB.cables[+pth.getAttribute('data-cb')], on = leoSel && cb.countries.indexOf(leoSel) !== -1;
+        pth.classList.toggle('dim', !!(leoOp === 'fibre' && leoSel && !on)); pth.classList.toggle('hi', !!(leoOp === 'fibre' && on));
+      });
+    }
   }
   function leoDetail(c) {
     var el = $('leo-detail');
@@ -1024,7 +1053,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       var fh = '<h3>' + esc(LEOC[c]) + '</h3>';
       if (PROF[c]) fh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
       var gsn = gByCountry(c).filter(gLive), satx = ixByCountry(c).filter(function (x) { return x.ops.length; });
-      fh += '<ul><li><strong>Fibre</strong> ' + esc(fibText(c)) + '</li><li><strong>Starlink</strong> ' + esc(leoLabel('starlink', c)) + '</li>' +
+      var cbs = (FIB.cables || []).filter(function (cb) { return cb.countries.indexOf(c) !== -1; });
+      fh += '<ul><li><strong>Fibre</strong> ' + esc(fibText(c)) + (cbs.length ? '<br><span class="meta">' + esc(cbs.map(function (cb) { return cb.name + (cb.planned ? ' (planned)' : ''); }).join(', ')) + '</span>' : '') + '</li><li><strong>Starlink</strong> ' + esc(leoLabel('starlink', c)) + '</li>' +
         '<li><strong>Operational ground sites</strong> ' + gsn.length + (gsn.length ? ' (' + esc(gsn.map(function (g) { return g.name; }).join(', ')) + ')' : '') + '</li>' +
         '<li><strong>Exchanges with a satellite operator</strong> ' + (satx.length ? esc(satx.map(function (x) { return x.name; }).join(', ')) : 'None') + '</li></ul>' +
         '<p class="meta">Cable count from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '.</p>';
@@ -1143,12 +1173,13 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function fibreRender() {
     var codes = Object.keys(LEOC), live = function (c) { return leoCat('starlink', c) === 'live'; };
     var ll = codes.filter(function (c) { return fib(c).landlocked; }), one = codes.filter(function (c) { return !fib(c).landlocked && fib(c).cables === 1; });
-    var llLive = ll.filter(live), llNoGround = llLive.filter(function (c) { return !gByCountry(c).filter(gLive).length; });
-    $('leo-tiles').innerHTML = [[ll.length, 'Landlocked countries'], [llLive.length, 'Landlocked countries with Starlink live'], [llNoGround.length, 'Of those, with no satellite ground site recorded'], [one.length, 'Coastal countries with a single subsea cable: ' + one.map(function (c) { return LEOC[c]; }).join(', ')]].map(function (t) {
+    var llGw = GROUND.filter(function (g) { return gLive(g) && g.type === 'LEO gateway' && fib(g.code).landlocked; }).length;
+    var liveC = (FIB.cables || []).filter(function (cb) { return !cb.planned; }).length;
+    $('leo-tiles').innerHTML = [[liveC, 'Subsea cables in service landing in Africa'], [ll.length, 'Landlocked countries'], [llGw, 'Operational satellite gateways in landlocked countries'], [one.length, 'Coastal countries with a single subsea cable: ' + one.map(function (c) { return LEOC[c]; }).join(', ')]].map(function (t) {
       return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
     }).join('');
-    $('leo-legend').innerHTML = leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
-    $('leo-note').innerHTML = 'Subsea cable counts from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '.';
+    $('leo-legend').innerHTML = '<span class="ln" style="--sw:#4363d8">Subsea cable in service</span><span class="ln plan" style="--sw:#4363d8">Planned cable</span>' + leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('');
+    $('leo-note').innerHTML = 'Cable landings from <a href="' + esc(FIB.source_url || '#') + '" target="_blank" rel="noopener">' + esc(FIB.source_name || 'TeleGeography') + '</a>' + (FIB.checked ? ', checked ' + esc(fmtDate(FIB.checked)) : '') + '. Routes are drawn schematically.';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All countries</option>' + leoCats().map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
     var rows = codes.filter(function (c) {

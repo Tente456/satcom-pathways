@@ -532,8 +532,11 @@ def load_ixp():
 
 
 def load_fibre():
-    f = ROOT / "fibre.json"
-    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    f, c = ROOT / "fibre.json", ROOT / "cables.json"
+    d = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+    if c.exists():
+        d["cables"] = json.loads(c.read_text(encoding="utf-8")).get("cables", [])
+    return d
 
 
 def load_ground():
