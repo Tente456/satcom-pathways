@@ -240,6 +240,32 @@ aside { display: grid; gap: 18px; }
 .tag.check { color: var(--muted); border-style: dashed; background: transparent; }
 @media (max-width: 520px) { .ev { grid-template-columns: 1fr; } }
 .about { display: grid; gap: 18px; max-width: 860px; }
+.home-stats { margin: -8px 0 26px; }
+.home-stats a.tile { color: var(--ink); text-decoration: none; transition: border-color .15s; }
+.home-stats a.tile:hover { border-color: var(--ink); }
+.svc { display: grid; gap: 22px; }
+.svc-hero { background: var(--band); color: var(--band-ink); border-radius: 12px; padding: 44px 48px 40px; }
+.svc-hero .kicker { color: var(--accent); letter-spacing: .14em; font-size: 12.5px; margin: 0 0 14px; text-transform: uppercase; }
+.svc-hero h1 { font-family: var(--font-display); font-size: 34px; font-weight: 600; line-height: 1.2; margin: 0 0 16px; max-width: 26ch; }
+.svc-hero p { font-size: 17px; line-height: 1.7; opacity: .82; max-width: 62ch; margin: 0 0 26px; }
+.svc-btn { display: inline-block; background: var(--accent); color: #0b1a12; font-weight: 700; padding: 11px 20px; border-radius: 8px; text-decoration: none; }
+.svc-btn:hover { filter: brightness(1.06); }
+.svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
+.svc-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 24px; display: flex; flex-direction: column; gap: 6px; }
+.svc-step { font-size: 11.5px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+.svc-card h2 { font-size: 21px; margin: 2px 0 0; }
+.svc-sub { margin: 0 0 8px; color: var(--muted); }
+.svc-card ul { margin: 0 0 14px; padding-left: 18px; display: grid; gap: 7px; line-height: 1.5; flex: 1; }
+.svc-card > a { font-weight: 600; }
+.svc-why { display: grid; grid-template-columns: 1.5fr 1fr; gap: 16px; }
+.svc-why > div { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 26px; }
+.svc-why h2 { font-size: 20px; margin: 0 0 10px; }
+.svc-why p { line-height: 1.7; margin: 0 0 12px; }
+.svc-why .svc-cta { background: var(--band); color: var(--band-ink); border-color: var(--band); }
+.svc-cta p { opacity: .82; }
+.cp-enquire { margin-top: 18px; background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 18px 22px; display: flex; gap: 14px; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.cp-enquire p { margin: 0; font-weight: 600; }
+@media (max-width: 900px) { .svc-grid, .svc-why { grid-template-columns: 1fr; } .svc-hero { padding: 32px 24px; } .svc-hero h1 { font-size: 27px; } }
 .why { background: var(--band); color: var(--band-ink); border-radius: 12px; padding: 52px 48px 44px; }
 .why .kicker { color: var(--accent); letter-spacing: .14em; font-size: 12.5px; margin: 0 0 18px; }
 .why h1 { font-family: var(--font-display); font-size: 31px; font-weight: 600; line-height: 1.22; letter-spacing: -.01em; max-width: 32ch; margin: 0 0 26px; }
@@ -393,6 +419,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <a href="/deals/" id="tab-deals">Deals</a>
       <a href="/map/" id="tab-leomap">Map</a>
       <a href="/research/" id="tab-research">Research</a>
+      <a href="/services/" id="tab-services">Services</a>
       <a href="/events/" id="tab-events">Events</a>
       <a href="/about/" id="tab-about">About</a>
     </nav>
@@ -405,6 +432,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <h2>{{TAGLINE}}</h2>
     </div>
     <div class="lead" id="lead"></div>
+    <div class="tiles home-stats" id="home-stats"></div>
   </section>
   <div class="band view-band" id="home-band" aria-label="Companies whose live job listings appear on this site">
     <div class="marquee"><div class="marquee-track" id="marquee"></div></div>
@@ -573,6 +601,68 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="evlist" id="events-list"></div>
   </section>
 
+  <section class="view" id="view-services" aria-labelledby="services-title" hidden>
+    <div class="svc">
+      <div class="svc-hero">
+        <p class="kicker">Our services</p>
+        <h1 id="services-title">Entering an African satellite market</h1>
+        <p>We help satellite and telecom companies understand and enter African markets, using the same licensing, deals and infrastructure data published across this site.</p>
+        <a class="svc-btn" href="mailto:hello@satcompathways.com?subject=Project%20enquiry">Discuss your project</a>
+      </div>
+      <div class="svc-grid">
+        <div class="svc-card">
+          <span class="svc-step">Research</span>
+          <h2>Country licensing brief</h2>
+          <p class="svc-sub">Know the rules before you commit.</p>
+          <ul>
+            <li>Who licenses satellite services, ground stations and spectrum</li>
+            <li>Licence categories, local partner and ownership requirements</li>
+            <li>Where Starlink, Amazon Leo and Eutelsat OneWeb stand in the country</li>
+            <li>Typical timelines and published fees</li>
+            <li>Recent regulator decisions, each linked to its source</li>
+          </ul>
+          <a href="/research/countries/nigeria/">See the Nigeria country profile</a>
+        </div>
+        <div class="svc-card">
+          <span class="svc-step">Representation</span>
+          <h2>Market access</h2>
+          <p class="svc-sub">From licensing roadmap to licence in hand.</p>
+          <ul>
+            <li>A licensing roadmap across your target countries</li>
+            <li>A compliant operating model with local partners</li>
+            <li>Preparing and leading applications, with qualified local counsel</li>
+            <li>Support for demonstrations and testing with regulators</li>
+            <li>Keeping licences maintained and compliant</li>
+          </ul>
+          <a href="mailto:hello@satcompathways.com?subject=Project%20enquiry">Discuss your project</a>
+        </div>
+        <div class="svc-card">
+          <span class="svc-step">Representation</span>
+          <h2>Regulator relations</h2>
+          <p class="svc-sub">Early, clear dialogue with the people who decide.</p>
+          <ul>
+            <li>Introductions and meetings with regulators and space agencies</li>
+            <li>Briefing regulators on new satellite services and technologies</li>
+            <li>Tracking consultations and policy changes that affect you</li>
+            <li>Preparing responses to public consultations</li>
+          </ul>
+          <a href="mailto:hello@satcompathways.com?subject=Project%20enquiry">Discuss your project</a>
+        </div>
+      </div>
+      <div class="svc-why">
+        <div>
+          <h2>Why Satcom Pathways</h2>
+          <p>Satcom Pathways is run by Kola Egbeyemi, who delivered enterprise connectivity projects at Airtel Nigeria and led satellite field services at Avanti Communications. He holds an M.Sc. in Telecommunication Technology and PMP and PMI-ACP certifications.</p>
+          <p>Every recommendation rests on data you can check, from the <a href="/map/">Africa connectivity map</a> to the <a href="/deals/">deals tracker</a> and <a href="/research/countries/">country profiles</a>.</p>
+        </div>
+        <div class="svc-cta">
+          <h2>Discuss your project</h2>
+          <p>Tell us the market and the service you have in mind.</p>
+          <a class="svc-btn" href="mailto:hello@satcompathways.com?subject=Project%20enquiry">Email hello@satcompathways.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
   <section class="view" id="view-about" aria-labelledby="about-title" hidden>
     <div class="about" id="about"></div>
   </section>
@@ -605,6 +695,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <a href="/digest.html">Weekly digest</a>
       <a href="/digest.xml">Digest RSS</a>
       <a href="/jobs-early.xml">Early-career jobs RSS</a>
+      <a href="/services/">Discuss your project</a>
       <a href="https://www.linkedin.com/company/satcom-pathways/" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
     <p id="foot-line"></p>
@@ -946,6 +1037,18 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function gbps(m) { var g = m / 1000; return (g >= 10 ? Math.round(g).toLocaleString() : g.toLocaleString(undefined, {maximumFractionDigits: 1})) + ' Gbps'; }
   function ixOpsText(x) { return x.ops.map(function (l) { return l.operator + ' (' + gbps(l.mbps) + ')'; }).join(', '); }
   var GROUND = (D.ground || []).map(function (g, i) { g.i = i; g.code = LEO_ALIAS[g.country.toLowerCase()] || ''; return g; });
+  (function homeStats() {
+    var el = $('home-stats'); if (!el) return;
+    el.innerHTML = [
+      [Object.keys(LEOC).length, 'African countries mapped', '/map/'],
+      [(D.deals || []).length, 'Africa deals tracked', '/deals/'],
+      [GROUND.length, 'satellite ground sites', '/map/'],
+      [(FIB.cables || []).filter(function (c) { return !c.planned; }).length, 'subsea cables in service', '/map/'],
+      [(D.jobs || []).length.toLocaleString('en-GB'), 'live satcom and space jobs', '/jobs/']
+    ].filter(function (x) { return x[0]; }).map(function (x) {
+      return '<a class="tile" href="' + x[2] + '"><span class="stat">' + x[0] + '</span><p class="meta">' + x[1] + '</p></a>';
+    }).join('');
+  })();
   var GTYPES = [['LEO gateway', '--gm-leo'], ['Internet point of presence', '--gm-pop'], ['TT&C and EO ground station', '--gm-ttc'], ['Teleport or GEO ground station', '--gm-geo']];
   function gColor(t) { var r = GTYPES.filter(function (x) { return x[0] === t; })[0]; return 'var(' + (r ? r[1] : '--gm-geo') + ')'; }
   function gLive(g) { return g.status === 'Operational'; }
@@ -1311,12 +1414,13 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       '<section><h3>Upcoming events</h3>' + (evs.length ? '<ul>' + evs.map(function (e) { return '<li><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a><span class="meta">' + esc(evWhen(e)) + ' · ' + esc(e.where) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No upcoming events listed in ' + esc(name) + '.</p>') + '</section>' +
       '<section><h3>Jobs</h3><p class="meta">' + (nJobs ? nJobs + ' open roles on the jobs board are based in ' + esc(name) + '. <a href="/jobs/">See jobs</a>' : 'None of the ' + companies.length + ' companies on the jobs board lists an open role in ' + esc(name) + ' today.') + '</p></section>' +
       '</div>';
-    $('country').innerHTML = '<div class="rhead"><div><h2>' + esc(name) + '</h2><p class="cp-lede">Satellite and space profile. Every item links to its source and the page updates with each site refresh.</p></div></div><div class="cp-grid">' + main + facts + '</div>';
+    $('country').innerHTML = '<div class="rhead"><div><h2>' + esc(name) + '</h2><p class="cp-lede">Satellite and space profile. Every item links to its source and the page updates with each site refresh.</p></div></div><div class="cp-grid">' + main + facts + '</div>' +
+      '<div class="cp-enquire"><p>Planning to enter ' + esc(name) + '?</p><a class="svc-btn" href="mailto:hello@satcompathways.com?subject=' + encodeURIComponent(name + ' project enquiry') + '">Discuss your project</a></div>';
     return name + ' satellite and space profile';
   }
 
-  var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
-  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa connectivity map', research: 'Research', events: 'Events', about: 'About'};
+  var SECTIONS = ['jobs', 'news', 'deals', 'research', 'services', 'events', 'about'];
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa connectivity map', research: 'Research', services: 'Our services', events: 'Events', about: 'About'};
   (function legacyHash() {
     var h = location.hash.slice(1);
     if (!h) return;
@@ -1343,7 +1447,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     }
     if (v === 'country') title = renderCountry(cur.slug);
     document.title = (title ? title + ' | ' : '') + D.site.name;
-    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'events', 'about'].forEach(function (k) {
+    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'services', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
       if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country')) || false) ? 'page' : 'false');

@@ -850,6 +850,7 @@ SECTION_PAGES = {
     "deals": ("Africa deals tracker", "Satellite and space licences, contracts and partnerships in Africa, each linked to its source."),
     "map": ("Africa connectivity map", "Starlink, Amazon Leo and Eutelsat OneWeb status, satellite ground stations, internet exchanges and subsea cables across every African country, each from operator data or a sourced record."),
     "research": ("Research", "Research and country profiles on African satellite and space markets, built on public data."),
+    "services": ("Our services", "Country licensing briefs, market access and regulator relations for satellite and telecom companies entering African markets."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),
 }
