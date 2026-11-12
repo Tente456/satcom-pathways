@@ -263,7 +263,7 @@ aside { display: grid; gap: 18px; }
 .svc-hero { background: var(--band); color: var(--band-ink); border-radius: 12px; padding: 44px 48px 40px; }
 .svc-hero .kicker { color: var(--accent); letter-spacing: .14em; font-size: 12.5px; margin: 0 0 14px; text-transform: uppercase; }
 .svc-hero h1 { font-family: var(--font-display); font-size: 34px; font-weight: 600; line-height: 1.2; margin: 0 0 16px; max-width: 26ch; }
-.svc-hero p { font-size: 17px; line-height: 1.7; opacity: .82; max-width: 62ch; margin: 0 0 26px; }
+.svc-hero p { font-size: 17px; line-height: 1.7; opacity: .82; max-width: 62ch; margin: 0; }
 .svc-btn { display: inline-block; background: var(--accent); color: #0b1a12; font-weight: 700; padding: 11px 20px; border-radius: 8px; text-decoration: none; }
 .svc-btn:hover { filter: brightness(1.06); }
 .svc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; }
@@ -285,9 +285,17 @@ aside { display: grid; gap: 18px; }
 .svc-why p { line-height: 1.7; margin: 0 0 12px; }
 .svc-why .svc-cta { background: var(--band); color: var(--band-ink); border-color: var(--band); }
 .svc-cta p { opacity: .82; }
-.enq { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 32px; scroll-margin-top: 90px; }
-.enq h2 { font-size: 24px; margin: 0 0 10px; }
-.enq-intro p { color: var(--muted); line-height: 1.6; margin: 0; }
+.enq { display: grid; grid-template-columns: 1fr 2fr; gap: 28px; background: var(--accent); color: #06210f; border-radius: 12px; padding: 32px; scroll-margin-top: 90px; }
+.enq h2 { font-size: 26px; margin: 0 0 10px; color: #06210f; }
+.enq-intro p { color: #06210f; opacity: .85; line-height: 1.6; margin: 0; }
+.enq .enq-form label { color: #06210f; }
+.enq .enq-form input, .enq .enq-form select, .enq .enq-form textarea { background: #fff; color: #0f1b2d; border-color: rgba(6, 33, 15, .25); }
+.enq .enq-form input:focus, .enq .enq-form select:focus, .enq .enq-form textarea:focus { outline-color: #0f1b2d; }
+.enq .enq-foot .svc-btn { background: #0f1b2d; color: #fff; }
+.enq #enq-status { color: #06210f; }
+.enq #enq-status.ok { color: #06210f; }
+.enq #enq-status.err { color: #7a1010; }
+.enq #enq-status a { color: #06210f; }
 .enq-form { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; }
 .enq-form label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
 .enq-form input, .enq-form select, .enq-form textarea { font: inherit; font-weight: 400; font-size: 15px; color: var(--ink); background: var(--bg, #fff); border: 1px solid var(--line); border-radius: 8px; padding: 10px 12px; width: 100%; box-sizing: border-box; }
@@ -654,7 +662,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
         <p class="kicker">Our services</p>
         <h1 id="services-title">Entering an African satellite market</h1>
         <p>We help satellite and telecom companies understand and enter African markets, using the same licensing, deals and infrastructure data published across this site.</p>
-        <a class="svc-btn" href="/services/#enquire">Discuss your project</a>
       </div>
       <div class="svc-grid">
         <div class="svc-card">
