@@ -45,7 +45,7 @@ Egypt, Morocco.
 
 ## Method
 
-Country statuses come from Starlink's public availability file, which the site reads on every refresh. The live status for each country, and any change since, is on the [Africa connectivity atlas](/atlas/). Regulator decisions come from the Satcom Pathways deals tracker, where every record links to its source. A country listed for 2026 that has not launched by the end of the year will show whatever date Starlink lists next.
+Country statuses come from Starlink's public availability file, which the site reads on every refresh. The live status for each country, and any change since, is on the [Africa connectivity map](/map/). Regulator decisions come from the Satcom Pathways deals tracker, where every record links to its source. A country listed for 2026 that has not launched by the end of the year will show whatever date Starlink lists next.
 
 ## Sources
 

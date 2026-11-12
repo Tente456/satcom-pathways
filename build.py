@@ -848,7 +848,7 @@ SECTION_PAGES = {
     "jobs": ("Jobs", "Open roles at satcom and space companies, with internships and graduate roles flagged."),
     "news": ("News", "Satellite, space and telecom headlines, refreshed every four hours."),
     "deals": ("Africa deals tracker", "Satellite and space licences, contracts and partnerships in Africa, each linked to its source."),
-    "atlas": ("Africa connectivity atlas", "Starlink, Amazon Leo and Eutelsat OneWeb status, satellite ground stations, internet exchanges and subsea cables across every African country, each from operator data or a sourced record."),
+    "map": ("Africa connectivity map", "Starlink, Amazon Leo and Eutelsat OneWeb status, satellite ground stations, internet exchanges and subsea cables across every African country, each from operator data or a sourced record."),
     "research": ("Research", "Research and country profiles on African satellite and space markets, built on public data."),
     "events": ("Events", "Upcoming satcom and space conferences, Africa included."),
     "about": ("About", "Who runs Satcom Pathways and how the site works."),
@@ -888,10 +888,10 @@ def write_pages(cfg, page, research):
         dest = OUT / path.strip("/") / "index.html" if path != "/" else OUT / "index.html"
         dest.parent.mkdir(parents=True, exist_ok=True)
         dest.write_text(variant(path, title, desc), encoding="utf-8")
-    # old address of the atlas keeps working and points search engines to the new one
+    # old address of the map keeps working and points search engines to the new one
     old = OUT / "deals" / "map" / "index.html"
     old.parent.mkdir(parents=True, exist_ok=True)
-    old.write_text(variant("/atlas/", *targets["/atlas/"]), encoding="utf-8")
+    old.write_text(variant("/map/", *targets["/map/"]), encoding="utf-8")
     (OUT / "404.html").write_text(page, encoding="utf-8")
     if url:
         today = NOW.date().isoformat()
