@@ -816,6 +816,148 @@ def load_about(cfg):
     return out + '<div class="prose">' + md.markdown(body, extensions=["sane_lists"]) + "</div>"
 
 
+# ---------------------------------------------------------------- free data downloads
+
+DL_ALIAS = {"dr congo": "CD", "democratic republic of the congo": "CD", "drc": "CD", "republic of the congo": "CG",
+            "congo-brazzaville": "CG", "ivory coast": "CI", "cote d'ivoire": "CI", "gambia": "GM",
+            "cape verde": "CV", "swaziland": "SZ", "sao tome and principe": "ST"}
+DL_CREDIT = "Satcom Pathways (satcompathways.com), licensed CC BY 4.0"
+
+
+def dl_code(name):
+    n = (name or "").strip().lower()
+    for code, nm in AFRICA.items():
+        if nm.lower() == n:
+            return code
+    return DL_ALIAS.get(n, "")
+
+
+def write_downloads(payload, updated):
+    """Rebuild the free CSV and Excel downloads from the site's own data on every build."""
+    import csv
+    import io
+    deals, ground = payload["deals"], payload["ground"] or []
+    sl = (payload["leo"].get("starlink") or {}).get("statuses", {})
+    sl_checked = ((payload["leo"].get("starlink") or {}).get("fetched") or "")[:10]
+    fib = (payload.get("fibre") or {}).get("countries", {})
+    prof = payload.get("profiles") or {}
+
+    deal_rows = [["Date", "Title", "Type", "Segment", "Countries", "Parties", "Value (USD)", "Value note",
+                  "Summary", "Source", "Source URL"]]
+    for d in deals:
+        deal_rows.append([d["date"], d["title"], d.get("type", ""), d.get("segment", ""), "; ".join(d.get("countries", [])),
+                          "; ".join(d.get("parties", [])), d.get("value_usd") or "", d.get("value_text", ""),
+                          d.get("summary", ""), d.get("source_name", ""), d.get("source_url", "")])
+
+    ground_rows = [["Name", "Country", "Place", "Latitude", "Longitude", "Type", "Operator", "Status", "Note",
+                    "Source", "Source URL"]]
+    for g in ground:
+        ground_rows.append([g["name"], g["country"], g.get("place", ""), g.get("lat", ""), g.get("lon", ""),
+                            g.get("type", ""), g.get("operator", ""), g.get("status", ""), g.get("note", ""),
+                            g.get("source_name", ""), g.get("source_url", "")])
+
+    ops = {"amazon": {}, "oneweb": {}}
+    flags = {}
+    for d in deals:
+        t = (d["title"] + " " + " ".join(d.get("parties", []))).lower()
+        hit = []
+        if re.search(r"amazon leo|kuiper", t):
+            hit.append("amazon")
+        if "oneweb" in t or ("eutelsat" in t and d.get("segment") == "LEO broadband"):
+            hit.append("oneweb")
+        neg = d.get("type") in ("Licence & regulation", "Court ruling") and re.search(r"denies|refus|suspend|reject|revok|ban", d["title"], re.I)
+        for n in d.get("countries", []):
+            c = dl_code(n)
+            if not c:
+                continue
+            for op in hit:
+                ops[op].setdefault(c, []).append(d)
+            if neg and re.search(r"starlink|spacex", t):
+                flags.setdefault(c, d)
+
+    def op_label(op, c):
+        ds = ops[op].get(c, [])
+        if not ds:
+            return "Nothing recorded"
+        if any(x.get("type") == "Service launch" for x in ds):
+            return "Service launch recorded"
+        if any(x.get("type") == "Licence & regulation" for x in ds):
+            return "Licensing activity recorded"
+        return "Agreement recorded"
+
+    def sl_label(c):
+        st = sl.get(c, {})
+        if st.get("status") in ("launched", "available"):
+            return "Live"
+        if st.get("status") == "coming_soon":
+            return "Listed for a launch year" if re.search(r"20\d\d", st.get("expected", "")) else "Listed, date unknown"
+        return "Not listed"
+
+    by_c = {}
+    for g in ground:
+        by_c.setdefault(dl_code(g["country"]), []).append(g)
+    country_rows = [["Country", "ISO code", "Starlink status", "Starlink expected", "Starlink refusal or suspension recorded",
+                     "Amazon Leo", "Eutelsat OneWeb", "Ground sites recorded", "Operational LEO gateways",
+                     "Landlocked", "Regulator"]]
+    for c, name in sorted(AFRICA.items(), key=lambda kv: kv[1]):
+        gs = by_c.get(c, [])
+        reg = ((prof.get(c) or {}).get("regulator") or {}).get("name", "")
+        country_rows.append([name, c, sl_label(c), sl.get(c, {}).get("expected", ""),
+                             flags[c]["title"] if c in flags else "", op_label("amazon", c), op_label("oneweb", c),
+                             len(gs), sum(1 for g in gs if g.get("type") == "LEO gateway" and g.get("status") == "Operational"),
+                             "Yes" if (fib.get(c) or {}).get("landlocked") else "No", reg])
+
+    sets = [
+        ("deals", "Africa satcom deals", "africa-satcom-deals.csv", deal_rows,
+         "Licences, partnerships, contracts, launches and regulator decisions in Africa, each with its source."),
+        ("ground", "Satellite ground sites in Africa", "africa-satellite-ground-sites.csv", ground_rows,
+         "LEO gateways, teleports, TT&C stations and internet points of presence, with operator, status and source."),
+        ("countries", "Africa country connectivity status", "africa-country-connectivity.csv", country_rows,
+         "One row per country with Starlink, Amazon Leo and Eutelsat OneWeb status, ground sites and regulator."),
+    ]
+    out = OUT / "data" / "downloads"
+    out.mkdir(parents=True, exist_ok=True)
+    for _, _, fn, rows, _ in sets:
+        buf = io.StringIO()
+        csv.writer(buf).writerows(rows)
+        (out / fn).write_text(buf.getvalue(), encoding="utf-8-sig")
+
+    xlsx = "satcom-pathways-africa-data.xlsx"
+    try:
+        from openpyxl import Workbook
+        from openpyxl.styles import Font
+        wb = Workbook()
+        ws = wb.active
+        ws.title = "About"
+        about = [["Satcom Pathways Africa data"], [],
+                 ["Updated", updated[:10]],
+                 ["Credit", DL_CREDIT],
+                 ["Sources", "Every deal and ground site row links to its public source. Starlink status comes from Starlink's own availability data" + (", checked " + sl_checked if sl_checked else "") + "."],
+                 ["Amazon Leo and OneWeb", "Status reflects what the deals tracker has recorded, not official availability."],
+                 []] + [[t, d] for _, t, _, _, d in sets]
+        for r in about:
+            ws.append(r)
+        ws["A1"].font = Font(bold=True, size=14)
+        ws.column_dimensions["A"].width = 34
+        ws.column_dimensions["B"].width = 110
+        for _, title, _, rows, _ in sets:
+            sh = wb.create_sheet(title[:31])
+            for r in rows:
+                sh.append(r)
+            for cell in sh[1]:
+                cell.font = Font(bold=True)
+            sh.freeze_panes = "A2"
+            for i, col in enumerate(zip(*rows)):
+                w = min(60, max(10, max(len(str(v)) for v in col[:200]) + 2))
+                sh.column_dimensions[sh.cell(1, i + 1).column_letter].width = w
+        wb.save(out / xlsx)
+    except ImportError:
+        xlsx = ""
+    return {"updated": updated, "xlsx": "/data/downloads/" + xlsx if xlsx else "", "credit": DL_CREDIT,
+            "sets": [{"key": k, "title": t, "file": "/data/downloads/" + fn, "rows": len(rows) - 1, "desc": d}
+                     for k, t, fn, rows, d in sets]}
+
+
 def render(cfg, news, jobs, updated, research):
     template = (ROOT / "template.html").read_text(encoding="utf-8")
     payload = {
@@ -837,6 +979,7 @@ def render(cfg, news, jobs, updated, research):
         "fibre": load_fibre(),
         "aboutHtml": load_about(cfg),
     }
+    payload["downloads"] = write_downloads(payload, updated)
     data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     page = (template.replace("{{SITE_NAME}}", html.escape(cfg["site_name"]))
                     .replace("{{TAGLINE}}", html.escape(cfg["tagline"]))
@@ -878,6 +1021,7 @@ def write_pages(cfg, page, research):
         targets[f"/{key}/"] = (f"{label} | {name}", desc)
     for r in research:
         targets[f"/research/{r['slug']}/"] = (f"{r['title']} | {name}", r.get("summary") or r["title"])
+    targets["/research/data/"] = (f"Africa satellite data downloads | {name}", "Free CSV and Excel downloads of Africa satcom deals, satellite ground sites and country connectivity status, rebuilt with every refresh.")
     profiles = load_profiles()
     if profiles:
         targets["/research/countries/"] = (f"Country profiles | {name}", "Satellite and space profiles of African countries: regulators, Starlink and LEO status, deals and events, each linked to its source.")

@@ -241,6 +241,22 @@ aside { display: grid; gap: 18px; }
 @media (max-width: 520px) { .ev { grid-template-columns: 1fr; } }
 .about { display: grid; gap: 18px; max-width: 860px; }
 .home-stats { margin: -8px 0 26px; }
+.dl-btn { display: inline-flex; align-items: center; gap: 8px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; padding: 8px 14px; border-radius: 8px; text-decoration: none; font-size: 14px; }
+.dl-btn::before { content: ''; width: 14px; height: 14px; background: currentColor; -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12M6 11l6 6 6-6M4 21h16'/%3E%3C/svg%3E") center / contain no-repeat; mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 3v12M6 11l6 6 6-6M4 21h16'/%3E%3C/svg%3E") center / contain no-repeat; }
+.dl-btn:hover { border-color: var(--ink); }
+.dl-btn.primary { background: var(--accent); border-color: var(--accent); color: #0b1a12; }
+.dl-row { margin: 14px 0 0; }
+.dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 4px 0 18px; }
+.dl-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
+.dl-card h3 { font-size: 19px; margin: 0; }
+.dl-card .stat { font-size: 30px; }
+.dl-card p { margin: 0; line-height: 1.55; }
+.dl-card .dl-btn { margin-top: auto; align-self: start; }
+.dl-all { background: var(--band); color: var(--band-ink); border-radius: 10px; padding: 22px 26px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; justify-content: space-between; }
+.dl-all h3 { margin: 0 0 4px; font-size: 19px; }
+.dl-all p { margin: 0; opacity: .8; }
+.dl-note { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 16px 0 0; max-width: 80ch; }
+@media (max-width: 900px) { .dl-grid { grid-template-columns: 1fr; } }
 .home-stats a.tile { color: var(--ink); text-decoration: none; transition: border-color .15s; }
 .home-stats a.tile:hover { border-color: var(--ink); }
 .svc { display: grid; gap: 22px; }
@@ -523,6 +539,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div>
         <h2>Africa satcom deals</h2>
       </div>
+      <a class="dl-btn" href="/research/data/">Download the data</a>
     </div>
     <div class="tiles" id="deal-tiles"></div>
     <div class="news-layout">
@@ -570,12 +587,14 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <p class="note" id="leo-note"></p>
     <div class="toolbar"><input type="search" id="leo-q" placeholder="Find a country" aria-label="Find a country"><select id="leo-filter" aria-label="Filter by status"></select></div>
     <div class="leo-table-wrap"><table class="leo-table" id="leo-table"></table></div>
+    <p class="dl-row"><a class="dl-btn" href="/research/data/">Download the data</a></p>
     <div id="leo-changes"></div>
   </section>
   <section class="view" id="view-research" aria-labelledby="tab-research" hidden>
     <div class="rhead">
       <div>
         <h2>Research</h2>
+        <p><a class="dl-btn" href="/research/data/">Download our Africa data</a></p>
       </div>
       <dl class="rledger" id="research-ledger"></dl>
     </div>
@@ -607,6 +626,11 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="evlist" id="events-list"></div>
   </section>
 
+  <section class="view" id="view-data" aria-labelledby="data-title" hidden>
+    <nav class="crumbs"><a href="/research/">Research</a></nav>
+    <div class="rhead"><div><h2 id="data-title">Africa satellite data</h2><p class="cp-lede">Free downloads of the data behind this site, rebuilt with every refresh.</p></div></div>
+    <div id="data-body"></div>
+  </section>
   <section class="view" id="view-services" aria-labelledby="services-title" hidden>
     <div class="svc">
       <div class="svc-hero">
@@ -1423,11 +1447,21 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var p = location.pathname.split('/').filter(Boolean);
     if (!p.length) return {v: 'home'};
     if (p[0] === 'research' && p[1] === 'countries') return {v: 'country', slug: p[2] || ''};
+    if (p[0] === 'research' && p[1] === 'data') return {v: 'data'};
     if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
     if (p[0] === 'map') return {v: 'leomap'};
     if (p[0] === 'deals' && p[1] === 'map') { history.replaceState(null, '', '/map/' + location.search + location.hash); return {v: 'leomap'}; }
     if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
     return {v: 'home'};
+  }
+  function renderData() {
+    var M = D.downloads || {sets: []};
+    $('data-body').innerHTML = '<div class="dl-grid">' + M.sets.map(function (x) {
+      return '<div class="dl-card"><h3>' + esc(x.title) + '</h3><span class="stat">' + x.rows + '</span><p class="meta">' + (x.key === 'countries' ? 'countries' : x.key === 'ground' ? 'sites' : 'records') + '</p><p>' + esc(x.desc) + '</p><a class="dl-btn" href="' + esc(x.file) + '" download>Download CSV</a></div>';
+    }).join('') + '</div>' +
+      (M.xlsx ? '<div class="dl-all"><div><h3>All three in one Excel workbook</h3><p>One tab per dataset, plus a notes tab on sources.</p></div><a class="dl-btn primary" href="' + esc(M.xlsx) + '" download>Download Excel</a></div>' : '') +
+      '<p class="dl-note">Updated ' + esc(fmtDate((M.updated || '').slice(0, 10))) + '. Free to use under CC BY 4.0. Please credit Satcom Pathways (satcompathways.com).</p>';
+    return 'Africa satellite data';
   }
   function route() {
     var cur = currentView(), v = cur.v, title = TITLES[v];
@@ -1437,11 +1471,12 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       title = r ? r.title : 'Research';
     }
     if (v === 'country') title = renderCountry(cur.slug);
+    if (v === 'data') title = renderData();
     document.title = (title ? title + ' | ' : '') + D.site.name;
-    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'services', 'events', 'about'].forEach(function (k) {
+    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'data', 'services', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
-      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country')) || false) ? 'page' : 'false');
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country' || v === 'data')) || false) ? 'page' : 'false');
     });
     if (v === 'leomap') renderLeoMap();
     $('view-home2').hidden = v !== 'home';
