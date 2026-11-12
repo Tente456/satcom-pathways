@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-12T03:46+00:00",
+ "fetched": "2026-11-12T07:25+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -151,7 +151,7 @@
    "name": "IXP Namibia",
    "city": "Windhoek",
    "country": "NA",
-   "networks": 7,
+   "networks": 8,
    "lat": -22.56,
    "lon": 17.08
   },
@@ -196,7 +196,7 @@
    "name": "RINEX",
    "city": "Kigali",
    "country": "RW",
-   "networks": 17,
+   "networks": 18,
    "lat": -1.95,
    "lon": 30.06
   },
