@@ -391,6 +391,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <a href="/jobs/" id="tab-jobs">Jobs</a>
       <a href="/news/" id="tab-news">News</a>
       <a href="/deals/" id="tab-deals">Deals</a>
+      <a href="/atlas/" id="tab-leomap">Atlas</a>
       <a href="/research/" id="tab-research">Research</a>
       <a href="/events/" id="tab-events">Events</a>
       <a href="/about/" id="tab-about">About</a>
@@ -488,7 +489,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <div>
         <h2>Africa satcom deals</h2>
       </div>
-      <nav class="subnav" aria-label="Deals views"><a href="/deals/" aria-current="page">Deals tracker</a><a href="/deals/map/">Africa satellite map</a></nav>
     </div>
     <div class="tiles" id="deal-tiles"></div>
     <div class="news-layout">
@@ -516,10 +516,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   <section class="view" id="view-leomap" aria-labelledby="leomap-title" hidden>
     <div class="jobs-head">
       <div>
-        <h2 id="leomap-title">Africa satellite map</h2>
-        <p class="cp-lede">Where Starlink, Amazon Leo and Eutelsat OneWeb stand in every African country, and the ground stations that serve them.</p>
+        <h2 id="leomap-title">Africa connectivity atlas</h2>
+        <p class="cp-lede">Satellite broadband, ground stations, internet exchanges and subsea cables across every African country.</p>
       </div>
-      <nav class="subnav" aria-label="Deals views"><a href="/deals/">Deals tracker</a><a href="/deals/map/" aria-current="page">Africa satellite map</a></nav>
     </div>
     <div class="chips" id="leo-ops" role="group" aria-label="Choose operator">
       <button type="button" data-op="starlink" aria-pressed="true">Starlink</button>
@@ -1301,12 +1300,12 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       '<div><dt>Ground sites recorded</dt><dd>' + gByCountry(c).length + '</dd></div>' +
       '<div><dt>Fibre</dt><dd>' + esc(fibText(c)) + '</dd></div>' +
       '<div><dt>Open roles here on the jobs board</dt><dd>' + nJobs + '</dd></div>' +
-      '</dl><p class="meta">Starlink status comes from Starlink\'s own availability file' + (LEO.starlink && LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. Amazon Leo and OneWeb status comes from tracker records. <a href="/deals/map/">See the map</a></p></aside>';
+      '</dl><p class="meta">Starlink status comes from Starlink\'s own availability file' + (LEO.starlink && LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. Amazon Leo and OneWeb status comes from tracker records. <a href="/atlas/">See the map</a></p></aside>';
     var main = '<div class="cp-main">' +
       (flag ? '<p class="cp-flag">Starlink lists ' + esc(name) + ' but the tracker records a regulator decision against it. <a href="' + esc(flag.source_url) + '" target="_blank" rel="noopener">' + esc(flag.title) + '</a></p>' : '') +
       (P.context && P.context.length ? '<section><h3>Background</h3><ul>' + P.context.map(function (x) { return '<li><span>' + esc(x.text) + '</span><span class="meta"><a href="' + esc(x.source_url) + '" target="_blank" rel="noopener">' + esc(x.source_name) + '</a></span></li>'; }).join('') + '</ul></section>' : '') +
       '<section><h3>Deals and milestones</h3>' + (ds.length ? '<ul>' + ds.map(cpDealLi).join('') + '</ul>' : '<p class="meta">Nothing recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/deals/">Open the full deals tracker</a></p></section>' +
-      '<section><h3>Ground infrastructure</h3>' + (gByCountry(c).length ? '<ul>' + gByCountry(c).map(gLi).join('') + '</ul>' : '<p class="meta">No gateways, teleports or ground stations recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/deals/map/">See all sites on the map</a></p></section>' +
+      '<section><h3>Ground infrastructure</h3>' + (gByCountry(c).length ? '<ul>' + gByCountry(c).map(gLi).join('') + '</ul>' : '<p class="meta">No gateways, teleports or ground stations recorded for ' + esc(name) + ' yet.</p>') + '<p class="meta"><a href="/atlas/">See all sites on the map</a></p></section>' +
       '<section><h3>Internet exchanges</h3>' + (ixByCountry(c).length ? '<ul>' + ixByCountry(c).map(ixLi).join('') + '</ul>' : '<p class="meta">No internet exchange in ' + esc(name) + ' is listed on PeeringDB.</p>') + '</section>' +
       '<section><h3>Recent headlines</h3>' + (heads.length ? '<ul>' + heads.map(function (n) { return '<li><a href="' + esc(n.url) + '" target="_blank" rel="noopener">' + esc(n.title) + '</a><span class="meta">' + esc(n.source) + ' · ' + esc(ago(n.date)) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No headlines mentioning ' + esc(name) + ' in the current news feed.</p>') + '</section>' +
       '<section><h3>Upcoming events</h3>' + (evs.length ? '<ul>' + evs.map(function (e) { return '<li><a href="' + esc(e.url) + '" target="_blank" rel="noopener">' + esc(e.name) + '</a><span class="meta">' + esc(evWhen(e)) + ' · ' + esc(e.where) + '</span></li>'; }).join('') + '</ul>' : '<p class="meta">No upcoming events listed in ' + esc(name) + '.</p>') + '</section>' +
@@ -1317,7 +1316,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   }
 
   var SECTIONS = ['jobs', 'news', 'deals', 'research', 'events', 'about'];
-  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa satellite map', research: 'Research', events: 'Events', about: 'About'};
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa connectivity atlas', research: 'Research', events: 'Events', about: 'About'};
   (function legacyHash() {
     var h = location.hash.slice(1);
     if (!h) return;
@@ -1330,7 +1329,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     if (!p.length) return {v: 'home'};
     if (p[0] === 'research' && p[1] === 'countries') return {v: 'country', slug: p[2] || ''};
     if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
-    if (p[0] === 'deals' && p[1] === 'map') return {v: 'leomap'};
+    if (p[0] === 'atlas') return {v: 'leomap'};
+    if (p[0] === 'deals' && p[1] === 'map') { history.replaceState(null, '', '/atlas/' + location.search + location.hash); return {v: 'leomap'}; }
     if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
     return {v: 'home'};
   }
@@ -1346,7 +1346,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
-      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country')) || (k === 'deals' && v === 'leomap')) ? 'page' : 'false');
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country')) || false) ? 'page' : 'false');
     });
     if (v === 'leomap') renderLeoMap();
     $('view-home2').hidden = v !== 'home';
@@ -1355,7 +1355,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function isRoute(path) {
     if (path === '/') return true;
     var p = path.split('/').filter(Boolean);
-    return SECTIONS.indexOf(p[0]) !== -1 && /\/$/.test(path);
+    return (SECTIONS.indexOf(p[0]) !== -1 || p[0] === 'atlas') && /\/$/.test(path);
   }
   document.addEventListener('click', function (e) {
     if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
