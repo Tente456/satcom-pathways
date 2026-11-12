@@ -940,8 +940,9 @@ def write_downloads(payload, updated):
         ws["A1"].font = Font(bold=True, size=14)
         ws.column_dimensions["A"].width = 34
         ws.column_dimensions["B"].width = 110
-        for _, title, _, rows, _ in sets:
-            sh = wb.create_sheet(title[:31])
+        tabs = {"deals": "Deals", "ground": "Ground sites", "countries": "Countries"}
+        for key, title, _, rows, _ in sets:
+            sh = wb.create_sheet(tabs[key])
             for r in rows:
                 sh.append(r)
             for cell in sh[1]:
