@@ -1115,20 +1115,20 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     if (leoOp === 'ground') {
       var gs = gByCountry(c), gh = '<h3>' + esc(LEOC[c]) + '</h3>';
       if (PROF[c]) gh += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
-      gh += gs.length ? '<p class="meta">' + gs.length + (gs.length === 1 ? ' site recorded' : ' sites recorded') + '</p><ul>' + gs.map(gLi).join('') + '</ul>' : '<p class="meta">No ground sites recorded for ' + esc(LEOC[c]) + ' yet. That means none has been found in a public source, not that none exists.</p>';
+      gh += gs.length ? '<p class="meta">' + gs.length + (gs.length === 1 ? ' site recorded' : ' sites recorded') + '</p><ul>' + gs.map(gLi).join('') + '</ul>' : '<p class="meta">No ground sites recorded</p>';
       el.innerHTML = gh; return;
     }
-    var html = '<h3>' + esc(LEOC[c]) + '</h3><span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c)) + '</span>';
+    var pill = esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c));
+    var html = '<h3>' + esc(LEOC[c]) + '</h3>' + (leoOp === 'starlink'
+      ? '<a class="st" style="--sw:' + leoColor(leoOp, c) + ';text-decoration:none" href="https://www.starlink.com/map" target="_blank" rel="noopener" title="Source Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '">' + pill + '</a>'
+      : '<span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + pill + '</span>');
     if (PROF[c]) html += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
-    if (leoOp === 'starlink') {
-      html += '<p class="meta">From Starlink\'s own availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '. <a href="https://www.starlink.com/map" target="_blank" rel="noopener">Starlink map</a></p>';
-    }
     var flag = leoFlags[leoOp][c];
     if (flag && leoOp === 'starlink' && leoCat('starlink', c) !== 'none') html += '<p class="warn">Starlink\'s map and the regulatory record below point in different directions.</p>';
     var ds = (leoDeals[leoOp][c] || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
     html += ds.length ? '<p class="meta" style="margin-top:12px">Records in the deals tracker</p><ul>' + ds.map(function (d) {
       return '<li><strong>' + esc(fmtDate(d.date)) + '</strong> ' + esc(d.title) + ' <a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.source_name) + '</a></li>';
-    }).join('') + '</ul>' : '<p class="meta">No ' + esc(LEO_OPS[leoOp]) + ' records for ' + esc(LEOC[c]) + ' in the deals tracker yet.</p>';
+    }).join('') + '</ul>' : '';
     el.innerHTML = html;
   }
   function gLi(g) {
