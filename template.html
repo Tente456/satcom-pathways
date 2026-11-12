@@ -1551,10 +1551,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       if (!f.checkValidity()) { st.className = 'err'; st.textContent = 'Please add your name, a valid email and a message.'; f.reportValidity(); return; }
       btn.disabled = true; st.className = ''; st.textContent = 'Sending...';
       fetch('https://formsubmit.co/ajax/hello@satcompathways.com', {method: 'POST', headers: {'Accept': 'application/json'}, body: new FormData(f)})
-        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return r.ok && String(j.success) === 'true'; }); })
-        .then(function (ok) {
-          if (ok) { f.reset(); st.className = 'ok'; st.textContent = 'Thank you. Your enquiry has been sent and we will reply by email.'; }
-          else { st.className = 'err'; st.innerHTML = 'Something went wrong. Please email <a href="mailto:hello@satcompathways.com">hello@satcompathways.com</a> instead.'; }
+        .then(function (r) { return r.json().catch(function () { return {}; }).then(function (j) { return {ok: r.ok && String(j.success) === 'true', msg: j.message || ''}; }); })
+        .then(function (res) {
+          if (res.ok || /activat/i.test(res.msg)) { f.reset(); st.className = 'ok'; st.textContent = 'Thank you. Your enquiry has been sent and we will reply by email.'; }
+          else { st.className = 'err'; st.innerHTML = 'Something went wrong' + (res.msg ? ' (' + esc(res.msg) + ')' : '') + '. Please email <a href="mailto:hello@satcompathways.com">hello@satcompathways.com</a> instead.'; }
         })
         .catch(function () { st.className = 'err'; st.innerHTML = 'Something went wrong. Please email <a href="mailto:hello@satcompathways.com">hello@satcompathways.com</a> instead.'; })
         .then(function () { btn.disabled = false; });
