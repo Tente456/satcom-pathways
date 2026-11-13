@@ -1,5 +1,128 @@
 [
  {
+  "title": "DND Departmental Results Report shows space gains and a delay",
+  "url": "https://spaceq.ca/dnd-departmental-results-report-2025-26/",
+  "source": "SpaceQ",
+  "date": "2026-11-12T22:57+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "York Space Entering Unmanned Systems Market With Deal For Australian UGV Developer",
+  "url": "https://www.satellitetoday.com/technology/2026/11/12/york-space-entering-unmanned-systems-market-with-deal-for-australian-ugv-developer/",
+  "source": "Via Satellite",
+  "date": "2026-11-12T21:48+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Italy’s Revolv Space Closes Series A Funding Round",
+  "url": "https://www.satellitetoday.com/finance/2026/11/12/italys-revolv-space-closes-series-a-funding-round/",
+  "source": "Via Satellite",
+  "date": "2026-11-12T21:36+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "SpaceX's bid for Grain's lowband spectrum takes a step forward",
+  "url": "https://www.lightreading.com/5g/spacex-s-bid-for-grain-s-lowband-spectrum-takes-a-step-forward",
+  "source": "Light Reading",
+  "date": "2026-11-12T21:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Avoiding the Starlink Trap: Why the Satellite Industry Must Think Smarter, Not Bigger",
+  "url": "https://www.satellitetoday.com/opinion/2026/11/12/avoiding-the-starlink-trap-why-the-satellite-industry-must-think-smarter-not-bigger/",
+  "source": "Via Satellite",
+  "date": "2026-11-12T20:56+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Gatehouse Satcom to Acquire Satlab to Build Integrated Radio for 5G NTN Solution",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/12/gatehouse-satcom-to-acquire-satlab-to-build-integrated-radio-for-5g-ntn-solution/",
+  "source": "Via Satellite",
+  "date": "2026-11-12T20:51+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Ukraine Reports More Restrictions to Starshield Access",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/12/ukraine-reports-more-restrictions-to-starshield-access/",
+  "source": "Via Satellite",
+  "date": "2026-11-12T20:46+00:00",
+  "categories": []
+ },
+ {
+  "title": "SDA explores integration of SpaceX laser communication terminals with missile tracking sats",
+  "url": "https://breakingdefense.com/2026/11/sda-explores-integration-of-spacex-laser-communication-terminals-with-missile-tracking-sats/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-12T20:23+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "UARX Space Marks a Milestone for Spain’s Space Industry with the Maiden Flight of OSSIE-D, Featuring a Complete Power Subsystem Supplied by DHV Technology",
+  "url": "https://spacenews.com/uarx-space-marks-a-milestone-for-spains-space-industry-with-the-maiden-flight-of-ossie-d-featuring-a-complete-power-subsystem-supplied-by-dhv-technology/",
+  "source": "SpaceNews",
+  "date": "2026-11-12T20:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "What role does industry play in Europe’s space sovereignty push?",
+  "url": "https://spacenews.com/what-role-does-industry-play-in-europes-space-sovereignty-push/",
+  "source": "SpaceNews",
+  "date": "2026-11-12T19:40+00:00",
+  "categories": []
+ },
+ {
+  "title": "ULA’s Vulcan set to return to flight with first Amazon Leo payload",
+  "url": "https://www.nasaspaceflight.com/2026/11/amazon-leo-lv-01/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-12T17:44+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Sarah McLean named Maritime Launch chief operating officer",
+  "url": "https://spaceq.ca/sarah-mclean-maritime-launch-chief-operating-officer/",
+  "source": "SpaceQ",
+  "date": "2026-11-12T17:19+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Africa’s NewSpace Industry Generated USD 352 Million in 2025. Has Investment Kept Pace With Its Growth?",
+  "url": "https://spaceinafrica.com/2026/11/12/africas-newspace-industry-generated-usd-352-million-in-2025-has-investment-kept-pace-with-its-growth/",
+  "source": "Space in Africa",
+  "date": "2026-11-12T16:57+00:00",
+  "categories": [
+   "Business & funding",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Senior is not a skill level: Rethinking startup hiring",
+  "url": "https://spaceq.ca/senior-is-not-a-skill-level-rethinking-startup-hiring/",
+  "source": "SpaceQ",
+  "date": "2026-11-12T16:55+00:00",
+  "categories": []
+ },
+ {
   "title": "Exclusive: Spaceium Opens License for Refueling Hardware",
   "url": "https://payloadspace.com/exclusive-spaceium-opens-license-for-refueling-hardware/",
   "source": "Payload",
@@ -3423,127 +3546,6 @@
   "categories": [
    "Launch",
    "Africa"
-  ]
- },
- {
-  "title": "Replay: Satellite Mission Management at the Edge",
-  "url": "https://spacenews.com/satellite-mission-management-at-the-edge-event/",
-  "source": "SpaceNews",
-  "date": "2026-10-23T19:53+00:00",
-  "categories": []
- },
- {
-  "title": "Inside the Pentagon, the pressure is on to find a home for a new spaceport",
-  "url": "https://arstechnica.com/space/2026/10/senior-commander-says-space-force-needs-new-spaceport-by-2030/",
-  "source": "Ars Technica",
-  "date": "2026-10-23T19:33+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Kyiv eyes purchase of planned ICEYE, Nokia ‘sovereign’ communication sats",
-  "url": "https://breakingdefense.com/2026/10/kyiv-eyes-purchase-of-planned-iceye-nokia-sovereign-communication-sats/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-10-23T19:07+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Xona Prepares to Start Navigation Service in Beta With Recent Launch and $250M Raise",
-  "url": "https://www.satellitetoday.com/technology/2026/10/23/xona-prepares-to-start-navigation-service-in-beta-with-recent-launch-and-250m-raise/",
-  "source": "Via Satellite",
-  "date": "2026-10-23T18:23+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Speedcast Completes Connectivity Upgrade for Maritime Customer",
-  "url": "https://www.satellitetoday.com/mobility/2026/10/23/speedcast-completes-connectivity-upgrade-for-maritime-customer/",
-  "source": "Via Satellite",
-  "date": "2026-10-23T18:22+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Solstar Demonstrated Space Wi-Fi Technology in Recent RPO Mission With NASA",
-  "url": "https://www.satellitetoday.com/space-economy/2026/10/23/solstar-demonstrated-space-wi-fi-technology-in-recent-rpo-mission-with-nasa/",
-  "source": "Via Satellite",
-  "date": "2026-10-23T18:19+00:00",
-  "categories": []
- },
- {
-  "title": "Is Rwanda Pointing to Africa’s Next EO Model?",
-  "url": "https://spaceinafrica.com/2026/10/23/is-rwanda-pointing-to-africas-next-eo-model/",
-  "source": "Space in Africa",
-  "date": "2026-10-23T18:17+00:00",
-  "categories": [
-   "Earth observation",
-   "Business & funding",
-   "Africa"
-  ]
- },
- {
-  "title": "Space Systems Command Makes CASR Awards for Space Domain Awareness",
-  "url": "https://www.satellitetoday.com/government-military/2026/10/23/space-systems-command-makes-casr-awards-for-space-domain-awareness/",
-  "source": "Via Satellite",
-  "date": "2026-10-23T18:00+00:00",
-  "categories": [
-   "Defence & security",
-   "Business & funding",
-   "Sustainability & debris"
-  ]
- },
- {
-  "title": "Musk's mobile plan comes down to Earth with tower talk",
-  "url": "https://www.lightreading.com/satellite/musk-s-mobile-plan-comes-down-to-earth-with-tower-talk",
-  "source": "Light Reading",
-  "date": "2026-10-23T16:09+00:00",
-  "categories": []
- },
- {
-  "title": "Photon-IV wins STDP award for AI that times satellite passes",
-  "url": "https://spaceq.ca/photon-iv-stdp-award-ai-satellite-passes/",
-  "source": "SpaceQ",
-  "date": "2026-10-23T15:42+00:00",
-  "categories": []
- },
- {
-  "title": "The Arctic advantage: Panelists call for more investments while celebrating successes",
-  "url": "https://spaceq.ca/spacebound-arctic-connectivity-panel/",
-  "source": "SpaceQ",
-  "date": "2026-10-23T15:02+00:00",
-  "categories": []
- },
- {
-  "title": "Exclusive: DoD Taps Orbital Operations for Cryogenic Spacecraft Demo",
-  "url": "https://payloadspace.com/exclusive-dod-taps-orbital-operations-for-cryogenic-spacecraft-demo/",
-  "source": "Payload",
-  "date": "2026-10-23T13:00+00:00",
-  "categories": []
- },
- {
-  "title": "SpaceX clinches deal to use Tristar's spectrum for D2D",
-  "url": "https://www.lightreading.com/satellite/spacex-clinches-deal-to-use-tristar-s-spectrum-for-d2d",
-  "source": "Light Reading",
-  "date": "2026-10-23T13:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Eurobites: Nokia, Iceye help Ukraine with sovereign satcom",
-  "url": "https://www.lightreading.com/satellite/eurobites-nokia-iceye-help-ukraine-with-sovereign-satcom",
-  "source": "Light Reading",
-  "date": "2026-10-23T12:59+00:00",
-  "categories": [
-   "Satcom & connectivity"
   ]
  }
 ]
