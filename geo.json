@@ -11,7 +11,8 @@
       "bands": "C, Ku, Ka and L band",
       "note": "Replacement for NigComSat-1, with 28 transponders.",
       "source_name": "NIGCOMSAT",
-      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat"
+      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat",
+      "scope": "african"
     },
     {
       "name": "NigComSat-1",
@@ -23,7 +24,8 @@
       "bands": "C, Ku, Ka and L band",
       "note": "De-orbited on 11 November 2008 after an in-orbit failure.",
       "source_name": "NIGCOMSAT",
-      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat"
+      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat",
+      "scope": "african"
     },
     {
       "name": "Angosat-2",
@@ -35,7 +37,8 @@
       "bands": "C, Ku and Ka band",
       "note": "Reached its orbital position of 23 degrees East on 3 November 2022. Replacement for Angosat-1.",
       "source_name": "ANGOP",
-      "source_url": "https://angop.ao/en/noticias/tecnologia/angosat-2-atinge-posicao-orbital-23e/"
+      "source_url": "https://angop.ao/en/noticias/tecnologia/angosat-2-atinge-posicao-orbital-23e/",
+      "scope": "african"
     },
     {
       "name": "Angosat-1",
@@ -47,7 +50,8 @@
       "bands": "C and Ku band",
       "note": "Declared a total loss on 28 April 2019.",
       "source_name": "RussianSpaceWeb",
-      "source_url": "https://www.russianspaceweb.com/angosat2.html"
+      "source_url": "https://www.russianspaceweb.com/angosat2.html",
+      "scope": "african"
     },
     {
       "name": "Nilesat 301",
@@ -59,7 +63,8 @@
       "bands": "Ku band",
       "note": "Built by Thales Alenia Space. Replaces Nilesat 201 and adds coverage of Southern Africa and the Nile Basin.",
       "source_name": "Thales",
-      "source_url": "https://www.thalesgroup.com/en/news-centre/press-releases/nilesat-301-communications-satellite-successfully-launched"
+      "source_url": "https://www.thalesgroup.com/en/news-centre/press-releases/nilesat-301-communications-satellite-successfully-launched",
+      "scope": "african"
     },
     {
       "name": "Nilesat 201",
@@ -71,7 +76,8 @@
       "bands": "",
       "note": "Expected to retire in 2028.",
       "source_name": "Via Satellite",
-      "source_url": "https://www.satellitetoday.com/launch/2022/06/08/spacex-launches-nilesat-301-for-egyptian-operator/"
+      "source_url": "https://www.satellitetoday.com/launch/2022/06/08/spacex-launches-nilesat-301-for-egyptian-operator/",
+      "scope": "african"
     },
     {
       "name": "Tiba-1",
@@ -83,7 +89,8 @@
       "bands": "Ka band",
       "note": "Government owned. Broadband for Egypt and secure government and military communications.",
       "source_name": "Space in Africa",
-      "source_url": "https://spaceinafrica.com/2019/11/27/egypt-launches-tiba-1-communications-satellite-on-board-ariane-5-rocket/"
+      "source_url": "https://spaceinafrica.com/2019/11/27/egypt-launches-tiba-1-communications-satellite-on-board-ariane-5-rocket/",
+      "scope": "african"
     },
     {
       "name": "Alcomsat-1",
@@ -95,7 +102,8 @@
       "bands": "Ku, Ka and L band",
       "note": "33 transponders. Placed at 24.8 degrees West on 18 December 2017.",
       "source_name": "Space in Africa",
-      "source_url": "https://spaceinafrica.com/2021/12/13/asal-celebrates-the-4th-year-anniversary-of-the-alcomsat-1-satellite/"
+      "source_url": "https://spaceinafrica.com/2021/12/13/asal-celebrates-the-4th-year-anniversary-of-the-alcomsat-1-satellite/",
+      "scope": "african"
     },
     {
       "name": "RASCOM-QAF1R",
@@ -108,7 +116,120 @@
       "bands": "C and Ku band",
       "note": "Pan-African satellite of the Regional African Satellite Communication Organization, operating past its 15-year design life.",
       "source_name": "KeepTrack",
-      "source_url": "https://keeptrack.space/satellite-of-the-day/sotd-2026-10-15"
+      "source_url": "https://keeptrack.space/satellite-of-the-day/sotd-2026-10-15",
+      "scope": "african"
+    },
+    {
+      "name": "HYLAS 4",
+      "country": "",
+      "region": "International",
+      "operator": "Avanti",
+      "lon": -33.5,
+      "launched": "2018-04-05",
+      "status": "In service",
+      "bands": "Ka band",
+      "note": "64 fixed Ka-band beams serving Africa and Europe, plus four steerable beams.",
+      "source_name": "Developing Telecoms",
+      "source_url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/15044-avanti-s-new-hylas-4-satellite-gateway-station-will-boost-broadband-support.html",
+      "scope": "intl"
+    },
+    {
+      "name": "Al Yah 3",
+      "country": "",
+      "region": "International",
+      "operator": "Yahsat",
+      "lon": -20,
+      "launched": "2018-01-26",
+      "status": "In service",
+      "bands": "Ka band",
+      "note": "Ka-band broadband reaching around 60 percent of Africa's population, plus Brazil.",
+      "source_name": "Spaceflight101",
+      "source_url": "https://spaceflight101.com/ariane-5-va241/",
+      "scope": "intl"
+    },
+    {
+      "name": "Intelsat 37e",
+      "country": "",
+      "region": "International",
+      "operator": "Intelsat",
+      "lon": -18,
+      "launched": "2017-09-29",
+      "status": "In service",
+      "bands": "C, Ku and Ka band",
+      "note": "High-throughput service to Africa, Europe and the Americas.",
+      "source_name": "Intelsat",
+      "source_url": "https://investors.intelsat.com/node/11106/pdf",
+      "scope": "intl"
+    },
+    {
+      "name": "SES-5",
+      "country": "",
+      "region": "International",
+      "operator": "SES",
+      "lon": 5,
+      "launched": "2012-07-09",
+      "status": "In service",
+      "bands": "C and Ku band",
+      "note": "Carries a Ku-band beam serving Sub-Saharan Africa.",
+      "source_name": "Digital TV Europe",
+      "source_url": "https://digitaltveurope.com/2012/09/18/ses-5-fully-operational",
+      "scope": "intl"
+    },
+    {
+      "name": "Eutelsat Konnect",
+      "country": "",
+      "region": "International",
+      "operator": "Eutelsat",
+      "lon": 7,
+      "launched": "2020-01-16",
+      "status": "In service",
+      "bands": "",
+      "note": "High-throughput broadband satellite covering Sub-Saharan Africa.",
+      "source_name": "Eutelsat",
+      "source_url": "https://www.eutelsat.com/konnect",
+      "scope": "intl"
+    },
+    {
+      "name": "AMOS-17",
+      "country": "",
+      "region": "International",
+      "operator": "Spacecom",
+      "lon": 17,
+      "launched": "2019-08-06",
+      "status": "In service",
+      "bands": "C, Ku and Ka band",
+      "note": "Built for Africa, with high-throughput C-band beams over the continent.",
+      "source_name": "Spacecom",
+      "source_url": "https://amos-spacecom.com/satellite-amos-17",
+      "scope": "intl"
+    },
+    {
+      "name": "Eutelsat 36D",
+      "country": "",
+      "region": "International",
+      "operator": "Eutelsat",
+      "lon": 36,
+      "launched": "2024-03-30",
+      "status": "In service",
+      "bands": "Ku band",
+      "note": "Succeeds Eutelsat 36B at 36 degrees East, the main TV position for Sub-Saharan Africa.",
+      "source_name": "Eutelsat",
+      "source_url": "https://www.eutelsat.com/files/PDF/brochures/EUTELSAT_SATELLITE_E36D.pdf",
+      "scope": "intl"
+    },
+    {
+      "name": "Intelsat 39",
+      "country": "",
+      "region": "International",
+      "operator": "Intelsat",
+      "lon": 62,
+      "launched": "2019-08-06",
+      "status": "In service",
+      "bands": "C and Ku band",
+      "note": "Broadband and video distribution across Africa, Europe, the Middle East and Asia. Replaced Intelsat 902.",
+      "source_name": "SatNews",
+      "source_url": "https://satnews.com/2019/06/26/the-maxar-built-intelsat-39-satellite-arrives-in-french-guiana-for-july-launch/",
+      "scope": "intl"
     }
   ]
 }

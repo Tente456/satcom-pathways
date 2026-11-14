@@ -375,7 +375,7 @@ aside { display: grid; gap: 18px; }
 .leo-table tr:hover td { background: var(--bg); cursor: pointer; }
 .leo-table .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--sw); margin-right: 7px; }
 .leo-table .warn { color: #e5484d; font-weight: 600; }
-:root { --lv3: #0b8f45; --lv2: #1fd16a; --lv1: #a6ecc2; --op-sl: #1d4ed8; --op-az: #ea580c; --op-ow: #9333ea; --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; --g1: #c9d4e3; --g2: #9fb2cc; --g3: #7189ad; --gm-leo: #12b85a; --gm-pop: #f59e0b; --gm-ttc: #8b5cf6; --gm-geo: #0ea5e9; }
+:root { --lv3: #0b8f45; --lv2: #1fd16a; --lv1: #a6ecc2; --op-sl: #1d4ed8; --op-az: #ea580c; --op-ow: #9333ea; --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; --g1: #c9d4e3; --g2: #9fb2cc; --g3: #7189ad; --gm-leo: #12b85a; --gm-pop: #f59e0b; --gm-ttc: #8b5cf6; --gm-geo: #0ea5e9; --gm-intl: #64748b; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; } }
 :root[data-theme="dark"] { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; }
 .leo-map .gpt { stroke: var(--surface); stroke-width: 1.6; cursor: pointer; }
@@ -390,6 +390,7 @@ aside { display: grid; gap: 18px; }
 .leo-map .geo-lnk { fill: none; stroke: var(--gm-geo); stroke-width: 1; stroke-dasharray: 2 4; opacity: .45; pointer-events: none; }
 .leo-map .geo-lnk.on { opacity: 1; stroke-width: 1.6; }
 .leo-map .gsat { fill: var(--gm-geo); stroke: #fff; stroke-width: 1.6; cursor: pointer; }
+.leo-map .gsat.intl { fill: var(--gm-intl); }
 .leo-map .gsat.on { stroke: var(--ink); stroke-width: 2.4; }
 .leo-map .geo-lbl { font: 600 12px/1 system-ui, sans-serif; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
 .leo-map .geo-cap { font: 600 11px/1 system-ui, sans-serif; fill: var(--gm-geo); letter-spacing: .04em; pointer-events: none; }
@@ -614,6 +615,11 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       <button type="button" data-sub="starlink" aria-pressed="false">Starlink</button>
       <button type="button" data-sub="amazon" aria-pressed="false">Amazon Leo</button>
       <button type="button" data-sub="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
+    </div>
+    <div class="chips sub" id="geo-sub" role="group" aria-label="Choose GEO satellites" hidden>
+      <button type="button" data-gsub="all" aria-pressed="true">All satellites</button>
+      <button type="button" data-gsub="african" aria-pressed="false">African-owned</button>
+      <button type="button" data-gsub="intl" aria-pressed="false">International operators</button>
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
@@ -1091,13 +1097,15 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   /* views: each section has its own address (/jobs/, /research/<slug>/ ...) */
   /* Africa satellite map */
   var LEO = D.leo || {}, LEOC = LEO.countries || {}, SL = (LEO.starlink || {}).statuses || {};
-  var leoOp = 'leo', leoSub = 'all', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
+  var leoOp = 'leo', leoSub = 'all', geoSub = 'all', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
   var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
   Object.keys(LEOC).forEach(function (c) { LEO_ALIAS[LEOC[c].toLowerCase()] = c; });
   var LEO_OPS = {leo: 'LEO broadband', geo: 'GEO satellites', starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure', ixp: 'Internet exchanges', fibre: 'Fibre and satellite'};
   var LEO_THREE = ['starlink', 'amazon', 'oneweb'], OP_VAR = {starlink: '--op-sl', amazon: '--op-az', oneweb: '--op-ow'};
   var GSATS = ((D.geo || {}).satellites || []).map(function (g, i) { g.i = i; return g; });
   function gsLive(g) { return g.status === 'In service'; }
+  function gsIntl(g) { return g.scope === 'intl'; }
+  function gsShow(g) { return geoSub === 'all' || (geoSub === 'intl') === gsIntl(g); }
   function gsByCountry(c) { return GSATS.filter(function (g) { return g.country === c; }); }
   function gsPos(g) { return g.lon === null || g.lon === undefined ? 'Not reached' : Math.abs(g.lon) + '°' + (g.lon >= 0 ? 'E' : 'W'); }
   function curOp() { return leoOp === 'leo' ? (leoSub === 'all' ? 'leo' : leoSub) : leoOp; }
@@ -1236,21 +1244,29 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       var ey = (38.5 * KYY).toFixed(1), NS = 'http://www.w3.org/2000/svg';
       var arc = document.createElementNS(NS, 'path'); arc.setAttribute('d', 'M0,' + ey + 'L1000,' + ey); arc.setAttribute('class', 'geo-arc'); gg.appendChild(arc);
       var cap = document.createElementNS(NS, 'text'); cap.setAttribute('x', '8'); cap.setAttribute('y', (38.5 * KYY - 9).toFixed(1)); cap.setAttribute('class', 'geo-cap'); cap.textContent = 'GEOSTATIONARY ARC'; gg.appendChild(cap);
-      var seen = {};
-      GSATS.filter(function (g) { return gsLive(g) && g.lon !== null && g.lon !== undefined; }).forEach(function (g) {
-        var x = (g.lon + 26) * KX, k = seen[g.lon] = (seen[g.lon] || 0) + 1, y = 38.5 * KYY + (k - 1) * 15;
+      var levels = [], placed = GSATS.filter(function (g) { return gsLive(g) && g.lon !== null && g.lon !== undefined; }).sort(function (a, b) { return a.lon - b.lon; });
+      placed.forEach(function (g) {
+        var raw = (g.lon + 26) * KX, x = Math.max(9, Math.min(991, raw)), off = x !== raw, right = raw > 991;
+        var label = g.name + (off ? ' ' + gsPos(g) : ''), w = label.length * 7.4 + 16;
+        var x0 = right ? x - w : x - 8, x1 = right ? x + 8 : x + w, l = 0;
+        while (levels[l] !== undefined && levels[l] > x0) l++;
+        levels[l] = x1;
+        var y = 38.5 * KYY + l * 15, cls = gsIntl(g) ? ' intl' : '';
         var p = g.country && cxy(g.country);
-        if (p) { var l = document.createElementNS(NS, 'path'); l.setAttribute('d', 'M' + x.toFixed(1) + ',' + y.toFixed(1) + 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)); l.setAttribute('class', 'geo-lnk'); l.setAttribute('data-gc', g.country); gg.insertBefore(l, gg.firstChild); }
+        if (p) { var ln = document.createElementNS(NS, 'path'); ln.setAttribute('d', 'M' + x.toFixed(1) + ',' + y.toFixed(1) + 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)); ln.setAttribute('class', 'geo-lnk'); ln.setAttribute('data-gc', g.country); ln.setAttribute('data-gs', g.i); gg.insertBefore(ln, gg.firstChild); }
         var m = document.createElementNS(NS, 'circle'); m.setAttribute('cx', x.toFixed(1)); m.setAttribute('cy', y.toFixed(1)); m.setAttribute('r', '7');
-        m.setAttribute('class', 'gsat'); m.setAttribute('data-sat', g.i); m.setAttribute('data-gc', g.country || '');
+        m.setAttribute('class', 'gsat' + cls); m.setAttribute('data-sat', g.i); m.setAttribute('data-gc', g.country || ''); m.setAttribute('data-gs', g.i);
         var t = document.createElementNS(NS, 'title'); t.textContent = g.name + ', ' + gsPos(g) + ', ' + g.operator; m.appendChild(t); gg.appendChild(m);
-        var tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', (x + 11).toFixed(1)); tx.setAttribute('y', (y + 4).toFixed(1)); tx.setAttribute('class', 'geo-lbl'); tx.textContent = g.name; gg.appendChild(tx);
+        var tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', (right ? x - 11 : x + 11).toFixed(1)); tx.setAttribute('y', (y + 4).toFixed(1)); tx.setAttribute('class', 'geo-lbl'); tx.setAttribute('data-gs', g.i);
+        if (right) tx.setAttribute('text-anchor', 'end');
+        tx.textContent = label; gg.appendChild(tx);
       });
       svg.appendChild(gg);
     }
     if (gg) {
       gg.style.display = leoOp === 'geo' ? '' : 'none';
       gg.querySelectorAll('[data-gc]').forEach(function (e) { e.classList.toggle('on', !!leoSel && e.getAttribute('data-gc') === leoSel); });
+      gg.querySelectorAll('[data-gs]').forEach(function (e) { e.style.display = gsShow(GSATS[+e.getAttribute('data-gs')]) ? '' : 'none'; });
     }
     if (svg && !gp) {
       gp = document.createElementNS('http://www.w3.org/2000/svg', 'g'); gp.id = 'gpts';
@@ -1400,6 +1416,8 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function leoRender() {
     $('leo-ops').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-op') === leoOp ? 'true' : 'false'); });
     $('leo-sub').hidden = leoOp !== 'leo';
+    $('geo-sub').hidden = leoOp !== 'geo';
+    $('geo-sub').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-gsub') === geoSub ? 'true' : 'false'); });
     $('leo-sub').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sub') === leoSub ? 'true' : 'false'); });
     if (leoOp === 'geo') { geoRender(); return; }
     if (leoOp === 'ground') { groundRender(); return; }
@@ -1441,18 +1459,26 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     leoPaint(); leoDetail(leoSel);
   }
   function geoRender() {
-    var live = GSATS.filter(gsLive), lost = GSATS.filter(function (g) { return g.status === 'Lost'; }), nc = {};
+    var afr = GSATS.filter(function (g) { return !gsIntl(g); }), intl = GSATS.filter(gsIntl);
+    var live = afr.filter(gsLive), lost = afr.filter(function (g) { return g.status === 'Lost'; }), nc = {};
     live.forEach(function (g) { if (g.country) nc[g.country] = 1; });
     var minY = live.reduce(function (m, g) { return Math.min(m, +g.launched.slice(0, 4)); }, 9999), oldest = live.filter(function (g) { return +g.launched.slice(0, 4) === minY; });
-    $('leo-tiles').innerHTML = [[live.length, 'African-owned GEO communications satellites in service'], [Object.keys(nc).length, 'Countries with their own GEO communications satellite'], [lost.length, 'Lost after launch: ' + lost.map(function (g) { return g.name; }).join(', ')], [minY, 'Oldest still in service: ' + oldest.map(function (g) { return g.name; }).join(' and ')]].map(function (t) {
+    var iops = intl.map(function (g) { return g.operator; }).filter(function (o, i, a) { return a.indexOf(o) === i; });
+    var newest = intl.slice().sort(function (a, b) { return b.launched.localeCompare(a.launched); })[0];
+    var tiles = geoSub === 'intl'
+      ? [[intl.length, 'International GEO satellites serving Africa listed'], [iops.length, 'Operators: ' + iops.join(', ')], [newest ? newest.launched.slice(0, 4) : '', newest ? 'Newest: ' + newest.name : ''], [intl.filter(function (g) { return /Ka/.test(g.bands); }).length, 'With Ka-band capacity']]
+      : geoSub === 'african'
+        ? [[live.length, 'African-owned GEO communications satellites in service'], [Object.keys(nc).length, 'Countries with their own GEO communications satellite'], [lost.length, 'Lost after launch: ' + lost.map(function (g) { return g.name; }).join(', ')], [minY, 'Oldest still in service: ' + oldest.map(function (g) { return g.name; }).join(' and ')]]
+        : [[live.length, 'African-owned GEO communications satellites in service'], [Object.keys(nc).length, 'Countries with their own GEO communications satellite'], [intl.length, 'International GEO satellites serving Africa listed'], [iops.length, 'International operators: ' + iops.join(', ')]];
+    $('leo-tiles').innerHTML = tiles.map(function (t) {
       return '<div class="tile"><span class="stat">' + esc(String(t[0])) + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
     }).join('');
-    $('leo-legend').innerHTML = leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="mk" style="--sw:var(--gm-geo)">Satellite at its orbital position over the equator</span><span class="src">Operator and launch records, linked in each row</span>';
+    $('leo-legend').innerHTML = leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + (geoSub !== 'intl' ? '<span class="mk" style="--sw:var(--gm-geo)">African-owned satellite</span>' : '') + (geoSub !== 'african' ? '<span class="mk" style="--sw:var(--gm-intl)">International operator serving Africa</span>' : '') + '<span class="src">Positions over the equator. Operator and launch records linked in each row</span>';
     $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All satellites</option><option value="In service"' + (leoFilter === 'In service' ? ' selected' : '') + '>In service</option><option value="Lost"' + (leoFilter === 'Lost' ? ' selected' : '') + '>Lost</option>';
     var rows = GSATS.filter(function (g) {
-      return (!leoFilter || g.status === leoFilter) && (!leoQ || (g.name + ' ' + g.operator + ' ' + (LEOC[g.country] || g.region || '')).toLowerCase().indexOf(leoQ) !== -1);
+      return gsShow(g) && (!leoFilter || g.status === leoFilter) && (!leoQ || (g.name + ' ' + g.operator + ' ' + (LEOC[g.country] || g.region || '')).toLowerCase().indexOf(leoQ) !== -1);
     }).sort(function (a, b) { return (b.status === 'In service') - (a.status === 'In service') || (a.lon === null) - (b.lon === null) || (a.lon || 0) - (b.lon || 0); });
     $('leo-table').innerHTML = '<thead><tr><th>Satellite</th><th>Country</th><th>Operator</th><th>Orbital position</th><th>Launched</th><th>Status</th></tr></thead><tbody>' + rows.map(function (g) {
       return '<tr data-c="' + esc(g.country) + '"><td><strong>' + esc(g.name) + '</strong><br><a class="meta" href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></td><td>' + esc(LEOC[g.country] || g.region || '') + '</td><td>' + esc(g.operator) + '</td><td>' + esc(gsPos(g)) + '</td><td>' + esc(fmtDate(g.launched)) + '</td><td>' + esc(g.status) + '</td></tr>';
@@ -1533,6 +1559,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       leoWired = true;
       $('leo-ops').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; leoOp = b.getAttribute('data-op'); leoFilter = ''; leoRender(); });
       $('leo-sub').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; leoSub = b.getAttribute('data-sub'); leoFilter = ''; leoRender(); });
+      $('geo-sub').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; geoSub = b.getAttribute('data-gsub'); leoFilter = ''; leoRender(); });
       $('leo-filter').addEventListener('change', function (e) { leoFilter = e.target.value; leoRender(); });
       $('leo-q').addEventListener('input', function (e) { leoQ = e.target.value.trim().toLowerCase(); leoRender(); });
       $('leo-table').addEventListener('click', function (e) { var r = e.target.closest('tr[data-c]'); if (r) { leoSelect(r.getAttribute('data-c')); $('leo-detail').scrollIntoView({block: 'nearest', behavior: 'smooth'}); } });
