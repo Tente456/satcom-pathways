@@ -1,5 +1,14 @@
 [
  {
+  "title": "SpaceX Catches a Starship",
+  "url": "https://spacepolicyonline.com/news/spacex-catches-a-starship/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-14T21:53+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "Next Vega C Launch Edges Closer to Christmas Day as Satellites Arrive Late",
   "url": "https://europeanspaceflight.com/next-vega-c-launch-edges-closer-to-christmas-day-as-satellites-arrive-late/",
   "source": "European Spaceflight",
@@ -3553,16 +3562,6 @@
   "date": "2026-10-26T19:59+00:00",
   "categories": [
    "Satcom & connectivity"
-  ]
- },
- {
-  "title": "AST SpaceMobile gains S-band authorisation in Brazil",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21027-ast-spacemobile-gains-s-band-authorisation-in-brazil.html",
-  "source": "Developing Telecoms",
-  "date": "2026-10-26T19:05+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation"
   ]
  }
 ]
