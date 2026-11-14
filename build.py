@@ -531,6 +531,11 @@ def load_ixp():
     return d
 
 
+def load_geo():
+    f = ROOT / "geo.json"
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
+
+
 def load_fibre():
     f, c = ROOT / "fibre.json", ROOT / "cables.json"
     d = json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
@@ -907,6 +912,12 @@ def write_downloads(payload, updated):
                              len(gs), sum(1 for g in gs if g.get("type") == "LEO gateway" and g.get("status") == "Operational"),
                              "Yes" if (fib.get(c) or {}).get("landlocked") else "No", reg])
 
+    geo_rows = [["Satellite", "Country", "Operator", "Orbital position", "Launched", "Status", "Bands", "Note", "Source", "Source URL"]]
+    for g in (payload.get("geo") or {}).get("satellites", []):
+        pos = "" if g.get("lon") is None else (f"{abs(g['lon']):g} degrees " + ("East" if g["lon"] >= 0 else "West"))
+        geo_rows.append([g["name"], AFRICA.get(g.get("country"), g.get("region", "")), g.get("operator", ""), pos,
+                         g.get("launched", ""), g.get("status", ""), g.get("bands", ""), g.get("note", ""),
+                         g.get("source_name", ""), g.get("source_url", "")])
     sets = [
         ("deals", "Africa satcom deals", "africa-satcom-deals.csv", deal_rows,
          "Licences, partnerships, contracts, launches and regulator decisions in Africa, each with its source."),
@@ -914,6 +925,8 @@ def write_downloads(payload, updated):
          "LEO gateways, teleports, TT&C stations and internet points of presence, with operator, status and source."),
         ("countries", "Africa country connectivity status", "africa-country-connectivity.csv", country_rows,
          "One row per country with Starlink, Amazon Leo and Eutelsat OneWeb status, ground sites and regulator."),
+        ("geo", "African GEO communications satellites", "africa-geo-satellites.csv", geo_rows,
+         "Every African-owned geostationary communications satellite, in service or lost, with orbital position and source."),
     ]
     out = OUT / "data" / "downloads"
     out.mkdir(parents=True, exist_ok=True)
@@ -940,7 +953,7 @@ def write_downloads(payload, updated):
         ws["A1"].font = Font(bold=True, size=14)
         ws.column_dimensions["A"].width = 34
         ws.column_dimensions["B"].width = 110
-        tabs = {"deals": "Deals", "ground": "Ground sites", "countries": "Countries"}
+        tabs = {"deals": "Deals", "ground": "Ground sites", "countries": "Countries", "geo": "GEO satellites"}
         for key, title, _, rows, _ in sets:
             sh = wb.create_sheet(tabs[key])
             for r in rows:
@@ -978,6 +991,7 @@ def render(cfg, news, jobs, updated, research):
         "ground": load_ground(),
         "ixp": load_ixp(),
         "fibre": load_fibre(),
+        "geo": load_geo(),
         "aboutHtml": load_about(cfg),
     }
     payload["downloads"] = write_downloads(payload, updated)

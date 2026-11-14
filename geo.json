@@ -1,0 +1,114 @@
+{
+  "checked": "2026-11-14",
+  "satellites": [
+    {
+      "name": "NigComSat-1R",
+      "country": "NG",
+      "operator": "NIGCOMSAT Ltd",
+      "lon": 42.5,
+      "launched": "2011-12-19",
+      "status": "In service",
+      "bands": "C, Ku, Ka and L band",
+      "note": "Replacement for NigComSat-1, with 28 transponders.",
+      "source_name": "NIGCOMSAT",
+      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat"
+    },
+    {
+      "name": "NigComSat-1",
+      "country": "NG",
+      "operator": "NIGCOMSAT Ltd",
+      "lon": 42.5,
+      "launched": "2007-05-13",
+      "status": "Lost",
+      "bands": "C, Ku, Ka and L band",
+      "note": "De-orbited on 11 November 2008 after an in-orbit failure.",
+      "source_name": "NIGCOMSAT",
+      "source_url": "https://nigcomsat.gov.ng/fleet/nigcomsat"
+    },
+    {
+      "name": "Angosat-2",
+      "country": "AO",
+      "operator": "GGPEN",
+      "lon": 23,
+      "launched": "2022-10-12",
+      "status": "In service",
+      "bands": "C, Ku and Ka band",
+      "note": "Reached its orbital position of 23 degrees East on 3 November 2022. Replacement for Angosat-1.",
+      "source_name": "ANGOP",
+      "source_url": "https://angop.ao/en/noticias/tecnologia/angosat-2-atinge-posicao-orbital-23e/"
+    },
+    {
+      "name": "Angosat-1",
+      "country": "AO",
+      "operator": "GGPEN",
+      "lon": null,
+      "launched": "2017-12-26",
+      "status": "Lost",
+      "bands": "C and Ku band",
+      "note": "Declared a total loss on 28 April 2019.",
+      "source_name": "RussianSpaceWeb",
+      "source_url": "https://www.russianspaceweb.com/angosat2.html"
+    },
+    {
+      "name": "Nilesat 301",
+      "country": "EG",
+      "operator": "Nilesat",
+      "lon": -7,
+      "launched": "2022-06-08",
+      "status": "In service",
+      "bands": "Ku band",
+      "note": "Built by Thales Alenia Space. Replaces Nilesat 201 and adds coverage of Southern Africa and the Nile Basin.",
+      "source_name": "Thales",
+      "source_url": "https://www.thalesgroup.com/en/news-centre/press-releases/nilesat-301-communications-satellite-successfully-launched"
+    },
+    {
+      "name": "Nilesat 201",
+      "country": "EG",
+      "operator": "Nilesat",
+      "lon": -7,
+      "launched": "2010-08-04",
+      "status": "In service",
+      "bands": "",
+      "note": "Expected to retire in 2028.",
+      "source_name": "Via Satellite",
+      "source_url": "https://www.satellitetoday.com/launch/2022/06/08/spacex-launches-nilesat-301-for-egyptian-operator/"
+    },
+    {
+      "name": "Tiba-1",
+      "country": "EG",
+      "operator": "Government of Egypt",
+      "lon": 35.5,
+      "launched": "2019-11-26",
+      "status": "In service",
+      "bands": "Ka band",
+      "note": "Government owned. Broadband for Egypt and secure government and military communications.",
+      "source_name": "Space in Africa",
+      "source_url": "https://spaceinafrica.com/2019/11/27/egypt-launches-tiba-1-communications-satellite-on-board-ariane-5-rocket/"
+    },
+    {
+      "name": "Alcomsat-1",
+      "country": "DZ",
+      "operator": "Algerian Space Agency (ASAL)",
+      "lon": -24.8,
+      "launched": "2017-12-10",
+      "status": "In service",
+      "bands": "Ku, Ka and L band",
+      "note": "33 transponders. Placed at 24.8 degrees West on 18 December 2017.",
+      "source_name": "Space in Africa",
+      "source_url": "https://spaceinafrica.com/2021/12/13/asal-celebrates-the-4th-year-anniversary-of-the-alcomsat-1-satellite/"
+    },
+    {
+      "name": "RASCOM-QAF1R",
+      "country": "",
+      "region": "Pan-African",
+      "operator": "RascomStar-QAF for RASCOM",
+      "lon": 2.85,
+      "launched": "2010-08-04",
+      "status": "In service",
+      "bands": "C and Ku band",
+      "note": "Pan-African satellite of the Regional African Satellite Communication Organization, operating past its 15-year design life.",
+      "source_name": "KeepTrack",
+      "source_url": "https://keeptrack.space/satellite-of-the-day/sotd-2026-10-15"
+    }
+  ]
+}

@@ -363,6 +363,8 @@ aside { display: grid; gap: 18px; }
 @media (max-width: 520px) { #leo-tiles { grid-template-columns: 1fr 1fr; } #leo-tiles .stat { font-size: 22px; } }
 #leo-changes h3 { font-size: 16px; margin: 20px 0 6px; }
 .leo-detail h3 { margin: 0 0 6px; font-size: 19px; }
+.leo-detail .st-row { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 10px; }
+.leo-detail .st-row .st { margin-bottom: 0; }
 .leo-detail .st { display: inline-block; width: fit-content; font-size: 13px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--sw); color: #0b1220; margin-bottom: 10px; }
 .leo-detail ul { margin: 6px 0 0; padding-left: 18px; }
 .leo-detail li { margin-bottom: 8px; font-size: 14px; }
@@ -373,12 +375,24 @@ aside { display: grid; gap: 18px; }
 .leo-table tr:hover td { background: var(--bg); cursor: pointer; }
 .leo-table .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: var(--sw); margin-right: 7px; }
 .leo-table .warn { color: #e5484d; font-weight: 600; }
-:root { --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; --g1: #c9d4e3; --g2: #9fb2cc; --g3: #7189ad; --gm-leo: #12b85a; --gm-pop: #f59e0b; --gm-ttc: #8b5cf6; --gm-geo: #0ea5e9; }
+:root { --lv3: #0b8f45; --lv2: #1fd16a; --lv1: #a6ecc2; --op-sl: #1d4ed8; --op-az: #ea580c; --op-ow: #9333ea; --leo-live: #1fd16a; --leo-soon: #f5b83d; --leo-unk: #8fa3bf; --leo-none: #d5dbe3; --leo-lic: #4c8dff; --leo-agr: #a78bfa; --g1: #c9d4e3; --g2: #9fb2cc; --g3: #7189ad; --gm-leo: #12b85a; --gm-pop: #f59e0b; --gm-ttc: #8b5cf6; --gm-geo: #0ea5e9; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; } }
 :root[data-theme="dark"] { --leo-none: #2a3546; --g1: #31415c; --g2: #42587e; --g3: #5a76a6; }
 .leo-map .gpt { stroke: var(--surface); stroke-width: 1.6; cursor: pointer; }
 .leo-map .gpt.hollow { fill: var(--surface) !important; stroke: var(--gc); stroke-width: 2.6; }
 .leo-map .gpt:hover, .leo-map .xpt:hover { stroke: var(--ink); }
+.chips.sub { margin-top: -6px; }
+.chips.sub button { font-size: 13px; padding: 5px 12px; }
+.chips.sub[hidden] { display: none; }
+.leo-map .lpt { stroke: #fff; stroke-width: 1.3; pointer-events: none; }
+.leo-map .lpt.hollow { fill: #fff !important; stroke-width: 1.8; }
+.leo-map .geo-arc { fill: none; stroke: var(--gm-geo); stroke-width: 1.6; stroke-dasharray: 6 5; opacity: .75; pointer-events: none; }
+.leo-map .geo-lnk { fill: none; stroke: var(--gm-geo); stroke-width: 1; stroke-dasharray: 2 4; opacity: .45; pointer-events: none; }
+.leo-map .geo-lnk.on { opacity: 1; stroke-width: 1.6; }
+.leo-map .gsat { fill: var(--gm-geo); stroke: #fff; stroke-width: 1.6; cursor: pointer; }
+.leo-map .gsat.on { stroke: var(--ink); stroke-width: 2.4; }
+.leo-map .geo-lbl { font: 600 12px/1 system-ui, sans-serif; fill: var(--ink); paint-order: stroke; stroke: var(--surface); stroke-width: 3.5px; stroke-linejoin: round; pointer-events: none; }
+.leo-map .geo-cap { font: 600 11px/1 system-ui, sans-serif; fill: var(--gm-geo); letter-spacing: .04em; pointer-events: none; }
 .leo-map .xpt { stroke: var(--surface); stroke-width: 1.4; cursor: pointer; fill: var(--leo-unk); }
 .leo-map .cbl path.cv { fill: none; stroke: #0e7c86; stroke-width: 1.1; stroke-opacity: .45; stroke-linecap: round; stroke-linejoin: round; pointer-events: none; transition: stroke-opacity .15s, stroke-width .15s; }
 .leo-map .cbl path.cv.plan { stroke-dasharray: 3 3; }
@@ -589,12 +603,17 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       </div>
     </div>
     <div class="chips" id="leo-ops" role="group" aria-label="Choose operator">
-      <button type="button" data-op="starlink" aria-pressed="true">Starlink</button>
-      <button type="button" data-op="amazon" aria-pressed="false">Amazon Leo</button>
-      <button type="button" data-op="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
+      <button type="button" data-op="leo" aria-pressed="true">LEO broadband</button>
+      <button type="button" data-op="geo" aria-pressed="false">GEO satellites</button>
       <button type="button" data-op="ground" aria-pressed="false">Ground infrastructure</button>
       <button type="button" data-op="ixp" aria-pressed="false">Internet exchanges</button>
       <button type="button" data-op="fibre" aria-pressed="false">Fibre and satellite</button>
+    </div>
+    <div class="chips sub" id="leo-sub" role="group" aria-label="Choose LEO operator">
+      <button type="button" data-sub="all" aria-pressed="true">All operators</button>
+      <button type="button" data-sub="starlink" aria-pressed="false">Starlink</button>
+      <button type="button" data-sub="amazon" aria-pressed="false">Amazon Leo</button>
+      <button type="button" data-sub="oneweb" aria-pressed="false">Eutelsat OneWeb</button>
     </div>
     <div class="tiles" id="leo-tiles"></div>
     <div class="leo-layout">
@@ -1072,10 +1091,22 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   /* views: each section has its own address (/jobs/, /research/<slug>/ ...) */
   /* Africa satellite map */
   var LEO = D.leo || {}, LEOC = LEO.countries || {}, SL = (LEO.starlink || {}).statuses || {};
-  var leoOp = 'starlink', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
+  var leoOp = 'leo', leoSub = 'all', leoSel = null, leoMapLoaded = false, leoWired = false, leoFilter = '', leoQ = '';
   var LEO_ALIAS = {'dr congo': 'CD', 'democratic republic of the congo': 'CD', 'drc': 'CD', 'republic of the congo': 'CG', 'congo-brazzaville': 'CG', 'ivory coast': 'CI', "cote d'ivoire": 'CI', 'gambia': 'GM', 'cape verde': 'CV', 'swaziland': 'SZ', 'sao tome and principe': 'ST'};
   Object.keys(LEOC).forEach(function (c) { LEO_ALIAS[LEOC[c].toLowerCase()] = c; });
-  var LEO_OPS = {starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure', ixp: 'Internet exchanges', fibre: 'Fibre and satellite'};
+  var LEO_OPS = {leo: 'LEO broadband', geo: 'GEO satellites', starlink: 'Starlink', amazon: 'Amazon Leo', oneweb: 'Eutelsat OneWeb', ground: 'Ground infrastructure', ixp: 'Internet exchanges', fibre: 'Fibre and satellite'};
+  var LEO_THREE = ['starlink', 'amazon', 'oneweb'], OP_VAR = {starlink: '--op-sl', amazon: '--op-az', oneweb: '--op-ow'};
+  var GSATS = ((D.geo || {}).satellites || []).map(function (g, i) { g.i = i; return g; });
+  function gsLive(g) { return g.status === 'In service'; }
+  function gsByCountry(c) { return GSATS.filter(function (g) { return g.country === c; }); }
+  function gsPos(g) { return g.lon === null || g.lon === undefined ? 'Not reached' : Math.abs(g.lon) + '°' + (g.lon >= 0 ? 'E' : 'W'); }
+  function curOp() { return leoOp === 'leo' ? (leoSub === 'all' ? 'leo' : leoSub) : leoOp; }
+  function opState(op, c) { var k = leoCat(op, c); return k === 'live' ? 2 : k === 'none' ? 0 : 1; }
+  function flagsFor() {
+    if (leoOp !== 'leo') return leoFlags[leoOp] || {};
+    if (leoSub !== 'all') return leoFlags[leoSub];
+    var u = {}; LEO_THREE.forEach(function (o) { Object.keys(leoFlags[o]).forEach(function (c) { u[c] = leoFlags[o][c]; }); }); return u;
+  }
   var leoDeals = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}, fibre: {}}, leoPan = {starlink: [], amazon: [], oneweb: [], ground: [], ixp: [], fibre: []}, leoFlags = {starlink: {}, amazon: {}, oneweb: {}, ground: {}, ixp: {}, fibre: {}};
   var FIB = D.fibre || {}, FIBC = FIB.countries || {};
   function fib(c) { return FIBC[c] || {landlocked: false, cables: 0, planned: 0, lake: 0}; }
@@ -1125,6 +1156,11 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     });
   });
   function leoCat(op, c) {
+    if (op === 'leo') {
+      var st = LEO_THREE.map(function (o) { return opState(o, c); }), n = st.filter(function (x) { return x === 2; }).length;
+      return n === 3 ? 'l3' : n === 2 ? 'l2' : n === 1 ? 'l1' : st.some(function (x) { return x === 1; }) ? 'lp' : 'l0';
+    }
+    if (op === 'geo') { var gl = gsByCountry(c).filter(gsLive).length; return gl >= 2 ? 'm2' : gl === 1 ? 'm1' : 'm0'; }
     if (op === 'ground') { var n = gByCountry(c).length; return n >= 4 ? 'g4' : n >= 2 ? 'g2' : n === 1 ? 'g1' : 'g0'; }
     if (op === 'ixp') { var xs = ixByCountry(c); return xs.some(function (x) { return x.ops.length; }) ? 'x2' : xs.length ? 'x1' : 'x0'; }
     if (op === 'fibre') { var f = fib(c); return f.landlocked ? 'll' : f.cables >= 5 ? 'c5' : f.cables >= 2 ? 'c2' : f.cables === 1 ? 'c1' : 'c0'; }
@@ -1141,14 +1177,16 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     return 'agr';
   }
   var LEO_CATS = {
+    leo: [['l3', 'All 3 operators live', '--lv3'], ['l2', '2 operators live', '--lv2'], ['l1', '1 operator live', '--lv1'], ['lp', 'Listed, licensed or agreed only', '--leo-soon'], ['l0', 'Nothing recorded yet', '--leo-none']],
+    geo: [['m2', '2 or more national GEO satellites in service', '--g3'], ['m1', '1 national GEO satellite in service', '--g2'], ['m0', 'No national GEO satellite', '--leo-none']],
     starlink: [['live', 'Live', '--leo-live'], ['soon', 'Listed for a launch year', '--leo-soon'], ['unk', 'Listed, date unknown', '--leo-unk'], ['none', 'Not listed', '--leo-none']],
     other: [['live', 'Service launch recorded', '--leo-live'], ['lic', 'Licensing activity recorded', '--leo-lic'], ['agr', 'Agreement recorded', '--leo-agr'], ['none', 'Nothing recorded yet', '--leo-none']],
     ground: [['g4', '4 or more sites', '--g3'], ['g2', '2 to 3 sites', '--g2'], ['g1', '1 site', '--g1'], ['g0', 'None recorded yet', '--leo-none']],
     ixp: [['x2', 'Exchange with a satellite operator connected', '--g3'], ['x1', 'Exchange, no satellite operator listed', '--g1'], ['x0', 'No exchange listed', '--leo-none']],
     fibre: [['c5', '5 or more subsea cables', '--g3'], ['c2', '2 to 4 subsea cables', '--g2'], ['c1', '1 subsea cable', '--leo-agr'], ['ll', 'Landlocked', '--leo-soon'], ['c0', 'No subsea cable listed', '--leo-none']]
   };
-  function catsFor(op) { return LEO_CATS[op === 'starlink' || op === 'ground' || op === 'ixp' || op === 'fibre' ? op : 'other']; }
-  function leoCats() { return catsFor(leoOp); }
+  function catsFor(op) { return LEO_CATS[op === 'amazon' || op === 'oneweb' ? 'other' : op]; }
+  function leoCats() { return catsFor(curOp()); }
   function leoLabel(op, c) {
     var k = leoCat(op, c), row = catsFor(op).filter(function (r) { return r[0] === k; })[0];
     if (op === 'starlink' && k === 'soon') return 'Listed: ' + SL[c].expected.replace('Starting in ', 'from ');
@@ -1161,12 +1199,59 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     var host = $('leo-map'); if (!leoMapLoaded) return;
     host.querySelectorAll('[data-c]').forEach(function (el) {
       var c = el.getAttribute('data-c'); if (!LEOC[c]) return;
-      el.style.fill = leoColor(leoOp, c);
-      el.classList.toggle('flag', !!leoFlags[leoOp][c]);
+      el.style.fill = leoColor(curOp(), c);
+      el.classList.toggle('flag', !!flagsFor()[c]);
       el.classList.toggle('sel', c === leoSel);
-      el.setAttribute('aria-label', LEOC[c] + ': ' + leoLabel(leoOp, c));
+      el.setAttribute('aria-label', LEOC[c] + ': ' + leoLabel(curOp(), c));
     });
     var svg = host.querySelector('svg'), gp = svg && svg.querySelector('#gpts');
+    var KX = 1000 / 86, KYY = KX / Math.cos(2 * Math.PI / 180);
+    function cxy(c) { var el = svg.querySelector('[data-c="' + c + '"]'); if (!el) return null; var b = el.getBBox(); return [b.x + b.width / 2, b.y + b.height / 2]; }
+    var lp = svg && svg.querySelector('#lpts');
+    if (svg && !lp) {
+      lp = document.createElementNS('http://www.w3.org/2000/svg', 'g'); lp.id = 'lpts';
+      Object.keys(LEOC).forEach(function (c) {
+        var p = cxy(c); if (!p) return;
+        LEO_THREE.forEach(function (o, k) {
+          var m = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          m.setAttribute('cx', (p[0] + (k - 1) * 9).toFixed(1)); m.setAttribute('cy', p[1].toFixed(1)); m.setAttribute('r', '3.8');
+          m.setAttribute('class', 'lpt'); m.setAttribute('data-lc', c); m.setAttribute('data-lo', o);
+          m.style.fill = 'var(' + OP_VAR[o] + ')'; m.style.stroke = '#fff';
+          lp.appendChild(m);
+        });
+      });
+      svg.appendChild(lp);
+    }
+    if (lp) {
+      var showDots = leoOp === 'leo' && leoSub === 'all'; lp.style.display = showDots ? '' : 'none';
+      if (showDots) lp.querySelectorAll('circle').forEach(function (m) {
+        var stt = opState(m.getAttribute('data-lo'), m.getAttribute('data-lc'));
+        m.style.display = stt ? '' : 'none'; m.classList.toggle('hollow', stt === 1);
+        m.style.stroke = stt === 1 ? 'var(' + OP_VAR[m.getAttribute('data-lo')] + ')' : '#fff';
+      });
+    }
+    var gg = svg && svg.querySelector('#geopts');
+    if (svg && !gg && GSATS.length) {
+      gg = document.createElementNS('http://www.w3.org/2000/svg', 'g'); gg.id = 'geopts';
+      var ey = (38.5 * KYY).toFixed(1), NS = 'http://www.w3.org/2000/svg';
+      var arc = document.createElementNS(NS, 'path'); arc.setAttribute('d', 'M0,' + ey + 'L1000,' + ey); arc.setAttribute('class', 'geo-arc'); gg.appendChild(arc);
+      var cap = document.createElementNS(NS, 'text'); cap.setAttribute('x', '8'); cap.setAttribute('y', (38.5 * KYY - 9).toFixed(1)); cap.setAttribute('class', 'geo-cap'); cap.textContent = 'GEOSTATIONARY ARC'; gg.appendChild(cap);
+      var seen = {};
+      GSATS.filter(function (g) { return gsLive(g) && g.lon !== null && g.lon !== undefined; }).forEach(function (g) {
+        var x = (g.lon + 26) * KX, k = seen[g.lon] = (seen[g.lon] || 0) + 1, y = 38.5 * KYY + (k - 1) * 15;
+        var p = g.country && cxy(g.country);
+        if (p) { var l = document.createElementNS(NS, 'path'); l.setAttribute('d', 'M' + x.toFixed(1) + ',' + y.toFixed(1) + 'L' + p[0].toFixed(1) + ',' + p[1].toFixed(1)); l.setAttribute('class', 'geo-lnk'); l.setAttribute('data-gc', g.country); gg.insertBefore(l, gg.firstChild); }
+        var m = document.createElementNS(NS, 'circle'); m.setAttribute('cx', x.toFixed(1)); m.setAttribute('cy', y.toFixed(1)); m.setAttribute('r', '7');
+        m.setAttribute('class', 'gsat'); m.setAttribute('data-sat', g.i); m.setAttribute('data-gc', g.country || '');
+        var t = document.createElementNS(NS, 'title'); t.textContent = g.name + ', ' + gsPos(g) + ', ' + g.operator; m.appendChild(t); gg.appendChild(m);
+        var tx = document.createElementNS(NS, 'text'); tx.setAttribute('x', (x + 11).toFixed(1)); tx.setAttribute('y', (y + 4).toFixed(1)); tx.setAttribute('class', 'geo-lbl'); tx.textContent = g.name; gg.appendChild(tx);
+      });
+      svg.appendChild(gg);
+    }
+    if (gg) {
+      gg.style.display = leoOp === 'geo' ? '' : 'none';
+      gg.querySelectorAll('[data-gc]').forEach(function (e) { e.classList.toggle('on', !!leoSel && e.getAttribute('data-gc') === leoSel); });
+    }
     if (svg && !gp) {
       gp = document.createElementNS('http://www.w3.org/2000/svg', 'g'); gp.id = 'gpts';
       var K = 1000 / 86, KY = K / Math.cos(2 * Math.PI / 180);
@@ -1276,18 +1361,32 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       gh += gs.length ? '<p class="meta">' + gs.length + (gs.length === 1 ? ' site recorded' : ' sites recorded') + '</p><ul>' + gs.map(gLi).join('') + '</ul>' : '<p class="meta">No ground sites recorded</p>';
       el.innerHTML = gh; return;
     }
-    var pill = esc(LEO_OPS[leoOp]) + ': ' + esc(leoLabel(leoOp, c));
-    var html = '<h3>' + esc(LEOC[c]) + '</h3>' + (leoOp === 'starlink'
-      ? '<a class="st" style="--sw:' + leoColor(leoOp, c) + ';text-decoration:none" href="https://www.starlink.com/map" target="_blank" rel="noopener" title="Source Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '">' + pill + '</a>'
-      : '<span class="st" style="--sw:' + leoColor(leoOp, c) + '">' + pill + '</span>');
+    if (leoOp === 'geo') {
+      var gs2 = gsByCountry(c), gh2 = '<h3>' + esc(LEOC[c]) + '</h3>';
+      if (PROF[c]) gh2 += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
+      gh2 += gs2.length ? '<ul>' + gs2.map(gsLi).join('') + '</ul>' : '<p class="meta">No national GEO satellite</p>';
+      el.innerHTML = gh2; return;
+    }
+    var ops = curOp() === 'leo' ? LEO_THREE : [curOp()];
+    function pillFor(op) {
+      var pill = esc(LEO_OPS[op]) + ': ' + esc(leoLabel(op, c));
+      return op === 'starlink'
+        ? '<a class="st" style="--sw:' + leoColor(op, c) + ';text-decoration:none" href="https://www.starlink.com/map" target="_blank" rel="noopener" title="Source Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') + '">' + pill + '</a>'
+        : '<span class="st" style="--sw:' + leoColor(op, c) + '">' + pill + '</span>';
+    }
+    var html = '<h3>' + esc(LEOC[c]) + '</h3><div class="st-row">' + ops.map(pillFor).join(' ') + '</div>';
     if (PROF[c]) html += '<p><a href="/research/countries/' + esc(PROF[c].slug) + '/">Full ' + esc(PROF[c].name) + ' profile</a></p>';
-    var flag = leoFlags[leoOp][c];
-    if (flag && leoOp === 'starlink' && leoCat('starlink', c) !== 'none') html += '<p class="warn">Starlink\'s map and the regulatory record below point in different directions.</p>';
-    var ds = (leoDeals[leoOp][c] || []).slice().sort(function (a, b) { return b.date.localeCompare(a.date); });
+    if (ops.indexOf('starlink') !== -1 && leoFlags.starlink[c] && leoCat('starlink', c) !== 'none') html += '<p class="warn">Starlink\'s map and the regulatory record below point in different directions.</p>';
+    var ds = [];
+    ops.forEach(function (op) { (leoDeals[op][c] || []).forEach(function (d) { if (ds.indexOf(d) === -1) ds.push(d); }); });
+    ds.sort(function (a, b) { return b.date.localeCompare(a.date); });
     html += ds.length ? '<p class="meta" style="margin-top:12px">Records in the deals tracker</p><ul>' + ds.map(function (d) {
       return '<li><strong>' + esc(fmtDate(d.date)) + '</strong> ' + esc(d.title) + ' <a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.source_name) + '</a></li>';
     }).join('') + '</ul>' : '';
     el.innerHTML = html;
+  }
+  function gsLi(g) {
+    return '<li><strong>' + esc(g.name) + '</strong> <span class="gtype" style="--sw:var(--gm-geo)">' + esc(gsPos(g)) + '</span><br><span class="meta">' + esc(g.operator) + ' · ' + esc(g.status) + ' · launched ' + esc(fmtDate(g.launched)) + (g.bands ? ' · ' + esc(g.bands) : '') + '</span><br>' + esc(g.note) + ' <a href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></li>';
   }
   function gLi(g) {
     return '<li><strong>' + esc(g.name) + '</strong> <span class="gtype" style="--sw:' + gColor(g.type) + '">' + esc(g.type) + '</span><br><span class="meta">' + esc(g.operator) + ' · ' + esc(g.status) + ' · ' + esc(g.place) + '</span><br>' + esc(g.note) + ' <a href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></li>';
@@ -1300,22 +1399,36 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function leoSelect(c) { leoSel = c; leoPaint(); leoDetail(c); }
   function leoRender() {
     $('leo-ops').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-op') === leoOp ? 'true' : 'false'); });
+    $('leo-sub').hidden = leoOp !== 'leo';
+    $('leo-sub').querySelectorAll('button').forEach(function (b) { b.setAttribute('aria-pressed', b.getAttribute('data-sub') === leoSub ? 'true' : 'false'); });
+    if (leoOp === 'geo') { geoRender(); return; }
     if (leoOp === 'ground') { groundRender(); return; }
     if (leoOp === 'ixp') { ixpRender(); return; }
     if (leoOp === 'fibre') { fibreRender(); return; }
-    var codes = Object.keys(LEOC), cats = leoCats(), count = {};
-    codes.forEach(function (c) { var k = leoCat(leoOp, c); count[k] = (count[k] || 0) + 1; });
-    var flags = Object.keys(leoFlags[leoOp]).length;
-    $('leo-tiles').innerHTML = cats.slice(0, 3).map(function (r) {
-      return '<div class="tile"><span class="stat">' + (count[r[0]] || 0) + '</span><p class="meta">' + esc(r[1]) + '</p></div>';
-    }).join('') + '<div class="tile"><span class="stat">' + flags + '</span><p class="meta">Regulator refusal or suspension recorded</p></div>';
-    $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>' +
-      '<span class="src">' + (leoOp === 'starlink' ? 'Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '') : 'From the deals tracker') + '</span>';
-    $('leo-note').innerHTML = leoOp !== 'starlink' && leoPan[leoOp].length ? 'Pan-African agreements ' + leoPan[leoOp].map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join(', ') : '';
+    var op = curOp(), codes = Object.keys(LEOC), cats = leoCats(), count = {};
+    codes.forEach(function (c) { var k = leoCat(op, c); count[k] = (count[k] || 0) + 1; });
+    var flags = Object.keys(flagsFor()).length, slTxt = 'Starlink availability data' + (LEO.starlink.fetched ? ', checked ' + esc(ago(LEO.starlink.fetched)) : '');
+    if (op === 'leo') {
+      var liveN = function (o) { return codes.filter(function (c) { return opState(o, c) === 2; }).length; };
+      $('leo-tiles').innerHTML = [[codes.length - (count.lp || 0) - (count.l0 || 0), 'Countries with at least one LEO service live'], [liveN('starlink'), 'Starlink live'], [liveN('oneweb'), 'Eutelsat OneWeb service launch recorded'], [liveN('amazon'), 'Amazon Leo service launch recorded']].map(function (t) {
+        return '<div class="tile"><span class="stat">' + t[0] + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
+      }).join('');
+      $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') +
+        LEO_THREE.map(function (o) { return '<span class="mk" style="--sw:var(' + OP_VAR[o] + ')">' + esc(LEO_OPS[o]) + '</span>'; }).join('') + '<span class="mk hollow">Not yet live</span><span class="flagkey">Regulator refusal or suspension</span>' +
+        '<span class="src">' + slTxt + '. Amazon Leo and OneWeb from the deals tracker</span>';
+    } else {
+      $('leo-tiles').innerHTML = cats.slice(0, 3).map(function (r) {
+        return '<div class="tile"><span class="stat">' + (count[r[0]] || 0) + '</span><p class="meta">' + esc(r[1]) + '</p></div>';
+      }).join('') + '<div class="tile"><span class="stat">' + flags + '</span><p class="meta">Regulator refusal or suspension recorded</p></div>';
+      $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>' +
+        '<span class="src">' + (op === 'starlink' ? slTxt : 'From the deals tracker') + '</span>';
+    }
+    var pan = (op === 'leo' ? leoPan.amazon.concat(leoPan.oneweb) : op === 'starlink' ? [] : leoPan[op]).filter(function (d, i, a) { return a.indexOf(d) === i; });
+    $('leo-note').innerHTML = pan.length ? 'Pan-African agreements ' + pan.map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join(', ') : '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All statuses</option>' + cats.map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
     var rows = codes.filter(function (c) {
-      return (!leoFilter || leoCat(leoOp, c) === leoFilter) && (!leoQ || LEOC[c].toLowerCase().indexOf(leoQ) !== -1);
+      return (!leoFilter || leoCat(op, c) === leoFilter) && (!leoQ || LEOC[c].toLowerCase().indexOf(leoQ) !== -1);
     }).sort(function (a, b) { return LEOC[a].localeCompare(LEOC[b]); });
     $('leo-table').innerHTML = '<thead><tr><th>Country</th><th>Starlink (company data)</th><th>Amazon Leo (tracker)</th><th>Eutelsat OneWeb (tracker)</th></tr></thead><tbody>' + rows.map(function (c) {
       function cell(op) { var w = leoFlags[op][c] ? ' <span class="warn" title="Regulator refusal or suspension recorded">⚠</span>' : ''; return '<td><span class="dot" style="--sw:' + leoColor(op, c) + '"></span>' + esc(leoLabel(op, c)) + w + '</td>'; }
@@ -1325,6 +1438,26 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     $('leo-changes').innerHTML = hist.length ? '<h3>Recent Starlink status changes</h3><ul>' + hist.map(function (h) {
       return '<li>' + esc(fmtDate(h.date)) + ': ' + esc(LEOC[h.code] || h.code) + ' changed from ' + esc(h.from.replace('_', ' ')) + ' to ' + esc(h.to.replace('_', ' ')) + '</li>';
     }).join('') + '</ul>' : '';
+    leoPaint(); leoDetail(leoSel);
+  }
+  function geoRender() {
+    var live = GSATS.filter(gsLive), lost = GSATS.filter(function (g) { return g.status === 'Lost'; }), nc = {};
+    live.forEach(function (g) { if (g.country) nc[g.country] = 1; });
+    var minY = live.reduce(function (m, g) { return Math.min(m, +g.launched.slice(0, 4)); }, 9999), oldest = live.filter(function (g) { return +g.launched.slice(0, 4) === minY; });
+    $('leo-tiles').innerHTML = [[live.length, 'African-owned GEO communications satellites in service'], [Object.keys(nc).length, 'Countries with their own GEO communications satellite'], [lost.length, 'Lost after launch: ' + lost.map(function (g) { return g.name; }).join(', ')], [minY, 'Oldest still in service: ' + oldest.map(function (g) { return g.name; }).join(' and ')]].map(function (t) {
+      return '<div class="tile"><span class="stat">' + esc(String(t[0])) + '</span><p class="meta">' + esc(t[1]) + '</p></div>';
+    }).join('');
+    $('leo-legend').innerHTML = leoCats().map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="mk" style="--sw:var(--gm-geo)">Satellite at its orbital position over the equator</span><span class="src">Operator and launch records, linked in each row</span>';
+    $('leo-note').innerHTML = '';
+    var sel = $('leo-filter');
+    sel.innerHTML = '<option value="">All satellites</option><option value="In service"' + (leoFilter === 'In service' ? ' selected' : '') + '>In service</option><option value="Lost"' + (leoFilter === 'Lost' ? ' selected' : '') + '>Lost</option>';
+    var rows = GSATS.filter(function (g) {
+      return (!leoFilter || g.status === leoFilter) && (!leoQ || (g.name + ' ' + g.operator + ' ' + (LEOC[g.country] || g.region || '')).toLowerCase().indexOf(leoQ) !== -1);
+    }).sort(function (a, b) { return (b.status === 'In service') - (a.status === 'In service') || (a.lon === null) - (b.lon === null) || (a.lon || 0) - (b.lon || 0); });
+    $('leo-table').innerHTML = '<thead><tr><th>Satellite</th><th>Country</th><th>Operator</th><th>Orbital position</th><th>Launched</th><th>Status</th></tr></thead><tbody>' + rows.map(function (g) {
+      return '<tr data-c="' + esc(g.country) + '"><td><strong>' + esc(g.name) + '</strong><br><a class="meta" href="' + esc(g.source_url) + '" target="_blank" rel="noopener">' + esc(g.source_name) + '</a></td><td>' + esc(LEOC[g.country] || g.region || '') + '</td><td>' + esc(g.operator) + '</td><td>' + esc(gsPos(g)) + '</td><td>' + esc(fmtDate(g.launched)) + '</td><td>' + esc(g.status) + '</td></tr>';
+    }).join('') + '</tbody>';
+    $('leo-changes').innerHTML = '';
     leoPaint(); leoDetail(leoSel);
   }
   function groundRender() {
@@ -1399,6 +1532,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     if (!leoWired) {
       leoWired = true;
       $('leo-ops').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; leoOp = b.getAttribute('data-op'); leoFilter = ''; leoRender(); });
+      $('leo-sub').addEventListener('click', function (e) { var b = e.target.closest('button'); if (!b) return; leoSub = b.getAttribute('data-sub'); leoFilter = ''; leoRender(); });
       $('leo-filter').addEventListener('change', function (e) { leoFilter = e.target.value; leoRender(); });
       $('leo-q').addEventListener('input', function (e) { leoQ = e.target.value.trim().toLowerCase(); leoRender(); });
       $('leo-table').addEventListener('click', function (e) { var r = e.target.closest('tr[data-c]'); if (r) { leoSelect(r.getAttribute('data-c')); $('leo-detail').scrollIntoView({block: 'nearest', behavior: 'smooth'}); } });
@@ -1407,6 +1541,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       $('cab-panel').addEventListener('mouseleave', function () { cabHi(-1); });
       $('leo-map').addEventListener('click', function (e) {
         var cbt = e.target.closest('[data-cb]'); if (cbt) { cabHi(+cbt.getAttribute('data-cb')); return; }
+        var gst = e.target.closest('[data-sat]'); if (gst) { var gsx = GSATS[+gst.getAttribute('data-sat')]; if (gsx && LEOC[gsx.country]) leoSelect(gsx.country); return; }
         var m = e.target.closest('[data-gi]'); if (m) { var g = GROUND[+m.getAttribute('data-gi')]; if (g && g.code) leoSelect(g.code); return; }
         var xm = e.target.closest('[data-xc]'); if (xm) { if (LEOC[xm.getAttribute('data-xc')]) leoSelect(xm.getAttribute('data-xc')); return; }
         var el = e.target.closest('[data-c]'); if (el && LEOC[el.getAttribute('data-c')]) leoSelect(el.getAttribute('data-c'));
@@ -1498,9 +1633,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   function renderData() {
     var M = D.downloads || {sets: []};
     $('data-body').innerHTML = '<div class="dl-grid">' + M.sets.map(function (x) {
-      return '<div class="dl-card"><h3>' + esc(x.title) + '</h3><span class="stat">' + x.rows + '</span><p class="meta">' + (x.key === 'countries' ? 'countries' : x.key === 'ground' ? 'sites' : 'records') + '</p><p>' + esc(x.desc) + '</p><a class="dl-btn" href="' + esc(x.file) + '" download>Download CSV</a></div>';
+      return '<div class="dl-card"><h3>' + esc(x.title) + '</h3><span class="stat">' + x.rows + '</span><p class="meta">' + (x.key === 'countries' ? 'countries' : x.key === 'ground' ? 'sites' : x.key === 'geo' ? 'satellites' : 'records') + '</p><p>' + esc(x.desc) + '</p><a class="dl-btn" href="' + esc(x.file) + '" download>Download CSV</a></div>';
     }).join('') + '</div>' +
-      (M.xlsx ? '<div class="dl-all"><div><h3>All three in one Excel workbook</h3><p>One tab per dataset, plus a notes tab on sources.</p></div><a class="dl-btn primary" href="' + esc(M.xlsx) + '" download>Download Excel</a></div>' : '') +
+      (M.xlsx ? '<div class="dl-all"><div><h3>All datasets in one Excel workbook</h3><p>One tab per dataset, plus a notes tab on sources.</p></div><a class="dl-btn primary" href="' + esc(M.xlsx) + '" download>Download Excel</a></div>' : '') +
       '<p class="dl-note">Updated ' + esc(fmtDate((M.updated || '').slice(0, 10))) + '. Free to use under CC BY 4.0. Please credit Satcom Pathways (satcompathways.com).</p>';
     return 'Africa satellite data';
   }
