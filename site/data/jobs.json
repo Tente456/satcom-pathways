@@ -66,6 +66,17 @@
   "remote": false
  },
  {
+  "title": "Production Test Lab Engineer, Amazon Leo, Space Simulation Lab",
+  "url": "https://www.amazon.jobs/en/jobs/10605423/production-test-lab-engineer-amazon-leo-space-simulation-lab",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Kirkland, Washington, USA",
+  "posted": "2026-11-14T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "ASIC Characterization Engineer, Silicon",
   "url": "https://www.amazon.jobs/en/jobs/10604687/asic-characterization-engineer-silicon",
   "company": "Amazon Leo",
@@ -3498,17 +3509,6 @@
   "remote": false
  },
  {
-  "title": "Software Development Engineer - Network Observability, Leo Networking Software",
-  "url": "https://www.amazon.jobs/en/jobs/10600664/software-development-engineer-network-observability-leo-networking-software",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-11-10T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Assembly, Integration & Test (AI&T) Technician",
   "url": "https://boards.greenhouse.io/blacksky/jobs/8924647002?gh_jid=8924647002",
   "company": "BlackSky",
@@ -3536,7 +3536,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Greece",
-  "posted": "2026-11-09T22:22+00:00",
+  "posted": "2026-11-09T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -4680,7 +4680,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-11-05T22:22+00:00",
+  "posted": "2026-11-05T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -4691,7 +4691,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-11-05T22:22+00:00",
+  "posted": "2026-11-05T22:37+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -5434,23 +5434,23 @@
   "remote": false
  },
  {
+  "title": "Billing Analyst",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "5 Locations",
+  "posted": "2026-11-03T22:37+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Embedded Software Engineer, Satellite Antenna (Starlink)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8925605002?gh_jid=8925605002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
   "location": "Redmond, WA",
   "posted": "2026-11-03T22:32+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Billing Analyst",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "5 Locations",
-  "posted": "2026-11-03T22:22+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -8937,7 +8937,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -8948,7 +8948,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8959,7 +8959,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -8970,7 +8970,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8981,7 +8981,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -8992,7 +8992,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9003,7 +9003,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9014,7 +9014,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9025,7 +9025,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9036,7 +9036,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-15T22:22+00:00",
+  "posted": "2026-10-15T22:37+00:00",
   "function": "Other",
   "early": false,
   "remote": false
