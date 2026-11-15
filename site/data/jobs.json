@@ -3399,17 +3399,6 @@
   "remote": false
  },
  {
-  "title": "Site Reliability Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Greece",
-  "posted": "2026-11-10T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
   "title": "Senior Accounting Manager",
   "url": "https://jobs.ashbyhq.com/northwoodspace/c94c0dcc-85ba-4b97-a911-f54359b3346e",
   "company": "Northwood Space",
@@ -3771,6 +3760,17 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "Site Reliability Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Greece",
+  "posted": "2026-11-09T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Backend Software Engineer - Mission Planning Strategy",
@@ -4136,17 +4136,6 @@
   "remote": false
  },
  {
-  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "IRIS2 End-to-End Functional Architect",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Functional-Architect-92130/1371868657/",
   "company": "Eutelsat OneWeb",
@@ -4248,6 +4237,17 @@
  {
   "title": "Satellite Avionics / Data Handling Engineer (IRIS2)",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Data-Handling-Engineer-%28IRIS2%29-92130/1371812157/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -4565,28 +4565,6 @@
   "remote": false
  },
  {
-  "title": "System Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-11-06T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Field Dispatch Co-ordinator",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Philippines",
-  "posted": "2026-11-06T06:48+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
- },
- {
   "title": "Senior Software Engineer, Ground Station Platform",
   "url": "https://job-boards.greenhouse.io/muonspace/jobs/5286925007",
   "company": "Muon Space",
@@ -4827,6 +4805,28 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "System Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-11-05T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Field Dispatch Co-ordinator",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Philippines",
+  "posted": "2026-11-05T15:43+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Mission Modeling Engineer",
@@ -5423,17 +5423,6 @@
   "remote": false
  },
  {
-  "title": "Billing Analyst",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "5 Locations",
-  "posted": "2026-11-04T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Sales Manager",
   "url": "https://careers.viasat.com/jobs/7157",
   "company": "Viasat",
@@ -5704,6 +5693,17 @@
   "sector": "Spacecraft & infrastructure",
   "location": "Golden, CO",
   "posted": "2026-11-03T16:29+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Billing Analyst",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "5 Locations",
+  "posted": "2026-11-03T15:43+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -8888,6 +8888,160 @@
   "remote": false
  },
  {
+  "title": "Platform Owner",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Vice President, Business Development & Country Manager, India",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Project Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Project-Engineer_JR11157-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Program & project management",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "VP Product Management",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA---Texas/VP-Product-Management_JR11122",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - USA - Texas",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineering Internship",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineering-Internship_JR11156-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": true,
+  "remote": true
+ },
+ {
+  "title": "Business Development Specialist",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA/Business-Development-Specialist_JR11119-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - USA",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Sales Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote--Rio-de-Janeiro/Sales-Director---Energy-South-America_JR11142-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote – Rio de Janeiro",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Business Development Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Australian-Capital-Territory/Business-Development-Manager_JR11064",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Australia - Australian Capital Territory",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IP Architect",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/IP-Architect_JR11117-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Engineer Sr Software",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Systems-Specialist_JR11014-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Brazil",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineer_JR11036-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - India",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Edge-Network-Engineer_JR11030-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "2 Locations",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Edge Network Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Indonesia---Selatan/Edge-Network-Engineer_JR11027-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Indonesia - Selatan",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Incident Response Manager",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Tasmania/Incident-Response-Manager_JR10609-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Australia - Tasmania",
+  "posted": "2026-10-16T15:43+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Senior User Terminal System Engineering Specialist",
   "url": "https://jobs.lever.co/telesat/1e4a7d15-92a5-4c14-8dab-4c57429528a7",
   "company": "Telesat",
@@ -8928,160 +9082,6 @@
   "location": "Herndon, VA",
   "posted": "2026-10-16T13:46+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Platform Owner",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Vice President, Business Development & Country Manager, India",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Vice-President--Business-Development---Country-Manager--India_JR11153-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Project Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/Project-Engineer_JR11157-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Program & project management",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "VP Product Management",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA---Texas/VP-Product-Management_JR11122",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - USA - Texas",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineering Internship",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineering-Internship_JR11156-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": true,
-  "remote": true
- },
- {
-  "title": "Business Development Specialist",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---USA/Business-Development-Specialist_JR11119-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - USA",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Sales Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote--Rio-de-Janeiro/Sales-Director---Energy-South-America_JR11142-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Business Development Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Australian-Capital-Territory/Business-Development-Manager_JR11064",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IP Architect",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/IP-Architect_JR11117-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Engineer Sr Software",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Systems-Specialist_JR11014-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Brazil",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Edge-Network-Engineer_JR11036-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - India",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Edge-Network-Engineer_JR11030-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "2 Locations",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Edge Network Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Indonesia---Selatan/Edge-Network-Engineer_JR11027-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Indonesia - Selatan",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Incident Response Manager",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Australia---Tasmania/Incident-Response-Manager_JR10609-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Australia - Tasmania",
-  "posted": "2026-10-16T06:48+00:00",
-  "function": "Other",
   "early": false,
   "remote": false
  },
