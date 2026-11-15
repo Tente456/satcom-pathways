@@ -1,5 +1,60 @@
 [
  {
+  "title": "Full Stack Software Engineer (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8943586002?gh_jid=8943586002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Palo Alto, CA",
+  "posted": "2026-11-15T02:59+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Sr. Full Stack Software Engineer (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8943684002?gh_jid=8943684002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Palo Alto, CA",
+  "posted": "2026-11-15T02:56+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Integration Developer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Integration-Developer-92130/1351450957/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-15T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS² 5G/NTN Cybersecurity Expert",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-5GNTN-Cybersecurity-Expert-92130/1372513057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-15T00:00+00:00",
+  "function": "IT & security",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS² Space Cybersecurity Architect",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Space-Cybersecurity-Architect-92130/1372512757/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-15T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Propulsion Responsible Engineer II, Combustion Devices",
   "url": "https://boards.greenhouse.io/relativity/jobs/8944095002?gh_jid=8944095002",
   "company": "Relativity Space",
@@ -551,10 +606,10 @@
  },
  {
   "title": "Business Development Director - Civil & Commercial",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8202969003",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8202971003",
   "company": "Rocket Lab",
   "sector": "Launch & spacecraft",
-  "location": "Long Beach, CA",
+  "location": "Littleton, CO",
   "posted": "2026-11-13T01:25+00:00",
   "function": "Business & sales",
   "early": false,
@@ -562,10 +617,10 @@
  },
  {
   "title": "Business Development Director - Civil & Commercial",
-  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8202971003",
+  "url": "https://job-boards.greenhouse.io/rocketlab/jobs/8202969003",
   "company": "Rocket Lab",
   "sector": "Launch & spacecraft",
-  "location": "Littleton, CO",
+  "location": "Long Beach, CA",
   "posted": "2026-11-13T01:25+00:00",
   "function": "Business & sales",
   "early": false,
@@ -682,33 +737,33 @@
   "remote": false
  },
  {
-  "title": "Analyste Stratégie & M&A (Stage)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Analyste-Strat%C3%A9gie-&-M&A-%28Stage%29-92130/1377474457/",
+  "title": "Systems Integration, Verification and Validation Engineer for the IRIS2 Integrated Project Team",
+  "url": "https://careers.eutelsat.com/job/HJ-Amsterdam-Systems-Integration%2C-Verification-and-Validation-Engineer-for-the-IRIS2-Integrated-Project-Team-1083/1377479057/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "FR",
+  "location": "NL",
   "posted": "2026-11-13T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "Stage - Ingénieur Traitement du Signal et Géolocalisation Satellitaire",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Stage-Ing%C3%A9nieur-Traitement-du-Signal-et-G%C3%A9olocalisation-Satellitaire-92130/1377505357/",
+  "title": "E2E System Cybersecurity Architect for the IRIS2 Integrated Project Team",
+  "url": "https://careers.eutelsat.com/job/HJ-Amsterdam-E2E-System-Cybersecurity-Architect-for-the-IRIS2-Integrated-Project-Team-1083/1377490957/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "FR",
+  "location": "NL",
   "posted": "2026-11-13T00:00+00:00",
-  "function": "Other",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "Systems Integration, Verification and Validation Engineer for the IRIS2 Integrated Project Team",
-  "url": "https://careers.eutelsat.com/job/HJ-Amsterdam-Systems-Integration%2C-Verification-and-Validation-Engineer-for-the-IRIS2-Integrated-Project-Team-1083/1377479057/",
+  "title": "Analyste Stratégie & M&A (Stage)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Analyste-Strat%C3%A9gie-&-M&A-%28Stage%29-92130/1377474457/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "NL",
+  "location": "FR",
   "posted": "2026-11-13T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -726,6 +781,17 @@
   "remote": false
  },
  {
+  "title": "Stage - Ingénieur Traitement du Signal et Géolocalisation Satellitaire",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Stage-Ing%C3%A9nieur-Traitement-du-Signal-et-G%C3%A9olocalisation-Satellitaire-92130/1377505357/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-13T00:00+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Project Management Office for the IRIS2 Integrated Project Team",
   "url": "https://careers.eutelsat.com/job/HJ-Amsterdam-Project-Management-Office-for-the-IRIS2-Integrated-Project-Team-1083/1377477957/",
   "company": "Eutelsat OneWeb",
@@ -733,17 +799,6 @@
   "location": "NL",
   "posted": "2026-11-13T00:00+00:00",
   "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "E2E System Cybersecurity Architect for the IRIS2 Integrated Project Team",
-  "url": "https://careers.eutelsat.com/job/HJ-Amsterdam-E2E-System-Cybersecurity-Architect-for-the-IRIS2-Integrated-Project-Team-1083/1377490957/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "NL",
-  "posted": "2026-11-13T00:00+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -1068,10 +1123,10 @@
  },
  {
   "title": "Principal Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940257002?gh_jid=8940257002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940270002?gh_jid=8940270002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -1090,10 +1145,10 @@
  },
  {
   "title": "Principal Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940270002?gh_jid=8940270002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940257002?gh_jid=8940257002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
+  "location": "Redmond, WA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -1101,10 +1156,10 @@
  },
  {
   "title": "Sr. Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940248002?gh_jid=8940248002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940244002?gh_jid=8940244002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
+  "location": "Palo Alto, CA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -1123,10 +1178,10 @@
  },
  {
   "title": "Sr. Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940244002?gh_jid=8940244002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940248002?gh_jid=8940248002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -1584,30 +1639,8 @@
   "remote": false
  },
  {
-  "title": "System Requirements Engineer OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/London-System-Requirements-Engineer-OneWeb-Next-E18RU/1372232757/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-11-12T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Flight Dynamics Mission Analyst",
   "url": "https://careers.eutelsat.com/job/London-Senior-Flight-Dynamics-Mission-Analyst-E18RU/826731502/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-11-12T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "RAN System Engineer OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-RAN-System-Engineer-OneWeb-Next-92130/1372231557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -1628,8 +1661,30 @@
   "remote": false
  },
  {
+  "title": "User Terminal Principal Modem Waveform Architect - OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-Principal-Modem-Waveform-Architect-OneWeb-Next-92130/1372245357/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-12T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Physical Layer and Air Interface Engineer OneWeb Next",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Physical-Layer-and-Air-Interface-Engineer-OneWeb-Next-92130/1372229957/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "GB",
+  "posted": "2026-11-12T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "RAN System Engineer OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-RAN-System-Engineer-OneWeb-Next-92130/1372231557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -1650,19 +1705,19 @@
   "remote": false
  },
  {
-  "title": "User Terminal Principal Modem Waveform Architect - OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-User-Terminal-Principal-Modem-Waveform-Architect-OneWeb-Next-92130/1372245357/",
+  "title": "E2E System Performance & Sizing Engineer OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/London-E2E-System-Performance-&-Sizing-Engineer-OneWeb-Next-E18RU/1372233557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "FR",
+  "location": "GB",
   "posted": "2026-11-12T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
  {
-  "title": "E2E System Performance & Sizing Engineer OneWeb Next",
-  "url": "https://careers.eutelsat.com/job/London-E2E-System-Performance-&-Sizing-Engineer-OneWeb-Next-E18RU/1372233557/",
+  "title": "System Requirements Engineer OneWeb Next",
+  "url": "https://careers.eutelsat.com/job/London-System-Requirements-Engineer-OneWeb-Next-E18RU/1372232757/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "GB",
@@ -2486,8 +2541,8 @@
   "remote": false
  },
  {
-  "title": "IRIS² Senior/Programme Test Manager",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-SeniorProgramme-Test-Manager-92130/1372112857/",
+  "title": "IRIS² Senior SIT Engineer - Labs and Tooling",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Senior-SIT-Engineer-Labs-and-Tooling-92130/1372113557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -2497,8 +2552,8 @@
   "remote": false
  },
  {
-  "title": "IRIS² Senior SIT Engineer - Labs and Tooling",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Senior-SIT-Engineer-Labs-and-Tooling-92130/1372113557/",
+  "title": "IRIS² Senior/Programme Test Manager",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-SeniorProgramme-Test-Manager-92130/1372112857/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -2916,6 +2971,17 @@
  },
  {
   "title": "Sr. Server Hardware Systems Engineer (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8935643002?gh_jid=8935643002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Hawthorne, CA",
+  "posted": "2026-11-10T21:09+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Sr. Server Hardware Systems Engineer (Starlink)",
   "url": "https://boards.greenhouse.io/spacex/jobs/8935627002?gh_jid=8935627002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
@@ -2937,33 +3003,11 @@
   "remote": false
  },
  {
-  "title": "Sr. Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8935643002?gh_jid=8935643002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
-  "posted": "2026-11-10T21:09+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8934140002?gh_jid=8934140002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8934139002?gh_jid=8934139002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
-  "posted": "2026-11-10T21:08+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8934135002?gh_jid=8934135002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Bastrop, TX",
+  "location": "Redmond, WA",
   "posted": "2026-11-10T21:08+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -2982,10 +3026,21 @@
  },
  {
   "title": "Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8934139002?gh_jid=8934139002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8934135002?gh_jid=8934135002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Bastrop, TX",
+  "posted": "2026-11-10T21:08+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Server Hardware Systems Engineer (Starlink)",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8934140002?gh_jid=8934140002",
+  "company": "SpaceX (Starlink roles)",
+  "sector": "Satcom & connectivity",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-10T21:08+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3344,6 +3399,17 @@
   "remote": false
  },
  {
+  "title": "Site Reliability Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Greece",
+  "posted": "2026-11-10T06:48+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": true
+ },
+ {
   "title": "Senior Accounting Manager",
   "url": "https://jobs.ashbyhq.com/northwoodspace/c94c0dcc-85ba-4b97-a911-f54359b3346e",
   "company": "Northwood Space",
@@ -3507,17 +3573,6 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
- },
- {
-  "title": "Site Reliability Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Greece/Site-Reliability-Engineer_JR11177-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Greece",
-  "posted": "2026-11-09T23:58+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": true
  },
  {
   "title": "Assembly, Integration & Test (AI&T) Technician",
@@ -4004,28 +4059,6 @@
   "remote": false
  },
  {
-  "title": "IRIS2 E2E System Performance & Sizing Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-E2E-System-Performance-&-Sizing-Engineer-92130/1371866557/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Physical Layer and Air Interface Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Physical-Layer-and-Air-Interface-Engineer-92130/1371859757/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "IRIS2 End-to-End Network Architect",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Network-Architect-92130/1371863957/",
   "company": "Eutelsat OneWeb",
@@ -4033,17 +4066,6 @@
   "location": "FR",
   "posted": "2026-11-07T00:00+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Analyste Corporate Finance (Alternance)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Analyste-Corporate-Finance-%28Alternance%29-92130/1371880657/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -4059,30 +4081,8 @@
   "remote": false
  },
  {
-  "title": "IRIS² Satellite Ground Stations, Integration, Testing & Validation Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Satellite-Ground-Stations%2C-Integration%2C-Testing-&-Validation-Engineer-92130/1371771057/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Satellite Avionics / Data Handling Engineer (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Data-Handling-Engineer-%28IRIS2%29-92130/1371812157/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Satellite Avionics / Electrical Power Supply Engineer (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Electrical-Power-Supply-Engineer-%28IRIS2%29-92130/1371814657/",
+  "title": "Satellite Avionics / Attitude Control Engineer (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Attitude-Control-Engineer-%28IRIS2%29-92130/1371810557/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -4103,8 +4103,85 @@
   "remote": false
  },
  {
-  "title": "Satellite Avionics / Attitude Control Engineer (IRIS2)",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Attitude-Control-Engineer-%28IRIS2%29-92130/1371810557/",
+  "title": "IRIS2 Satellite Telecommunications Payload Engineer - LEO Constellations & Regenerative Payloads",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Engineer-LEO-Constellations-&-Regenerative-Payloads-92130/1371814057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Analyste Corporate Finance (Alternance)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Analyste-Corporate-Finance-%28Alternance%29-92130/1371880657/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 E2E System Performance & Sizing Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-E2E-System-Performance-&-Sizing-Engineer-92130/1371866557/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS2 End-to-End Functional Architect",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Functional-Architect-92130/1371868657/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "IRIS² Satellite Ground Stations, Integration, Testing & Validation Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS%C2%B2-Satellite-Ground-Stations%2C-Integration%2C-Testing-&-Validation-Engineer-92130/1371771057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Account Manager",
+  "url": "https://careers.eutelsat.com/job/Mexico-City-Account-Manager-_/1374493757/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "MX",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Satellite Avionics / Electrical Power Supply Engineer (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Electrical-Power-Supply-Engineer-%28IRIS2%29-92130/1371814657/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -4125,46 +4202,13 @@
   "remote": false
  },
  {
-  "title": "IRIS2 Satellite Telecommunications Payload Engineer - LEO Constellations & Regenerative Payloads",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Engineer-LEO-Constellations-&-Regenerative-Payloads-92130/1371814057/",
+  "title": "IRIS2 Physical Layer and Air Interface Engineer",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Physical-Layer-and-Air-Interface-Engineer-92130/1371859757/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
   "posted": "2026-11-07T00:00+00:00",
   "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 Project Management Office for High LEO",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-for-High-LEO-92130/1371825157/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "IRIS2 End-to-End Functional Architect",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-End-to-End-Functional-Architect-92130/1371868657/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Account Manager",
-  "url": "https://careers.eutelsat.com/job/Mexico-City-Account-Manager-_/1374493757/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "MX",
-  "posted": "2026-11-07T00:00+00:00",
-  "function": "Business & sales",
   "early": false,
   "remote": false
  },
@@ -4191,8 +4235,19 @@
   "remote": false
  },
  {
-  "title": "IRIS2 Satellite Telecommunications Payload Digital Electronics Engineer",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Satellite-Telecommunications-Payload-Digital-Electronics-Engineer-92130/1371815557/",
+  "title": "IRIS2 Project Management Office for High LEO",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-IRIS2-Project-Management-Office-for-High-LEO-92130/1371825157/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-11-07T00:00+00:00",
+  "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Satellite Avionics / Data Handling Engineer (IRIS2)",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Satellite-Avionics-Data-Handling-Engineer-%28IRIS2%29-92130/1371812157/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
   "location": "FR",
@@ -4478,10 +4533,10 @@
  },
  {
   "title": "Senior Software Engineer",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8346050",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8337803",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Graz, Austria",
+  "location": "Ljubljana, Slovenia",
   "posted": "2026-11-06T11:54+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4489,10 +4544,10 @@
  },
  {
   "title": "Senior Software Engineer",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8337803",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8346050",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Ljubljana, Slovenia",
+  "location": "Graz, Austria",
   "posted": "2026-11-06T11:54+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4508,6 +4563,28 @@
   "function": "Engineering & technical",
   "early": false,
   "remote": false
+ },
+ {
+  "title": "System Engineer",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "India",
+  "posted": "2026-11-06T06:48+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Field Dispatch Co-ordinator",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "Remote - Philippines",
+  "posted": "2026-11-06T06:48+00:00",
+  "function": "Other",
+  "early": false,
+  "remote": true
  },
  {
   "title": "Senior Software Engineer, Ground Station Platform",
@@ -4631,33 +4708,11 @@
   "remote": false
  },
  {
-  "title": "System Engineer",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "India",
-  "posted": "2026-11-05T23:58+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Field Dispatch Co-ordinator",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Philippines/Field-Dispatch-Co-ordinator_JR11171",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "Remote - Philippines",
-  "posted": "2026-11-05T23:58+00:00",
-  "function": "Other",
-  "early": false,
-  "remote": true
- },
- {
   "title": "Site Reliability Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8886620002?gh_jid=8886620002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8932369002?gh_jid=8932369002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
+  "location": "Redmond, WA",
   "posted": "2026-11-05T23:37+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4665,10 +4720,10 @@
  },
  {
   "title": "Site Reliability Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8932369002?gh_jid=8932369002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8886620002?gh_jid=8886620002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-05T23:37+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4797,10 +4852,10 @@
  },
  {
   "title": "Software Engineer",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8337813",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8345618",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Berlin, Germany",
+  "location": "Ljubljana, Slovenia",
   "posted": "2026-11-05T13:54+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4808,10 +4863,10 @@
  },
  {
   "title": "Software Engineer",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8345618",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8337813",
   "company": "Planet",
   "sector": "Data & Earth observation",
-  "location": "Ljubljana, Slovenia",
+  "location": "Berlin, Germany",
   "posted": "2026-11-05T13:54+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -5368,6 +5423,17 @@
   "remote": false
  },
  {
+  "title": "Billing Analyst",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "5 Locations",
+  "posted": "2026-11-04T06:48+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Sales Manager",
   "url": "https://careers.viasat.com/jobs/7157",
   "company": "Viasat",
@@ -5419,17 +5485,6 @@
   "location": "FR",
   "posted": "2026-11-04T00:00+00:00",
   "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Billing Analyst",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "5 Locations",
-  "posted": "2026-11-03T23:58+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -5628,28 +5683,6 @@
   "location": "Bastrop, TX",
   "posted": "2026-11-03T18:45+00:00",
   "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Sr. Antenna Engineer, Satellites (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8925583002?gh_jid=8925583002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
-  "posted": "2026-11-03T16:37+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Thermal Engineer, Satellites (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8925479002?gh_jid=8925479002",
-  "company": "SpaceX (Starlink roles)",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
-  "posted": "2026-11-03T16:36+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -5885,13 +5918,13 @@
   "remote": false
  },
  {
-  "title": "Treasury Analyst - Global Cash Management",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Treasury-Analyst-Global-Cash-Management-92130/1373979257/",
+  "title": "Product Catalogue CPQ Technical Lead",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Product-Catalogue-CPQ-Technical-Lead-92130/1355513357/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "FR",
+  "location": "GB",
   "posted": "2026-11-03T00:00+00:00",
-  "function": "Engineering & technical",
+  "function": "Other",
   "early": false,
   "remote": false
  },
@@ -5907,13 +5940,13 @@
   "remote": false
  },
  {
-  "title": "Product Catalogue CPQ Technical Lead",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Product-Catalogue-CPQ-Technical-Lead-92130/1355513357/",
+  "title": "Treasury Analyst - Global Cash Management",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Treasury-Analyst-Global-Cash-Management-92130/1373979257/",
   "company": "Eutelsat OneWeb",
   "sector": "Satcom & connectivity",
-  "location": "GB",
+  "location": "FR",
   "posted": "2026-11-03T00:00+00:00",
-  "function": "Other",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -6798,17 +6831,6 @@
   "remote": false
  },
  {
-  "title": "Project Controller",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Project-Controller-92130/1368432057/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-29T00:00+00:00",
-  "function": "Corporate",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Head of Group Project Control",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Head-of-Group-Project-Control-92130/1368455857/",
   "company": "Eutelsat OneWeb",
@@ -6816,6 +6838,17 @@
   "location": "FR",
   "posted": "2026-10-29T00:00+00:00",
   "function": "Other",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Project Controller",
+  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Project-Controller-92130/1368432057/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "FR",
+  "posted": "2026-10-29T00:00+00:00",
+  "function": "Corporate",
   "early": false,
   "remote": false
  },
@@ -7073,17 +7106,6 @@
   "remote": false
  },
  {
-  "title": "User Terminal Operations Engineer",
-  "url": "https://careers.eutelsat.com/job/London-User-Terminal-Operations-Engineer-OH-E18RU/1332516957/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "US",
-  "posted": "2026-10-28T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Apprenti(e) Financial Planning & Analysis",
   "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Apprenti%28e%29-Financial-Planning-&-Analysis-92130/1370856657/",
   "company": "Eutelsat OneWeb",
@@ -7091,6 +7113,17 @@
   "location": "FR",
   "posted": "2026-10-28T00:00+00:00",
   "function": "Corporate",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "User Terminal Operations Engineer",
+  "url": "https://careers.eutelsat.com/job/London-User-Terminal-Operations-Engineer-OH-E18RU/1332516957/",
+  "company": "Eutelsat OneWeb",
+  "sector": "Satcom & connectivity",
+  "location": "US",
+  "posted": "2026-10-28T00:00+00:00",
+  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -7272,17 +7305,6 @@
  },
  {
   "title": "Senior Director of Engineering - Civil Government and Commercial",
-  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8324236",
-  "company": "Planet",
-  "sector": "Data & Earth observation",
-  "location": "Ljubljana, Slovenia",
-  "posted": "2026-10-27T15:04+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Senior Director of Engineering - Civil Government and Commercial",
   "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8318600",
   "company": "Planet",
   "sector": "Data & Earth observation",
@@ -7298,6 +7320,17 @@
   "company": "Planet",
   "sector": "Data & Earth observation",
   "location": "Haarlem, Netherlands",
+  "posted": "2026-10-27T15:04+00:00",
+  "function": "Business & sales",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Senior Director of Engineering - Civil Government and Commercial",
+  "url": "https://job-boards.greenhouse.io/planetlabs/jobs/8324236",
+  "company": "Planet",
+  "sector": "Data & Earth observation",
+  "location": "Ljubljana, Slovenia",
   "posted": "2026-10-27T15:04+00:00",
   "function": "Business & sales",
   "early": false,
@@ -8624,28 +8657,6 @@
   "remote": false
  },
  {
-  "title": "Solution Architect",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Solution-Architect-92130/805296302/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-20T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Alternant(e) Gouvernance Cybersécurité",
-  "url": "https://careers.eutelsat.com/job/Issy-Les-Moulineaux-Alternant%28e%29-Gouvernance-Cybers%C3%A9curit%C3%A9-92130/1375337857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "FR",
-  "posted": "2026-10-20T00:00+00:00",
-  "function": "IT & security",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Senior Engineer - Embedded/Flight Software",
   "url": "https://boards.greenhouse.io/blacksky/jobs/8886624002?gh_jid=8886624002",
   "company": "BlackSky",
@@ -8774,17 +8785,6 @@
   "location": "Midland, Texas, United States",
   "posted": "2026-10-19T01:47+00:00",
   "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Innovation Programme Manager",
-  "url": "https://careers.eutelsat.com/job/London-Innovation-Programme-Manager-E18RU/1358755857/",
-  "company": "Eutelsat OneWeb",
-  "sector": "Satcom & connectivity",
-  "location": "GB",
-  "posted": "2026-10-19T00:00+00:00",
-  "function": "Program & project management",
   "early": false,
   "remote": false
  },
@@ -8937,7 +8937,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -8948,7 +8948,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8959,7 +8959,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Program & project management",
   "early": false,
   "remote": false
@@ -8970,7 +8970,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -8981,7 +8981,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -8992,7 +8992,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9003,7 +9003,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9014,7 +9014,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9025,7 +9025,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9036,7 +9036,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-15T23:58+00:00",
+  "posted": "2026-10-16T06:48+00:00",
   "function": "Other",
   "early": false,
   "remote": false

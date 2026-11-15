@@ -1,5 +1,14 @@
 [
  {
+  "title": "SpaceX Successfully Catches Starship Upper Stage",
+  "url": "https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/",
+  "source": "Payload",
+  "date": "2026-11-15T01:39+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "SpaceX Catches a Starship",
   "url": "https://spacepolicyonline.com/news/spacex-catches-a-starship/",
   "source": "SpacePolicyOnline",
@@ -3553,15 +3562,6 @@
   "date": "2026-10-26T20:00+00:00",
   "categories": [
    "Business & funding"
-  ]
- },
- {
-  "title": "EasyJet to Adopt IFC With Starlink Deal",
-  "url": "https://www.satellitetoday.com/mobility/2026/10/26/easyjet-to-adopt-ifc-with-starlink-deal/",
-  "source": "Via Satellite",
-  "date": "2026-10-26T19:59+00:00",
-  "categories": [
-   "Satcom & connectivity"
   ]
  }
 ]
