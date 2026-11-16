@@ -1,5 +1,117 @@
 [
  {
+  "title": "UK MOD Defends Satcom Resilience Amid SpaceX Starshield Concerns",
+  "url": "https://europeanspaceflight.com/uk-mod-defends-satcom-resilience-amid-spacex-starshield-concerns/",
+  "source": "European Spaceflight",
+  "date": "2026-11-16T17:50+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "SpaceX catches its first Starship but loses the booster, at a cost",
+  "url": "https://spaceq.ca/starship-flight-15-ship-catch-booster-lost/",
+  "source": "SpaceQ",
+  "date": "2026-11-16T17:20+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Exclusive: SpaceComputer Books a D-Orbit Demo Mission with Aptos Orbital in 2027",
+  "url": "https://payloadspace.com/exclusive-spacecomputer-books-a-d-orbit-demo-mission-in-2027/",
+  "source": "Payload",
+  "date": "2026-11-16T14:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "SPACE STAR’26 Closes in Gammarth After Three Days of Science, Applications and Policy",
+  "url": "https://spaceinafrica.com/2026/11/16/space-star26-closes-in-gammarth-after-three-days-of-science-applications-and-policy/",
+  "source": "Space in Africa",
+  "date": "2026-11-16T13:26+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Midterms Impact on Defense Budgets",
+  "url": "https://payloadspace.com/midterms-impact-on-defense-budgets/",
+  "source": "Payload",
+  "date": "2026-11-16T12:07+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL: Space, Unromanced – Houston, We Have an Accessibility Problem",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-space-unromanced-houston-we-have-an-accessibility-problem/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-16T09:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Latvia pushes 5G answer to Ukraine's Starlink problem",
+  "url": "https://www.lightreading.com/5g/latvia-pushes-5g-answer-to-ukraine-s-starlink-problem",
+  "source": "Light Reading",
+  "date": "2026-11-16T08:30+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Paratus Expands Starlink Enterprise Connectivity into Lesotho and Malawi",
+  "url": "https://spaceinafrica.com/2026/11/16/paratus-expands-starlink-enterprise-connectivity-into-lesotho-and-malawi/",
+  "source": "Space in Africa",
+  "date": "2026-11-16T08:20+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Amazon loses 40 satellites",
+  "url": "https://www.advanced-television.com/2026/11/16/amazon-loses-40-satellites/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-16T07:03+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "ESA’s Izaña Station Gains New Capabilities for Automated Space Debris Tracking",
+  "url": "https://spacewatch.global/2026/11/esas-izana-station-gains-new-capabilities-for-automated-space-debris-tracking/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-16T07:00+00:00",
+  "categories": [
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "SpaceX Makes History with First Orbital Recovery of Starship Upper Stage",
+  "url": "https://spacewatch.global/2026/11/spacex-makes-history-with-first-orbital-recovery-of-starship-upper-stage/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-16T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "ULA’s Vulcan Rocket Fails During Debut Amazon Leo Satellite Launch",
+  "url": "https://spacewatch.global/2026/11/ulas-vulcan-rocket-fails-during-debut-amazon-leo-satellite-launch/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-16T07:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
   "title": "Connecting Constellations: The Shift to Real-Time Space Operations",
   "url": "https://payloadspace.com/connecting-constellations-the-shift-to-real-time-space-operations/",
   "source": "Payload",
@@ -22,6 +134,28 @@
   "date": "2026-11-16T01:32+00:00",
   "categories": [
    "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Rocket Lab’s flawless 100th launch",
+  "url": "https://www.advanced-television.com/2026/11/16/rocket-labs-flawless-100th-launch/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-16T00:50+00:00",
+  "categories": [
+   "Launch",
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "Viasat/Space42 approved for Equatys D2D",
+  "url": "https://www.advanced-television.com/2026/11/16/viasat-space42-approved-for-equatys-d2d/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-16T00:43+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Policy & regulation",
+   "Business & funding"
   ]
  },
  {
@@ -70,18 +204,7 @@
   ]
  },
  {
-  "title": "ULA’s Vulcan Rocket Fails During Debut Amazon Leo Satellite Launch",
-  "url": "https://spacewatch.global/2026/11/ulas-vulcan-rocket-fails-during-debut-amazon-leo-satellite-launch/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-15T19:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Defence & security"
-  ]
- },
- {
-  "title": "SpaceX Successfully Catches Starship Upper Stage",
+  "title": "SpaceX Catches Starship Upper Stage",
   "url": "https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/",
   "source": "Payload",
   "date": "2026-11-15T01:39+00:00",
@@ -1289,6 +1412,15 @@
   ]
  },
  {
+  "title": "RFA Confirms Inaugural RFA ONE Launch Has Slipped to 2027",
+  "url": "https://europeanspaceflight.com/rfa-confirms-inaugural-rfa-one-launch-has-slipped-to-2027/",
+  "source": "European Spaceflight",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "NASA Expands Lunar Delivery Network with CLPS 2 and New Moon Base Awards",
   "url": "https://spacewatch.global/2026/11/nasa-expands-lunar-delivery-network-with-clps-2-and-new-moon-base-awards/",
   "source": "SpaceWatch.Global",
@@ -1306,15 +1438,6 @@
    "Launch",
    "Defence & security",
    "Business & funding"
-  ]
- },
- {
-  "title": "RFA Confirms Inaugural RFA ONE Launch Has Slipped to 2027",
-  "url": "https://europeanspaceflight.com/rfa-confirms-inaugural-rfa-one-launch-has-slipped-to-2027/",
-  "source": "European Spaceflight",
-  "date": "2026-11-09T07:00+00:00",
-  "categories": [
-   "Launch"
   ]
  },
  {
@@ -3455,112 +3578,5 @@
    "Policy & regulation",
    "Business & funding"
   ]
- },
- {
-  "title": "Amazon Leo's D2D plan nears liftoff as FCC clears Globalstar buy",
-  "url": "https://www.lightreading.com/satellite/amazon-leo-s-d2d-plan-ready-for-liftoff-as-fcc-clears-globalstar-buy",
-  "source": "Light Reading",
-  "date": "2026-10-27T19:20+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Policy & regulation",
-   "Business & funding"
-  ]
- },
- {
-  "title": "What’s haunting the Pentagon this Halloween?",
-  "url": "https://breakingdefense.com/2026/10/whats-haunting-the-pentagon-this-halloween/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-10-27T17:45+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "NASA, Agriculture Department Partner On Space Data Sharing",
-  "url": "https://payloadspace.com/nasa-agriculture-department-partner-on-space-data-sharing/",
-  "source": "Payload",
-  "date": "2026-10-27T17:00+00:00",
-  "categories": []
- },
- {
-  "title": "U.S. Ambassador Hoekstra makes the case for Canada’s sovereign push",
-  "url": "https://spaceq.ca/hoekstra-canada-sovereign-space-push/",
-  "source": "SpaceQ",
-  "date": "2026-10-27T15:35+00:00",
-  "categories": []
- },
- {
-  "title": "ESA’s INVICTUS Hypersonic Programme Clears First Major Review",
-  "url": "https://europeanspaceflight.com/esas-invictus-hypersonic-programme-clears-first-major-review/",
-  "source": "European Spaceflight",
-  "date": "2026-10-27T14:32+00:00",
-  "categories": []
- },
- {
-  "title": "Eurobites: Virgin Media O2 rolls out 2Gbit/s service over cable",
-  "url": "https://www.lightreading.com/cable-technology/eurobites-virgin-media-o2-rolls-out-2gbit-s-service-over-cable",
-  "source": "Light Reading",
-  "date": "2026-10-27T13:23+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "OSMOS X Tapped to Lead EDF-backed Tactical Capture Consortium",
-  "url": "https://payloadspace.com/osmos-x-tapped-to-lead-edf-backed-tactical-capture-consortium/",
-  "source": "Payload",
-  "date": "2026-10-27T12:59+00:00",
-  "categories": []
- },
- {
-  "title": "MP Space Raises AUD $23M to Scale Satellite Battery Manufacturing",
-  "url": "https://payloadspace.com/mp-space-raises-aud-23m-to-scale-satellite-battery-manufacturing/",
-  "source": "Payload",
-  "date": "2026-10-27T12:29+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Craft Prospect kicks off PERSEUS project to advance optical communications for space",
-  "url": "https://spacenews.com/craft-prospect-kicks-off-perseus-project-to-advance-optical-communications-for-space/",
-  "source": "SpaceNews",
-  "date": "2026-10-27T12:00+00:00",
-  "categories": []
- },
- {
-  "title": "North Vector Dynamics closes $29 million Series A",
-  "url": "https://spaceq.ca/north-vector-dynamics-series-a/",
-  "source": "SpaceQ",
-  "date": "2026-10-27T11:04+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "#SpaceWatchGL Opinion: Space Is Not the Hero. It’s the Infrastructure.",
-  "url": "https://spacewatch.global/2026/10/spacewatchgl-opinion-space-is-not-the-hero-its-the-infrastructure/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-27T09:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security"
-  ]
- },
- {
-  "title": "EraDrive Cleared to Test Autonomous Spacecraft Manoeuvring Software on NASA’s Starling Mission",
-  "url": "https://spacewatch.global/2026/10/eradrive-cleared-to-test-autonomous-spacecraft-manoeuvring-software-on-nasas-starling-mission/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-27T07:00+00:00",
-  "categories": []
- },
- {
-  "title": "EarthDaily Secures $3 Million NASA Task Order to Advance Landsat Integration with Commercial EO Data",
-  "url": "https://spacewatch.global/2026/10/earthdaily-secures-3-million-nasa-task-order-to-advance-landsat-integration-with-commercial-eo-data/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-27T07:00+00:00",
-  "categories": []
  }
 ]

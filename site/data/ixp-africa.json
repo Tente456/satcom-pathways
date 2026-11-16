@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-16T06:48+00:00",
+ "fetched": "2026-11-16T18:41+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -88,7 +88,7 @@
    "name": "NAPAfrica IX Cape Town",
    "city": "Cape Town",
    "country": "ZA",
-   "networks": 280,
+   "networks": 281,
    "lat": -33.971,
    "lon": 18.465
   },
@@ -754,7 +754,7 @@
    "name": "Lilongwe Internet Exchange, LLIX",
    "city": "Lilongwe",
    "country": "MW",
-   "networks": 2,
+   "networks": 3,
    "lat": -13.96,
    "lon": 33.79
   }
