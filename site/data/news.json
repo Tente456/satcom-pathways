@@ -1,5 +1,86 @@
 [
  {
+  "title": "Connecting Constellations: The Shift to Real-Time Space Operations",
+  "url": "https://payloadspace.com/connecting-constellations-the-shift-to-real-time-space-operations/",
+  "source": "Payload",
+  "date": "2026-11-16T05:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "SpaceX Catches Starship In Landing After Orbital Flight for First Time",
+  "url": "https://www.satellitetoday.com/launch/2026/11/15/spacex-catches-starship-in-landing-after-orbital-flight-for-first-time/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T01:32+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Weekly ISS update: Kutryk calls Newfoundland students from orbit",
+  "url": "https://spaceq.ca/weekly-iss-update-kutryk-calls-newfoundland-students/",
+  "source": "SpaceQ",
+  "date": "2026-11-16T01:32+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "ULA Vulcan Rocket Suffers Anomaly During First Amazon Leo Launch",
+  "url": "https://www.satellitetoday.com/launch/2026/11/15/ula-set-to-return-vulcan-to-flight-in-first-amazon-leo-launch/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T00:04+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Magellan jumps on results as space index rises 4.1 per cent",
+  "url": "https://spaceq.ca/the-weekly-close-november-13-2026/",
+  "source": "SpaceQ",
+  "date": "2026-11-15T23:17+00:00",
+  "categories": []
+ },
+ {
+  "title": "What’s Happening in Space Policy November 15-21, 2026",
+  "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-november-15-21-2026/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-15T23:13+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Vulcan rocket fails during launch, dealing major blow to SpaceX competitors",
+  "url": "https://arstechnica.com/space/2026/11/vulcan-rocket-fails-during-launch-dealing-major-blow-to-spacex-competitors/",
+  "source": "Ars Technica",
+  "date": "2026-11-15T23:11+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Vulcan’s Return-to-Flight Fails",
+  "url": "https://spacepolicyonline.com/news/vulcans-return-to-flight-fails/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-15T22:35+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "ULA’s Vulcan Rocket Fails During Debut Amazon Leo Satellite Launch",
+  "url": "https://spacewatch.global/2026/11/ulas-vulcan-rocket-fails-during-debut-amazon-leo-satellite-launch/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-15T19:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
   "title": "SpaceX Successfully Catches Starship Upper Stage",
   "url": "https://payloadspace.com/spacex-successfully-catches-starship-upper-stage/",
   "source": "Payload",
@@ -85,6 +166,15 @@
   ]
  },
  {
+  "title": "Office of Space Commerce Picks 4 Companies for Regulatory Pilot",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/13/office-of-space-commerce-picks-4-companies-for-regulatory-pilot/",
+  "source": "Via Satellite",
+  "date": "2026-11-13T19:55+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
   "title": "ULA Set to Return Vulcan to Flight in First Amazon Leo Launch",
   "url": "https://www.satellitetoday.com/launch/2026/11/13/ula-set-to-return-vulcan-to-flight-in-first-amazon-leo-launch/",
   "source": "Via Satellite",
@@ -92,15 +182,6 @@
   "categories": [
    "Satcom & connectivity",
    "Launch"
-  ]
- },
- {
-  "title": "Office of Space Commerce Picks 4 Companies for Regulatory Pilot",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/13/office-of-space-commerce-picks-4-companies-for-regulatory-pilot/",
-  "source": "Via Satellite",
-  "date": "2026-11-13T19:55+00:00",
-  "categories": [
-   "Policy & regulation"
   ]
  },
  {
@@ -1228,21 +1309,21 @@
   ]
  },
  {
-  "title": "ESA’s Hera Captures First Close-Up Image of Didymos Binary Asteroid System",
-  "url": "https://spacewatch.global/2026/11/esas-hera-captures-first-close-up-image-of-didymos-binary-asteroid-system/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-09T07:00+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
   "title": "RFA Confirms Inaugural RFA ONE Launch Has Slipped to 2027",
   "url": "https://europeanspaceflight.com/rfa-confirms-inaugural-rfa-one-launch-has-slipped-to-2027/",
   "source": "European Spaceflight",
   "date": "2026-11-09T07:00+00:00",
   "categories": [
    "Launch"
+  ]
+ },
+ {
+  "title": "ESA’s Hera Captures First Close-Up Image of Didymos Binary Asteroid System",
+  "url": "https://spacewatch.global/2026/11/esas-hera-captures-first-close-up-image-of-didymos-binary-asteroid-system/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-09T07:00+00:00",
+  "categories": [
+   "Defence & security"
   ]
  },
  {
@@ -3481,87 +3562,5 @@
   "source": "SpaceWatch.Global",
   "date": "2026-10-27T07:00+00:00",
   "categories": []
- },
- {
-  "title": "Interstellar Lab Taps Voyager to Manage ISS Plant-Growth Experiment",
-  "url": "https://spacewatch.global/2026/10/interstellar-lab-taps-voyager-to-manage-iss-plant-growth-experiment/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-27T07:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Cowboy Space Reveals Big Iron Data Center Rocket",
-  "url": "https://payloadspace.com/cowboy-space-reveals-big-iron-data-center-rocket/",
-  "source": "Payload",
-  "date": "2026-10-27T02:30+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Bank examines SpaceX plan for 80,000 cell-towers",
-  "url": "https://www.advanced-television.com/2026/10/27/bank-examines-spacex-plan-for-80000-cell-towers/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-27T00:28+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Rocket Lab completes 98th mission",
-  "url": "https://www.advanced-television.com/2026/10/27/rocket-lab-completes-98th-mission/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-27T00:26+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Thaicom asks ITU for more time to launch",
-  "url": "https://www.advanced-television.com/2026/10/27/thaicom-asks-itu-for-more-time-to-launch/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-27T00:22+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "Launch Preview: Falcon 9 and GSLV rockets scheduled to launch",
-  "url": "https://www.nasaspaceflight.com/2026/10/launch-preview-102626/",
-  "source": "NASASpaceflight",
-  "date": "2026-10-26T21:11+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Astranis Plans Dedicated Falcon 9 to Launch 6 MicroGEO Satellites",
-  "url": "https://www.satellitetoday.com/launch/2026/10/26/astranis-plans-dedicated-falcon-9-to-launch-6-microgeo-satellites/",
-  "source": "Via Satellite",
-  "date": "2026-10-26T20:07+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "ST Engineering iDirect to Provide Ground Network for Oman’s MB Sat-1",
-  "url": "https://www.satellitetoday.com/technology/2026/10/26/st-engineering-idirect-to-provide-ground-network-for-omans-mb-sat-1/",
-  "source": "Via Satellite",
-  "date": "2026-10-26T20:02+00:00",
-  "categories": []
- },
- {
-  "title": "Flexell Space Establishes French Subsidiary to Strengthen European Presence",
-  "url": "https://spacenews.com/flexell-space-establishes-french-subsidiary-to-strengthen-european-presence/",
-  "source": "SpaceNews",
-  "date": "2026-10-26T20:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
  }
 ]
