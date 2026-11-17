@@ -5,7 +5,18 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-11-17T02:59+00:00",
+  "posted": "2026-11-17T06:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Associate Manufacturing Engineer",
+  "url": "https://ast-science.com/company/careers/?gh_jid=4754916005",
+  "company": "AST SpaceMobile",
+  "sector": "Satcom & connectivity",
+  "location": "Midland, Texas, United States",
+  "posted": "2026-11-17T04:58+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -156,6 +167,17 @@
  {
   "title": "Environmental test engineer",
   "url": "https://www.amazon.jobs/en/jobs/10606793/environmental-test-engineer",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Northridge, California, USA",
+  "posted": "2026-11-17T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Lead Research & Development Manufacturing Technician (L4), ALG",
+  "url": "https://www.amazon.jobs/en/jobs/10606829/lead-research-development-manufacturing-technician-l4-alg",
   "company": "Amazon Leo",
   "sector": "Satcom & connectivity",
   "location": "Northridge, California, USA",
@@ -2201,10 +2223,10 @@
  },
  {
   "title": "Sr. Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940244002?gh_jid=8940244002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940235002?gh_jid=8940235002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Redmond, WA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -2212,10 +2234,10 @@
  },
  {
   "title": "Sr. Software Engineer, CDN (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8940235002?gh_jid=8940235002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8940244002?gh_jid=8940244002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Palo Alto, CA",
   "posted": "2026-11-12T21:19+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3619,17 +3641,6 @@
   "remote": false
  },
  {
-  "title": "Senior Manager, Change & Configuration Management Amazon Leo, D2D Software",
-  "url": "https://www.amazon.jobs/en/jobs/10602867/senior-manager-change-configuration-management-amazon-leo-d2d-software",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Redmond, Washington, USA",
-  "posted": "2026-11-11T00:00+00:00",
-  "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Vehicle Structures Engineer II",
   "url": "https://boards.greenhouse.io/relativity/jobs/8937117002?gh_jid=8937117002",
   "company": "Relativity Space",
@@ -3730,10 +3741,10 @@
  },
  {
   "title": "Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8934113002?gh_jid=8934113002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8934140002?gh_jid=8934140002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-10T21:08+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3741,10 +3752,10 @@
  },
  {
   "title": "Server Hardware Systems Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8934140002?gh_jid=8934140002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8934113002?gh_jid=8934113002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
+  "location": "Palo Alto, CA",
   "posted": "2026-11-10T21:08+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3840,10 +3851,10 @@
  },
  {
   "title": "Sr. Software Engineer (Starlink Mobile)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8935776002?gh_jid=8935776002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8935801002?gh_jid=8935801002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Palo Alto, CA",
   "posted": "2026-11-10T19:38+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -3851,10 +3862,10 @@
  },
  {
   "title": "Sr. Software Engineer (Starlink Mobile)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8935801002?gh_jid=8935801002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8935776002?gh_jid=8935776002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Palo Alto, CA",
+  "location": "Redmond, WA",
   "posted": "2026-11-10T19:38+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -4086,7 +4097,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Greece",
-  "posted": "2026-11-10T02:59+00:00",
+  "posted": "2026-11-10T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -5148,23 +5159,12 @@
   "remote": false
  },
  {
-  "title": "Senior Software Engineer, Ground Station Platform",
-  "url": "https://job-boards.greenhouse.io/muonspace/jobs/5286925007",
-  "company": "Muon Space",
-  "sector": "Data & Earth observation",
-  "location": "San Jose, CA",
-  "posted": "2026-11-06T03:42+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "System Engineer",
   "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/India/System-Engineer_JR11123",
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-11-06T02:59+00:00",
+  "posted": "2026-11-06T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -5175,10 +5175,21 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-11-06T02:59+00:00",
+  "posted": "2026-11-06T06:00+00:00",
   "function": "Other",
   "early": false,
   "remote": true
+ },
+ {
+  "title": "Senior Software Engineer, Ground Station Platform",
+  "url": "https://job-boards.greenhouse.io/muonspace/jobs/5286925007",
+  "company": "Muon Space",
+  "sector": "Data & Earth observation",
+  "location": "San Jose, CA",
+  "posted": "2026-11-06T03:42+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
  },
  {
   "title": "Mechanical Engineer, Insource Manufacturing (Starlink)",
@@ -5303,10 +5314,10 @@
  },
  {
   "title": "Site Reliability Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8932369002?gh_jid=8932369002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8886620002?gh_jid=8886620002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Redmond, WA",
+  "location": "Hawthorne, CA",
   "posted": "2026-11-05T23:37+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -5314,10 +5325,10 @@
  },
  {
   "title": "Site Reliability Engineer (Starlink)",
-  "url": "https://boards.greenhouse.io/spacex/jobs/8886620002?gh_jid=8886620002",
+  "url": "https://boards.greenhouse.io/spacex/jobs/8932369002?gh_jid=8932369002",
   "company": "SpaceX (Starlink roles)",
   "sector": "Satcom & connectivity",
-  "location": "Hawthorne, CA",
+  "location": "Redmond, WA",
   "posted": "2026-11-05T23:37+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -5929,6 +5940,17 @@
   "remote": false
  },
  {
+  "title": "Billing Analyst",
+  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
+  "company": "Speedcast",
+  "sector": "Satcom & connectivity",
+  "location": "5 Locations",
+  "posted": "2026-11-04T06:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
   "title": "Sales Manager",
   "url": "https://careers.viasat.com/jobs/7157",
   "company": "Viasat",
@@ -5936,17 +5958,6 @@
   "location": "Canberra, Australia; Sydney, Australia; North Sydney, Australia",
   "posted": "2026-11-04T04:22+00:00",
   "function": "Business & sales",
-  "early": false,
-  "remote": false
- },
- {
-  "title": "Billing Analyst",
-  "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---Brazil/Billing-Analyst_JR11178-1",
-  "company": "Speedcast",
-  "sector": "Satcom & connectivity",
-  "location": "5 Locations",
-  "posted": "2026-11-04T02:59+00:00",
-  "function": "Engineering & technical",
   "early": false,
   "remote": false
  },
@@ -8954,23 +8965,12 @@
   "remote": false
  },
  {
-  "title": "Front Desk Security, 4th Shift, Site 4",
-  "url": "https://ast-science.com/company/careers/?gh_jid=4741735005",
-  "company": "AST SpaceMobile",
-  "sector": "Satcom & connectivity",
-  "location": "Midland, Texas, United States",
-  "posted": "2026-10-19T01:48+00:00",
-  "function": "Operations & supply chain",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Platform Owner",
   "url": "https://speedcast.wd1.myworkdayjobs.com/en-US/SpeedcastCareers/job/Remote---India/Platform-Owner_JR11175-1",
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -8981,7 +8981,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -8992,7 +8992,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9003,7 +9003,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -9014,7 +9014,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9025,7 +9025,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9036,7 +9036,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9091,7 +9091,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9102,7 +9102,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-18T02:59+00:00",
+  "posted": "2026-10-18T06:00+00:00",
   "function": "Other",
   "early": false,
   "remote": false
