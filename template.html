@@ -8,7 +8,9 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2040%2040%22%3E%3Crect%20width%3D%2240%22%20height%3D%2240%22%20rx%3D%228%22%20fill%3D%22%230f1b2d%22/%3E%3Cg%20transform%3D%22translate%284%204%29%20scale%28.8%29%22%20color%3D%22%23eef2f7%22%3E%3Cpath%20d%3D%22M-2%2040%20Q20%2028%2042%2040%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%223.5%22%20stroke-opacity%3D%22.5%22/%3E%3Ccircle%20cx%3D%229%22%20cy%3D%2229.5%22%20r%3D%222%22%20fill%3D%22currentColor%22%20fill-opacity%3D%22.6%22/%3E%3Ccircle%20cx%3D%2215%22%20cy%3D%2223.5%22%20r%3D%222.4%22%20fill%3D%22currentColor%22%20fill-opacity%3D%22.8%22/%3E%3Ccircle%20cx%3D%2221.5%22%20cy%3D%2216.5%22%20r%3D%222.8%22%20fill%3D%22currentColor%22/%3E%3Ccircle%20cx%3D%2231%22%20cy%3D%228%22%20r%3D%225.5%22%20fill%3D%22%231fd16a%22/%3E%3C/g%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400;500&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" href="{{DATA_URL}}" as="fetch" crossorigin>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400&family=Source+Sans+3:wght@400;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Fraunces:opsz,wght@9..144,600&family=IBM+Plex+Mono:wght@400&family=Source+Sans+3:wght@400;600&display=swap"></noscript>
 <style>
 :root {
   /* Layout: masthead + two views (news, jobs) switched by #hash; news has a lead row, filters, list and a hiring sidebar. */
@@ -783,10 +785,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   </div>
 </footer>
 
-<script id="site-data" type="application/json">{{DATA}}</script>
 <script>
 (function () {
-  var D = JSON.parse(document.getElementById('site-data').textContent);
+  function boot(D) {
   var PAGE = 40;
   function $(id) { return document.getElementById(id); }
   function esc(s) { return String(s).replace(/[&<>"']/g, function (c) { return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -1725,6 +1726,9 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   window.addEventListener('popstate', route);
   renderResearch(); renderEvents(); route(); renderNews(); renderJobs(); renderDeals();
   if (location.hash || location.search) setTimeout(goHash, 50);
+  }
+  function fail() { var l = document.getElementById('lead'); if (l && !l.children.length) l.innerHTML = '<p class="meta">The page could not load its data. Please refresh.</p>'; }
+  fetch('{{DATA_URL}}').then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); }).then(boot, fail);
 })();
 </script>
 <!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "a8e95d993b86422eba6086e6b6f05fff"}'></script><!-- End Cloudflare Web Analytics -->

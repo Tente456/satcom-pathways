@@ -16,6 +16,7 @@ Usage:  python build.py            (fetch live data and build)
 """
 import calendar
 import html
+import hashlib
 import json
 import re
 import sys
@@ -995,11 +996,92 @@ def render(cfg, news, jobs, updated, research):
         "aboutHtml": load_about(cfg),
     }
     payload["downloads"] = write_downloads(payload, updated)
-    data = json.dumps(payload, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
+    data = json.dumps(payload, ensure_ascii=False, separators=(",", ":"))
+    # the data lives in one hashed file that every page shares and the browser caches,
+    # instead of a copy inside each page
+    name = "site-" + hashlib.sha256(data.encode("utf-8")).hexdigest()[:10] + ".json"
+    for old_file in (OUT / "data").glob("site-*.json"):
+        if old_file.name != name:
+            old_file.unlink()
+    (OUT / "data" / name).write_text(data, encoding="utf-8")
     page = (template.replace("{{SITE_NAME}}", html.escape(cfg["site_name"]))
                     .replace("{{TAGLINE}}", html.escape(cfg["tagline"]))
-                    .replace("{{DATA}}", data))
+                    .replace("{{DATA_URL}}", "/data/" + name))
+    return prerender_home(page, payload)
+
+
+def _ago(iso):
+    """Same wording as ago() in the page script, worked out at build time."""
+    try:
+        t = datetime.fromisoformat(iso.replace("Z", "+00:00"))
+    except (ValueError, AttributeError):
+        return ""
+    if t.tzinfo is None:
+        t = t.replace(tzinfo=timezone.utc)
+    h = int((NOW - t).total_seconds() // 3600)
+    if h < 1:
+        return "just now"
+    if h < 24:
+        return f"{h}h ago"
+    d = h // 24
+    if d < 60:
+        return f"{d}d ago"
+    return t.strftime("%-d %b %Y")
+
+
+def prerender_home(page, payload):
+    """Write the home page's first screen into the HTML so it shows before the data file
+    arrives. The page script redraws the same lists once it has loaded."""
+    esc = html.escape
+    news = payload["news"]
+    satcom = [n for n in news if "Satcom & connectivity" in n["categories"]]
+    lead = (satcom if len(satcom) >= 3 else news)[:3]
+    lead_html = "".join(
+        f'<a class="story" href="{esc(n["url"])}" target="_blank" rel="noopener"><span class="kicker">{esc((n["categories"] or ["Industry"])[0])}</span>'
+        f'<h3>{esc(n["title"])}</h3><span class="meta">{esc(n["source"])} · {esc(_ago(n["date"]))}</span></a>' for n in lead)
+    urls = {n["url"] for n in lead}
+    news_html = "".join(
+        f'<li><a href="{esc(n["url"])}" target="_blank" rel="noopener">{esc(n["title"])}</a><span class="meta">{esc(n["source"])} · {esc(_ago(n["date"]))}</span></li>'
+        for n in [n for n in news if n["url"] not in urls][:6])
+    seen, side = set(), []
+    for j in payload["jobs"]:
+        if j["company"] not in seen:
+            seen.add(j["company"])
+            side.append(j)
+    jobs_html = "".join(
+        f'<li><a href="{esc(j["url"])}" target="_blank" rel="noopener">{esc(j["title"])}</a><span class="meta">{esc(j["company"])} · {esc(j["location"])}</span></li>'
+        for j in side[:6])
+    early = sum(1 for j in payload["jobs"] if j.get("early"))
+    for old, new in (('<div class="lead" id="lead"></div>', f'<div class="lead" id="lead">{lead_html}</div>'),
+                     ('<ul id="home-news"></ul>', f'<ul id="home-news">{news_html}</ul>'),
+                     ('<ul id="side-jobs"></ul>', f'<ul id="side-jobs">{jobs_html}</ul>'),
+                     ('<span class="stat" id="early-count">0</span>', f'<span class="stat" id="early-count">{early}</span>')):
+        assert old in page, old
+        page = page.replace(old, new, 1)
     return page
+
+
+def view_for(path):
+    """Which section a path opens, matching currentView() in the page script."""
+    p = [x for x in path.split("/") if x]
+    if not p:
+        return "home"
+    if p[0] == "research" and len(p) > 1:
+        return {"countries": "country", "data": "data"}.get(p[1], "article")
+    if p[0] == "map":
+        return "leomap"
+    return p[0] if p[0] in SECTION_PAGES else "home"
+
+
+def show_view(page, v):
+    """Mark the right section visible in the HTML itself, so a deep link never flashes the home page."""
+    if v == "home":
+        return page
+    for marker in ('id="view-home" aria-labelledby="tab-home">', 'id="view-home2" aria-label="Highlights">'):
+        assert marker in page, marker
+        page = page.replace(marker, marker[:-1] + " hidden>", 1)
+    page = page.replace('<div class="band view-band" id="home-band"', '<div class="band view-band" id="home-band" hidden', 1)
+    return re.sub(r'(<section class="view" id="view-' + re.escape(v) + r'"[^>]*?) hidden>', r"\1>", page, count=1)
 
 
 SECTION_PAGES = {
@@ -1025,7 +1107,8 @@ def write_pages(cfg, page, research):
     default_desc = f'<meta name="description" content="{esc(cfg["tagline"])}">'
 
     def variant(path, title, desc):
-        out = page.replace(default_title, f"<title>{esc(title)}</title>", 1)
+        out = show_view(page, view_for(path))
+        out = out.replace(default_title, f"<title>{esc(title)}</title>", 1)
         out = out.replace(default_desc, f'<meta name="description" content="{esc(desc)}">', 1)
         if url:
             out = out.replace("</head>", f'<link rel="canonical" href="{esc(url + path)}">\n</head>', 1)
