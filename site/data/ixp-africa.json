@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-14T22:22+00:00",
+ "fetched": "2026-11-17T02:59+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -61,7 +61,7 @@
    "name": "IXPN Lagos",
    "city": "Lagos",
    "country": "NG",
-   "networks": 125,
+   "networks": 126,
    "lat": 6.427,
    "lon": 3.418
   },
@@ -88,7 +88,7 @@
    "name": "NAPAfrica IX Cape Town",
    "city": "Cape Town",
    "country": "ZA",
-   "networks": 280,
+   "networks": 281,
    "lat": -33.971,
    "lon": 18.465
   },
@@ -754,7 +754,7 @@
    "name": "Lilongwe Internet Exchange, LLIX",
    "city": "Lilongwe",
    "country": "MW",
-   "networks": 2,
+   "networks": 3,
    "lat": -13.96,
    "lon": 33.79
   }
