@@ -1,5 +1,87 @@
 [
  {
+  "title": "Launch Preview: Ariane 6 to launch Amazon satellites, Falcon 9 to launch government missions",
+  "url": "https://www.nasaspaceflight.com/2026/11/launch-preview-111626/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-16T21:57+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Iceye’s Fifth Generation SAR Satellite Built for 11cm Resolution",
+  "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/11/16/iceyes-fifth-generation-sar-satellite-built-for-11cm-resolution/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T20:50+00:00",
+  "categories": [
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "Umbra Secures Launch for Next 7 SAR Satellites WIth Increased Capabilities",
+  "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/11/16/umbra-secures-launch-for-next-7-sar-satellites-with-increased-capabilities/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T20:44+00:00",
+  "categories": [
+   "Launch",
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "LeoLabs Buys Missile Defense and Space Awareness Engineering Firm FishEye",
+  "url": "https://www.satellitetoday.com/finance/2026/11/16/leolabs-buys-missile-defense-and-space-awareness-engineering-firm-fisheye/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T20:42+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Meridian Space Validates Reflectarray Antenna in Space",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/16/meridian-space-validates-reflectarray-antenna-in-space/",
+  "source": "Via Satellite",
+  "date": "2026-11-16T20:38+00:00",
+  "categories": []
+ },
+ {
+  "title": "SpaceX's Starship program advances as Amazon Leo suffers another setback",
+  "url": "https://www.lightreading.com/satellite/spacex-s-starship-program-advances-as-amazon-leo-suffers-another-setback",
+  "source": "Light Reading",
+  "date": "2026-11-16T20:30+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Vulcan failure deepens concerns over US military launch capacity",
+  "url": "https://breakingdefense.com/2026/11/vulcan-failure-deepens-concerns-over-us-military-launch-capacity/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-16T20:07+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "SpaceNukes Opens Los Alamos Manufacture and Materials Facility to Build Its Next-Generation Space Reactor",
+  "url": "https://spacenews.com/spacenukes-opens-los-alamos-manufacture-and-materials-facility-to-build-its-next-generation-space-reactor/",
+  "source": "SpaceNews",
+  "date": "2026-11-16T20:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "SES supports digital education access in Africa",
+  "url": "https://developingtelecoms.com/telecom-business/humanitarian-communications/21140-ses-supports-digital-education-access-in-africa.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-16T19:50+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation",
+   "Africa"
+  ]
+ },
+ {
   "title": "UK MOD Defends Satcom Resilience Amid SpaceX Starshield Concerns",
   "url": "https://europeanspaceflight.com/uk-mod-defends-satcom-resilience-amid-spacex-starshield-concerns/",
   "source": "European Spaceflight",
@@ -412,7 +494,7 @@
  },
  {
   "title": "Paratus launches in Malawi with Starlink enterprise service",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21124-paratus-launches-in-malawi-with-starlink-enterprise-service.html",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21124-paratus-launches-in-malawi-with-starlink-enterprise-service.html",
   "source": "Developing Telecoms",
   "date": "2026-11-13T04:46+00:00",
   "categories": [
@@ -746,7 +828,7 @@
  },
  {
   "title": "Space42 brings ad-funded Wi-Fi hotspots to South Africa",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21118-space42-brings-ad-funded-wi-fi-hotspots-to-south-africa.html",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21118-space42-brings-ad-funded-wi-fi-hotspots-to-south-africa.html",
   "source": "Developing Telecoms",
   "date": "2026-11-12T00:16+00:00",
   "categories": [
@@ -3494,89 +3576,6 @@
   "date": "2026-10-28T01:36+00:00",
   "categories": [
    "Launch"
-  ]
- },
- {
-  "title": "AST SpaceMobile gets access to Brazil",
-  "url": "https://www.advanced-television.com/2026/10/28/ast-spacemobile-gets-access-to-brazil/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-28T00:54+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "SpaceX complains to FCC about Eutelsat",
-  "url": "https://www.advanced-television.com/2026/10/28/spacex-complains-to-fcc-about-eutelsat/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-28T00:38+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "SpaceX will offer Starlink Mobile to any Canadian carrier",
-  "url": "https://spaceq.ca/starlink-mobile-canada-carriers/",
-  "source": "SpaceQ",
-  "date": "2026-10-27T23:36+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "China has tripled its satellite fleet since 2018 as expansion continues: DIA",
-  "url": "https://breakingdefense.com/2026/10/dia-china-has-tripled-its-satellite-fleet-since-2018-as-expansion-continues/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-10-27T20:56+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Ethiopia’s Innovation Minister Directs SSGI to Reset Strategy Around National Development Priorities",
-  "url": "https://spaceinafrica.com/2026/10/27/ethiopias-innovation-minister-directs-ssgi-to-reset-strategy-around-national-development-priorities/",
-  "source": "Space in Africa",
-  "date": "2026-10-27T20:41+00:00",
-  "categories": [
-   "Earth observation",
-   "Africa"
-  ]
- },
- {
-  "title": "Ukrainian startup, GomSpace test satellite for future communications network",
-  "url": "https://spacenews.com/ukrainian-startup-gomspace-test-satellite-for-future-communications-network/",
-  "source": "SpaceNews",
-  "date": "2026-10-27T20:21+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Cowboy Space Names Rocket ‘Big Iron,’ Targets 2028 Debut",
-  "url": "https://www.satellitetoday.com/launch/2026/10/27/cowboy-space-names-rocket-big-iron-targets-2028-debut/",
-  "source": "Via Satellite",
-  "date": "2026-10-27T19:49+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Airbus and Thales Contracted for 2 Galileo Satellites Each",
-  "url": "https://www.satellitetoday.com/government-military/2026/10/27/airbus-and-thales-contracted-for-2-galileo-satellites-each/",
-  "source": "Via Satellite",
-  "date": "2026-10-27T19:44+00:00",
-  "categories": []
- },
- {
-  "title": "Amazon Secures FCC Approval for Globalstar Acquisition",
-  "url": "https://www.satellitetoday.com/connectivity/2026/10/27/amazon-secures-fcc-approval-for-globalstar-acquisition/",
-  "source": "Via Satellite",
-  "date": "2026-10-27T19:38+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation",
-   "Business & funding"
   ]
  }
 ]
