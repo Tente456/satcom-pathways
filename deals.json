@@ -1,5 +1,84 @@
 [
   {
+    "date": "2026-11-12",
+    "title": "Paratus launches in Malawi with Starlink enterprise service",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Malawi"
+    ],
+    "parties": [
+      "Paratus Group",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Paratus Malawi now sells managed Starlink connectivity to businesses and institutions, with local installation and support. Paratus says it has already signed several enterprise customers.",
+    "source_name": "Developing Telecoms",
+    "source_url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21124-paratus-launches-in-malawi-with-starlink-enterprise-service.html"
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Space42 introduces advertising-funded Wi-Fi hotspots in South Africa",
+    "type": "Service launch",
+    "segment": "GEO broadband",
+    "countries": [
+      "South Africa"
+    ],
+    "parties": [
+      "Space42"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Public Wi-Fi hotspots running on Space42's YahClick satellite broadband, paid for by advertisers. Users watch a 30-second video for 20 minutes of free access, and network partners share in the revenue.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/11/12/space42-introduces-advertising-funded-wi-fi-hotspots-for-partners-in-south-africa/"
+  },
+  {
+    "date": "2026-11-12",
+    "title": "Starlink grant to connect childcare institutions in nine African countries",
+    "type": "Partnership",
+    "segment": "LEO broadband",
+    "countries": [
+      "Botswana",
+      "Ghana",
+      "Kenya",
+      "Malawi",
+      "Nigeria",
+      "Sierra Leone",
+      "Uganda",
+      "Zambia",
+      "Zimbabwe"
+    ],
+    "parties": [
+      "Starlink",
+      "Both Ends Believing"
+    ],
+    "value_usd": null,
+    "value_text": "About $1 million (covers 16 countries, not only Africa)",
+    "summary": "SpaceX is giving US non-profit Both Ends Believing 750 Starlink kits with installation and 12 months of free service for residential childcare institutions in 16 countries, nine of them in Africa.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/11/12/starlink-to-connect-childcare-institutions-in-nine-african-countries/"
+  },
+  {
+    "date": "2026-11-11",
+    "title": "Nigeria completes bidding for four more satellites, with contract awards awaiting FEC approval",
+    "type": "Tender",
+    "segment": "Space policy",
+    "countries": [
+      "Nigeria"
+    ],
+    "parties": [
+      "Federal Ministry of Innovation, Science and Technology",
+      "Federal Executive Council of Nigeria"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Minister Kingsley Udeh said international bidding for four additional satellites is complete and winning bidders have been recommended. Bidders came from China, Israel, Europe, the US and Nigeria. Awards still need Federal Executive Council approval.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/11/12/nigeria-moves-towards-contract-awards-for-four-new-satellites/"
+  },
+  {
     "date": "2026-11-05",
     "title": "Paratus launches in Lesotho with Starlink enterprise connectivity",
     "type": "Service launch",
@@ -17,6 +96,25 @@
     "summary": "Paratus Lesotho, a joint venture of Paratus Group and Real Image Lesotho, opened with Starlink enterprise connectivity alongside Paratus network services for businesses and organisations.",
     "source_name": "Developing Telecoms",
     "source_url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21088-paratus-lesotho-opens-shop-with-starlink-enterprise-offering.html"
+  },
+  {
+    "date": "2026-11-04",
+    "title": "Senegal's Supreme Court confirms suspension of Starlink's licence and rejects state challenge",
+    "type": "Court ruling",
+    "segment": "LEO broadband",
+    "countries": [
+      "Senegal"
+    ],
+    "parties": [
+      "Starlink",
+      "Sonatel",
+      "Government of Senegal"
+    ],
+    "value_usd": null,
+    "value_text": "Not applicable",
+    "summary": "The court upheld the provisional suspension it ordered on 7 September after Sonatel's challenge, and rejected the state's appeal against it. A ruling on the merits is still to come.",
+    "source_name": "The Rio Times",
+    "source_url": "https://www.riotimesonline.com/senegal-court-keeps-starlink-licence-frozen/"
   },
   {
     "date": "2026-10-30",
@@ -94,6 +192,59 @@
     "source_url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21048-consortium-appointed-to-advise-on-kenyan-spaceport.html"
   },
   {
+    "date": "2026-10-27",
+    "title": "SES and Canal+ extend satellite capacity partnership to 2040",
+    "type": "Capacity agreement",
+    "segment": "Broadcast",
+    "countries": [
+      "Pan-African"
+    ],
+    "parties": [
+      "SES",
+      "Canal+"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Multi-year extension covering SES capacity across several orbital positions for Canal+ in Europe, Africa and the Caribbean. Satellites and African markets were not named.",
+    "source_name": "SES / Business Wire",
+    "source_url": "https://www.uniindia.com/business-wire-india/ses-and-canal-strengthen-strategic-partnership-through-2040-102434/226907"
+  },
+  {
+    "date": "2026-10-22",
+    "title": "MTN Uganda launches Starlink for Business",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Uganda"
+    ],
+    "parties": [
+      "MTN Uganda",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "MTN Uganda, an authorised Starlink reseller, launched Starlink for Business for organisations in remote parts of the country, following its August partnership announcement.",
+    "source_name": "Connecting Africa",
+    "source_url": "https://www.connectingafrica.com/connectivity/mtn-uganda-expands-remote-connectivity-with-starlink"
+  },
+  {
+    "date": "2026-10-13",
+    "title": "Kenya's Communications Authority publishes draft satellite frequency licensing framework",
+    "type": "Licence & regulation",
+    "segment": "Space policy",
+    "countries": [
+      "Kenya"
+    ],
+    "parties": [
+      "Communications Authority of Kenya"
+    ],
+    "value_usd": null,
+    "value_text": "Not applicable",
+    "summary": "The draft sets the licences and frequency authorisations needed for GSO and NGSO satellite services, starting with Landing Rights Authorisation. Public comments were due by 6 November 2026.",
+    "source_name": "Techweez",
+    "source_url": "https://techweez.com/2026/10/13/satellite-frequency-licensing-framework-kenya/"
+  },
+  {
     "date": "2026-10-07",
     "title": "Eutelsat renews TV capacity deal with Télédiffusion d'Algérie",
     "type": "Capacity agreement",
@@ -145,6 +296,24 @@
     "summary": "Kenyan-founded startup raises seed funding for software that lets satellites process data and run AI in orbit.",
     "source_name": "Empower Africa",
     "source_url": "https://empowerafrica.com/2026/10/15/"
+  },
+  {
+    "date": "2026-09-24",
+    "title": "Airtel Africa launches Starlink Mobile in Uganda",
+    "type": "Service launch",
+    "segment": "Direct-to-device",
+    "countries": [
+      "Uganda"
+    ],
+    "parties": [
+      "Airtel Africa",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Airtel Uganda customers with compatible phones can use SMS and light data apps where there is no mobile coverage, with a free 30-day trial. It is the second African market after DR Congo.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/09/24/airtel-africa-and-starlink-launch-satellite-to-mobile-service-in-uganda/"
   },
   {
     "date": "2026-09-16",
@@ -199,6 +368,77 @@
     "summary": "The court provisionally suspended Starlink's operating licence while it hears a challenge brought by incumbent operator Sonatel.",
     "source_name": "Space in Africa",
     "source_url": "https://spaceinafrica.com/2026/09/09/senegals-supreme-court-orders-suspension-of-starlinks-operating-licence/"
+  },
+  {
+    "date": "2026-09-01",
+    "title": "Starlink residential service goes live in Uganda",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Uganda"
+    ],
+    "parties": [
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Starlink opened residential orders in Uganda, following the five-year operating licence signed with the Uganda Communications Commission in May 2026.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/09/01/starlink-is-now-live-in-uganda/"
+  },
+  {
+    "date": "2026-08-29",
+    "title": "Starlink goes live in Equatorial Guinea",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Equatorial Guinea"
+    ],
+    "parties": [
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Starlink opened orders in Equatorial Guinea under a provisional approval granted on 29 July 2026, with state company GITGE to assess the service before long-term conditions are set.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/08/31/starlink-is-live-in-equatorial-guinea/"
+  },
+  {
+    "date": "2026-08-27",
+    "title": "MTN Uganda partners with Starlink for enterprise connectivity",
+    "type": "Partnership",
+    "segment": "LEO broadband",
+    "countries": [
+      "Uganda"
+    ],
+    "parties": [
+      "MTN Uganda",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "MTN Uganda extended MTN Group's Starlink arrangement to Uganda to offer satellite internet to enterprise customers in remote and underserved areas.",
+    "source_name": "Pulse Uganda",
+    "source_url": "https://www.pulse.ug/story/mtn-uganda-turns-to-starlink-to-connect-ugandas-hard-to-reach-areas-2026082719095402937"
+  },
+  {
+    "date": "2026-08-24",
+    "title": "Paratus Uganda becomes first provider to launch Starlink services in Uganda",
+    "type": "Service launch",
+    "segment": "LEO broadband",
+    "countries": [
+      "Uganda"
+    ],
+    "parties": [
+      "Paratus Group",
+      "Roke Telkom",
+      "Starlink"
+    ],
+    "value_usd": null,
+    "value_text": "Not disclosed",
+    "summary": "Paratus Uganda, a joint venture of Paratus Group and Roke Telkom, launched Starlink services for enterprise customers. Paratus says Uganda is its ninth African country offering Starlink.",
+    "source_name": "Space in Africa",
+    "source_url": "https://spaceinafrica.com/2026/08/24/paratus-uganda-becomes-first-provider-to-launch-starlink-services-in-the-country/"
   },
   {
     "date": "2026-08-22",
