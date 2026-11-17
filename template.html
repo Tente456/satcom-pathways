@@ -1444,8 +1444,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
       $('leo-legend').innerHTML = cats.map(function (r) { return '<span style="--sw:var(' + r[2] + ')">' + esc(r[1]) + '</span>'; }).join('') + '<span class="flagkey">Regulator refusal or suspension</span>' +
         '<span class="src">' + (op === 'starlink' ? slTxt : 'From the deals tracker') + '</span>';
     }
-    var pan = (op === 'leo' ? leoPan.amazon.concat(leoPan.oneweb) : op === 'starlink' ? [] : leoPan[op]).filter(function (d, i, a) { return a.indexOf(d) === i; });
-    $('leo-note').innerHTML = pan.length ? 'Pan-African agreements ' + pan.map(function (d) { return '<a href="' + esc(d.source_url) + '" target="_blank" rel="noopener">' + esc(d.title) + '</a>'; }).join(', ') : '';
+    $('leo-note').innerHTML = '';
     var sel = $('leo-filter');
     sel.innerHTML = '<option value="">All statuses</option>' + cats.map(function (r) { return '<option value="' + r[0] + '"' + (leoFilter === r[0] ? ' selected' : '') + '>' + esc(r[1]) + '</option>'; }).join('');
     var rows = codes.filter(function (c) {
