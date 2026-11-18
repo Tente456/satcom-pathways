@@ -88,8 +88,3 @@ The lesson holds whatever the prices. A low unit price can hide higher bandwidth
 8. Is the service licensed in each country where we have sites?
 
 If you are comparing offers for sites in Africa and want a second view, [tell us about your project](/services/#enquire).
-
-## Sources
-
-- [RV Mobile Internet, Starlink changes Priority plan lineup](https://www.rvmobileinternet.com/starlink-massively-changes-priority-plan-lineup-unlimited-high-speed-data-eliminated)
-- [Satcom Pathways, Africa connectivity map](/map/)
