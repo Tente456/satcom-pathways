@@ -1067,7 +1067,7 @@ def view_for(path):
     if not p:
         return "home"
     if p[0] == "research" and len(p) > 1:
-        return {"countries": "country", "data": "data"}.get(p[1], "article")
+        return {"countries": "country", "data": "data", "capacity-cost-calculator": "calc"}.get(p[1], "article")
     if p[0] == "map":
         return "leomap"
     return p[0] if p[0] in SECTION_PAGES else "home"
@@ -1120,6 +1120,7 @@ def write_pages(cfg, page, research):
     for r in research:
         targets[f"/research/{r['slug']}/"] = (f"{r['title']} | {name}", r.get("summary") or r["title"])
     targets["/research/data/"] = (f"Africa satellite data downloads | {name}", "Free CSV and Excel downloads of Africa satcom deals, satellite ground sites and country connectivity status, rebuilt with every refresh.")
+    targets["/research/capacity-cost-calculator/"] = (f"Satellite capacity cost calculator | {name}", "Compare two satellite capacity or LEO service offers on total cost over the contract, with bandwidth, equipment and per-site costs worked out for you.")
     profiles = load_profiles()
     if profiles:
         targets["/research/countries/"] = (f"Country profiles | {name}", "Satellite and space profiles of African countries: regulators, Starlink and LEO status, deals and events, each linked to its source.")
