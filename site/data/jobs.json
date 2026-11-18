@@ -5,7 +5,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-11-18T02:19+00:00",
+  "posted": "2026-11-18T02:26+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -104,6 +104,17 @@
   "company": "Amazon Leo",
   "sector": "Satcom & connectivity",
   "location": "Northridge, California, USA",
+  "posted": "2026-11-18T00:00+00:00",
+  "function": "Engineering & technical",
+  "early": false,
+  "remote": false
+ },
+ {
+  "title": "Inventory Analyst, Leo",
+  "url": "https://www.amazon.jobs/en/jobs/10607784/inventory-analyst-leo",
+  "company": "Amazon Leo",
+  "sector": "Satcom & connectivity",
+  "location": "Kirkland, Washington, USA",
   "posted": "2026-11-18T00:00+00:00",
   "function": "Engineering & technical",
   "early": false,
@@ -841,7 +852,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-11-17T02:19+00:00",
+  "posted": "2026-11-17T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -3850,17 +3861,6 @@
   "remote": false
  },
  {
-  "title": "Software Development Engineer , Software Defined Network Control Plane, Amazon LEO",
-  "url": "https://www.amazon.jobs/en/jobs/10603822/software-development-engineer-software-defined-network-control-plane-amazon-leo",
-  "company": "Amazon Leo",
-  "sector": "Satcom & connectivity",
-  "location": "Sunnyvale, California, USA",
-  "posted": "2026-11-12T00:00+00:00",
-  "function": "Engineering & technical",
-  "early": false,
-  "remote": false
- },
- {
   "title": "Capture Manager",
   "url": "https://job-boards.greenhouse.io/albedo/jobs/4504403009",
   "company": "Albedo",
@@ -4768,7 +4768,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Greece",
-  "posted": "2026-11-10T02:19+00:00",
+  "posted": "2026-11-10T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -5857,7 +5857,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-11-06T02:19+00:00",
+  "posted": "2026-11-06T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -5868,7 +5868,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Philippines",
-  "posted": "2026-11-06T02:19+00:00",
+  "posted": "2026-11-06T02:26+00:00",
   "function": "Other",
   "early": false,
   "remote": true
@@ -6396,7 +6396,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "5 Locations",
-  "posted": "2026-11-04T02:19+00:00",
+  "posted": "2026-11-04T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9036,7 +9036,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "India",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9047,7 +9047,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA - Texas",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9058,7 +9058,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": true,
   "remote": true
@@ -9069,7 +9069,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - USA",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9080,7 +9080,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote – Rio de Janeiro",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": true
@@ -9091,7 +9091,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Australian Capital Territory",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Business & sales",
   "early": false,
   "remote": false
@@ -9102,7 +9102,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9113,7 +9113,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - Brazil",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9124,7 +9124,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Remote - India",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": true
@@ -9135,7 +9135,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "2 Locations",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9146,7 +9146,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Indonesia - Selatan",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Engineering & technical",
   "early": false,
   "remote": false
@@ -9157,7 +9157,7 @@
   "company": "Speedcast",
   "sector": "Satcom & connectivity",
   "location": "Australia - Tasmania",
-  "posted": "2026-10-19T02:19+00:00",
+  "posted": "2026-10-19T02:26+00:00",
   "function": "Other",
   "early": false,
   "remote": false
