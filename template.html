@@ -248,22 +248,6 @@ aside { display: grid; gap: 18px; }
 .dl-btn:hover { border-color: var(--ink); }
 .dl-btn.primary { background: var(--accent); border-color: var(--accent); color: #0b1a12; }
 .dl-row { margin: 14px 0 0; }
-.calc-common { display: flex; flex-wrap: wrap; gap: 14px 18px; margin: 0 0 16px; }
-.calc label { display: grid; gap: 6px; font-weight: 600; font-size: 14px; }
-.calc input, .calc select { font: inherit; font-weight: 400; font-size: 15px; color: var(--ink); background: var(--bg, #fff); border: 1px solid var(--line); border-radius: 8px; padding: 9px 11px; width: 100%; box-sizing: border-box; }
-.calc-common label { width: 210px; }
-.calc-opts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.calc-opt { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px; display: grid; gap: 12px; align-content: start; }
-.calc-opt .calc-name { font-family: var(--font-display, inherit); font-weight: 700; font-size: 18px; }
-.calc-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 12px 14px; }
-.calc-fields[hidden] { display: none; }
-.calc-res { border-top: 1px solid var(--line); padding-top: 12px; display: grid; gap: 6px; }
-.calc-res div { display: flex; justify-content: space-between; gap: 12px; font-size: 15px; }
-.calc-res div span:first-child { color: var(--muted); }
-.calc-res .calc-total { font-weight: 700; font-size: 18px; }
-.calc-verdict { margin: 16px 0 10px; background: var(--band); color: var(--band-ink); border-radius: 10px; padding: 16px 20px; font-size: 17px; font-weight: 600; }
-.calc-note { color: var(--muted); font-size: 14px; line-height: 1.55; max-width: 80ch; }
-@media (max-width: 760px) { .calc-opts, .calc-fields { grid-template-columns: 1fr; } .calc-common label { width: 100%; } }
 .dl-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; margin: 4px 0 18px; }
 .dl-card { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 22px; display: flex; flex-direction: column; gap: 8px; }
 .dl-card h3 { font-size: 19px; margin: 0; }
@@ -655,7 +639,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <div class="rhead">
       <div>
         <h2>Research</h2>
-        <p class="dl-row"><a class="dl-btn" href="/research/data/">Download our Africa data</a> <a class="dl-btn" href="/research/capacity-cost-calculator/">Capacity cost calculator</a></p>
+        <p><a class="dl-btn" href="/research/data/">Download our Africa data</a></p>
       </div>
       <dl class="rledger" id="research-ledger"></dl>
     </div>
@@ -692,56 +676,6 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     <nav class="crumbs"><a href="/research/">Research</a></nav>
     <div class="rhead"><div><h2 id="data-title">Africa satellite data</h2><p class="cp-lede">Free downloads of the data behind this site, rebuilt with every refresh.</p></div></div>
     <div id="data-body"></div>
-  </section>
-  <section class="view" id="view-calc" aria-labelledby="calc-title" hidden>
-    <nav class="crumbs"><a href="/research/">Research</a></nav>
-    <div class="rhead"><div><h2 id="calc-title">Satellite capacity cost calculator</h2><p class="cp-lede">Compare two satellite offers on what they cost over the whole contract, not on unit price. Nothing you enter leaves your browser.</p></div></div>
-    <div class="calc" id="calc">
-      <div class="calc-common">
-        <label>Contract length (months)<input type="number" min="1" step="1" id="calc-months" value="36"></label>
-        <label>Number of sites<input type="number" min="1" step="1" id="calc-sites" value="10"></label>
-      </div>
-      <div class="calc-opts">
-      <div class="calc-opt" data-o="a">
-        <input class="calc-name" aria-label="Option name" value="Option A">
-        <label>How it is priced<select data-k="mode"><option value="mhz">Per MHz of satellite bandwidth</option><option value="term">Per terminal, as a service plan</option></select></label>
-        <div class="calc-fields" data-show="mhz">
-          <label>Total data rate needed (Mbps)<input type="number" min="0" step="any" data-k="rate" value="10"></label>
-          <label>Spectral efficiency (bps/Hz)<input type="number" min="0" step="any" data-k="eff" value="1.6"></label>
-          <label>Price per MHz per month (USD)<input type="number" min="0" step="any" data-k="price" value="2000"></label>
-        </div>
-        <div class="calc-fields" data-show="term" hidden>
-          <label>Monthly fee per terminal (USD)<input type="number" min="0" step="any" data-k="fee" value="0"></label>
-          <label>Hardware per terminal (USD)<input type="number" min="0" step="any" data-k="hw" value="0"></label>
-        </div>
-        <div class="calc-fields">
-          <label>Equipment and installation, one-off (USD)<input type="number" min="0" step="any" data-k="equip" value="100000"></label>
-          <label>Other monthly costs (USD)<input type="number" min="0" step="any" data-k="other" value="0"></label>
-        </div>
-        <div class="calc-res" aria-live="polite"></div>
-      </div>
-      <div class="calc-opt" data-o="b">
-        <input class="calc-name" aria-label="Option name" value="Option B">
-        <label>How it is priced<select data-k="mode"><option value="mhz">Per MHz of satellite bandwidth</option><option value="term">Per terminal, as a service plan</option></select></label>
-        <div class="calc-fields" data-show="mhz">
-          <label>Total data rate needed (Mbps)<input type="number" min="0" step="any" data-k="rate" value="10"></label>
-          <label>Spectral efficiency (bps/Hz)<input type="number" min="0" step="any" data-k="eff" value="2.8"></label>
-          <label>Price per MHz per month (USD)<input type="number" min="0" step="any" data-k="price" value="2500"></label>
-        </div>
-        <div class="calc-fields" data-show="term" hidden>
-          <label>Monthly fee per terminal (USD)<input type="number" min="0" step="any" data-k="fee" value="0"></label>
-          <label>Hardware per terminal (USD)<input type="number" min="0" step="any" data-k="hw" value="0"></label>
-        </div>
-        <div class="calc-fields">
-          <label>Equipment and installation, one-off (USD)<input type="number" min="0" step="any" data-k="equip" value="180000"></label>
-          <label>Other monthly costs (USD)<input type="number" min="0" step="any" data-k="other" value="0"></label>
-        </div>
-        <div class="calc-res" aria-live="polite"></div>
-      </div>
-      </div>
-      <div class="calc-verdict" id="calc-verdict"></div>
-      <p class="calc-note">The starting figures are the illustrative Alpha and Beta example from our <a href="/research/2026-11-satellite-capacity-buyers-guide/">plain-language buyer's guide</a>. Replace them with the quotes you have. For a service plan, the fee and hardware are multiplied by the number of sites. Spectral efficiency comes from the supplier's link budget, so ask for it.</p>
-    </div>
   </section>
   <section class="view" id="view-services" aria-labelledby="services-title" hidden>
     <div class="svc">
@@ -1707,7 +1641,7 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
   }
 
   var SECTIONS = ['jobs', 'news', 'deals', 'research', 'services', 'events', 'about'];
-  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa connectivity map', research: 'Research', calc: 'Satellite capacity cost calculator', services: 'Our services', events: 'Events', about: 'About'};
+  var TITLES = {home: '', jobs: 'Jobs', news: 'News', deals: 'Africa deals tracker', leomap: 'Africa connectivity map', research: 'Research', services: 'Our services', events: 'Events', about: 'About'};
   (function legacyHash() {
     var h = location.hash.slice(1);
     if (!h) return;
@@ -1720,48 +1654,12 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     if (!p.length) return {v: 'home'};
     if (p[0] === 'research' && p[1] === 'countries') return {v: 'country', slug: p[2] || ''};
     if (p[0] === 'research' && p[1] === 'data') return {v: 'data'};
-    if (p[0] === 'research' && p[1] === 'capacity-cost-calculator') return {v: 'calc'};
     if (p[0] === 'research' && p[1]) return {v: 'article', slug: p[1]};
     if (p[0] === 'map') return {v: 'leomap'};
     if (p[0] === 'deals' && p[1] === 'map') { history.replaceState(null, '', '/map/' + location.search + location.hash); return {v: 'leomap'}; }
     if (SECTIONS.indexOf(p[0]) !== -1) return {v: p[0]};
     return {v: 'home'};
   }
-  (function initCalc() {
-    var root = $('calc'); if (!root) return;
-    function num(el) { var x = parseFloat(el.value); return isFinite(x) && x >= 0 ? x : 0; }
-    function usd(x) { return '$' + Math.round(x).toLocaleString('en-US'); }
-    function row(k, v, cls) { return '<div' + (cls ? ' class="' + cls + '"' : '') + '><span>' + k + '</span><span>' + v + '</span></div>'; }
-    function run() {
-      var months = Math.max(1, Math.round(num($('calc-months')))), sites = Math.max(1, Math.round(num($('calc-sites')))), out = [];
-      root.querySelectorAll('.calc-opt').forEach(function (box) {
-        var g = function (k) { return box.querySelector('[data-k="' + k + '"]'); }, mode = g('mode').value, html = '', mhz = null, monthly, once;
-        box.querySelectorAll('[data-show]').forEach(function (f) { f.hidden = f.getAttribute('data-show') !== mode; });
-        if (mode === 'mhz') {
-          var eff = num(g('eff'));
-          mhz = eff > 0 ? num(g('rate')) / eff : 0;
-          monthly = mhz * num(g('price')) + num(g('other'));
-          once = num(g('equip'));
-          html += row('Bandwidth needed', eff > 0 ? mhz.toFixed(2) + ' MHz' : 'Enter an efficiency above 0');
-        } else {
-          monthly = num(g('fee')) * sites + num(g('other'));
-          once = num(g('hw')) * sites + num(g('equip'));
-        }
-        var total = monthly * months + once;
-        html += row('Monthly cost', usd(monthly)) + row('One-off cost', usd(once)) + row('Per site per month, over the contract', usd(total / months / sites)) + row('Total over ' + months + ' months', usd(total), 'calc-total');
-        box.querySelector('.calc-res').innerHTML = html;
-        out.push({name: box.querySelector('.calc-name').value.trim() || 'This option', total: total});
-      });
-      var a = out[0], b = out[1], d = Math.abs(a.total - b.total), v;
-      if (d < 0.5) v = 'Both options cost the same over ' + months + ' months.';
-      else {
-        var lo = a.total < b.total ? a : b, hi = lo === a ? b : a;
-        v = esc(lo.name) + ' costs ' + usd(d) + ' less over ' + months + ' months, ' + (hi.total ? (d / hi.total * 100).toFixed(1) + '% below ' + esc(hi.name) : 'less than ' + esc(hi.name)) + '.';
-      }
-      $('calc-verdict').innerHTML = v;
-    }
-    root.addEventListener('input', run); root.addEventListener('change', run); run();
-  })();
   function renderData() {
     var M = D.downloads || {sets: []};
     $('data-body').innerHTML = '<div class="dl-grid">' + M.sets.map(function (x) {
@@ -1781,10 +1679,10 @@ footer p { margin: 0 0 6px; max-width: 90ch; }
     if (v === 'country') title = renderCountry(cur.slug);
     if (v === 'data') title = renderData();
     document.title = (title ? title + ' | ' : '') + D.site.name;
-    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'data', 'calc', 'services', 'events', 'about'].forEach(function (k) {
+    ['home', 'news', 'jobs', 'deals', 'leomap', 'research', 'article', 'country', 'data', 'services', 'events', 'about'].forEach(function (k) {
       $('view-' + k).hidden = v !== k;
       var tab = $('tab-' + (k === 'article' ? 'research' : k));
-      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country' || v === 'data' || v === 'calc')) || false) ? 'page' : 'false');
+      if (tab && k !== 'article') tab.setAttribute('aria-current', (v === k || (k === 'research' && (v === 'article' || v === 'country' || v === 'data')) || false) ? 'page' : 'false');
     });
     if (v === 'leomap') renderLeoMap();
     $('view-home2').hidden = v !== 'home';

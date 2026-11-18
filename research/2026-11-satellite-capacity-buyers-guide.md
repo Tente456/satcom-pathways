@@ -7,7 +7,7 @@ summary: What Mbps, MHz, committed rates, contention, availability and latency m
 tags: Procurement, GEO, LEO broadband, Guide
 ---
 
-Satellite offers are hard to compare because suppliers price them in different units. One quotes dollars per MHz, another a monthly fee per terminal, a third a "10 Mbps service" with no detail behind it. This guide explains the terms that decide what you actually get and what it really costs. When you have two quotes in hand, put them side by side in our [capacity cost calculator](/research/capacity-cost-calculator/).
+Satellite offers are hard to compare because suppliers price them in different units. One quotes dollars per MHz, another a monthly fee per terminal, a third a "10 Mbps service" with no detail behind it. This guide explains the terms that decide what you actually get and what it really costs.
 
 ## Start with what the network has to do
 
@@ -74,7 +74,7 @@ Take two mobile operators, Alpha and Beta, in a worked example. Each needs ten 1
 
 Beta pays 25% more per MHz and 80% more for equipment, yet spends $48,571 less over the contract. Its better equipment also leaves room to add sites without buying as much new bandwidth.
 
-The lesson holds whatever the prices. A low unit price can hide higher bandwidth needs, weaker availability or costs that only appear later. Try your own numbers in the [capacity cost calculator](/research/capacity-cost-calculator/).
+The lesson holds whatever the prices. A low unit price can hide higher bandwidth needs, weaker availability or costs that only appear later.
 
 ## Questions to ask every supplier
 
