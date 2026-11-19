@@ -1,5 +1,100 @@
 [
  {
+  "title": "NASA and FCC Nominations Advance Out of Committee Despite Democratic Boycott",
+  "url": "https://spacepolicyonline.com/news/nasa-and-fcc-nominations-advance-out-of-committee-despite-democratic-boycott/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-18T23:40+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "European Commission Recommends Increasing Competition Fund 5x to Mobilize Space Industry",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/18/european-commission-recommends-increasing-competition-fund-5x-to-mobilize-space-industry/",
+  "source": "Via Satellite",
+  "date": "2026-11-18T22:11+00:00",
+  "categories": []
+ },
+ {
+  "title": "Flexell Space and ALATYR Sign MoU to Explore Solar Power Solutions for Orbital Data Centers",
+  "url": "https://spacenews.com/flexell-space-and-alatyr-sign-mou-to-explore-solar-power-solutions-for-orbital-data-centers/",
+  "source": "SpaceNews",
+  "date": "2026-11-18T22:02+00:00",
+  "categories": []
+ },
+ {
+  "title": "Voyager 1 reaches one light-day nearly 50 years after launch",
+  "url": "https://www.nasaspaceflight.com/2026/11/voyager-1-light-day/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-18T21:48+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "ESA, OHB and ClearSpace Move Forward on Active Debris Removal Mission",
+  "url": "https://www.satellitetoday.com/technology/2026/11/18/esa-ohb-and-clearspace-move-forward-on-active-debris-removal-mission/",
+  "source": "Via Satellite",
+  "date": "2026-11-18T21:25+00:00",
+  "categories": [
+   "Business & funding",
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "ULA Reports Launch Failure Not Tied to Engine Issue",
+  "url": "https://www.satellitetoday.com/launch/2026/11/18/ula-reports-launch-failure-not-tied-to-engine-issue/",
+  "source": "Via Satellite",
+  "date": "2026-11-18T20:53+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "SES to Lead New European D2D Project SELYCE",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/18/ses-to-lead-new-european-d2d-project-selyce/",
+  "source": "Via Satellite",
+  "date": "2026-11-18T20:49+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Senate Committee Advances FCC Nominee Despite Democratic Boycott",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/18/senate-committee-advances-fcc-nominee-despite-democratic-boycott/",
+  "source": "Via Satellite",
+  "date": "2026-11-18T20:45+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "All Points Logistics Announces Partnership with Expeditors for Space Prep Logistics Center at Kennedy Space Center",
+  "url": "https://spacenews.com/all-points-logistics-announces-partnership-with-expeditors-for-space-prep-logistics-center-at-kennedy-space-center/",
+  "source": "SpaceNews",
+  "date": "2026-11-18T20:31+00:00",
+  "categories": []
+ },
+ {
+  "title": "Insufficient Fuel Flow May Have Doomed Vulcan",
+  "url": "https://spacepolicyonline.com/news/insufficient-fuel-flow-may-have-doomed-vulcan/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-18T19:27+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "NATO STARLIFT starts with Canada, South Korea among funders",
+  "url": "https://spaceq.ca/nato-starlift-begins/",
+  "source": "SpaceQ",
+  "date": "2026-11-18T18:07+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
   "title": "Origami and solar arrays",
   "url": "https://spacenews.com/origami-and-solar-arrays/",
   "source": "SpaceNews",
@@ -3485,108 +3580,6 @@
   "url": "https://spaceq.ca/joshua-kutryk-first-spacewalk-solar-array/",
   "source": "SpaceQ",
   "date": "2026-10-30T16:08+00:00",
-  "categories": []
- },
- {
-  "title": "FCC Names Courtney Reinhard as New Space Bureau Chief",
-  "url": "https://www.satellitetoday.com/government-military/2026/10/30/fcc-names-courtney-reinhard-as-new-space-bureau-chief/",
-  "source": "Via Satellite",
-  "date": "2026-10-30T15:20+00:00",
-  "categories": [
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "South Africa Proposes New Space Industry Bill to Replace 1993 Act",
-  "url": "https://spaceinafrica.com/2026/10/30/south-africa-proposes-new-space-industry-bill-to-replace-1993-act/",
-  "source": "Space in Africa",
-  "date": "2026-10-30T12:30+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Africa"
-  ]
- },
- {
-  "title": "Telesat Stays Quiet on C$2.4B GEO Debt Due in December",
-  "url": "https://payloadspace.com/telesat-stays-quiet-on-c2-4b-geo-debt-due-in-december/",
-  "source": "Payload",
-  "date": "2026-10-30T12:00+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "SSGI and SkyWin Aeronautics Industry Sign MoU on Aeronautics Technology Development and Aerial Survey Services",
-  "url": "https://spaceinafrica.com/2026/10/30/ssgi-and-skywin-aeronautics-industry-sign-mou-on-aeronautics-technology-development-and-aerial-survey-services/",
-  "source": "Space in Africa",
-  "date": "2026-10-30T11:38+00:00",
-  "categories": [
-   "Earth observation",
-   "Africa"
-  ]
- },
- {
-  "title": "Ground Qualification Testing Begins for Callisto Reusable Rocket Demonstrator",
-  "url": "https://europeanspaceflight.com/ground-qualification-testing-begins-for-callisto-reusable-rocket-demonstrator/",
-  "source": "European Spaceflight",
-  "date": "2026-10-30T11:02+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Rocket Report: Winter is coming for Themis; Cowboy Space adds iron to the fire",
-  "url": "https://arstechnica.com/space/2026/10/rocket-report-winter-is-coming-for-themis-cowboy-space-adds-iron-to-the-fire/",
-  "source": "Ars Technica",
-  "date": "2026-10-30T11:00+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
-  ]
- },
- {
-  "title": "#SpaceWatchGL GRAY SPACE – HALLOWEEN SPECIAL: TRICK or TRADE? How flipping the Starshield kill-switch over Ukraine eventually backfired",
-  "url": "https://spacewatch.global/2026/10/spacewatchgl-gray-space-halloween-special-trick-or-trade-how-flipping-the-starshield-kill-switch-over-ukraine-eventually-backfired/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-30T09:00+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Eutelsat: LEO revenues up 30%",
-  "url": "https://www.advanced-television.com/2026/10/30/eutelsat-leo-revenues-up-30/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-10-30T07:58+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Es’hailSat and Arabsat Partner to Expand Satellite Broadcasting and Communications Services",
-  "url": "https://spacewatch.global/2026/10/eshailsat-and-arabsat-partner-to-expand-satellite-broadcasting-and-communications-services/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-30T07:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Africa"
-  ]
- },
- {
-  "title": "Vyoma Brings Flamingo-1, Germany’s First Space-Based SDA Telescope, Into Operation",
-  "url": "https://spacewatch.global/2026/10/vyoma-brings-flamingo-1-germanys-first-space-based-sda-telescope-into-operation/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-30T07:00+00:00",
-  "categories": [
-   "Earth observation",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Satellogic Extends Non-Earth Imaging Partnership with HEO Through 2029",
-  "url": "https://spacewatch.global/2026/10/satellogic-extends-non-earth-imaging-partnership-with-heo-through-2029/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-10-30T07:00+00:00",
   "categories": []
  }
 ]
