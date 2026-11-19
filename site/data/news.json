@@ -1,5 +1,131 @@
 [
  {
+  "title": "European Tech Leaders Flag Reliance on Foreign Chipsets Amid Push for Strategic Autonomy",
+  "url": "https://www.satellitetoday.com/technology/2026/11/19/european-tech-leaders-flag-reliance-on-foreign-chipsets-amid-push-for-strategic-autonomy/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T22:20+00:00",
+  "categories": []
+ },
+ {
+  "title": "Relativity tests Terran R second stage, completes structural qualifications ahead of inaugural launch",
+  "url": "https://www.nasaspaceflight.com/2026/11/relativity-update-1116/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-19T22:08+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Sophia Space CEO Details Computing Software Deployment on Kepler Satellites",
+  "url": "https://www.satellitetoday.com/technology/2026/11/19/sophia-space-ceo-details-computing-software-deployment-on-kepler-satellites/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T21:32+00:00",
+  "categories": []
+ },
+ {
+  "title": "Redwire ELSA Wings to Power AscendArc GEO Sat",
+  "url": "https://www.satellitetoday.com/technology/2026/11/19/redwire-elsa-wings-to-power-ascendarc-geo-sat/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T21:29+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Google Orders Heavy-Lift Launch for Project Suncatcher from Blue Origin",
+  "url": "https://www.satellitetoday.com/launch/2026/11/19/google-orders-heavy-lift-launch-for-project-suncatcher-from-blue-origin/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T21:20+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Estonian Minister Talks Cyber Awareness from the Cyber Frontier",
+  "url": "https://www.satellitetoday.com/cybersecurity/2026/11/19/estonian-minister-talks-cyber-awareness-from-the-cyber-frontier/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T21:19+00:00",
+  "categories": []
+ },
+ {
+  "title": "Telesat Partners With Canada’s Dominion Dynamics for Portable and Uncrewed LEO Antennas",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/19/telesat-partners-with-canadas-dominion-dynamics-for-portable-and-uncrewed-leo-antennas/",
+  "source": "Via Satellite",
+  "date": "2026-11-19T21:16+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "ICEYE unveils Gen5 satellite, makes €2-billion bid for Avio",
+  "url": "https://spaceq.ca/iceye-gen5-avio-bid/",
+  "source": "SpaceQ",
+  "date": "2026-11-19T20:10+00:00",
+  "categories": [
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "GHGSat DATA.AIR Gen2 wins EPA approval for leak screening",
+  "url": "https://spaceq.ca/ghgsat-data-air-gen2-epa-methane-compliance/",
+  "source": "SpaceQ",
+  "date": "2026-11-19T20:03+00:00",
+  "categories": []
+ },
+ {
+  "title": "The sweet spot for constellation size",
+  "url": "https://spacenews.com/the-sweet-spot-for-constellation-size/",
+  "source": "SpaceNews",
+  "date": "2026-11-19T17:25+00:00",
+  "categories": []
+ },
+ {
+  "title": "Dominion Dynamics, Telesat to build Arctic antennas for Lightspeed",
+  "url": "https://spaceq.ca/dominion-dynamics-telesat-lightspeed-antennas/",
+  "source": "SpaceQ",
+  "date": "2026-11-19T17:23+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Reliance in talks with suppliers for Indian satellite constellation",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21160-reliance-in-talks-with-suppliers-for-indian-satellite-constellation.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-19T17:23+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Technical meeting assesses ECOWAS Earth observation satellite plans",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21159-technical-meeting-assesses-ecowas-earth-observation-satellite-plans.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-19T16:25+00:00",
+  "categories": [
+   "Earth observation",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Making the case for optical",
+  "url": "https://spacenews.com/making-the-case-for-optical/",
+  "source": "SpaceNews",
+  "date": "2026-11-19T15:38+00:00",
+  "categories": []
+ },
+ {
+  "title": "Warsaw shoots for the stars: MoD to buy new sats as part of major space expansion plans",
+  "url": "https://breakingdefense.com/2026/11/warsaw-shoots-for-the-stars-mod-to-buy-new-sats-as-part-of-major-space-expansion-plans/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-19T15:21+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
   "title": "Satellite broadband to capture most market share from FWA – report",
   "url": "https://www.lightreading.com/satellite/satellite-broadband-to-capture-most-market-share-from-fwa-report",
   "source": "Light Reading",
@@ -1460,7 +1586,7 @@
   "categories": []
  },
  {
-  "title": "Nigeria Moves Towards Contract Awards for Four New Satellites",
+  "title": "Nigeria Moves Towards Contract Awards for Four New EO Satellites",
   "url": "https://spaceinafrica.com/2026/11/12/nigeria-moves-towards-contract-awards-for-four-new-satellites/",
   "source": "Space in Africa",
   "date": "2026-11-12T11:08+00:00",
@@ -3473,139 +3599,5 @@
   "source": "Payload",
   "date": "2026-11-02T11:00+00:00",
   "categories": []
- },
- {
-  "title": "Northwood Space to Scale Ground Network Build-Out With $375M Funding Raise",
-  "url": "https://www.satellitetoday.com/finance/2026/11/02/northwood-space-to-scale-ground-network-build-out-with-375m-funding-raise/",
-  "source": "Via Satellite",
-  "date": "2026-11-02T11:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Greenwatch: Time to declutter Earth's orbit?",
-  "url": "https://www.lightreading.com/sustainability/greenwatch-time-to-declutter-earth-s-orbit-",
-  "source": "Light Reading",
-  "date": "2026-11-02T10:54+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Sustainability & debris"
-  ]
- },
- {
-  "title": "Northwood Space Raises $375M Series C at $2B Valuation",
-  "url": "https://payloadspace.com/northwood-space-raises-375m-series-c-at-2b-valuation/",
-  "source": "Payload",
-  "date": "2026-11-02T10:30+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "#SpaceWatchGL Opinion: Europe’s Window on the World Is Wide Open. That’s the Problem.",
-  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinion-europes-window-on-the-world-is-wide-open-thats-the-problem/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-02T09:00+00:00",
-  "categories": [
-   "Earth observation"
-  ]
- },
- {
-  "title": "CubeSat achieves challenging laser link to ground",
-  "url": "https://www.esa.int/Applications/Connectivity_and_Secure_Communications/CubeSat_achieves_challenging_laser_link_to_ground",
-  "source": "ESA Telecommunications",
-  "date": "2026-11-02T08:55+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "The Satellite Is Funded. Who Pays for the Service?",
-  "url": "https://spaceinafrica.com/2026/11/02/the-satellite-is-funded-who-pays-for-the-service/",
-  "source": "Space in Africa",
-  "date": "2026-11-02T08:48+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "Tanzania Signals Interest In ANGOSAT-2 Services Through New Angola Partnership",
-  "url": "https://spaceinafrica.com/2026/11/02/tanzania-signals-interest-in-angosat-2-services-through-new-angola-partnership/",
-  "source": "Space in Africa",
-  "date": "2026-11-02T08:35+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "ispace Strengthens Saudi Arabia Operations With Anas Al-Shuwayer Appointment",
-  "url": "https://spacewatch.global/2026/11/ispace-strengthens-saudi-arabia-operations-with-anas-al-shuwayer-appointment/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-02T07:00+00:00",
-  "categories": []
- },
- {
-  "title": "NASA’s Upcoming UVEX Space Telescope Advances toward New Era of Ultraviolet Astronomy",
-  "url": "https://spacewatch.global/2026/11/nasas-upcoming-uvex-space-telescope-advances-toward-new-era-of-ultraviolet-astronomy/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-02T07:00+00:00",
-  "categories": []
- },
- {
-  "title": "EIB and Deutsche Bank Launch €560 Million Financing Initiative for European Space Companies",
-  "url": "https://spacewatch.global/2026/11/eib-and-deutsche-bank-launch-e560-million-financing-initiative-for-european-space-companies/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-02T07:00+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
-  ]
- },
- {
-  "title": "SES to supply next-gen inflight connectivity to Air Astana",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21057-ses-to-supply-next-gen-inflight-connectivity-to-air-astana.html",
-  "source": "Developing Telecoms",
-  "date": "2026-11-02T05:47+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "World turning against SpaceX and Starlink",
-  "url": "https://www.advanced-television.com/2026/11/02/world-turning-against-spacex-and-starlink/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-02T05:07+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Eutelsat’s OneWeb LEO supports SES’s multi-orbit service for Finnair",
-  "url": "https://www.advanced-television.com/2026/11/02/eutelsats-oneweb-leo-supports-sess-multi-orbit-service-for-finnair/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-02T00:33+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Rocket Lab backing new Alaska launch pads",
-  "url": "https://www.advanced-television.com/2026/11/02/rocket-lab-backing-new-alaska-launch-pads/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-02T00:17+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "What’s Happening in Space Policy November 1-8, 2026",
-  "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-november-1-8-2026/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-01T22:31+00:00",
-  "categories": [
-   "Policy & regulation"
-  ]
  }
 ]
