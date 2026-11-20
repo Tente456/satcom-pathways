@@ -1,5 +1,84 @@
 [
  {
+  "title": "Atomic-6 Wants to Shield Astronauts Against Untrackable Debris",
+  "url": "https://payloadspace.com/atomic-6-wants-to-shield-astronauts-against-untrackable-debris/",
+  "source": "Payload",
+  "date": "2026-11-20T14:00+00:00",
+  "categories": [
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "Rocket Report: A weekend of ups and downs; Stoke celebrates engine milestone",
+  "url": "https://arstechnica.com/space/2026/11/rocket-report-a-weekend-of-ups-and-downs-stoke-celebrates-engine-milestone/",
+  "source": "Ars Technica",
+  "date": "2026-11-20T13:35+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "RBC Signals Raises $10M to Commercialize New Comms Tech",
+  "url": "https://payloadspace.com/rbc-signals-raises-10m-to-commercialize-new-comms-tech/",
+  "source": "Payload",
+  "date": "2026-11-20T13:21+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Pegasus lunar terrain vehicle passes NASA design review",
+  "url": "https://spaceq.ca/pegasus-lunar-terrain-vehicle-nasa-design-review/",
+  "source": "SpaceQ",
+  "date": "2026-11-20T12:22+00:00",
+  "categories": []
+ },
+ {
+  "title": "#SpaceWatchGL Opinion: Whatever Happened to That Big Space Announcement?",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinion-whatever-happened-to-that-big-space-announcement/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-20T09:00+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "STAR.VISION, University of Rwanda and Rwanda Space Agency Sign Tripartite MoU on Space Education and AI",
+  "url": "https://spaceinafrica.com/2026/11/20/star-vision-university-of-rwanda-and-rwanda-space-agency-sign-tripartite-mou-on-space-education-and-ai/",
+  "source": "Space in Africa",
+  "date": "2026-11-20T08:59+00:00",
+  "categories": [
+   "Africa"
+  ]
+ },
+ {
+  "title": "What AIAA Membership Means for Africa’s Aerospace Students and Professionals",
+  "url": "https://spaceinafrica.com/2026/11/20/what-aiaa-membership-means-for-africas-aerospace-students-and-professionals/",
+  "source": "Space in Africa",
+  "date": "2026-11-20T08:23+00:00",
+  "categories": [
+   "Africa"
+  ]
+ },
+ {
+  "title": "Telecom veteran bets airships in stratosphere can beat Starlink in space",
+  "url": "https://www.lightreading.com/satellite/telecom-veteran-bets-airships-in-stratosphere-can-beat-starlink-in-space",
+  "source": "Light Reading",
+  "date": "2026-11-20T08:00+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "European Hardware Takes Center Stage at Space Tech Expo",
+  "url": "https://payloadspace.com/european-hardware-takes-center-stage-at-space-tech-expo/",
+  "source": "Payload",
+  "date": "2026-11-20T07:45+00:00",
+  "categories": []
+ },
+ {
   "title": "Danish Soldiers Are Sneaking Starlink Terminals into Greenland",
   "url": "https://europeanspaceflight.com/danish-soldiers-are-sneaking-starlink-terminals-into-greenland/",
   "source": "European Spaceflight",
@@ -7,6 +86,28 @@
   "categories": [
    "Satcom & connectivity",
    "Business & funding"
+  ]
+ },
+ {
+  "title": "HEO Launches Insights Next to Expand Space Domain Awareness through 3D Orbital Intelligence",
+  "url": "https://spacewatch.global/2026/11/heo-launches-insights-next-to-expand-space-domain-awareness-through-3d-orbital-intelligence/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-20T07:00+00:00",
+  "categories": [
+   "Launch",
+   "Earth observation",
+   "Defence & security",
+   "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "ECOWAS Moves Forward with Plans for ECOSAT-1 Regional Earth Observation Satellite",
+  "url": "https://spacewatch.global/2026/11/ecowas-moves-forward-with-plans-for-ecosat-1-regional-earth-observation-satellite/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-20T07:00+00:00",
+  "categories": [
+   "Earth observation",
+   "Africa"
   ]
  },
  {
@@ -26,6 +127,26 @@
   "date": "2026-11-20T01:00+00:00",
   "categories": [
    "Launch"
+  ]
+ },
+ {
+  "title": "Canada PM: “Nations should be cautious over Starlink”",
+  "url": "https://www.advanced-television.com/2026/11/20/canada-pm-nations-should-be-cautious-over-starlink/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-20T00:45+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Bank: Rocket Lab share target raised to $138",
+  "url": "https://www.advanced-television.com/2026/11/20/bank-rocket-lab-share-target-raised-to-138/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-20T00:13+00:00",
+  "categories": [
+   "Launch",
+   "Business & funding"
   ]
  },
  {
@@ -3479,128 +3600,6 @@
   "date": "2026-11-03T07:00+00:00",
   "categories": [
    "Business & funding"
-  ]
- },
- {
-  "title": "China Plans “Two Launches, Lunar Orbit Rendezvous” to Land Taikonauts on Moon",
-  "url": "https://spacepolicyonline.com/news/china-plans-two-launches-lunar-orbit-rendezvous-to-land-taikonauts-on-moon/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-03T04:51+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "US Military Sees Space as a ‘Digital Domain’ Where Cyber Reigns Supreme, Deputy CSO for Cyber and Data Says",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/02/us-military-sees-space-as-a-digital-domain-where-cyber-reigns-supreme-deputy-cso-for-cyber-and-data-says/",
-  "source": "Via Satellite",
-  "date": "2026-11-03T01:53+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "United Airlines Deploys Defensive AI as it Rolls Out Starlink Across Fleet, CISO Says",
-  "url": "https://www.satellitetoday.com/cybersecurity/2026/11/02/united-airlines-deploys-defensive-ai-as-it-rolls-out-starlink-across-fleet-ciso-says/",
-  "source": "Via Satellite",
-  "date": "2026-11-03T01:51+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "South Africa wants a new Space Regulator",
-  "url": "https://www.advanced-television.com/2026/11/03/south-africa-wants-a-new-space-regulator/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-03T01:49+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Africa"
-  ]
- },
- {
-  "title": "Rocket Lab ups connectivity",
-  "url": "https://www.advanced-television.com/2026/11/03/rocket-lab-ups-connectivity/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-03T01:25+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "AST SpaceMobile wins access to Chile",
-  "url": "https://www.advanced-television.com/2026/11/03/ast-spacemobile-wins-access-to-chile/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-03T01:14+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "Launch Preview: Falcon 9 to launch USSF missions, China to launch internet satellites",
-  "url": "https://www.nasaspaceflight.com/2026/11/launch-preview-110226/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-02T22:21+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "SES Wins Multi-Orbit IFC Deals for Finnair and Air Astana",
-  "url": "https://www.satellitetoday.com/mobility/2026/11/02/ses-wins-multi-orbit-ifc-deals-for-finnair-and-air-astana/",
-  "source": "Via Satellite",
-  "date": "2026-11-02T21:30+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Hydrosat Launches Thermal Imaging Capability for Tactical ISR",
-  "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/11/02/hydrosat-launches-thermal-imaging-capability-for-tactical-isr/",
-  "source": "Via Satellite",
-  "date": "2026-11-02T21:27+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Maritime Launch Services gets final approval to list on the TSX",
-  "url": "https://spaceq.ca/maritime-launch-services-tsx-final-approval/",
-  "source": "SpaceQ",
-  "date": "2026-11-02T16:39+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch"
-  ]
- },
- {
-  "title": "Only USD 2 Billion of Africa’s USD 7.9 Billion Satellite Pipeline Is Firmly Committed, New Space in Africa Report Finds",
-  "url": "https://spaceinafrica.com/2026/11/02/only-usd-2-billion-of-africas-usd-7-9-billion-satellite-pipeline-is-firmly-committed-new-space-in-africa-report-finds/",
-  "source": "Space in Africa",
-  "date": "2026-11-02T16:37+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "SpaceX eyes back door to MVNO via Boost Mobile – report",
-  "url": "https://www.lightreading.com/satellite/spacex-eyes-back-door-to-mvno-via-boost-mobile-report",
-  "source": "Light Reading",
-  "date": "2026-11-02T16:32+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "National security strategy gives space tech a supporting role",
-  "url": "https://spaceq.ca/national-security-strategy-space/",
-  "source": "SpaceQ",
-  "date": "2026-11-02T16:20+00:00",
-  "categories": [
-   "Defence & security"
   ]
  }
 ]
