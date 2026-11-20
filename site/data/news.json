@@ -1,5 +1,34 @@
 [
  {
+  "title": "Danish Soldiers Are Sneaking Starlink Terminals into Greenland",
+  "url": "https://europeanspaceflight.com/danish-soldiers-are-sneaking-starlink-terminals-into-greenland/",
+  "source": "European Spaceflight",
+  "date": "2026-11-20T07:09+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "FCC satellite connectivity boost for ships, planes, drones",
+  "url": "https://www.advanced-television.com/2026/11/20/fcc-satellite-connectivity-boost-for-ships-planes-drones/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-20T02:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Google selects Blue Origin’s New Glenn for Project Suncatcher",
+  "url": "https://www.advanced-television.com/2026/11/20/google-selects-blue-origins-new-glenn-for-project-suncatcher/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-20T01:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
   "title": "European Tech Leaders Flag Reliance on Foreign Chipsets Amid Push for Strategic Autonomy",
   "url": "https://www.satellitetoday.com/technology/2026/11/19/european-tech-leaders-flag-reliance-on-foreign-chipsets-amid-push-for-strategic-autonomy/",
   "source": "Via Satellite",
@@ -123,6 +152,29 @@
   "date": "2026-11-19T15:21+00:00",
   "categories": [
    "Defence & security"
+  ]
+ },
+ {
+  "title": "Space Tech Expo Bremen – Oskar Zdunek of Scanway on Mapping the Moon and Scaling Fast",
+  "url": "https://spacewatch.global/2026/11/space-tech-expo-bremen-oskar-zdunek-of-scanway-on-mapping-the-moon-and-scaling-fast/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-19T15:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Space Tech Expo Bremen – Nicolas Gaume Unveils REV1, a Spacecraft Built Inside Out for Manufacturing",
+  "url": "https://spacewatch.global/2026/11/space-tech-expo-bremen-nicolas-gaume-unveils-rev1-a-spacecraft-built-inside-out-for-manufacturing/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-19T14:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "Space Tech Expo Bremen – Sandi Habinc of Frontgrade Gaisler on Putting a Whole Satellite on One Chip",
+  "url": "https://spacewatch.global/2026/11/space-tech-expo-bremen-sandi-habinc-of-frontgrade-gaisler-on-putting-a-whole-satellite-on-one-chip/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-19T13:00+00:00",
+  "categories": [
+   "Business & funding"
   ]
  },
  {
@@ -3550,54 +3602,5 @@
   "categories": [
    "Defence & security"
   ]
- },
- {
-  "title": "African NewSpace Investment Rebounds to USD 12.63 Million in 2026, but Capital Remains Highly Concentrated, Space in Africa Report Shows",
-  "url": "https://spaceinafrica.com/2026/11/02/african-newspace-investment-rebounds-to-usd-12-63-million-in-2026-but-capital-remains-highly-concentrated-space-in-africa-report-shows/",
-  "source": "Space in Africa",
-  "date": "2026-11-02T15:58+00:00",
-  "categories": [
-   "Business & funding",
-   "Africa"
-  ]
- },
- {
-  "title": "Up to What Size Can Africa Build a Satellite Today?",
-  "url": "https://spaceinafrica.com/2026/11/02/up-to-what-size-can-africa-build-a-satellite-today/",
-  "source": "Space in Africa",
-  "date": "2026-11-02T14:27+00:00",
-  "categories": [
-   "Africa"
-  ]
- },
- {
-  "title": "ESA to Support Industry-Led Reusable Booster Flight Demonstrations",
-  "url": "https://europeanspaceflight.com/esa-to-support-industry-led-reusable-booster-flight-demonstrations/",
-  "source": "European Spaceflight",
-  "date": "2026-11-02T14:13+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "How to Expand Reliable, Flexible Access to Space",
-  "url": "https://spacenews.com/how-to-expand-reliable-flexible-access-to-space/",
-  "source": "SpaceNews",
-  "date": "2026-11-02T14:00+00:00",
-  "categories": []
- },
- {
-  "title": "Exclusive: Stellar Alpina Unveils Monarch Orbiter and Morpho Lunar Lander",
-  "url": "https://payloadspace.com/exclusive-stellar-alpina-unveils-monarch-orbiter-and-morpho-lunar-lander/",
-  "source": "Payload",
-  "date": "2026-11-02T13:42+00:00",
-  "categories": []
- },
- {
-  "title": "Hydrosat Unveils New High-Res MWIR Thermal Capability",
-  "url": "https://payloadspace.com/hydrosat-unveils-new-high-res-mwir-thermal-capability/",
-  "source": "Payload",
-  "date": "2026-11-02T11:00+00:00",
-  "categories": []
  }
 ]
