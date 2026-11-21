@@ -1,5 +1,52 @@
 [
  {
+  "title": "SSC Space Furthers Optical Space Ambitions with NTT MoU",
+  "url": "https://www.satellitetoday.com/technology/2026/11/20/ssc-space-furthers-optical-space-ambitions-with-ntt-mou/",
+  "source": "Via Satellite",
+  "date": "2026-11-20T21:14+00:00",
+  "categories": []
+ },
+ {
+  "title": "Following Ship 42’s catch, SpaceX looks to the future",
+  "url": "https://www.nasaspaceflight.com/2026/11/ship-42-catch-future/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-20T19:49+00:00",
+  "categories": []
+ },
+ {
+  "title": "Indian EO Startup SatSure Raises $21M, With Sovereign Fund Investment",
+  "url": "https://www.satellitetoday.com/finance/2026/11/20/indian-eo-startup-satsure-raises-21m-with-sovereign-fund-investment/",
+  "source": "Via Satellite",
+  "date": "2026-11-20T19:37+00:00",
+  "categories": [
+   "Earth observation",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Argotec Signs Cable Deal with Sidus Space for HAWK Platform",
+  "url": "https://www.satellitetoday.com/technology/2026/11/20/argotec-signs-cable-deal-with-sidus-space-for-hawk-platform/",
+  "source": "Via Satellite",
+  "date": "2026-11-20T19:36+00:00",
+  "categories": []
+ },
+ {
+  "title": "Eutelsat Adds 3 Execs to C-Suite Team",
+  "url": "https://www.satellitetoday.com/people/2026/11/20/eutelsat-adds-3-execs-to-c-suite-team/",
+  "source": "Via Satellite",
+  "date": "2026-11-20T19:35+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Voyager 1 reaches one light-day from Earth",
+  "url": "https://spaceq.ca/voyager-1-light-day/",
+  "source": "SpaceQ",
+  "date": "2026-11-20T19:35+00:00",
+  "categories": []
+ },
+ {
   "title": "Atomic-6 Wants to Shield Astronauts Against Untrackable Debris",
   "url": "https://payloadspace.com/atomic-6-wants-to-shield-astronauts-against-untrackable-debris/",
   "source": "Payload",
@@ -3547,59 +3594,5 @@
   "source": "NASASpaceflight",
   "date": "2026-11-03T13:05+00:00",
   "categories": []
- },
- {
-  "title": "Why Boost Mobile isn't SpaceX's shortcut to an MVNO",
-  "url": "https://www.lightreading.com/satellite/why-boost-mobile-isn-t-spacex-s-shortcut-to-an-mvno",
-  "source": "Light Reading",
-  "date": "2026-11-03T13:00+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "#SpaceWatchGL Opinion: Bailouts, Billions and Satellites: Europe’s Space Defence Illusion",
-  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinion-bailouts-billions-and-satellites-europes-space-defence-illusion/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-03T09:00+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Tumbleweed Raises €6.9M to Build its Own Reentry Vehicle",
-  "url": "https://payloadspace.com/tumbleweed-raises-e6-9m-to-build-its-own-reentry-vehicle/",
-  "source": "Payload",
-  "date": "2026-11-03T08:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Stellar Alpina Expands Beyond Rocket Engines with New Orbital and Lunar Spacecraft",
-  "url": "https://spacewatch.global/2026/11/stellar-alpina-expands-beyond-rocket-engines-with-new-orbital-and-lunar-spacecraft/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-03T07:00+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "ERMIS-3 Demonstrates 1 Gbps Optical Downlink in Milestone for Greek Space Program",
-  "url": "https://spacewatch.global/2026/11/ermis-3-demonstrates-1-gbps-optical-downlink-in-milestone-for-greek-space-program/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-03T07:00+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Northwood Space Lands $375 Million Series C to Expand Multi-Orbit Ground Network",
-  "url": "https://spacewatch.global/2026/11/northwood-space-lands-375-million-series-c-to-expand-multi-orbit-ground-network/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-03T07:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
  }
 ]

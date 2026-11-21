@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-20T17:01+00:00",
+ "fetched": "2026-11-21T01:36+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -79,7 +79,7 @@
    "name": "NAPAfrica IX Johannesburg",
    "city": "Johannesburg",
    "country": "ZA",
-   "networks": 549,
+   "networks": 551,
    "lat": -26.138,
    "lon": 28.198
   },
