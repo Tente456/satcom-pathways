@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-23T00:57+00:00",
+ "fetched": "2026-11-23T14:56+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -7,7 +7,7 @@
    "name": "JINX",
    "city": "Johannesburg",
    "country": "ZA",
-   "networks": 210,
+   "networks": 209,
    "lat": -26.138,
    "lon": 28.198
   },
@@ -79,7 +79,7 @@
    "name": "NAPAfrica IX Johannesburg",
    "city": "Johannesburg",
    "country": "ZA",
-   "networks": 551,
+   "networks": 552,
    "lat": -26.138,
    "lon": 28.198
   },
@@ -736,7 +736,7 @@
    "name": "Digital Delta IX",
    "city": "Gaborone",
    "country": "BW",
-   "networks": 5,
+   "networks": 6,
    "lat": -24.588,
    "lon": 25.907
   },
