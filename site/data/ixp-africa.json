@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-22T16:25+00:00",
+ "fetched": "2026-11-23T00:57+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -556,7 +556,7 @@
    "name": "ixFabric - Johannesburg",
    "city": "Johannesburg",
    "country": "ZA",
-   "networks": 16,
+   "networks": 14,
    "lat": -26.2,
    "lon": 28.05
   },
