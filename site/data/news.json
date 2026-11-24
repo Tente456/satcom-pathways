@@ -1,5 +1,97 @@
 [
  {
+  "title": "Northrop books sixth Falcon 9 for Cygnus as Antares 330 waits",
+  "url": "https://www.nasaspaceflight.com/2026/11/northrop-sixth-f9-cygnus-antares-waits/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-23T23:28+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Progress MS-36 set to launch to ISS from Baikonur",
+  "url": "https://www.nasaspaceflight.com/2026/11/progress-ms-36/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-23T21:32+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "‘Spectrum is Power,’ Europe Eyes Place in D2D Race",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/23/spectrum-is-power-europe-eyes-place-in-d2d-race/",
+  "source": "Via Satellite",
+  "date": "2026-11-23T21:28+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Satellite Stalking and Orbital Defense With Blackswan Space CEO Marius Klimavičius",
+  "url": "https://www.satellitetoday.com/podcast/2026/11/23/satellite-stalking-and-orbital-defense-with-blackswan-space-ceo-marius-klimavicius/",
+  "source": "Via Satellite",
+  "date": "2026-11-23T20:55+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Umbra Debuts New SAR Spacecraft With Improved Radar and Revisit",
+  "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/11/23/umbra-debuts-new-sar-spacecraft-with-improved-radar-and-revisit/",
+  "source": "Via Satellite",
+  "date": "2026-11-23T20:50+00:00",
+  "categories": [
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "Elveo Reports D2D Demos Aboard Sea Vessels in the Philippines",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/23/elveo-reports-d2d-demos-aboard-sea-vessels-in-the-philippines/",
+  "source": "Via Satellite",
+  "date": "2026-11-23T20:45+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Quantum Space Completes SPAC Merger with $300M Investment",
+  "url": "https://www.satellitetoday.com/finance/2026/11/23/quantum-space-completes-spac-merger-with-300m-investment/",
+  "source": "Via Satellite",
+  "date": "2026-11-23T20:44+00:00",
+  "categories": [
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Umbra, ICEYE tout higher-resolution radar imaging with new satellites",
+  "url": "https://breakingdefense.com/2026/11/umbra-iceye-tout-higher-resolution-radar-imaging-with-new-satellites/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-23T17:20+00:00",
+  "categories": []
+ },
+ {
+  "title": "Beyond First Satellites: Why Africa’s Satellite Launch Cadence Is Cooling",
+  "url": "https://spaceinafrica.com/2026/11/23/beyond-first-satellites-why-africas-satellite-launch-cadence-is-cooling/",
+  "source": "Space in Africa",
+  "date": "2026-11-23T15:06+00:00",
+  "categories": [
+   "Launch",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Eutelsat Wins $60 Million US Space Force Contract",
+  "url": "https://europeanspaceflight.com/eutelsat-wins-60-million-us-space-force-contract/",
+  "source": "European Spaceflight",
+  "date": "2026-11-23T15:02+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
   "title": "Exclusive: Verde Technologies Will Test Perovskite Solar Cells on the ISS in 2027",
   "url": "https://payloadspace.com/exclusive-verde-technologies-will-test-perovskite-solar-cells-on-the-iss-in-2027/",
   "source": "Payload",
@@ -3507,94 +3599,6 @@
   "url": "https://www.satellitetoday.com/government-military/2026/11/04/former-dod-official-warns-that-golden-dome-may-not-outlive-trump-presidency/",
   "source": "Via Satellite",
   "date": "2026-11-04T22:47+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Trump Issues “American Declaration of Freedom in Space”",
-  "url": "https://spacepolicyonline.com/news/trump-issues-american-declaration-of-freedom-in-space/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-04T22:34+00:00",
-  "categories": []
- },
- {
-  "title": "Midterm elections shift space power to Democrats, with stakes for Canada",
-  "url": "https://spaceq.ca/midterm-elections-space-committees-democrats/",
-  "source": "SpaceQ",
-  "date": "2026-11-04T21:28+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Viasat, SES, and Astranis Win NASA Ka-band Relay Contracts",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/04/viasat-ses-and-astranis-win-nasa-ka-band-relay-contracts/",
-  "source": "Via Satellite",
-  "date": "2026-11-04T20:51+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "SES Reports Optical Communications Demo on K2 Gravitas Mission",
-  "url": "https://www.satellitetoday.com/technology/2026/11/04/ses-reports-optical-communications-demo-on-k2-gravitas-mission/",
-  "source": "Via Satellite",
-  "date": "2026-11-04T20:47+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "SpaceX Strikes Deal with Qualcomm for Terrestrial Component of Starlink Mobile Network",
-  "url": "https://www.satellitetoday.com/connectivity/2026/11/04/spacex-strikes-deal-with-qualcomm-for-terrestrial-component-of-starlink-mobile-network/",
-  "source": "Via Satellite",
-  "date": "2026-11-04T20:45+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "ULA To Bring Payload Fairing Manufacturing for Vulcan In-House",
-  "url": "https://www.satellitetoday.com/launch/2026/11/04/ula-to-bring-payload-fairing-manufacturing-for-vulcan-in-house/",
-  "source": "Via Satellite",
-  "date": "2026-11-04T20:41+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Trace Gas Orbiter discovers potential evidence of volcanic activity on Mars via atmospheric observations",
-  "url": "https://www.nasaspaceflight.com/2026/11/tgo-volcanic-activity/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-04T19:06+00:00",
-  "categories": []
- },
- {
-  "title": "Galaxia OSPREY satellite to test moving defence data in orbit",
-  "url": "https://spaceq.ca/galaxia-osprey-satellite-defence-data/",
-  "source": "SpaceQ",
-  "date": "2026-11-04T18:08+00:00",
-  "categories": [
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "“Blue Tsunami” Puts Democrats in Control of House and Senate Next Year",
-  "url": "https://spacepolicyonline.com/news/blue-tsunami-puts-democrats-in-control-of-house-and-senate-next-year-2/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-04T17:13+00:00",
-  "categories": [
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "EXCLUSIVE: House China committee pushes Air Force on think tank cuts",
-  "url": "https://breakingdefense.com/2026/11/house-china-committee-pushes-air-force-on-think-tank-cuts/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-11-04T16:28+00:00",
   "categories": [
    "Defence & security"
   ]
