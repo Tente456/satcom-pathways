@@ -1,5 +1,119 @@
 [
  {
+  "title": "Quantum Space Goes Public as SPACs Return",
+  "url": "https://payloadspace.com/quantum-space-goes-public-as-spacs-return/",
+  "source": "Payload",
+  "date": "2026-11-24T13:55+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Report Urges Congress to Designate Space as Critical Infrastructure",
+  "url": "https://payloadspace.com/report-urges-congress-to-designate-space-as-critical-infrastructure/",
+  "source": "Payload",
+  "date": "2026-11-24T13:08+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "NRCan seeks study of GNSS disruption risk to the energy sector",
+  "url": "https://spaceq.ca/nrcan-gnss-disruption-energy-sector-study/",
+  "source": "SpaceQ",
+  "date": "2026-11-24T12:12+00:00",
+  "categories": []
+ },
+ {
+  "title": "BTC Satellite to Bring Starlink D2D Connectivity to Botswana",
+  "url": "https://spaceinafrica.com/2026/11/24/btc-satellite-to-bring-starlink-d2d-connectivity-to-botswana/",
+  "source": "Space in Africa",
+  "date": "2026-11-24T09:51+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Africa"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL recap: Space Tech Expo Bremen 2026: What Europe Learned",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-recap-space-tech-expo-bremen-2026-what-europe-learned/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-24T09:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "BepiColombo Enters Orbit Around Mercury Despite “Software Glitch”",
+  "url": "https://europeanspaceflight.com/bepicolombo-enters-orbit-around-mercury-despite-software-glitch/",
+  "source": "European Spaceflight",
+  "date": "2026-11-24T08:50+00:00",
+  "categories": []
+ },
+ {
+  "title": "ESA Advances Genesis Mission with Enhanced Spacecraft Design for Improved Resilience",
+  "url": "https://spacewatch.global/2026/11/esa-advances-genesis-mission-with-enhanced-spacecraft-design-for-improved-resilience/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-24T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "NATO Launches New STARLIFT Initiative to Strengthen Allied Responsive Access to Space",
+  "url": "https://spacewatch.global/2026/11/nato-launches-new-starlift-initiative-to-strengthen-allied-responsive-access-to-space/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-24T07:00+00:00",
+  "categories": [
+   "Launch",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Russia’s Sputnik-S Project Raises Concerns over Nuclear Threats in Space",
+  "url": "https://spacewatch.global/2026/11/russias-sputnik-s-project-raises-concerns-over-nuclear-threats-in-space/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-24T07:00+00:00",
+  "categories": [
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Rocket Lab: “We’ll have no debt”",
+  "url": "https://www.advanced-television.com/2026/11/24/rocket-lab-well-have-no-debt/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-24T01:44+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "SaxaVord losses grow",
+  "url": "https://www.advanced-television.com/2026/11/24/saxavord-losses-grow/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-24T00:40+00:00",
+  "categories": [
+   "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "SpaceX shifts to wholesale rideshare model",
+  "url": "https://www.advanced-television.com/2026/11/24/spacex-shifts-to-wholesale-rideshare-model/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-24T00:36+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Elveo Mobile tests connections over Philippines",
+  "url": "https://www.advanced-television.com/2026/11/24/elveo-mobile-tests-connections-over-philippines/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-24T00:16+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
   "title": "Northrop books sixth Falcon 9 for Cygnus as Antares 330 waits",
   "url": "https://www.nasaspaceflight.com/2026/11/northrop-sixth-f9-cygnus-antares-waits/",
   "source": "NASASpaceflight",
@@ -9,7 +123,17 @@
   ]
  },
  {
-  "title": "Progress MS-36 set to launch to ISS from Baikonur",
+  "title": "Ariane 6 launch for Amazon Leo delayed",
+  "url": "https://www.advanced-television.com/2026/11/23/ariane-6-launch-for-amazon-leo-delayed/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-23T21:55+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Progress MS-36 launches to ISS from Baikonur",
   "url": "https://www.nasaspaceflight.com/2026/11/progress-ms-36/",
   "source": "NASASpaceflight",
   "date": "2026-11-23T21:32+00:00",
@@ -3478,129 +3602,6 @@
   "categories": [
    "Launch",
    "Business & funding"
-  ]
- },
- {
-  "title": "Oman to enhance satellite and submarine cable connectivity",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21081-oman-to-enhance-satellite-and-submarine-cable-connectivity.html",
-  "source": "Developing Telecoms",
-  "date": "2026-11-05T11:57+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Why We Are Seeing a Growing Disconnect Between Public and Private Space Markets",
-  "url": "https://payloadspace.com/why-we-are-seeing-a-growing-disconnect-between-public-and-private-space-markets/",
-  "source": "Payload",
-  "date": "2026-11-05T09:09+00:00",
-  "categories": []
- },
- {
-  "title": "#SpaceWatchGL Opinion: From Space Law to Space Markets – What UNOOSA’s Kenya Mission Could Change",
-  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinion-from-space-law-to-space-markets-what-unoosas-kenya-mission-could-change/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T09:00+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Business & funding",
-   "Africa"
-  ]
- },
- {
-  "title": "SES reiterates Full Year outlook",
-  "url": "https://www.advanced-television.com/2026/11/05/ses-reiterates-full-year-outlook/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-05T08:30+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "ESA’s Trace Gas Orbiter Detects Potential Signs of Volcanic Activity on Mars",
-  "url": "https://spacewatch.global/2026/11/esas-trace-gas-orbiter-detects-potential-signs-of-volcanic-activity-on-mars/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T07:00+00:00",
-  "categories": []
- },
- {
-  "title": "ULA to Bring Vulcan’s Payload Fairing and Composite Structures Manufacturing In-House from Beyond Gravity",
-  "url": "https://spacewatch.global/2026/11/ula-to-bring-vulcans-payload-fairing-and-composite-structures-manufacturing-in-house-from-beyond-gravity/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T07:00+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "OHB Secures €554 Million ESA Contract for Next-Generation Sentinel-3 Topography Mission",
-  "url": "https://spacewatch.global/2026/11/ohb-secures-e554-million-esa-contract-for-next-generation-sentinel-3-topography-mission/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T07:00+00:00",
-  "categories": [
-   "Earth observation",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Former NASA Chief Economist is New Head of Canadian Space Agency",
-  "url": "https://spacepolicyonline.com/news/former-nasa-chief-economist-is-new-head-of-canadian-space-agency/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-05T02:53+00:00",
-  "categories": []
- },
- {
-  "title": "Alex MacDonald appointed Canadian Space Agency president",
-  "url": "https://spaceq.ca/canadian-space-agency-president-alex-macdonald/",
-  "source": "SpaceQ",
-  "date": "2026-11-05T02:32+00:00",
-  "categories": []
- },
- {
-  "title": "SES tests video calls via laser",
-  "url": "https://www.advanced-television.com/2026/11/05/ses-tests-video-calls-via-laser/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-05T01:11+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Business & funding"
-  ]
- },
- {
-  "title": "ITU approves UK’s Open Cosmos delay request",
-  "url": "https://www.advanced-television.com/2026/11/05/itu-approves-uks-open-cosmos-delay-request/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-05T00:47+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "Redwire Wins $20M DARPA Contract for Second VLEO Demo",
-  "url": "https://payloadspace.com/redwire-wins-20m-darpa-contract-for-second-vleo-demo/",
-  "source": "Payload",
-  "date": "2026-11-05T00:34+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Farewell Swift",
-  "url": "https://spacepolicyonline.com/news/farewell-swift/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-05T00:16+00:00",
-  "categories": []
- },
- {
-  "title": "Former DoD Official Warns Golden Dome May Not Outlive Trump Presidency",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/04/former-dod-official-warns-that-golden-dome-may-not-outlive-trump-presidency/",
-  "source": "Via Satellite",
-  "date": "2026-11-04T22:47+00:00",
-  "categories": [
-   "Defence & security"
   ]
  }
 ]
