@@ -1,5 +1,120 @@
 [
  {
+  "title": "BlackSky Acquires Data Science Firm EpochGeo",
+  "url": "https://payloadspace.com/blacksky-acquires-data-science-firm-epochgeo/",
+  "source": "Payload",
+  "date": "2026-11-25T13:30+00:00",
+  "categories": [
+   "Earth observation",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Cerberus to Acquire Airbus US Space & Defense",
+  "url": "https://payloadspace.com/cerberus-to-acquire-airbus-us-space-defense/",
+  "source": "Payload",
+  "date": "2026-11-25T13:16+00:00",
+  "categories": [
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "University of Saskatchewan gets $2.6 million to build Osiris-3 for a CSA ozone CubeSat",
+  "url": "https://spaceq.ca/osiris-3-usask-csa-cubesat-mission-1/",
+  "source": "SpaceQ",
+  "date": "2026-11-25T12:07+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "#SpaceWatchGL Opinion: Europe Cannot Rearm Its Way Out of Communications Dependency",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-opinion-europe-cannot-rearm-its-way-out-of-communications-dependency/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-25T09:00+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Saudi Arabia Selects Lunar Outpost to Support Local Development of Lunar Rover Technologies",
+  "url": "https://spacewatch.global/2026/11/saudi-arabia-selects-lunar-outpost-to-support-local-development-of-lunar-rover-technologies/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-25T07:00+00:00",
+  "categories": []
+ },
+ {
+  "title": "FCC Considers Reciprocal Restrictions on Foreign Satellite Operators Amid US-Europe Tensions",
+  "url": "https://spacewatch.global/2026/11/fcc-considers-reciprocal-restrictions-on-foreign-satellite-operators-amid-us-europe-tensions/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-25T07:00+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Ariane 6 Completes 10th Flight with Successful Deployment of 36 Amazon Leo Satellites",
+  "url": "https://spacewatch.global/2026/11/ariane-6-completes-10th-flight-with-successful-deployment-of-36-amazon-leo-satellites/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-25T07:00+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "👨🏿‍🚀TechCabal Daily – Cell C picks a Melon",
+  "url": "https://techcabal.com/2026/11/25/%f0%9f%91%a8%f0%9f%8f%bf%f0%9f%9a%80techcabal-daily-cell-c-picks-a-melon/",
+  "source": "TechCabal",
+  "date": "2026-11-25T06:13+00:00",
+  "categories": []
+ },
+ {
+  "title": "FCC looks to rule against foreign satellites",
+  "url": "https://www.advanced-television.com/2026/11/25/fcc-looks-to-rule-against-foreign-satellites/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-25T04:33+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Vodafone, AST SpaceMobile ready European satellite coverage",
+  "url": "https://www.advanced-television.com/2026/11/25/vodafone-ast-spacemobile-ready-european-satellite-coverage/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-25T04:12+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Launch Preview: Russian, Chinese, and SpaceX rockets to launch space station missions",
+  "url": "https://www.nasaspaceflight.com/2026/11/launch-preview-112426/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-25T01:06+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "First Pakistani Astronaut Enroute to Tiangong",
+  "url": "https://spacepolicyonline.com/news/first-pakistani-astronaut-enroute-to-tiangong/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-25T00:58+00:00",
+  "categories": []
+ },
+ {
+  "title": "Flawless success for Arianespace and Amazon Leo",
+  "url": "https://www.advanced-television.com/2026/11/25/flawless-success-for-arianespace-and-amazon-leo/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-25T00:39+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
   "title": "Joshua Kutryk welcomes daughter from the space station",
   "url": "https://spaceq.ca/kutryk-welcomes-daughter-space-station/",
   "source": "SpaceQ",
@@ -121,7 +236,7 @@
   ]
  },
  {
-  "title": "Tiangong Space Station to welcome first international visitor",
+  "title": "Tiangong Space Station welcomes first international visitor",
   "url": "https://www.nasaspaceflight.com/2026/11/shenzhou-24/",
   "source": "NASASpaceflight",
   "date": "2026-11-24T16:26+00:00",
@@ -216,6 +331,15 @@
   "date": "2026-11-24T07:00+00:00",
   "categories": [
    "Launch",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Bank: “SpaceX capitalising on supply-demand imbalance”",
+  "url": "https://www.advanced-television.com/2026/11/24/bank-spacex-capitalising-on-supply-demand-imbalance/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-24T05:29+00:00",
+  "categories": [
    "Business & funding"
   ]
  },
@@ -948,21 +1072,21 @@
   "categories": []
  },
  {
-  "title": "Space Tech Expo Bremen – Sandi Habinc of Frontgrade Gaisler on Putting a Whole Satellite on One Chip",
-  "url": "https://spacewatch.global/2026/11/space-tech-expo-bremen-sandi-habinc-of-frontgrade-gaisler-on-putting-a-whole-satellite-on-one-chip/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-19T13:00+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
   "title": "Satellite broadband to capture most market share from FWA – report",
   "url": "https://www.lightreading.com/satellite/satellite-broadband-to-capture-most-market-share-from-fwa-report",
   "source": "Light Reading",
   "date": "2026-11-19T13:00+00:00",
   "categories": [
    "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Space Tech Expo Bremen – Sandi Habinc of Frontgrade Gaisler on Putting a Whole Satellite on One Chip",
+  "url": "https://spacewatch.global/2026/11/space-tech-expo-bremen-sandi-habinc-of-frontgrade-gaisler-on-putting-a-whole-satellite-on-one-chip/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-19T13:00+00:00",
+  "categories": [
+   "Business & funding"
   ]
  },
  {
@@ -3473,135 +3597,6 @@
   "categories": [
    "Launch",
    "Business & funding"
-  ]
- },
- {
-  "title": "European Bodyguard Sats are Closer Than You Think",
-  "url": "https://payloadspace.com/european-bodyguard-sats-are-closer-than-you-think/",
-  "source": "Payload",
-  "date": "2026-11-06T07:15+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security"
-  ]
- },
- {
-  "title": "European Bodyguard Sats are Closer Thank You Think",
-  "url": "https://payloadspace.com/european-bodyguard-sats-are-closer-thank-you-think/",
-  "source": "Payload",
-  "date": "2026-11-06T07:15+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security"
-  ]
- },
- {
-  "title": "LEAP Revives Hope for Mainland UK Vertical Launch with Sutherland Spaceport MoU",
-  "url": "https://spacewatch.global/2026/11/leap-revives-hope-for-mainland-uk-vertical-launch-with-sutherland-spaceport-mou/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-06T07:00+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Alexander MacDonald Takes Helm of Canadian Space Agency Following NASA Career",
-  "url": "https://spacewatch.global/2026/11/alexander-macdonald-takes-helm-of-canadian-space-agency-following-nasa-career/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-06T07:00+00:00",
-  "categories": []
- },
- {
-  "title": "AST SpaceMobile Joins U.S. Space Force Program to Advance Space-Based Sensing",
-  "url": "https://spacewatch.global/2026/11/ast-spacemobile-joins-u-s-space-force-program-to-advance-space-based-sensing/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-06T07:00+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Paratus Lesotho opens shop with Starlink enterprise offering",
-  "url": "https://www.developingtelecoms.com/telecom-technology/satellite-communications-networks/21088-paratus-lesotho-opens-shop-with-starlink-enterprise-offering.html",
-  "source": "Developing Telecoms",
-  "date": "2026-11-06T04:50+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Africa"
-  ]
- },
- {
-  "title": "SES wins NASA order",
-  "url": "https://www.advanced-television.com/2026/11/06/ses-wins-nasa-order/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-06T02:02+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Budget 2026 moves forward with medium-lift rockets",
-  "url": "https://spaceq.ca/budget-2026-medium-lift-rockets/",
-  "source": "SpaceQ",
-  "date": "2026-11-06T01:46+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security"
-  ]
- },
- {
-  "title": "CesiumAstro Raises $730M, Reaches Valuation Above $4.5B",
-  "url": "https://payloadspace.com/cesiumastro-raises-730m-reaches-valuation-above-4-5b/",
-  "source": "Payload",
-  "date": "2026-11-06T01:43+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "ISS astronauts install final iROSA solar panel to augment aging ISS power systems",
-  "url": "https://www.nasaspaceflight.com/2026/11/final-irosa-install-iss/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-06T01:15+00:00",
-  "categories": []
- },
- {
-  "title": "EU prepares draft Space Act",
-  "url": "https://www.advanced-television.com/2026/11/06/eu-prepares-draft-space-act/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-06T00:56+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Sustainability & debris"
-  ]
- },
- {
-  "title": "Norway selects Starlink for military use",
-  "url": "https://www.advanced-television.com/2026/11/06/norway-selects-starlink-for-military-use/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-06T00:18+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Canadian astronaut Josh Kutryk helps finish complex solar array spacewalks at ISS",
-  "url": "https://spaceq.ca/kutryk-spacewalk-final-solar-array/",
-  "source": "SpaceQ",
-  "date": "2026-11-05T22:57+00:00",
-  "categories": []
- },
- {
-  "title": "DoD Must Embrace Autonomous On-Orbit Cyber Defense, DoD CIO Official Says",
-  "url": "https://www.satellitetoday.com/cybersecurity/2026/11/05/dod-must-embrace-autonomous-on-orbit-cyber-defense-dod-cio-official-says/",
-  "source": "Via Satellite",
-  "date": "2026-11-05T21:49+00:00",
-  "categories": [
-   "Defence & security"
   ]
  }
 ]
