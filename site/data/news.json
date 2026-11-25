@@ -1,5 +1,149 @@
 [
  {
+  "title": "Joshua Kutryk welcomes daughter from the space station",
+  "url": "https://spaceq.ca/kutryk-welcomes-daughter-space-station/",
+  "source": "SpaceQ",
+  "date": "2026-11-25T00:01+00:00",
+  "categories": []
+ },
+ {
+  "title": "India pitches space co-operation in Canada defence pact talks",
+  "url": "https://spaceq.ca/canada-india-defence-agreement-space/",
+  "source": "SpaceQ",
+  "date": "2026-11-24T23:47+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "BlackSky Acquires Data Fusion Company EpochGeo To Enhance Solutions",
+  "url": "https://www.satellitetoday.com/imagery-and-sensing/2026/11/24/blacksky-acquires-data-fusion-company-epochgeo-to-enhance-solutions/",
+  "source": "Via Satellite",
+  "date": "2026-11-24T22:02+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "NATO Ready to Spend Billions on Defense",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/24/nato-ready-to-spend-billions-on-defense/",
+  "source": "Via Satellite",
+  "date": "2026-11-24T21:55+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "White House Requests Billions for NASA, Golden Dome in Next CR",
+  "url": "https://spacepolicyonline.com/news/white-house-requests-billions-for-nasa-golden-dome-in-next-cr/",
+  "source": "SpacePolicyOnline",
+  "date": "2026-11-24T21:16+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Cerberus Capital Management Acquires Satellite Manufacturing Business from Airbus U.S. Space & Defense",
+  "url": "https://www.satellitetoday.com/finance/2026/11/24/cerberus-capital-management-acquires-satellite-manufacturing-business-from-airbus-u-s-space-defense/",
+  "source": "Via Satellite",
+  "date": "2026-11-24T20:47+00:00",
+  "categories": [
+   "Defence & security",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Arianespace Mission Takes Amazon Leo to More than 400 Satellites",
+  "url": "https://www.satellitetoday.com/launch/2026/11/24/arianespace-mission-takes-amazon-leo-to-more-than-400-satellites/",
+  "source": "Via Satellite",
+  "date": "2026-11-24T20:44+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "BepiColombo successfully enters orbit of Mercury, suffers orbit-altering software glitch",
+  "url": "https://www.nasaspaceflight.com/2026/11/bepicolombo-moi/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-24T20:38+00:00",
+  "categories": []
+ },
+ {
+  "title": "NTIA, SpaceX agreement 'undermines' goal of BEAD – FBA",
+  "url": "https://www.lightreading.com/broadband/ntia-spacex-agreement-undermines-goal-of-bead-fba",
+  "source": "Light Reading",
+  "date": "2026-11-24T19:58+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
+  "title": "Arianespace Completes 10th Ariane 6 Flight With Next Expected on 17 December",
+  "url": "https://europeanspaceflight.com/arianespace-completes-10th-ariane-6-flight-with-next-expected-on-17-december/",
+  "source": "European Spaceflight",
+  "date": "2026-11-24T19:55+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "Africa GNSS Lab Turns Its Launch Into a Working Plan in Tunis",
+  "url": "https://spaceinafrica.com/2026/11/24/africa-gnss-lab-turns-its-launch-into-a-working-plan-in-tunis/",
+  "source": "Space in Africa",
+  "date": "2026-11-24T17:55+00:00",
+  "categories": [
+   "Launch",
+   "Africa"
+  ]
+ },
+ {
+  "title": "South Africa Weighs Four Financing Options for Its Proposed USD 372M Communications Satellite Programme",
+  "url": "https://spaceinafrica.com/2026/11/24/south-africa-weighs-four-financing-options-for-its-proposed-usd-372m-communications-satellite-programme/",
+  "source": "Space in Africa",
+  "date": "2026-11-24T16:56+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Business & funding",
+   "Africa"
+  ]
+ },
+ {
+  "title": "Investment firm Cerberus to buy space business of US Airbus arm",
+  "url": "https://breakingdefense.com/2026/11/investment-firm-cerberus-to-buy-space-business-of-us-airbus-arm/",
+  "source": "Breaking Defense: Space",
+  "date": "2026-11-24T16:49+00:00",
+  "categories": [
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Tiangong Space Station to welcome first international visitor",
+  "url": "https://www.nasaspaceflight.com/2026/11/shenzhou-24/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-24T16:26+00:00",
+  "categories": []
+ },
+ {
+  "title": "Simera Sense, Spacemanic, Zaitra and World from Space Join Forces on an End-to-End Dual-Use Mission Solution",
+  "url": "https://spacenews.com/simera-sense-spacemanic-zaitra-and-world-from-space-join-forces-on-an-end-to-end-dual-use-mission-solution/",
+  "source": "SpaceNews",
+  "date": "2026-11-24T15:17+00:00",
+  "categories": []
+ },
+ {
+  "title": "D2D trial aims to support maritime communications in the Philippines",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21178-d2d-trial-aims-to-support-maritime-communications-in-the-philippines.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-24T15:09+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
   "title": "Quantum Space Goes Public as SPACs Return",
   "url": "https://payloadspace.com/quantum-space-goes-public-as-spacs-return/",
   "source": "Payload",
@@ -475,6 +619,13 @@
   "categories": []
  },
  {
+  "title": "Voyager 1 reaches one light-day from Earth",
+  "url": "https://spaceq.ca/voyager-1-light-day/",
+  "source": "SpaceQ",
+  "date": "2026-11-20T19:35+00:00",
+  "categories": []
+ },
+ {
   "title": "Eutelsat Adds 3 Execs to C-Suite Team",
   "url": "https://www.satellitetoday.com/people/2026/11/20/eutelsat-adds-3-execs-to-c-suite-team/",
   "source": "Via Satellite",
@@ -482,13 +633,6 @@
   "categories": [
    "Satcom & connectivity"
   ]
- },
- {
-  "title": "Voyager 1 reaches one light-day from Earth",
-  "url": "https://spaceq.ca/voyager-1-light-day/",
-  "source": "SpaceQ",
-  "date": "2026-11-20T19:35+00:00",
-  "categories": []
  },
  {
   "title": "Space Tech Expo Bremen – Jim Beckley of Remondo on 2x the Resolution at 10% of the Cost",
@@ -745,6 +889,15 @@
   "categories": []
  },
  {
+  "title": "Reliance in talks with suppliers for Indian satellite constellation",
+  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21160-reliance-in-talks-with-suppliers-for-indian-satellite-constellation.html",
+  "source": "Developing Telecoms",
+  "date": "2026-11-19T17:23+00:00",
+  "categories": [
+   "Satcom & connectivity"
+  ]
+ },
+ {
   "title": "Dominion Dynamics, Telesat to build Arctic antennas for Lightspeed",
   "url": "https://spaceq.ca/dominion-dynamics-telesat-lightspeed-antennas/",
   "source": "SpaceQ",
@@ -752,15 +905,6 @@
   "categories": [
    "Satcom & connectivity",
    "Defence & security"
-  ]
- },
- {
-  "title": "Reliance in talks with suppliers for Indian satellite constellation",
-  "url": "https://developingtelecoms.com/telecom-technology/satellite-communications-networks/21160-reliance-in-talks-with-suppliers-for-indian-satellite-constellation.html",
-  "source": "Developing Telecoms",
-  "date": "2026-11-19T17:23+00:00",
-  "categories": [
-   "Satcom & connectivity"
   ]
  },
  {
@@ -3458,150 +3602,6 @@
   "date": "2026-11-05T21:49+00:00",
   "categories": [
    "Defence & security"
-  ]
- },
- {
-  "title": "CesiumAstro Secures $730 Million in Janus Henderson-Led Series D at a Valuation Above $4.5 Billion; Unveils Synchronicity Satellite Constellation Following Fully Successful Element-1 Mission",
-  "url": "https://spacenews.com/cesiumastro-secures-730-million-in-janus-henderson-led-series-d-at-a-valuation-above-4-5-billion-unveils-synchronicity-satellite-constellation-following-fully-successful-element-1-mission/",
-  "source": "SpaceNews",
-  "date": "2026-11-05T21:45+00:00",
-  "categories": [
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Blue Origin unveils New Glenn GS3 third stage and Northstar booster engine",
-  "url": "https://www.nasaspaceflight.com/2026/11/blue-origin-new-glenn-gs3-northstar-engine/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-05T20:51+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "SES Sees Aviation, Defense Momentum Drive Modest Q3 Revenue Growth",
-  "url": "https://www.satellitetoday.com/connectivity/2026/11/05/ses-sees-aviation-defense-momentum-drive-modest-q3-revenue-growth/",
-  "source": "Via Satellite",
-  "date": "2026-11-05T20:42+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "KT SAT to Lead South Korea Maritime Connectivity Project With ST Engineering iDirect",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/05/kt-sat-to-lead-south-korea-maritime-connectivity-project-with-st-engineering-idirect/",
-  "source": "Via Satellite",
-  "date": "2026-11-05T20:38+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "Redwire to Fly Second VLEO Test for DARPA Otter Program",
-  "url": "https://www.satellitetoday.com/government-military/2026/11/05/redwire-to-fly-second-vleo-test-for-darpa-otter-program/",
-  "source": "Via Satellite",
-  "date": "2026-11-05T20:32+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "MDA Space Q3 2026: no slowdown yet, forecast rises",
-  "url": "https://spaceq.ca/mda-space-q3-2026-forecast-rises/",
-  "source": "SpaceQ",
-  "date": "2026-11-05T18:44+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Ukraine eyeing new SpaceX Starshield deal by mid-2027, still no answers about October problems",
-  "url": "https://breakingdefense.com/2026/11/ukraine-eyeing-new-spacex-starshield-deal-by-mid-2027-still-no-answers-about-october-problems/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-11-05T18:02+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Voyager Technologies Q3 2026 results: core business lifts forecast",
-  "url": "https://spaceq.ca/voyager-technologies-q3-2026-results/",
-  "source": "SpaceQ",
-  "date": "2026-11-05T17:53+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Cork Takes the Heat So DRACO’s Data Can Survive",
-  "url": "https://spacenews.com/cork-takes-the-heat-so-dracos-data-can-survive/",
-  "source": "SpaceNews",
-  "date": "2026-11-05T17:05+00:00",
-  "categories": [
-   "Satcom & connectivity"
-  ]
- },
- {
-  "title": "GHGSat, TACTIQL among Deloitte Technology Fast 50 winners",
-  "url": "https://spaceq.ca/ghgsat-tactiql-deloitte-technology-fast-50/",
-  "source": "SpaceQ",
-  "date": "2026-11-05T15:20+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Deutsche Telekom braces for SpaceX impact in US",
-  "url": "https://www.lightreading.com/finance/deutsche-telekom-braces-for-spacex-impact-in-us",
-  "source": "Light Reading",
-  "date": "2026-11-05T14:33+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Building a ‘highway to the moon and back’ with Winnie Lai",
-  "url": "https://spacenews.com/building-a-highway-to-the-moon-and-back-with-winnie-lai/",
-  "source": "SpaceNews",
-  "date": "2026-11-05T14:15+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "Exclusive: Orbital Taps Orca Aerospace for Onboard Autonomy Software",
-  "url": "https://payloadspace.com/exclusive-orbital-taps-orca-aerospace-for-onboard-autonomy-software/",
-  "source": "Payload",
-  "date": "2026-11-05T14:00+00:00",
-  "categories": []
- },
- {
-  "title": "Czech Space Week – Gyula Cserényi on Hungary’s Next Step: From Mission to Space Agency",
-  "url": "https://spacewatch.global/2026/11/czech-space-week-gyula-cserenyi-on-hungarys-next-step-from-mission-to-space-agency/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T14:00+00:00",
-  "categories": []
- },
- {
-  "title": "OHB Awarded €554 Million Contract for Next-Gen Sentinel-3 Satellite",
-  "url": "https://europeanspaceflight.com/ohb-awarded-e554-million-contract-for-next-gen-sentinel-3-satellite/",
-  "source": "European Spaceflight",
-  "date": "2026-11-05T13:52+00:00",
-  "categories": [
-   "Business & funding"
-  ]
- },
- {
-  "title": "Czech Space Week – Adéla Boranová on Growing Startups, Bigger Funding, and Why Europe Needs Upstream",
-  "url": "https://spacewatch.global/2026/11/czech-space-week-adela-boranova-on-growing-startups-bigger-funding-and-why-europe-needs-upstream/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-05T13:00+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
   ]
  }
 ]
