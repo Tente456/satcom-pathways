@@ -1,5 +1,75 @@
 [
  {
+  "title": "At NATO Edge, Alliance Leaders Say Speed of Tech Adoption is the New Measure of Power",
+  "url": "https://www.satellitetoday.com/government-military/2026/11/25/at-nato-edge-alliance-leaders-say-speed-of-tech-adoption-is-the-new-measure-of-power/",
+  "source": "Via Satellite",
+  "date": "2026-11-25T21:39+00:00",
+  "categories": []
+ },
+ {
+  "title": "Northwood Space Demonstrates Full-Duplex Contacts With Government Satellite For Space Force",
+  "url": "https://www.satellitetoday.com/technology/2026/11/25/northwood-space-demonstrates-full-duplex-contacts-with-government-satellite-for-space-force/",
+  "source": "Via Satellite",
+  "date": "2026-11-25T21:19+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "EnduroSat Buys 2 Dedicated Launches from Blue Origin",
+  "url": "https://www.satellitetoday.com/launch/2026/11/25/endurosat-buys-2-dedicated-launches-from-blue-origin/",
+  "source": "Via Satellite",
+  "date": "2026-11-25T21:15+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "FCC Approves SpaceX’s 1-Million Satellite Orbital Data Center Constellation",
+  "url": "https://www.satellitetoday.com/connectivity/2026/11/25/fcc-approves-spacexs-1-million-satellite-orbital-data-center-constellation/",
+  "source": "Via Satellite",
+  "date": "2026-11-25T20:39+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "Landing Zones Canada and Meisei test stratospheric balloon system in Yukon",
+  "url": "https://spaceq.ca/landing-zones-canada-meisei-yukon-balloon-test/",
+  "source": "SpaceQ",
+  "date": "2026-11-25T20:01+00:00",
+  "categories": []
+ },
+ {
+  "title": "SpaceX OK'd to deploy up to 1M AI satellites, complete constellation by 2040",
+  "url": "https://www.lightreading.com/satellite/spacex-ok-d-to-deploy-up-to-1m-ai-satellites-complete-constellation-by-2040",
+  "source": "Light Reading",
+  "date": "2026-11-25T18:58+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
+  "title": "MaiaSpace Ships Maia Mechanical Models to Launch Site",
+  "url": "https://europeanspaceflight.com/maiaspace-ships-maia-mechanical-models-to-launch-site/",
+  "source": "European Spaceflight",
+  "date": "2026-11-25T18:51+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "FCC greenlights SpaceX plan to deploy up to 1M AI satellites",
+  "url": "https://www.lightreading.com/satellite/fcc-greenlights-spacex-plan-to-deploy-up-to-1m-ai-satellites",
+  "source": "Light Reading",
+  "date": "2026-11-25T16:58+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Sustainability & debris"
+  ]
+ },
+ {
   "title": "BlackSky Acquires Data Science Firm EpochGeo",
   "url": "https://payloadspace.com/blacksky-acquires-data-science-firm-epochgeo/",
   "source": "Payload",
@@ -3523,80 +3593,5 @@
   "source": "SpaceQ",
   "date": "2026-11-06T17:15+00:00",
   "categories": []
- },
- {
-  "title": "Starship Flight 15, a dual catch attempt, awaits FAA green light",
-  "url": "https://www.nasaspaceflight.com/2026/11/starship-flight-15-awaits-faa/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-06T15:31+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "AST SpaceMobile To Build New Blacklift Rocket",
-  "url": "https://payloadspace.com/ast-spacemobile-to-build-new-blacklift-rocket/",
-  "source": "Payload",
-  "date": "2026-11-06T15:03+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch"
-  ]
- },
- {
-  "title": "Key Space Force satellites can’t talk to each other, likely requiring $1B solution: Sources",
-  "url": "https://breakingdefense.com/2026/11/key-space-force-satellites-cant-talk-to-each-other-likely-requiring-1b-solution-sources/",
-  "source": "Breaking Defense: Space",
-  "date": "2026-11-06T14:15+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "Rocket Report: Artemis II literally tore through the atmosphere; New Glenn delay",
-  "url": "https://arstechnica.com/space/2026/11/rocket-report-new-glenn-wont-fly-this-year-china-launches-mini-falcon-heavy/",
-  "source": "Ars Technica",
-  "date": "2026-11-06T13:33+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
-  ]
- },
- {
-  "title": "Op-ed: Why Did Russia Bother with X36?",
-  "url": "https://payloadspace.com/op-ed-why-did-russia-bother-with-x36/",
-  "source": "Payload",
-  "date": "2026-11-06T13:30+00:00",
-  "categories": []
- },
- {
-  "title": "Space Café “Law Breakfast with Dr. Ingo Baumann” – with Steven Freeland",
-  "url": "https://spacewatch.global/2026/11/space-cafe-law-breakfast-with-dr-ingo-baumann-with-steven-freeland/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-06T10:00+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Defence & security"
-  ]
- },
- {
-  "title": "#SpaceWatchGL GRAY SPACE – Democrats Sweep Both U.S. Congressional Chambers. Space and Defence, Now What?",
-  "url": "https://spacewatch.global/2026/11/spacewatchgl-gray-space-democrats-sweep-both-u-s-congressional-chambers-space-and-defence-now-what/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-06T09:00+00:00",
-  "categories": [
-   "Policy & regulation",
-   "Defence & security"
-  ]
- },
- {
-  "title": "Avio Scales Back Demonstrator Programme Amid Technical Challenges",
-  "url": "https://europeanspaceflight.com/avio-scales-back-demonstrator-programme-amid-technical-challenges/",
-  "source": "European Spaceflight",
-  "date": "2026-11-06T07:39+00:00",
-  "categories": [
-   "Launch",
-   "Business & funding"
-  ]
  }
 ]
