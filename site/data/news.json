@@ -1,5 +1,85 @@
 [
  {
+  "title": "#SpaceWatchGL Feature: The Rocks Nobody Ordered",
+  "url": "https://spacewatch.global/2026/11/spacewatchgl-feature-the-rocks-nobody-ordered/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-27T10:00+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "Q&A With Aerospacelab CEO Benoît Deper",
+  "url": "https://payloadspace.com/qa-with-aerospacelab-ceo-benoit-deper/",
+  "source": "Payload",
+  "date": "2026-11-27T07:30+00:00",
+  "categories": []
+ },
+ {
+  "title": "Rocket Lab Launches 101st Electron Mission, Deploying Synspective SAR Satellite",
+  "url": "https://spacewatch.global/2026/11/rocket-lab-launches-101st-electron-mission-deploying-synspective-sar-satellite/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-27T07:00+00:00",
+  "categories": [
+   "Launch",
+   "Earth observation"
+  ]
+ },
+ {
+  "title": "SSC Space and Andøya Space Partner to Strengthen Nordic Orbital Launch Capabilities",
+  "url": "https://spacewatch.global/2026/11/ssc-space-and-andoya-space-partner-to-strengthen-nordic-orbital-launch-capabilities/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-27T07:00+00:00",
+  "categories": [
+   "Launch"
+  ]
+ },
+ {
+  "title": "Estonia Approves Draft of First National Space Activities Act",
+  "url": "https://spacewatch.global/2026/11/estonia-approves-draft-of-first-national-space-activities-act/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-27T07:00+00:00",
+  "categories": [
+   "Policy & regulation",
+   "Business & funding"
+  ]
+ },
+ {
+  "title": "Problems over SpaceX’s Louisiana plans",
+  "url": "https://www.advanced-television.com/2026/11/27/problems-over-spacexs-louisiana-plans/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-27T04:32+00:00",
+  "categories": []
+ },
+ {
+  "title": "Iberia Express launches Starlink service",
+  "url": "https://www.advanced-television.com/2026/11/27/296583/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-27T01:30+00:00",
+  "categories": [
+   "Satcom & connectivity",
+   "Launch"
+  ]
+ },
+ {
+  "title": "German army planning on Lightspeed solution",
+  "url": "https://www.advanced-television.com/2026/11/27/german-army-planning-on-lightspeed-solution/",
+  "source": "Advanced Television: Satellite",
+  "date": "2026-11-27T00:33+00:00",
+  "categories": [
+   "Defence & security"
+  ]
+ },
+ {
+  "title": "FCC authorizes SpaceX to deploy up to 1 million Starmind AI satellites by 2040",
+  "url": "https://www.nasaspaceflight.com/2026/11/fcc-authorizes-spacex-1-million-starmind-2040/",
+  "source": "NASASpaceflight",
+  "date": "2026-11-26T22:40+00:00",
+  "categories": [
+   "Policy & regulation"
+  ]
+ },
+ {
   "title": "The ‘bare-knuckled’ future of life in space with Tim Marshall",
   "url": "https://spacenews.com/the-bare-knuckled-future-of-life-in-space-with-tim-marshall/",
   "source": "SpaceNews",
@@ -29,6 +109,15 @@
   "date": "2026-11-26T09:00+00:00",
   "categories": [
    "Sustainability & debris"
+  ]
+ },
+ {
+  "title": "FCC Authorizes SpaceX’s Starmind Network of One Million Orbital Data Center Satellites",
+  "url": "https://spacewatch.global/2026/11/fcc-authorizes-spacexs-starmind-network-of-one-million-orbital-data-center-satellites/",
+  "source": "SpaceWatch.Global",
+  "date": "2026-11-26T07:00+00:00",
+  "categories": [
+   "Policy & regulation"
   ]
  },
  {
@@ -3497,91 +3586,5 @@
   "categories": [
    "Business & funding"
   ]
- },
- {
-  "title": "UK Launches Titania Military Satellite as it Expands Space Defense Investment",
-  "url": "https://spacewatch.global/2026/11/uk-launches-titania-military-satellite-as-it-expands-space-defense-investment/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-09T07:00+00:00",
-  "categories": [
-   "Launch",
-   "Defence & security",
-   "Business & funding"
-  ]
- },
- {
-  "title": "ESA’s Hera Captures First Close-Up Image of Didymos Binary Asteroid System",
-  "url": "https://spacewatch.global/2026/11/esas-hera-captures-first-close-up-image-of-didymos-binary-asteroid-system/",
-  "source": "SpaceWatch.Global",
-  "date": "2026-11-09T07:00+00:00",
-  "categories": [
-   "Defence & security"
-  ]
- },
- {
-  "title": "India’s TRAI eases access for satellite broadband",
-  "url": "https://www.advanced-television.com/2026/11/09/indias-trai-eases-access-for-satellite-broadband/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-09T01:41+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "Bezos’s New Glenn delayed until January",
-  "url": "https://www.advanced-television.com/2026/11/09/bezos-new-glenn-delayed-until-january/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-09T00:24+00:00",
-  "categories": [
-   "Launch"
-  ]
- },
- {
-  "title": "What’s Happening in Space Policy November 8-14, 2026",
-  "url": "https://spacepolicyonline.com/news/whats-happening-in-space-policy-november-8-14-2026/",
-  "source": "SpacePolicyOnline",
-  "date": "2026-11-08T22:27+00:00",
-  "categories": [
-   "Policy & regulation"
-  ]
- },
- {
-  "title": "Weekly ISS update: Kutryk’s second spacewalk adds final array",
-  "url": "https://spaceq.ca/weekly-iss-update-kutryks-second-spacewalk-adds-final-array/",
-  "source": "SpaceQ",
-  "date": "2026-11-08T19:55+00:00",
-  "categories": []
- },
- {
-  "title": "NASA Unveils Moon Base Awards at MAX POWER",
-  "url": "https://payloadspace.com/nasa-unveils-moon-base-awards-at-max-power/",
-  "source": "Payload",
-  "date": "2026-11-08T16:13+00:00",
-  "categories": []
- },
- {
-  "title": "AST to build and launch its own rockets",
-  "url": "https://www.advanced-television.com/2026/11/08/ast-to-build-and-launch-its-own-rockets/",
-  "source": "Advanced Television: Satellite",
-  "date": "2026-11-08T09:51+00:00",
-  "categories": [
-   "Satcom & connectivity",
-   "Launch"
-  ]
- },
- {
-  "title": "NASA’s Moon Base plan gains a PROMISE",
-  "url": "https://www.nasaspaceflight.com/2026/11/nasas-moon-base-promise/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-08T04:43+00:00",
-  "categories": []
- },
- {
-  "title": "NASA announces search for new astronauts",
-  "url": "https://www.nasaspaceflight.com/2026/11/astronaut-class-25-applications/",
-  "source": "NASASpaceflight",
-  "date": "2026-11-07T18:00+00:00",
-  "categories": []
  }
 ]

@@ -1,5 +1,5 @@
 {
- "fetched": "2026-11-27T00:40+00:00",
+ "fetched": "2026-11-27T14:00+00:00",
  "source": "https://www.peeringdb.com",
  "ixs": [
   {
@@ -16,7 +16,7 @@
    "name": "KIXP - Nairobi",
    "city": "Nairobi",
    "country": "KE",
-   "networks": 146,
+   "networks": 147,
    "lat": -1.34,
    "lon": 36.897
   },
